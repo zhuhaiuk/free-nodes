@@ -4,14 +4,14 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: RO-Bucharest - zhuhai.uk
+- name: RO - zhuhai.uk
   type: hysteria2
   server: 85.120.228.208
   port: 47257
   password: 35415e5e-3666-4454-8c45-903af0fcddf4
   sni: www.bing.com
   skip-cert-verify: true
-- name: US-East Los Angeles - zhuhai.uk
+- name: US - zhuhai.uk
   type: vless
   server: www.zsu.gov.ua
   port: 8880
@@ -21,27 +21,27 @@ proxies:
     path: "/pyip=ProxyIP.SG.CMLiussss.net"
     headers:
       Host: purple-forest-b185.467.workers.dev
-- name: FR-Paris 01 Louvre - zhuhai.uk
+- name: FR - zhuhai.uk
   type: socks5
   server: 51.210.5.144
   port: 1088
-- name: US-Los Angeles - zhuhai.uk
+- name: US - zhuhai.uk 02
   type: http
   server: 138.199.35.216
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: US-New York City - zhuhai.uk
+- name: US - zhuhai.uk 03
   type: http
   server: 156.146.59.34
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: GB-London - zhuhai.uk
+- name: GB - zhuhai.uk
   type: socks5
   server: 212.58.132.5
   port: 1080
-- name: HK-Hong Kong - zhuhai.uk
+- name: HK - zhuhai.uk
   type: vless
   server: 104.26.2.173
   port: 443
@@ -54,7 +54,7 @@ proxies:
     path: "/sg-melbi"
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: SG-Singapore - zhuhai.uk
+- name: SG - zhuhai.uk
   type: trojan
   server: 129.212.225.217
   port: 443
@@ -67,14 +67,14 @@ proxies:
     path: "/"
     headers:
       Host: tjplay.lxdxo.kdns.fr
-- name: KR-Seoul - zhuhai.uk
+- name: KR - zhuhai.uk
   type: trojan
   server: kr04212339.tmdsb.org
   port: 2648
   password: '3632736327'
   tls: true
   sni: kr04212339.tmdsb.org
-- name: TH-Bangkok - zhuhai.uk
+- name: TH - zhuhai.uk
   type: vless
   server: t1.hhaakk9922.com
   port: 36792
@@ -85,7 +85,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ljfxz
-- name: US-East Los Angeles - zhuhai.uk 02
+- name: US - zhuhai.uk 04
   type: vless
   server: 104.21.15.208
   port: 80
@@ -95,7 +95,7 @@ proxies:
     path: "/"
     headers:
       Host: zeus-panel-efn0dw.zeus-q2agkd.workers.dev
-- name: US-East Los Angeles - zhuhai.uk 03
+- name: US - zhuhai.uk 05
   type: vless
   server: 192.0.63.4
   port: 80
@@ -105,7 +105,7 @@ proxies:
     path: "/pyip=Telegram\U0001F1E8\U0001F1F3 @WangCai2"
     headers:
       Host: solitary-mountain-996f.223-38e.workers.dev
-- name: KR-Seoul - zhuhai.uk 02
+- name: KR - zhuhai.uk 02
   type: vless
   server: t1.hhaakk9922.com
   port: 46785
@@ -116,7 +116,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ljfxz
-- name: DE-Frankfurt am Main - zhuhai.uk
+- name: DE - zhuhai.uk
   type: vless
   server: media.frdmhere.com
   port: 443
@@ -129,7 +129,7 @@ proxies:
     path: "/mp3/all"
     headers:
       Host: media.frdmhere.com
-- name: US-East Los Angeles - zhuhai.uk 04
+- name: US - zhuhai.uk 06
   type: vless
   server: 104.18.5.4
   port: 443
@@ -142,7 +142,7 @@ proxies:
     path: "/vless"
     headers:
       Host: nfs.kdns.fr
-- name: DE-Frankfurt am Main - zhuhai.uk 02
+- name: DE - zhuhai.uk 02
   type: vless
   server: argg11.auragg.org
   port: 443
@@ -153,18 +153,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: media.session.poll
-- name: KR-Seoul - zhuhai.uk 03
+- name: KR - zhuhai.uk 03
   type: trojan
   server: kr04212341.tmdsb.org
   port: 2691
   password: '3632736327'
   tls: true
   sni: kr04212341.tmdsb.org
-- name: NL-Oosterhout - zhuhai.uk
+- name: NL - zhuhai.uk
   type: socks5
   server: 185.116.43.3
   port: 1088
-- name: US-East Los Angeles - zhuhai.uk 05
+- name: US - zhuhai.uk 07
   type: vless
   server: 162.159.4.221
   port: 8443
@@ -177,25 +177,25 @@ proxies:
     path: "/"
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: US-Los Angeles - zhuhai.uk 02
+- name: US - zhuhai.uk 08
   type: http
   server: 138.199.35.213
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: US-Los Angeles - zhuhai.uk 03
+- name: US - zhuhai.uk 09
   type: http
   server: 138.199.35.201
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: US-Los Angeles - zhuhai.uk 04
+- name: US - zhuhai.uk 10
   type: http
   server: 138.199.35.215
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: US-East Los Angeles - zhuhai.uk 06
+- name: US - zhuhai.uk 11
   type: vless
   server: 172.66.0.52
   port: 443
@@ -208,13 +208,13 @@ proxies:
     path: "/vless"
     headers:
       Host: nfs.kdns.fr
-- name: US-New York City - zhuhai.uk 02
+- name: US - zhuhai.uk 12
   type: http
   server: 156.146.59.12
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: HK-Hong Kong - zhuhai.uk 02
+- name: HK - zhuhai.uk 02
   type: trojan
   server: 103.192.179.132
   port: 443
@@ -227,7 +227,7 @@ proxies:
     path: "/"
     headers:
       Host: tjplay.lxdxo.kdns.fr
-- name: DE-Frankfurt am Main - zhuhai.uk 03
+- name: DE - zhuhai.uk 03
   type: vless
   server: assets.fiverr.com
   port: 443
@@ -240,7 +240,7 @@ proxies:
     path: "/api-ip"
     headers:
       Host: satl.satl.dpdns.org
-- name: FR-Paris 04 Hôtel-de-Ville - zhuhai.uk
+- name: FR - zhuhai.uk 02
   type: http
   server: 6461960b-t9zts0-tbicd9-1go3q.fr.oshuawei.com
   port: 443
@@ -248,13 +248,13 @@ proxies:
   password: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
   tls: true
   sni: 6461960b-t9zts0-tbicd9-1go3q.fr.oshuawei.com
-- name: US-Los Angeles - zhuhai.uk 05
+- name: US - zhuhai.uk 13
   type: http
   server: 138.199.35.200
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: AE-Dubai - zhuhai.uk
+- name: AE - zhuhai.uk
   type: vless
   server: uae1.appcodes.ir
   port: 2026
@@ -265,7 +265,7 @@ proxies:
   reality-opts:
     public-key: 1pZz4shnro2xyuXc7MMSFseBbbuy1weo2QLclTDJ8Fo
     short-id: db4a993c8bb355ba
-- name: US-San Jose - zhuhai.uk
+- name: US - zhuhai.uk 14
   type: vless
   server: 72.167.241.4
   port: 80
@@ -275,19 +275,19 @@ proxies:
     path: "/pyip=Telegram\U0001F1E8\U0001F1F3 @WangCai2"
     headers:
       Host: solitary-mountain-996f.223-38e.workers.dev
-- name: FR-Lauterbourg - zhuhai.uk
+- name: FR - zhuhai.uk 03
   type: http
   server: 5.189.184.6
   port: 443
   tls: true
   skip-cert-verify: true
-- name: US-New York City - zhuhai.uk 03
+- name: US - zhuhai.uk 15
   type: http
   server: 156.146.59.33
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: GB-London - zhuhai.uk 02
+- name: GB - zhuhai.uk 02
   type: http
   server: 395fb49a-ta1og0-tb5rbt-1kcpe.uk.oshuawei.com
   port: 443
@@ -295,7 +295,7 @@ proxies:
   password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
   tls: true
   sni: 395fb49a-ta1og0-tb5rbt-1kcpe.uk.oshuawei.com
-- name: DE-Frankfurt am Main - zhuhai.uk 04
+- name: DE - zhuhai.uk 04
   type: vless
   server: hikvision-plus.com
   port: 443
@@ -308,7 +308,7 @@ proxies:
     path: "/api-ip"
     headers:
       Host: satl.satl.dpdns.org
-- name: US-East Los Angeles - zhuhai.uk 07
+- name: US - zhuhai.uk 16
   type: vless
   server: themeforest.net
   port: 8880
@@ -318,17 +318,17 @@ proxies:
     path: "/pyip=ProxyIP.KR.CMLiussss.net"
     headers:
       Host: shiny-mud-d9fa.466.workers.dev
-- name: US-Los Angeles - zhuhai.uk 06
+- name: US - zhuhai.uk 17
   type: http
   server: 138.199.35.210
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: NL-Amsterdam - zhuhai.uk
+- name: NL - zhuhai.uk 02
   type: socks5
   server: 91.132.59.221
   port: 1080
-- name: US-East Los Angeles - zhuhai.uk 08
+- name: US - zhuhai.uk 18
   type: vless
   server: www.visa.com.sg
   port: 8880
@@ -338,7 +338,7 @@ proxies:
     path: "/pyip=ProxyIP.US.CMLiussss.net"
     headers:
       Host: gentle-rice-a9b4.460-a3e.workers.dev
-- name: US-East Los Angeles - zhuhai.uk 09
+- name: US - zhuhai.uk 19
   type: vless
   server: codecanyon.net
   port: 8880
@@ -348,7 +348,7 @@ proxies:
     path: "/pyip=ProxyIP.KR.CMLiussss.net"
     headers:
       Host: super-sunset-010c.24-43d.workers.dev
-- name: US-East Los Angeles - zhuhai.uk 10
+- name: US - zhuhai.uk 20
   type: vless
   server: themeforest.net
   port: 8880
@@ -358,7 +358,7 @@ proxies:
     path: "/pyip=ProxyIP.SG.CMLiussss.net"
     headers:
       Host: bitter-meadow-1d60.313-0f9.workers.dev
-- name: US-East Los Angeles - zhuhai.uk 11
+- name: US - zhuhai.uk 21
   type: vless
   server: 172.64.147.189
   port: 443
@@ -371,13 +371,13 @@ proxies:
     path: "/vless"
     headers:
       Host: nfs.kdns.fr
-- name: US-Dallas - zhuhai.uk
+- name: US - zhuhai.uk 22
   type: socks5
   server: 185.145.99.41
   port: 1080
   username: test123
   password: test123
-- name: FR-Paris 04 Hôtel-de-Ville - zhuhai.uk 02
+- name: FR - zhuhai.uk 04
   type: http
   server: 3de61285-t9zts0-tkhmfr-1jm8i.fr.oshuawei.com
   port: 443
@@ -385,7 +385,7 @@ proxies:
   password: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
   tls: true
   sni: 3de61285-t9zts0-tkhmfr-1jm8i.fr.oshuawei.com
-- name: DE-Frankfurt am Main - zhuhai.uk 05
+- name: DE - zhuhai.uk 05
   type: vless
   server: nebulonix.online
   port: 443
@@ -398,13 +398,13 @@ proxies:
     path: "/api-ip"
     headers:
       Host: satl.satl.dpdns.org
-- name: US-New York City - zhuhai.uk 04
+- name: US - zhuhai.uk 23
   type: http
   server: 156.146.59.11
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: US-East Los Angeles - zhuhai.uk 12
+- name: US - zhuhai.uk 24
   type: vless
   server: 172.64.148.42
   port: 2053
@@ -417,7 +417,7 @@ proxies:
     path: "/vless"
     headers:
       Host: nfs.kdns.fr
-- name: US-East Los Angeles - zhuhai.uk 13
+- name: US - zhuhai.uk 25
   type: vless
   server: www.baipiao.eu.org
   port: 8880
@@ -427,11 +427,11 @@ proxies:
     path: "/pyip=ProxyIP.JP.CMLiussss.net"
     headers:
       Host: crimson-sea-a4bb.343-1a7.workers.dev
-- name: NL-Alkmaar - zhuhai.uk
+- name: NL - zhuhai.uk 03
   type: socks5
   server: 5.255.103.55
   port: 1080
-- name: DE-Frankfurt am Main - zhuhai.uk 06
+- name: DE - zhuhai.uk 06
   type: vless
   server: brezzen.com
   port: 443
@@ -444,7 +444,7 @@ proxies:
     path: "/api-ip"
     headers:
       Host: satl.satl.dpdns.org
-- name: KR-Seoul - zhuhai.uk 04
+- name: KR - zhuhai.uk 04
   type: vmess
   server: 217.142.138.61
   port: 80
@@ -457,56 +457,56 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
-  - RO-Bucharest - zhuhai.uk
-  - US-East Los Angeles - zhuhai.uk
-  - FR-Paris 01 Louvre - zhuhai.uk
-  - US-Los Angeles - zhuhai.uk
-  - US-New York City - zhuhai.uk
-  - GB-London - zhuhai.uk
-  - HK-Hong Kong - zhuhai.uk
-  - SG-Singapore - zhuhai.uk
-  - KR-Seoul - zhuhai.uk
-  - TH-Bangkok - zhuhai.uk
-  - US-East Los Angeles - zhuhai.uk 02
-  - US-East Los Angeles - zhuhai.uk 03
-  - KR-Seoul - zhuhai.uk 02
-  - DE-Frankfurt am Main - zhuhai.uk
-  - US-East Los Angeles - zhuhai.uk 04
-  - DE-Frankfurt am Main - zhuhai.uk 02
-  - KR-Seoul - zhuhai.uk 03
-  - NL-Oosterhout - zhuhai.uk
-  - US-East Los Angeles - zhuhai.uk 05
-  - US-Los Angeles - zhuhai.uk 02
-  - US-Los Angeles - zhuhai.uk 03
-  - US-Los Angeles - zhuhai.uk 04
-  - US-East Los Angeles - zhuhai.uk 06
-  - US-New York City - zhuhai.uk 02
-  - HK-Hong Kong - zhuhai.uk 02
-  - DE-Frankfurt am Main - zhuhai.uk 03
-  - FR-Paris 04 Hôtel-de-Ville - zhuhai.uk
-  - US-Los Angeles - zhuhai.uk 05
-  - AE-Dubai - zhuhai.uk
-  - US-San Jose - zhuhai.uk
-  - FR-Lauterbourg - zhuhai.uk
-  - US-New York City - zhuhai.uk 03
-  - GB-London - zhuhai.uk 02
-  - DE-Frankfurt am Main - zhuhai.uk 04
-  - US-East Los Angeles - zhuhai.uk 07
-  - US-Los Angeles - zhuhai.uk 06
-  - NL-Amsterdam - zhuhai.uk
-  - US-East Los Angeles - zhuhai.uk 08
-  - US-East Los Angeles - zhuhai.uk 09
-  - US-East Los Angeles - zhuhai.uk 10
-  - US-East Los Angeles - zhuhai.uk 11
-  - US-Dallas - zhuhai.uk
-  - FR-Paris 04 Hôtel-de-Ville - zhuhai.uk 02
-  - DE-Frankfurt am Main - zhuhai.uk 05
-  - US-New York City - zhuhai.uk 04
-  - US-East Los Angeles - zhuhai.uk 12
-  - US-East Los Angeles - zhuhai.uk 13
-  - NL-Alkmaar - zhuhai.uk
-  - DE-Frankfurt am Main - zhuhai.uk 06
-  - KR-Seoul - zhuhai.uk 04
+  - RO - zhuhai.uk
+  - US - zhuhai.uk
+  - FR - zhuhai.uk
+  - US - zhuhai.uk 02
+  - US - zhuhai.uk 03
+  - GB - zhuhai.uk
+  - HK - zhuhai.uk
+  - SG - zhuhai.uk
+  - KR - zhuhai.uk
+  - TH - zhuhai.uk
+  - US - zhuhai.uk 04
+  - US - zhuhai.uk 05
+  - KR - zhuhai.uk 02
+  - DE - zhuhai.uk
+  - US - zhuhai.uk 06
+  - DE - zhuhai.uk 02
+  - KR - zhuhai.uk 03
+  - NL - zhuhai.uk
+  - US - zhuhai.uk 07
+  - US - zhuhai.uk 08
+  - US - zhuhai.uk 09
+  - US - zhuhai.uk 10
+  - US - zhuhai.uk 11
+  - US - zhuhai.uk 12
+  - HK - zhuhai.uk 02
+  - DE - zhuhai.uk 03
+  - FR - zhuhai.uk 02
+  - US - zhuhai.uk 13
+  - AE - zhuhai.uk
+  - US - zhuhai.uk 14
+  - FR - zhuhai.uk 03
+  - US - zhuhai.uk 15
+  - GB - zhuhai.uk 02
+  - DE - zhuhai.uk 04
+  - US - zhuhai.uk 16
+  - US - zhuhai.uk 17
+  - NL - zhuhai.uk 02
+  - US - zhuhai.uk 18
+  - US - zhuhai.uk 19
+  - US - zhuhai.uk 20
+  - US - zhuhai.uk 21
+  - US - zhuhai.uk 22
+  - FR - zhuhai.uk 04
+  - DE - zhuhai.uk 05
+  - US - zhuhai.uk 23
+  - US - zhuhai.uk 24
+  - US - zhuhai.uk 25
+  - NL - zhuhai.uk 03
+  - DE - zhuhai.uk 06
+  - KR - zhuhai.uk 04
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
