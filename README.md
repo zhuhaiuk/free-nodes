@@ -1,11 +1,24 @@
-# Zhuhai Free Nodes - 免费节点分享与机场推荐
+# Zhuhai Free Nodes - 免费节点订阅与机场推荐
 
-> 每日整理可用的免费代理节点，适合 Clash、V2Ray、Trojan、Shadowsocks、Shadowrocket 等客户端测试使用。  
-> Free proxy nodes for Clash, V2Ray, Trojan, Shadowsocks and Shadowrocket.
+> 每小时自动更新的免费代理节点订阅，适合 Clash、Mihomo、V2Ray、Trojan、Shadowsocks、Shadowrocket 等客户端测试使用。  
+> Hourly updated free proxy subscriptions for Clash, Mihomo, V2Ray, Trojan, Shadowsocks and Shadowrocket.
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-zhuhaiuk%2Ffree--nodes-181717?logo=github)](https://github.com/zhuhaiuk/free-nodes)
 [![Website](https://img.shields.io/badge/Website-zhuhai.uk-0f766e)](https://zhuhai.uk)
 [![Telegram](https://img.shields.io/badge/Telegram-dns68-229ED9?logo=telegram)](https://t.me/dns68)
+
+## 免费节点订阅
+
+本仓库提供两个固定订阅链接，文件会由私密自动化脚本每小时更新一次。节点名称会统一整理为 `国家/地区代码 - zhuhai.uk`，例如 `US - zhuhai.uk`、`DE - zhuhai.uk`、`HK - zhuhai.uk`，方便在客户端中快速识别线路地区。
+
+| 订阅类型 | 固定链接 | 适合客户端 |
+| --- | --- | --- |
+| Base64 通用订阅 | [nodes.txt](https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt) | V2Ray、v2rayN、v2rayNG、Shadowrocket、部分通用订阅客户端 |
+| Clash / Mihomo YAML 订阅 | [clash_config.yaml](https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml) | Clash、Clash Meta、Mihomo、Stash、部分 Clash 兼容客户端 |
+
+更新频率：每小时自动更新一次。  
+节点命名：`国家/地区代码 - zhuhai.uk`，同地区重复节点会自动追加序号，例如 `US - zhuhai.uk 02`。  
+用途定位：免费节点适合临时测试、备用连接、客户端学习和订阅格式验证。
 
 ## 项目简介
 
@@ -22,6 +35,7 @@
 - 小火箭共享账号
 - 稳定机场推荐
 - 免费代理订阅
+- 每小时更新免费节点
 
 这个仓库可以作为一个简单、清晰、持续更新的入口。
 
@@ -34,13 +48,6 @@
 | Telegram 频道 | [t.me/dns68](https://t.me/dns68) |
 | Telegram 私聊 | [t.me/dns68?direct](https://t.me/dns68?direct) |
 | 免费小火箭共享账号 | [zhuhai.uk/id](https://zhuhai.uk/id) |
-
-## 订阅链接
-
-| 类型 | 订阅地址 |
-| --- | --- |
-| Base64 通用订阅 | [nodes.txt](https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt) |
-| Clash / Mihomo YAML 订阅 | [clash_config.yaml](https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml) |
 
 ## 支持的客户端
 
@@ -60,6 +67,7 @@
 
 免费节点通常来自公开网络资源或临时测试线路，具有以下特点：
 
+- 每小时自动整理并发布到固定订阅链接
 - 可用于临时测试代理客户端是否正常工作
 - 适合备用、学习、测速和订阅格式验证
 - 稳定性、速度、可用地区和在线时间不保证
@@ -123,7 +131,15 @@
 
 ### 支持 Clash 吗？
 
-本项目会尽量整理适合 Clash、Clash Meta、Mihomo 等客户端使用的节点或订阅格式。具体可用性请以实际导入结果为准。
+支持。Clash / Mihomo YAML 订阅链接为：[https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml](https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml)
+
+### 支持 Base64 通用订阅吗？
+
+支持。Base64 通用订阅链接为：[https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt](https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt)
+
+### 多久更新一次？
+
+本仓库订阅文件每小时自动更新一次。GitHub Actions 定时任务可能会有几分钟延迟，这是正常情况。
 
 ### 支持 Shadowrocket 小火箭吗？
 
@@ -142,4 +158,4 @@
 
 ---
 
-关键词：免费节点、免费代理节点、Clash 节点、V2Ray 节点、Trojan 节点、Shadowsocks 节点、Shadowrocket 共享账号、小火箭账号、机场推荐、免费订阅、代理订阅、free nodes、free proxy nodes、free Clash nodes、free V2Ray nodes。
+关键词：免费节点、免费代理节点、免费节点订阅、每小时更新免费节点、Clash 节点、Mihomo 节点、V2Ray 节点、Trojan 节点、Shadowsocks 节点、Shadowrocket 共享账号、小火箭账号、机场推荐、免费订阅、代理订阅、free nodes、free proxy nodes、free Clash nodes、free V2Ray nodes。
