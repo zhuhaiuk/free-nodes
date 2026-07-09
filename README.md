@@ -35,6 +35,13 @@
 | Telegram 私聊 | [t.me/dns68?direct](https://t.me/dns68?direct) |
 | 免费小火箭共享账号 | [zhuhai.uk/id](https://zhuhai.uk/id) |
 
+## 订阅链接
+
+| 类型 | 订阅地址 |
+| --- | --- |
+| Base64 通用订阅 | [nodes.txt](https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt) |
+| Clash / Mihomo YAML 订阅 | [clash_config.yaml](https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml) |
+
 ## 支持的客户端
 
 本项目整理的节点信息通常适用于以下代理工具或订阅客户端：
