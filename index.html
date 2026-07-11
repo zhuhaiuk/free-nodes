@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhuhai Free Nodes - 免费节点订阅 | Clash / Mihomo / V2Ray 每小时更新</title>
+  <meta name="description" content="Zhuhai Free Nodes 提供每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket、sing-box、NekoBox、Hiddify 等客户端。">
+  <link rel="canonical" href="https://zhuhaiuk.github.io/free-nodes/">
+  <meta property="og:title" content="Zhuhai Free Nodes - 免费节点订阅 | Clash / Mihomo / V2Ray 每小时更新">
+  <meta property="og:description" content="每小时自动更新的免费代理节点订阅，提供 Base64 和 Clash / Mihomo YAML 固定入口。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zhuhaiuk.github.io/free-nodes/">
+  <style>
+    :root { color-scheme: light; --ink: #172033; --muted: #586174; --line: #d9e0ea; --brand: #1268d6; --soft: #f4f7fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: #fff; line-height: 1.65; }
+    main { max-width: 980px; margin: 0 auto; padding: 40px 20px 64px; }
+    header { padding: 28px 0 24px; border-bottom: 1px solid var(--line); }
+    h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 4rem); line-height: 1.08; letter-spacing: 0; }
+    h2 { margin: 36px 0 14px; font-size: 1.35rem; }
+    p { margin: 0 0 14px; color: var(--muted); }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+    .button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid var(--brand); border-radius: 6px; background: var(--brand); color: #fff; font-weight: 650; }
+    .button.secondary { background: #fff; color: var(--brand); }
+    .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0; }
+    .stat { padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); }
+    .stat strong { display: block; font-size: 1.8rem; line-height: 1.1; }
+    .stat span { color: var(--muted); font-size: .95rem; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    pre { overflow-x: auto; padding: 14px; border-radius: 8px; background: #0f172a; color: #e6edf7; }
+    .lists { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    ul.clean { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+    ul.clean li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+    ul.clean li:last-child { border-bottom: 0; }
+    footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
+    @media (max-width: 720px) { .stats, .lists { grid-template-columns: 1fr; } main { padding-top: 24px; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Zhuhai Free Nodes",
+    "description": "每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket 等客户端。",
+    "url": "https://zhuhaiuk.github.io/free-nodes/",
+    "codeRepository": "https://github.com/zhuhaiuk/free-nodes",
+    "dateModified": "2026-07-11"
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Zhuhai Free Nodes 免费节点订阅</h1>
+      <p>每小时自动更新，提供通用 Base64 与 Clash / Mihomo 配置，适合 V2RayN、V2rayNG、Shadowrocket、NekoBox、Hiddify、sing-box 等客户端测试使用。</p>
+      <div class="actions">
+        <a class="button" href="#base64">Base64 订阅</a>
+        <a class="button secondary" href="#clash">Clash / Mihomo 配置</a>
+        <a class="button secondary" href="#faq">常见问题</a>
+      </div>
+    </header>
+
+    <section class="stats" aria-label="今日免费节点状态">
+      <div class="stat"><strong>50+</strong><span>免费代理节点</span></div>
+      <div class="stat"><strong>13</strong><span>主要地区</span></div>
+      <div class="stat"><strong>1h</strong><span>自动更新频率</span></div>
+    </section>
+
+    <p>免费节点稳定性会随地区和运营商变化，建议导入后先测试延迟和连通性。订阅文件由 GitHub 仓库固定地址提供，便于收藏和自动刷新。</p>
+
+    <h2 id="base64">通用 Base64 订阅</h2>
+    <pre>https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt</pre>
+
+    <h2 id="clash">Clash / Mihomo 订阅</h2>
+    <pre>https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml</pre>
+
+    <div class="lists">
+      <section>
+        <h2>主要地区</h2>
+        <ul class="clean">
+          <li><strong>US</strong><span>美国节点</span></li>
+          <li><strong>RO</strong><span>罗马尼亚节点</span></li>
+          <li><strong>GB / HK / NL</strong><span>常见备用地区</span></li>
+          <li><strong>AU / BR / CA / FR / PL / DE / KR / SG</strong><span>更多地区</span></li>
+        </ul>
+      </section>
+      <section>
+        <h2>支持协议</h2>
+        <ul class="clean">
+          <li><strong>HTTP</strong><span>通用代理</span></li>
+          <li><strong>VLESS</strong><span>V2Ray 生态</span></li>
+          <li><strong>SOCKS5</strong><span>通用客户端</span></li>
+          <li><strong>Trojan / SS / Hysteria2</strong><span>多协议测试</span></li>
+        </ul>
+      </section>
+    </div>
+
+    <h2>每日归档</h2>
+    <p><a href="archive/2026-07-11-free-nodes.html">2026年07月11日免费节点订阅快照</a></p>
+
+    <h2 id="faq">常见问题</h2>
+    <p><strong>为什么节点会失效？</strong> 免费节点通常稳定性有限，更新订阅并测速后再使用更稳妥。</p>
+    <p><strong>Clash Verge、Mihomo Party 用哪个？</strong> 优先使用 Clash / Mihomo 订阅地址。</p>
+    <p><strong>V2RayN、V2rayNG、Shadowrocket 用哪个？</strong> 可以优先尝试通用 Base64 订阅地址。</p>
+
+    <footer>
+      <p>节点仅供测试与学习研究。请遵守当地法律法规和服务条款。</p>
+      <p><a href="https://github.com/zhuhaiuk/free-nodes">GitHub 仓库</a> · <a href="https://zhuhai.uk">zhuhai.uk</a> · <a href="https://t.me/dns68">Telegram</a></p>
+    </footer>
+  </main>
+</body>
+</html>

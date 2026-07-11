@@ -1,4 +1,4 @@
-#  Free Nodes - 免费节点订阅与机场推荐
+# Zhuhai Free Nodes - 免费节点订阅与机场推荐
 
 > 每小时自动更新的免费代理节点订阅，适合 Clash、Mihomo、V2Ray、Trojan、Shadowsocks、Shadowrocket 等客户端测试使用。  
 > Hourly updated free proxy subscriptions for Clash, Mihomo, V2Ray, Trojan, Shadowsocks and Shadowrocket.
@@ -17,8 +17,20 @@
 | Clash / Mihomo YAML 订阅 | [clash_config.yaml](https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml) | Clash、Clash Meta、Mihomo、Stash、部分 Clash 兼容客户端 |
 
 更新频率：每小时自动更新一次。  
+当前规模：约 50 个免费代理节点，覆盖 US、RO、GB、HK、NL、AU、BR、CA、FR、PL、DE、KR、SG 等地区。  
+支持协议：HTTP、VLESS、SOCKS5、Trojan、Shadowsocks、Hysteria2 等。  
 节点命名：`国家/地区代码 - zhuhai.uk`，同地区重复节点会自动追加序号，例如 `US - zhuhai.uk 02`。  
 用途定位：免费节点适合临时测试、备用连接、客户端学习和订阅格式验证。
+
+## GitHub Pages 与每日归档
+
+如果 GitHub Pages 已开启，可以访问项目页面：
+
+- 项目首页：[https://zhuhaiuk.github.io/free-nodes/](https://zhuhaiuk.github.io/free-nodes/)
+- 站点地图：[https://zhuhaiuk.github.io/free-nodes/sitemap.xml](https://zhuhaiuk.github.io/free-nodes/sitemap.xml)
+- 每日快照：[2026年07月11日免费节点订阅](archive/2026-07-11-free-nodes.html)
+
+这些页面用于帮助搜索引擎理解本仓库主题、更新时间和固定订阅入口。
 
 ## 项目简介
 
@@ -44,6 +56,7 @@
 | 类型 | 链接 |
 | --- | --- |
 | GitHub 仓库 | [github.com/zhuhaiuk/free-nodes](https://github.com/zhuhaiuk/free-nodes) |
+| GitHub Pages | [zhuhaiuk.github.io/free-nodes](https://zhuhaiuk.github.io/free-nodes/) |
 | 官方网站 | [zhuhai.uk](https://zhuhai.uk) |
 | Telegram 频道 | [t.me/dns68](https://t.me/dns68) |
 | Telegram 私聊 | [t.me/dns68?direct](https://t.me/dns68?direct) |
@@ -53,13 +66,13 @@
 
 本项目整理的节点信息通常适用于以下代理工具或订阅客户端：
 
-- Clash / Clash Meta / Mihomo
+- Clash / Clash Meta / Mihomo / Clash Verge / Mihomo Party
 - V2Ray / v2rayN / v2rayNG
 - Trojan / Trojan-Go
 - Shadowsocks / ShadowsocksR
 - Shadowrocket / 小火箭
 - Stash / Quantumult X / Loon
-- Sing-box / Hiddify / NekoBox
+- sing-box / Hiddify / NekoBox
 
 不同客户端的导入方式可能不同，请以客户端自身支持的订阅格式为准。
 
@@ -123,13 +136,13 @@
 
 ### 免费节点为什么不能用？
 
-免费节点通常使用人数多、线路公开、可用时间短，可能出现连接失败、速度慢、地区不可用或订阅更新不及时的情况。建议多尝试几个节点，或关注本站更新。
+免费节点通常使用人数多、线路公开、可用时间短，可能出现连接失败、速度慢、地区不可用或订阅更新不及时的情况。建议多尝试几个节点，或等待下一次自动更新。
 
 ### 免费节点和机场有什么区别？
 
 免费节点更适合临时测试和学习使用，稳定性不可控。机场通常提供更稳定的订阅服务、更多节点地区、更好的速度和更完整的客户端支持。
 
-### 支持 Clash 吗？
+### 支持 Clash / Mihomo 吗？
 
 支持。Clash / Mihomo YAML 订阅链接为：[https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml](https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml)
 
