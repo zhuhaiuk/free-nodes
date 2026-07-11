@@ -1,0 +1,40 @@
+name: Update SEO pages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "35 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-seo-pages
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate SEO pages
+        run: node scripts/update-seo-pages.mjs
+
+      - name: Commit generated pages
+        run: |
+          if [ -z "$(git status --short README.md index.html sitemap.xml robots.txt archive)" ]; then
+            echo "No SEO page changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md index.html sitemap.xml robots.txt archive/*.html
+          git commit -m "Update SEO pages"
+          git push
