@@ -26,8 +26,8 @@
 
 如果 GitHub Pages 已开启，可以访问项目页面：
 
-- 项目首页：[https://zhuhaiuk.github.io/free-nodes/](https://zhuhaiuk.github.io/free-nodes/)
-- 站点地图：[https://zhuhaiuk.github.io/free-nodes/sitemap.xml](https://zhuhaiuk.github.io/free-nodes/sitemap.xml)
+- 项目首页：[https://nodes.zhuhai.uk/](https://nodes.zhuhai.uk/)
+- 站点地图：[https://nodes.zhuhai.uk/sitemap.xml](https://nodes.zhuhai.uk/sitemap.xml)
 - 每日快照：[2026年07月11日免费节点订阅](archive/2026-07-11-free-nodes.html)
 
 这些页面用于帮助搜索引擎理解本仓库主题、更新时间和固定订阅入口。
@@ -56,7 +56,7 @@
 | 类型 | 链接 |
 | --- | --- |
 | GitHub 仓库 | [github.com/zhuhaiuk/free-nodes](https://github.com/zhuhaiuk/free-nodes) |
-| GitHub Pages | [zhuhaiuk.github.io/free-nodes](https://zhuhaiuk.github.io/free-nodes/) |
+| GitHub Pages | [nodes.zhuhai.uk](https://nodes.zhuhai.uk/) |
 | 官方网站 | [zhuhai.uk](https://zhuhai.uk) |
 | Telegram 频道 | [t.me/dns68](https://t.me/dns68) |
 | Telegram 私聊 | [t.me/dns68?direct](https://t.me/dns68?direct) |
