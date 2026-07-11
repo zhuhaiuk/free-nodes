@@ -5,6 +5,42 @@ import path from "node:path";
 const SITE_URL = "https://nodes.zhuhai.uk";
 const REPO_URL = "https://github.com/zhuhaiuk/free-nodes";
 const RAW_BASE = "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main";
+const TUTORIAL_REPO_URL = "https://github.com/zhuhaiuk/proxy-client-tutorials";
+
+const TUTORIAL_GROUPS = [
+  {
+    title: "新手入口",
+    links: [
+      ["代理软件下载地址", "docs/proxy-client-downloads.md"],
+      ["更新订阅提示无效的订阅怎么办", "docs/troubleshooting/invalid-subscription.md"],
+    ],
+  },
+  {
+    title: "Android 教程",
+    links: [
+      ["V2rayNG 使用教程", "docs/android/v2rayng.md"],
+      ["Clash for Android 使用教程", "docs/android/clash-for-android.md"],
+      ["NekoBox for Android 使用教程", "docs/android/nekobox-for-android.md"],
+      ["Hiddify for Android 使用教程", "docs/android/hiddify-for-android.md"],
+    ],
+  },
+  {
+    title: "Windows 教程",
+    links: [
+      ["Clash Verge 使用教程", "docs/windows/clash-verge.md"],
+      ["V2rayN 使用教程", "docs/windows/v2rayn.md"],
+      ["Mihomo Party 使用教程", "docs/windows/mihomo-party-for-windows.md"],
+      ["NekoBox for Windows 使用教程", "docs/windows/nekobox-for-windows.md"],
+    ],
+  },
+  {
+    title: "iOS 教程",
+    links: [
+      ["Shadowrocket 小火箭使用教程", "docs/ios/shadowrocket.md"],
+      ["Shadowrocket 账号与下载安全提醒", "docs/ios/shadowrocket-account-safety.md"],
+    ],
+  },
+];
 
 function cnDateParts(date = new Date()) {
   const parts = new Intl.DateTimeFormat("zh-CN", {
@@ -117,12 +153,32 @@ function sharedStyles() {
     code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
     pre { overflow-x: auto; padding: 14px; border-radius: 8px; background: #0f172a; color: #e6edf7; }
     .lists { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .tutorial-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
+    .tutorial-card { padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .tutorial-card h3 { margin: 0 0 10px; font-size: 1rem; }
+    .tutorial-card a { display: block; margin: 7px 0; color: var(--brand); overflow-wrap: anywhere; }
     ul.clean { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
     ul.clean li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
     ul.clean li:last-child { border-bottom: 0; }
     footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
-    @media (max-width: 720px) { .stats, .lists { grid-template-columns: 1fr; } main { padding-top: 24px; } }
+    @media (max-width: 900px) { .tutorial-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 720px) { .stats, .lists, .tutorial-grid { grid-template-columns: 1fr; } main { padding-top: 24px; } }
   `;
+}
+
+function tutorialHref(file) {
+  return `${TUTORIAL_REPO_URL}/blob/main/${file}`;
+}
+
+function tutorialCards() {
+  return TUTORIAL_GROUPS.map(
+    (group) => `      <section class="tutorial-card">
+        <h3>${escapeHtml(group.title)}</h3>
+${group.links
+  .map(([label, file]) => `        <a href="${tutorialHref(file)}">${escapeHtml(label)}</a>`)
+  .join("\n")}
+      </section>`
+  ).join("\n");
 }
 
 function indexHtml(stats, parts) {
@@ -137,7 +193,7 @@ function indexHtml(stats, parts) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zhuhai Free Nodes - 免费节点订阅 | Clash / Mihomo / V2Ray 每小时更新</title>
-  <meta name="description" content="Zhuhai Free Nodes 提供每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket、sing-box、NekoBox、Hiddify 等客户端。">
+  <meta name="description" content="Zhuhai Free Nodes 提供每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket、sing-box、NekoBox、Hiddify 等客户端，并整理订阅导入教程。">
   <link rel="canonical" href="${SITE_URL}/">
   <meta property="og:title" content="Zhuhai Free Nodes - 免费节点订阅 | Clash / Mihomo / V2Ray 每小时更新">
   <meta property="og:description" content="每小时自动更新的免费代理节点订阅，提供 Base64 和 Clash / Mihomo YAML 固定入口。">
@@ -149,7 +205,7 @@ function indexHtml(stats, parts) {
     "@context": "https://schema.org",
     "@type": "SoftwareSourceCode",
     "name": "Zhuhai Free Nodes",
-    "description": "每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket 等客户端。",
+    "description": "每小时自动更新的免费节点订阅，支持 Clash、Mihomo、V2Ray、Trojan、Shadowrocket 等客户端，并整理订阅导入教程。",
     "url": "${SITE_URL}/",
     "codeRepository": "${REPO_URL}",
     "dateModified": "${dateKey(parts)}"
@@ -164,6 +220,7 @@ function indexHtml(stats, parts) {
       <div class="actions">
         <a class="button" href="#base64">Base64 订阅</a>
         <a class="button secondary" href="#clash">Clash / Mihomo 配置</a>
+        <a class="button secondary" href="#tutorials">使用教程</a>
         <a class="button secondary" href="#faq">常见问题</a>
       </div>
     </header>
@@ -181,6 +238,12 @@ function indexHtml(stats, parts) {
 
     <h2 id="clash">Clash / Mihomo 订阅</h2>
     <pre>${RAW_BASE}/clash_config.yaml</pre>
+
+    <h2 id="tutorials">代理软件使用教程</h2>
+    <p>第一次使用免费节点时，可以先看客户端教程：下载软件、导入订阅、更新订阅、测速和排查无效订阅问题。</p>
+    <div class="tutorial-grid">
+${tutorialCards()}
+    </div>
 
     <div class="lists">
       <section>
@@ -253,6 +316,13 @@ function archiveHtml(stats, parts) {
     <pre>${RAW_BASE}/nodes.txt</pre>
     <h2>Clash / Mihomo 订阅</h2>
     <pre>${RAW_BASE}/clash_config.yaml</pre>
+    <h2>导入订阅教程</h2>
+    <p>
+      <a href="${tutorialHref("docs/windows/clash-verge.md")}">Clash Verge 使用教程</a> ·
+      <a href="${tutorialHref("docs/windows/v2rayn.md")}">V2rayN 使用教程</a> ·
+      <a href="${tutorialHref("docs/android/v2rayng.md")}">V2rayNG 使用教程</a> ·
+      <a href="${tutorialHref("docs/ios/shadowrocket.md")}">Shadowrocket 小火箭使用教程</a>
+    </p>
     <p><a href="../">返回首页</a> · <a href="${REPO_URL}">GitHub 仓库</a></p>
   </main>
 </body>
@@ -313,6 +383,17 @@ function updateReadme(readme, parts) {
 - 每日快照：[${label}免费节点订阅](${absoluteArchiveUrl})
 
 这些页面用于帮助搜索引擎理解本仓库主题、更新时间和固定订阅入口。
+
+## 代理软件使用教程
+
+如果你不知道订阅链接应该填在哪里，可以查看配套教程仓库：
+
+- 教程仓库：[zhuhaiuk/proxy-client-tutorials](${TUTORIAL_REPO_URL})
+- 软件下载：[代理软件下载地址](${tutorialHref("docs/proxy-client-downloads.md")})
+- 常见问题：[更新订阅提示无效的订阅怎么办](${tutorialHref("docs/troubleshooting/invalid-subscription.md")})
+- Android：[V2rayNG 使用教程](${tutorialHref("docs/android/v2rayng.md")})、[Clash for Android 使用教程](${tutorialHref("docs/android/clash-for-android.md")})
+- Windows：[Clash Verge 使用教程](${tutorialHref("docs/windows/clash-verge.md")})、[V2rayN 使用教程](${tutorialHref("docs/windows/v2rayn.md")})
+- iOS：[Shadowrocket 小火箭使用教程](${tutorialHref("docs/ios/shadowrocket.md")})
 `;
 
   return readme.replace(/## GitHub Pages 与每日归档[\s\S]*?(?=\n## 项目简介)/, section);

@@ -32,6 +32,17 @@
 
 这些页面用于帮助搜索引擎理解本仓库主题、更新时间和固定订阅入口。
 
+## 代理软件使用教程
+
+如果你不知道订阅链接应该填在哪里，可以查看配套教程仓库：
+
+- 教程仓库：[zhuhaiuk/proxy-client-tutorials](https://github.com/zhuhaiuk/proxy-client-tutorials)
+- 软件下载：[代理软件下载地址](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/proxy-client-downloads.md)
+- 常见问题：[更新订阅提示无效的订阅怎么办](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/troubleshooting/invalid-subscription.md)
+- Android：[V2rayNG 使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/android/v2rayng.md)、[Clash for Android 使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/android/clash-for-android.md)
+- Windows：[Clash Verge 使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/windows/clash-verge.md)、[V2rayN 使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/windows/v2rayn.md)
+- iOS：[Shadowrocket 小火箭使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/ios/shadowrocket.md)
+
 ## 项目简介
 
 `zhuhaiuk/free-nodes` 是一个面向中文用户的免费节点分享仓库，主要收集、整理和更新公开可用的代理节点资源。项目内容适合用于网络连通性测试、代理客户端学习、订阅格式验证，以及临时备用线路体验。
