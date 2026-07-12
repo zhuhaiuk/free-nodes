@@ -28,7 +28,7 @@
 
 - 项目首页：[https://nodes.zhuhai.uk/](https://nodes.zhuhai.uk/)
 - 站点地图：[https://nodes.zhuhai.uk/sitemap.xml](https://nodes.zhuhai.uk/sitemap.xml)
-- 每日快照：[2026年07月12日免费节点订阅](https://nodes.zhuhai.uk/archive/2026-07-12-free-nodes.html)
+- 每日快照：[2026年07月13日免费节点订阅](https://nodes.zhuhai.uk/archive/2026-07-13-free-nodes.html)
 
 这些页面用于帮助搜索引擎理解本仓库主题、更新时间和固定订阅入口。
 
