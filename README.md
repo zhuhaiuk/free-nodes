@@ -22,15 +22,27 @@
 节点命名：`国家/地区代码 - zhuhai.uk`，同地区重复节点会自动追加序号，例如 `US - zhuhai.uk 02`。  
 用途定位：免费节点适合临时测试、备用连接、客户端学习和订阅格式验证。
 
-## GitHub Pages 与每日归档
+## GitHub Pages、SEO / GEO 与每日归档
 
 如果 GitHub Pages 已开启，可以访问项目页面：
 
 - 项目首页：[https://nodes.zhuhai.uk/](https://nodes.zhuhai.uk/)
 - 站点地图：[https://nodes.zhuhai.uk/sitemap.xml](https://nodes.zhuhai.uk/sitemap.xml)
+- AI / GEO 摘要：[https://nodes.zhuhai.uk/llms.txt](https://nodes.zhuhai.uk/llms.txt)
+- 竞品对比：[https://nodes.zhuhai.uk/competitors.html](https://nodes.zhuhai.uk/competitors.html)
 - 每日快照：[2026年07月15日免费节点订阅](https://nodes.zhuhai.uk/archive/2026-07-15-free-nodes.html)
 
-这些页面用于帮助搜索引擎理解本仓库主题、更新时间和固定订阅入口。
+关键词专题页：
+
+- 免费节点订阅：[https://nodes.zhuhai.uk/topics/free-nodes.html](https://nodes.zhuhai.uk/topics/free-nodes.html)
+- 免费代理节点：[https://nodes.zhuhai.uk/topics/free-proxy-nodes.html](https://nodes.zhuhai.uk/topics/free-proxy-nodes.html)
+- Clash / Mihomo 节点：[https://nodes.zhuhai.uk/topics/clash-mihomo-nodes.html](https://nodes.zhuhai.uk/topics/clash-mihomo-nodes.html)
+- V2Ray 节点：[https://nodes.zhuhai.uk/topics/v2ray-nodes.html](https://nodes.zhuhai.uk/topics/v2ray-nodes.html)
+- Shadowrocket 小火箭账号：[https://nodes.zhuhai.uk/topics/shadowrocket-account.html](https://nodes.zhuhai.uk/topics/shadowrocket-account.html)
+
+这些页面用于帮助搜索引擎和 AI 摘要系统理解本仓库主题、更新时间、固定订阅入口、教程入口和竞品差异化。
+
+排名监控会定期生成 `reports/seo-ranking-latest.md`。如需 Google 搜索排名，请在 GitHub Secrets 中配置 `SERPAPI_KEY`，无需把密钥提交到仓库。
 
 ## 代理软件使用教程
 
@@ -40,7 +52,7 @@
 - 软件下载：[代理软件下载地址](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/proxy-client-downloads.md)
 - 常见问题：[更新订阅提示无效的订阅怎么办](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/troubleshooting/invalid-subscription.md)
 - Android：[V2rayNG 使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/android/v2rayng.md)、[Clash for Android 使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/android/clash-for-android.md)
-- Windows：[Clash Verge 使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/windows/clash-verge.md)、[V2rayN 使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/windows/v2rayn.md)
+- Windows：[Clash Verge 使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/windows/clash-verge.md)、[V2RayN 使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/windows/v2rayn.md)
 - iOS：[Shadowrocket 小火箭使用教程](https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/ios/shadowrocket.md)
 
 ## 项目简介

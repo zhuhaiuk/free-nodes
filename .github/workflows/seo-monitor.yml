@@ -1,0 +1,45 @@
+name: SEO ranking monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 2 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-ranking-monitor
+  cancel-in-progress: true
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate SEO ranking report
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          GOOGLE_GL: us
+          GOOGLE_HL: zh-cn
+        run: node scripts/seo-monitor.mjs
+
+      - name: Commit SEO ranking report
+        run: |
+          if [ -z "$(git status --short reports/seo-ranking-latest.json reports/seo-ranking-latest.md)" ]; then
+            echo "No SEO ranking report changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/seo-ranking-latest.json reports/seo-ranking-latest.md
+          git commit -m "Update SEO ranking report"
+          git push
