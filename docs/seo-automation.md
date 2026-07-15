@@ -1,9 +1,10 @@
 # SEO / GEO 自动优化说明
 
-本项目包含两套自动化：
+本项目包含三套自动化：
 
 1. `Update SEO pages`：每小时生成首页、每日快照、关键词专题页、竞品页、`sitemap.xml`、`robots.txt` 和 `llms.txt`。
 2. `SEO ranking monitor`：每周生成 `reports/seo-ranking-latest.md` 和 `reports/seo-ranking-latest.json`，用于观察 Google 关键词排名和 GitHub 竞品数据。
+3. `SEO autopilot`：每天自动分析 Google 前排竞品、生成 `data/seo-serp-insights.json`、`reports/seo-autopilot-latest.md` 和 `seo-insights.html`，再重新生成 SEO 页面。
 
 ## 关键词
 
@@ -39,11 +40,12 @@
 3. 新增 Repository secret：`SERPAPI_KEY`。
 4. 手动运行 `SEO ranking monitor` 工作流验证报告是否生成。
 
-没有 `SERPAPI_KEY` 时，工作流仍会生成 GitHub 竞品对比；Google 排名会标记为未配置。
+没有 `SERPAPI_KEY` 时，工作流仍会生成保底竞品对比；Google 排名会标记为未配置。配置后，`SEO autopilot` 会按关键词读取 Google 前 20 个自然结果，识别你的项目是否出现、前排竞品域名和 SERP 高频主题。
 
 ## 优化节奏
 
 - 每小时：刷新节点数据、首页、每日快照和 sitemap。
+- 每天：运行 `SEO autopilot`，分析 Google 前排同行并刷新洞察页。
 - 每周：生成排名与竞品报告。
 - 每月：根据报告补充关键词专题页、教程页和内部链接。
 

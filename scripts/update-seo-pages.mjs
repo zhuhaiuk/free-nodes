@@ -392,8 +392,8 @@ ${listItems(topProtocols, ([protocol, count]) => `          <li><strong>${escape
     <h2>每日归档</h2>
     <p><a href="${archive}">${label}免费节点订阅快照</a></p>
 
-    <h2>竞品与差异化</h2>
-    <p><a href="competitors.html">查看免费节点项目竞品对比</a>。本项目重点强化每小时更新、双格式订阅、教程入口、每日归档和排名监控。</p>
+    <h2>自动 SEO 分析</h2>
+    <p><a href="seo-insights.html">查看 SEO 自动分析</a>与<a href="competitors.html">免费节点项目竞品对比</a>。本项目会持续强化每小时更新、双格式订阅、教程入口、每日归档和排名监控。</p>
 
     <h2 id="faq">常见问题</h2>
     <p><strong>为什么节点会失效？</strong> 免费节点通常稳定性有限，更新订阅并测速后再使用更稳妥。</p>
@@ -594,6 +594,7 @@ async function sitemapXml(parts) {
 
   const urls = [
     { loc: `${SITE_URL}/`, freq: "hourly", priority: "1.0" },
+    { loc: `${SITE_URL}/seo-insights.html`, freq: "daily", priority: "0.8" },
     { loc: `${SITE_URL}/competitors.html`, freq: "weekly", priority: "0.7" },
     ...TOPIC_PAGES.map((topic) => ({ loc: topicHref(topic), freq: "daily", priority: "0.9" })),
     ...archives.map((file) => ({ loc: `${SITE_URL}/${file}`, freq: "daily", priority: "0.8" })),
@@ -668,6 +669,7 @@ function updateReadme(readme, parts) {
 - 项目首页：[${SITE_URL}/](${SITE_URL}/)
 - 站点地图：[${SITE_URL}/sitemap.xml](${SITE_URL}/sitemap.xml)
 - AI / GEO 摘要：[${SITE_URL}/llms.txt](${SITE_URL}/llms.txt)
+- SEO 自动分析：[${SITE_URL}/seo-insights.html](${SITE_URL}/seo-insights.html)
 - 竞品对比：[${SITE_URL}/competitors.html](${SITE_URL}/competitors.html)
 - 每日快照：[${label}免费节点订阅](${absoluteArchiveUrl})
 

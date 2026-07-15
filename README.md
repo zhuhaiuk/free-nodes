@@ -29,6 +29,7 @@
 - 项目首页：[https://nodes.zhuhai.uk/](https://nodes.zhuhai.uk/)
 - 站点地图：[https://nodes.zhuhai.uk/sitemap.xml](https://nodes.zhuhai.uk/sitemap.xml)
 - AI / GEO 摘要：[https://nodes.zhuhai.uk/llms.txt](https://nodes.zhuhai.uk/llms.txt)
+- SEO 自动分析：[https://nodes.zhuhai.uk/seo-insights.html](https://nodes.zhuhai.uk/seo-insights.html)
 - 竞品对比：[https://nodes.zhuhai.uk/competitors.html](https://nodes.zhuhai.uk/competitors.html)
 - 每日快照：[2026年07月15日免费节点订阅](https://nodes.zhuhai.uk/archive/2026-07-15-free-nodes.html)
 
