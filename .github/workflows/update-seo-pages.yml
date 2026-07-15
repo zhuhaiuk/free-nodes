@@ -22,7 +22,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
 
       - name: Generate SEO pages
         run: node scripts/update-seo-pages.mjs
