@@ -6,6 +6,7 @@ const SITE_URL = "https://nodes.zhuhai.uk";
 const REPO_URL = "https://github.com/zhuhaiuk/free-nodes";
 const RAW_BASE = "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main";
 const TUTORIAL_REPO_URL = "https://github.com/zhuhaiuk/proxy-client-tutorials";
+const SHADOWROCKET_ACCOUNT_URL = "https://zhuhai.uk/id";
 
 const KEYWORDS = [
   "免费节点",
@@ -99,8 +100,9 @@ const TOPIC_PAGES = [
     description:
       "为 iOS 用户整理 Shadowrocket、小火箭共享账号入口和免费节点订阅说明，帮助新手完成下载、导入和测试。",
     keywords: ["Shadowrocket 共享账号", "小火箭账号", "Shadowrocket 免费账号", "小火箭共享账号"],
+    accountUrl: SHADOWROCKET_ACCOUNT_URL,
     body:
-      "iOS 用户如果需要 Shadowrocket 相关资源，可以先查看小火箭账号入口和安全提醒。共享账号可能随时失效，导入节点前也建议先确认客户端来源和账号安全。",
+      "iOS 用户如果需要 Shadowrocket 相关资源，可以先访问小火箭账号入口。共享账号可能随时失效，导入节点前也建议先确认客户端来源和账号安全。",
   },
 ];
 
@@ -303,6 +305,16 @@ function jsonLd(data) {
   return `<script type="application/ld+json">\n${JSON.stringify(data, null, 2)}\n  </script>`;
 }
 
+function accountButton(topic) {
+  if (!topic.accountUrl) return "";
+  return `        <a class="button" href="${topic.accountUrl}">小火箭账号入口</a>\n`;
+}
+
+function accountSection(topic) {
+  if (!topic.accountUrl) return "";
+  return `    <p>小火箭账号入口：<a href="${topic.accountUrl}">${topic.accountUrl}</a>。页面会整理可用的 Shadowrocket 账号相关信息，账号状态可能变化，请以页面实时内容为准。</p>\n`;
+}
+
 function indexHtml(stats, parts) {
   const label = cnDateLabel(parts);
   const archive = archiveFile(parts);
@@ -439,7 +451,7 @@ function topicHtml(topic, stats, parts) {
       <h1>${escapeHtml(topic.h1)}</h1>
       <p>${escapeHtml(topic.description)}</p>
       <div class="actions">
-        <a class="button" href="${RAW_BASE}/nodes.txt">Base64 订阅</a>
+${accountButton(topic)}        ${topic.accountUrl ? `<a class="button secondary" href="${RAW_BASE}/nodes.txt">Base64 订阅</a>` : `<a class="button" href="${RAW_BASE}/nodes.txt">Base64 订阅</a>`}
         <a class="button secondary" href="${RAW_BASE}/clash_config.yaml">Clash / Mihomo 订阅</a>
         <a class="button secondary" href="../">返回首页</a>
       </div>
@@ -453,6 +465,7 @@ function topicHtml(topic, stats, parts) {
 
     <h2>使用说明</h2>
     <p>${escapeHtml(topic.body)}</p>
+${accountSection(topic)}
     <p>订阅文件会定时更新。免费节点来自公开资源，适合临时测试、备用连接、订阅格式验证和客户端学习，不建议用于重要账号或敏感数据。</p>
 
     <h2>固定订阅地址</h2>
