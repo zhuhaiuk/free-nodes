@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-07-15T10:32:23.183Z
+生成时间：2026-07-15T11:56:16.851Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -9,39 +9,58 @@
 
 | 关键词 | 当前排名 | 匹配页面 | 自动优化方向 |
 | --- | --- | --- | --- |
-| 免费节点 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| 免费代理节点 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| 免费节点订阅 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| 每小时更新免费节点 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| Clash 节点 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| Mihomo 节点 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| V2Ray 节点 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| Trojan 节点 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| Shadowsocks 节点 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| Shadowrocket 共享账号 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| 小火箭账号 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| 机场推荐 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| 免费订阅 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| 代理订阅 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| free nodes | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| free proxy nodes | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| free Clash nodes | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
-| free V2Ray nodes | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
+| 免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 免费代理节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 免费节点订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 每小时更新免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| Clash 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| Mihomo 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| V2Ray 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| Trojan 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| Shadowsocks 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| Shadowrocket 共享账号 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 小火箭账号 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 机场推荐 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 免费订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 代理订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| free nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| free proxy nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| free Clash nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| free V2Ray nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 
 ## Google 前排竞品域名
 
 | 域名 | 出现次数 |
 | --- | --- |
-| github.com/snakem982/proxypool | 1 |
-| github.com/Pawdroid/Free-servers | 1 |
-| github.com/shuaidaoya/FreeNodes | 1 |
-| github.com/littlebais/free-proxy-nodes | 1 |
-| github.com/freevpnssr/freevpnssr.github.io | 1 |
+| github.com | 36 |
+| youtube.com | 7 |
+| freenodes.github.io | 6 |
+| end-gfw.com | 5 |
+| mibei77.com | 5 |
+| oneclash.cc | 5 |
+| freeclashnode.com | 4 |
+| v2rayshare.net | 4 |
+| b.freev2.net | 3 |
+| linux.do | 3 |
+| cfmem.com | 2 |
+| clashgithub.com | 2 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
+| v2ray | 152 |
+| clash | 136 |
+| 机场 | 87 |
+| 免费节点 | 77 |
+| trojan | 69 |
+| 小火箭 | 46 |
+| shadowrocket | 41 |
+| 节点订阅 | 30 |
+| shadowsocks | 29 |
+| 每日更新 | 26 |
+| mihomo | 23 |
+| 免费订阅 | 20 |
 
 ## 自动策略
 
