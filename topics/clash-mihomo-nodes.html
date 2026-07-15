@@ -34,6 +34,17 @@
     .tutorial-card a, .topic-card a { display: block; margin: 7px 0; color: var(--brand); overflow-wrap: anywhere; }
     .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
     .tag { border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; color: var(--muted); font-size: .9rem; }
+    .intent { color: var(--ink); font-weight: 650; }
+    .note { padding: 14px 16px; border-left: 4px solid var(--brand); background: var(--soft); border-radius: 6px; }
+    .trust-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
+    .trust-item { padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .trust-item h3 { margin-bottom: 6px; }
+    .step-list { counter-reset: steps; list-style: none; padding: 0; margin: 12px 0; }
+    .step-list li { counter-increment: steps; display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: start; padding: 9px 0; border-bottom: 1px solid var(--line); }
+    .step-list li::before { content: counter(steps); display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 999px; background: var(--brand); color: #fff; font-size: .85rem; font-weight: 700; }
+    .faq-list { display: grid; gap: 12px; margin-top: 12px; }
+    .faq-item { padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); }
+    .faq-item strong { display: block; margin-bottom: 4px; color: var(--ink); }
     ul.clean { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
     ul.clean li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
     ul.clean li:last-child { border-bottom: 0; }
@@ -41,7 +52,7 @@
     th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 10px 8px; vertical-align: top; }
     footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
     @media (max-width: 900px) { .tutorial-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    @media (max-width: 720px) { .stats, .lists, .topic-grid, .competitor-grid, .tutorial-grid { grid-template-columns: 1fr; } main { padding-top: 24px; } }
+    @media (max-width: 720px) { .stats, .lists, .topic-grid, .competitor-grid, .tutorial-grid, .trust-grid { grid-template-columns: 1fr; } main { padding-top: 24px; } }
   </style>
   <script type="application/ld+json">
 {
@@ -57,6 +68,50 @@
     "url": "https://nodes.zhuhai.uk/"
   },
   "keywords": "Clash 节点, Mihomo 节点, free Clash nodes, Clash Meta, Stash"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Clash 和 Mihomo 可以用同一个订阅吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "多数情况下可以。Mihomo 是 Clash Meta 后续生态，通常兼容 YAML 配置。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Clash 节点导入后为什么不能用？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "常见原因是节点已失效、网络环境不通、客户端版本过旧或规则模式配置不完整。"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": "https://nodes.zhuhai.uk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Clash / Mihomo 节点",
+      "item": "https://nodes.zhuhai.uk/topics/clash-mihomo-nodes.html"
+    }
+  ]
 }
   </script>
 </head>
@@ -83,6 +138,31 @@
 
     <p>订阅文件会定时更新。免费节点来自公开资源，适合临时测试、备用连接、订阅格式验证和客户端学习，不建议用于重要账号或敏感数据。</p>
 
+    <h2>搜索意图</h2>
+    <p class="note">寻找 Clash、Mihomo、Clash Meta、Stash 可直接导入的 YAML 节点订阅。</p>
+
+    <h2>适合场景</h2>
+<ul>
+      <li>Clash Verge</li>
+      <li>Mihomo Party</li>
+      <li>Clash Meta</li>
+      <li>Stash</li>
+      <li>规则模式测试</li>
+    </ul>
+
+    <h2>导入建议</h2>
+<ul class="step-list">
+      <li>复制 Clash / Mihomo YAML 订阅地址。</li>
+      <li>在客户端中新建订阅配置或配置文件订阅。</li>
+      <li>更新订阅后进入代理列表测速，再切换规则模式或全局模式测试。</li>
+    </ul>
+
+    <h2>安全提醒</h2>
+<ul>
+      <li>Clash / Mihomo 配置适合规则分流测试，节点不可用时先更新订阅。</li>
+      <li>不同客户端内核版本不同，遇到解析失败可以升级客户端或改用通用订阅。</li>
+    </ul>
+
     <h2>固定订阅地址</h2>
     <table>
       <tbody>
@@ -107,6 +187,18 @@
       <a href="https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/android/v2rayng.md">V2rayNG 使用教程</a> ·
       <a href="https://github.com/zhuhaiuk/proxy-client-tutorials/blob/main/docs/ios/shadowrocket.md">Shadowrocket 小火箭使用教程</a>
     </p>
+
+    <h2>常见问题</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <strong>Clash 和 Mihomo 可以用同一个订阅吗？</strong>
+        <p>多数情况下可以。Mihomo 是 Clash Meta 后续生态，通常兼容 YAML 配置。</p>
+      </div>
+      <div class="faq-item">
+        <strong>Clash 节点导入后为什么不能用？</strong>
+        <p>常见原因是节点已失效、网络环境不通、客户端版本过旧或规则模式配置不完整。</p>
+      </div>
+    </div>
 
     <footer>
       <p><a href="../">返回首页</a> · <a href="https://github.com/zhuhaiuk/free-nodes">GitHub 仓库</a> · <a href="../competitors.html">竞品对比</a></p>
