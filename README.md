@@ -31,7 +31,7 @@
 - AI / GEO 摘要：[https://nodes.zhuhai.uk/llms.txt](https://nodes.zhuhai.uk/llms.txt)
 - SEO 自动分析：[https://nodes.zhuhai.uk/seo-insights.html](https://nodes.zhuhai.uk/seo-insights.html)
 - 竞品对比：[https://nodes.zhuhai.uk/competitors.html](https://nodes.zhuhai.uk/competitors.html)
-- 每日快照：[2026年07月21日免费节点订阅](https://nodes.zhuhai.uk/archive/2026-07-21-free-nodes.html)
+- 每日快照：[2026年07月22日免费节点订阅](https://nodes.zhuhai.uk/archive/2026-07-22-free-nodes.html)
 
 关键词专题页：
 
