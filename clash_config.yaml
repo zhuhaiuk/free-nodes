@@ -287,82 +287,20 @@ proxies:
   port: 65443
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: US - zhuhai.uk 08
+- name: FR - zhuhai.uk 01
   type: vless
-  server: vless.gboard.dev
+  server: 163.5.153.153
   port: 443
-  uuid: 402df54f-d686-4785-b5da-14ed5f257860
-  udp: true
-  network: ws
-  tls: true
-  servername: vless.gboard.dev
-  ws-opts:
-    path: "/"
-    headers:
-      Host: vless.gboard.dev
-- name: US - zhuhai.uk 10
-  type: trojan
-  server: trojan.gboard.dev
-  port: 443
-  password: fa66f1e6-b12e-4f21-8597-1ad4dd7654b1
-  udp: true
-  sni: trojan.gboard.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/"
-- name: US - zhuhai.uk 09
-  type: vless
-  server: vless.gboard.dev
-  port: 443
-  uuid: fa66f1e6-b12e-4f21-8597-1ad4dd7654b1
-  udp: true
-  network: ws
-  tls: true
-  servername: vless.gboard.dev
-  ws-opts:
-    path: "/"
-    headers:
-      Host: vless.gboard.dev
-- name: US - zhuhai.uk 14
-  type: trojan
-  server: trojan.gboard.dev
-  port: 443
-  password: 2bc2efc9-1943-4b2e-9412-43190d5099e4
-  udp: true
-  sni: trojan.gboard.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/"
-- name: GB - zhuhai.uk 01
-  type: vless
-  server: 138.124.254.21
-  port: 2096
-  uuid: 6fe06b02-74f7-431f-8ca4-c702fa3322bf
+  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: it-one.quiet-rogue.site
+  servername: www.samsung.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: pWPvxPIVtdzgaL0cdFZ73qn1FihjKDZ7TE55wg57Vl8
-    short-id: 9b43ece6010612b0
-- name: FI - zhuhai.uk 01
-  type: vless
-  server: 194.154.30.154
-  port: 443
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  udp: true
-  network: ws
-  tls: true
-  servername: forfreeuse.rtqa.ru
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/"
-    headers:
-      Host: forfreeuse.rtqa.ru
+    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
+    short-id: a91045bc
 proxy-groups:
 - name: 选择出口
   type: select
@@ -404,12 +342,7 @@ proxy-groups:
   - JP - zhuhai.uk 03
   - SG - zhuhai.uk
   - SG - zhuhai.uk 02
-  - US - zhuhai.uk 08
-  - US - zhuhai.uk 10
-  - US - zhuhai.uk 09
-  - US - zhuhai.uk 14
-  - GB - zhuhai.uk 01
-  - FI - zhuhai.uk 01
+  - FR - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
