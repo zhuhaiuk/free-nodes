@@ -1,35 +1,99 @@
 proxies:
-- name: HK - zhuhai.uk 04
+- name: US - zhuhai.uk 08
   type: vless
-  server: 155.117.199.13
-  port: 31723
-  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+  server: vless.gboard.dev
+  port: 443
+  uuid: 402df54f-d686-4785-b5da-14ed5f257860
+  udp: true
+  network: ws
+  tls: true
+  servername: vless.gboard.dev
+  ws-opts:
+    path: "/"
+    headers:
+      Host: vless.gboard.dev
+- name: US - zhuhai.uk 10
+  type: trojan
+  server: trojan.gboard.dev
+  port: 443
+  password: fa66f1e6-b12e-4f21-8597-1ad4dd7654b1
+  udp: true
+  sni: trojan.gboard.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/"
+- name: US - zhuhai.uk 03
+  type: trojan
+  server: trojan.gboard.dev
+  port: 443
+  password: ce91dfcc-c596-4b5a-b738-25344bd610e6
+  udp: true
+  sni: trojan.gboard.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/"
+- name: US - zhuhai.uk 09
+  type: vless
+  server: vless.gboard.dev
+  port: 443
+  uuid: fa66f1e6-b12e-4f21-8597-1ad4dd7654b1
+  udp: true
+  network: ws
+  tls: true
+  servername: vless.gboard.dev
+  ws-opts:
+    path: "/"
+    headers:
+      Host: vless.gboard.dev
+- name: US - zhuhai.uk 14
+  type: trojan
+  server: trojan.gboard.dev
+  port: 443
+  password: 2bc2efc9-1943-4b2e-9412-43190d5099e4
+  udp: true
+  sni: trojan.gboard.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/"
+- name: GB - zhuhai.uk 01
+  type: vless
+  server: 138.124.254.21
+  port: 2096
+  uuid: 6fe06b02-74f7-431f-8ca4-c702fa3322bf
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: cdnjs.cloudflare.com
+  servername: it-one.quiet-rogue.site
   client-fingerprint: chrome
   reality-opts:
-    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
-    short-id: bc8e3658db7d1323
-- name: CH - zhuhai.uk 01
+    public-key: pWPvxPIVtdzgaL0cdFZ73qn1FihjKDZ7TE55wg57Vl8
+    short-id: 9b43ece6010612b0
+- name: FI - zhuhai.uk 01
   type: vless
-  server: 178.83.226.142
-  port: 8443
-  uuid: 4cb63132-e084-4676-ac67-1ed6b60be05a
+  server: 194.154.30.154
+  port: 443
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: refersion.com
+  servername: forfreeuse.rtqa.ru
   client-fingerprint: chrome
-  reality-opts:
-    public-key: "-x9vdxai-qKAzuhxV7H2RIbEmIh_ZgdiFxiUA5q0B1I"
-    short-id: aa6988d03cc11454
+  ws-opts:
+    path: "/"
+    headers:
+      Host: forfreeuse.rtqa.ru
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - HK - zhuhai.uk 04
-  - CH - zhuhai.uk 01
+  - US - zhuhai.uk 08
+  - US - zhuhai.uk 10
+  - US - zhuhai.uk 03
+  - US - zhuhai.uk 09
+  - US - zhuhai.uk 14
+  - GB - zhuhai.uk 01
+  - FI - zhuhai.uk 01
