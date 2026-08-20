@@ -1,45 +1,9 @@
 proxies:
-- name: US - zhuhai.uk 01
-  type: vless
-  server: 51.81.223.225
-  port: 11094
-  uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 9dnXiXxP4xgvtTVRj9SBFdyO6mjGvVhWD8qVZZLCCCk
-    short-id: a356addf
-- name: GB - zhuhai.uk 01
-  type: vless
-  server: 138.124.125.211
-  port: 443
-  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
-    short-id: 72cceb78
 - name: JP - zhuhai.uk 01
-  type: trojan
-  server: known-albacore.rooster465.autos
-  port: 443
-  password: AE62539071
-  udp: true
-  sni: known-albacore.rooster465.autos
-- name: JP - zhuhai.uk 02
   type: vless
-  server: 116.206.92.22
+  server: 103.100.158.63
   port: 443
-  uuid: fa5f6e68-f424-4069-9f49-68eee4e2d671
+  uuid: ea1c1e20-7263-4b08-a01b-690b29af66b3
   udp: true
   network: tcp
   flow: xtls-rprx-vision
@@ -48,28 +12,25 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   reality-opts:
-    public-key: 1sU0drvVBwukk44ZHs46cpG0tw42GjjDc3m2nzKwewI
-    short-id: 19a6c7093ddda9b2
-- name: TR - zhuhai.uk 01
+    public-key: T587xqua0Nrs0YreQRWJAP9Wto94NcbbhKPK4DkSi0c
+    short-id: 2223411c2ad9c55f
+- name: UA - zhuhai.uk 01
   type: vless
-  server: bg.cloudtechone.org
-  port: 443
-  uuid: 0b596551-26c0-4d8d-8a4a-231b54418c28
+  server: TRT.PASARGUARDMS.IR
+  port: 8443
+  uuid: eec12a0f-7ceb-417d-89c1-1332f703cd10
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: bg.cloudtechone.org
+  servername: updates.cdn-apple.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: _IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo
-    short-id: f93c9d5127e622e4
+    public-key: H4CGZ7Ww5jslyTzgTdlR6zeyNoU5JSqiQ3pDR_JvyGw
+    short-id: f7273ebb60699af8
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
-  - GB - zhuhai.uk 01
   - JP - zhuhai.uk 01
-  - JP - zhuhai.uk 02
-  - TR - zhuhai.uk 01
+  - UA - zhuhai.uk 01
