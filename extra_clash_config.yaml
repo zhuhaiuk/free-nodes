@@ -1,11 +1,4 @@
 proxies:
-- name: DE - zhuhai.uk 04
-  type: vless
-  server: 35.157.103.248
-  port: 22222
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  network: tcp
 - name: GB - zhuhai.uk 02
   type: vless
   server: 5.152.223.193
@@ -34,20 +27,6 @@ proxies:
   reality-opts:
     public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
     short-id: 1aa9f3c9021280c0
-- name: SE - zhuhai.uk 01
-  type: vless
-  server: 45.196.161.171
-  port: 443
-  uuid: b55dd203-630d-46a3-b506-c52ebcafa77c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
-    short-id: d3ee47fc2f553c44
 - name: GB - zhuhai.uk 03
   type: vless
   server: 138.124.180.137
@@ -62,21 +41,6 @@ proxies:
   reality-opts:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
-- name: FI - zhuhai.uk 01
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: e75fbac1-efaa-45a2-ac76-ac150cb37329
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  ws-opts:
-    path: "/"
-    headers:
-      Host: c12.com
 - name: NL - zhuhai.uk 02
   type: vless
   server: bridge.meshbeat.online
@@ -91,60 +55,11 @@ proxies:
   reality-opts:
     public-key: XZa7f7bABj7lY4HuLopVCBBBYTu-RB7QyIZ96njvYwo
     short-id: 7bcfc0bc
-- name: MO - zhuhai.uk 01
-  type: vless
-  server: jpaws.ccwink.photos
-  port: 6897
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: docs.aws.amazon.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: X2thmYgL8pXZBmFxMOPo3oIYAga5CTMEd-YMcJHk4Es
-    short-id: 54efd54cf3e7
-- name: MO - zhuhai.uk 02
-  type: vless
-  server: jpaws.ccwink.photos
-  port: 6897
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: docs.aws.amazon.com
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: X2thmYgL8pXZBmFxMOPo3oIYAga5CTMEd-YMcJHk4Es
-    short-id: 54efd54cf3e7
-- name: SG - zhuhai.uk 04
-  type: vless
-  server: jpaws.ccwink.photos
-  port: 64294
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: docs.aws.amazon.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: KmcS-yU6kDycbSojXgUYU1-fHwXmF1oBk_ke0gbGUy0
-    short-id: '7083'
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - DE - zhuhai.uk 04
   - GB - zhuhai.uk 02
   - GB - zhuhai.uk 04
-  - SE - zhuhai.uk 01
   - GB - zhuhai.uk 03
-  - FI - zhuhai.uk 01
   - NL - zhuhai.uk 02
-  - MO - zhuhai.uk 01
-  - MO - zhuhai.uk 02
-  - SG - zhuhai.uk 04
