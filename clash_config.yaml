@@ -316,35 +316,57 @@ proxies:
   password: e4b72b531a2d10900519
   tls: true
   skip-cert-verify: true
-- name: JP - zhuhai.uk 01
+- name: US - zhuhai.uk 01
   type: vless
-  server: 103.100.158.63
+  server: 157.238.208.110
+  port: 41834
+  uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/5adeccb9"
+- name: CY - zhuhai.uk 01
+  type: vless
+  server: se1.se-cdn.ru
   port: 443
-  uuid: ea1c1e20-7263-4b08-a01b-690b29af66b3
+  uuid: d96e05a1-18bb-45da-9e9f-ab7caab6952a
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.apple.com
+  servername: se1.se-cdn.ru
   client-fingerprint: chrome
-  skip-cert-verify: true
   reality-opts:
-    public-key: T587xqua0Nrs0YreQRWJAP9Wto94NcbbhKPK4DkSi0c
-    short-id: 2223411c2ad9c55f
-- name: UA - zhuhai.uk 01
+    public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
+    short-id: 2d6d073dc88f22a8
+- name: FR - zhuhai.uk 01
   type: vless
-  server: TRT.PASARGUARDMS.IR
-  port: 8443
-  uuid: eec12a0f-7ceb-417d-89c1-1332f703cd10
+  server: 163.5.153.153
+  port: 443
+  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: updates.cdn-apple.com
+  servername: www.samsung.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: H4CGZ7Ww5jslyTzgTdlR6zeyNoU5JSqiQ3pDR_JvyGw
-    short-id: f7273ebb60699af8
+    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
+    short-id: a91045bc
+- name: TH - zhuhai.uk 01
+  type: vless
+  server: 109.169.85.140
+  port: 443
+  uuid: faf655fc-690f-4ea8-8eed-77077f493bc8
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: slashdot.org
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: djzfpNmvwYjCaOUUOHU_k0kl92HXIGIurq2i0p5UyDo
+    short-id: 1dc6d8a2045a7c9d
 proxy-groups:
 - name: 选择出口
   type: select
@@ -387,8 +409,10 @@ proxy-groups:
   - KR - zhuhai.uk
   - SG - zhuhai.uk
   - SG - zhuhai.uk 02
-  - JP - zhuhai.uk 01
-  - UA - zhuhai.uk 01
+  - US - zhuhai.uk 01
+  - CY - zhuhai.uk 01
+  - FR - zhuhai.uk 01
+  - TH - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
