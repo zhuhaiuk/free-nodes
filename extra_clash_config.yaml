@@ -1,14 +1,38 @@
 proxies:
-- name: US - zhuhai.uk 01
+- name: CO - zhuhai.uk 01
   type: vless
-  server: 157.238.208.110
-  port: 41834
-  uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
+  server: 157.137.218.222
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  udp: true
+  network: tcp
+- name: FI - zhuhai.uk 01
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: e75fbac1-efaa-45a2-ac76-ac150cb37329
   udp: true
   network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
   ws-opts:
-    path: "/5adeccb9"
-- name: US - zhuhai.uk 02
+    path: "/"
+    headers:
+      Host: c12.com
+- name: GB - zhuhai.uk 01
+  type: vless
+  server: 31.76.65.234.fwqfw783rg2dad.website
+  port: 443
+  uuid: 5ca83936-136d-4314-8453-4ba10a86cf60
+  udp: true
+  network: ws
+  tls: true
+  servername: 31.76.65.234.fwqfw783rg2dad.website
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/websocket"
+- name: US - zhuhai.uk 01
   type: vless
   server: de3.voronvpn.com
   port: 443
@@ -22,54 +46,27 @@ proxies:
   reality-opts:
     public-key: UR-ELTbCCTAAvg_y8vIznWFkGkCKFFaEAVgTtPYNCCk
     short-id: 54861d36
-- name: CY - zhuhai.uk 01
+- name: FI - zhuhai.uk 02
   type: vless
-  server: se1.se-cdn.ru
-  port: 443
-  uuid: d96e05a1-18bb-45da-9e9f-ab7caab6952a
+  server: 162.19.13.248
+  port: 2053
+  uuid: c7e9c591-2764-423a-afca-efbd010fd396
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: se1.se-cdn.ru
+  servername: forfreeuse.rtqa.ru
   client-fingerprint: chrome
-  reality-opts:
-    public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
-    short-id: 2d6d073dc88f22a8
-- name: FR - zhuhai.uk 01
-  type: vless
-  server: 163.5.153.153
-  port: 443
-  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
-    short-id: a91045bc
-- name: TH - zhuhai.uk 01
-  type: vless
-  server: 109.169.85.140
-  port: 443
-  uuid: faf655fc-690f-4ea8-8eed-77077f493bc8
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: slashdot.org
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: djzfpNmvwYjCaOUUOHU_k0kl92HXIGIurq2i0p5UyDo
-    short-id: 1dc6d8a2045a7c9d
+  skip-cert-verify: true
+  ws-opts:
+    path: "/"
+    headers:
+      Host: forfreeuse.rtqa.ru
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
+  - CO - zhuhai.uk 01
+  - FI - zhuhai.uk 01
+  - GB - zhuhai.uk 01
   - US - zhuhai.uk 01
-  - US - zhuhai.uk 02
-  - CY - zhuhai.uk 01
-  - FR - zhuhai.uk 01
-  - TH - zhuhai.uk 01
+  - FI - zhuhai.uk 02
