@@ -290,13 +290,62 @@ proxies:
   port: 56927
   cipher: 2022-blake3-chacha20-poly1305
   password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
-- name: CO - zhuhai.uk 01
+- name: GB - zhuhai.uk 02
   type: vless
-  server: 157.137.218.222
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  server: 5.152.223.193
+  port: 443
+  uuid: f09a0e10-a32f-4c77-9cb6-63b0823b5ad7
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: strapi.io
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+- name: GB - zhuhai.uk 04
+  type: vless
+  server: 5.152.223.97
+  port: 443
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: strapi.io
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+- name: SE - zhuhai.uk 01
+  type: vless
+  server: 45.196.161.171
+  port: 443
+  uuid: b55dd203-630d-46a3-b506-c52ebcafa77c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
+    short-id: d3ee47fc2f553c44
+- name: GB - zhuhai.uk 03
+  type: vless
+  server: 138.124.180.137
+  port: 443
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
 - name: FI - zhuhai.uk 01
   type: vless
   server: a2.arshia-nova.ir
@@ -306,52 +355,55 @@ proxies:
   network: ws
   tls: true
   servername: ssl.fastly.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/"
-    headers:
-      Host: c12.com
-- name: GB - zhuhai.uk 01
-  type: vless
-  server: 31.76.65.234.fwqfw783rg2dad.website
-  port: 443
-  uuid: 5ca83936-136d-4314-8453-4ba10a86cf60
-  udp: true
-  network: ws
-  tls: true
-  servername: 31.76.65.234.fwqfw783rg2dad.website
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/websocket"
-- name: US - zhuhai.uk 01
-  type: vless
-  server: de3.voronvpn.com
-  port: 443
-  uuid: 9e27f64b-7ae9-461b-b4c4-99696276633b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: UR-ELTbCCTAAvg_y8vIznWFkGkCKFFaEAVgTtPYNCCk
-    short-id: 54861d36
-- name: FI - zhuhai.uk 02
-  type: vless
-  server: 162.19.13.248
-  port: 2053
-  uuid: c7e9c591-2764-423a-afca-efbd010fd396
-  udp: true
-  network: ws
-  tls: true
-  servername: forfreeuse.rtqa.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   skip-cert-verify: true
   ws-opts:
     path: "/"
     headers:
-      Host: forfreeuse.rtqa.ru
+      Host: c12.com
+- name: MO - zhuhai.uk 01
+  type: vless
+  server: jpaws.ccwink.photos
+  port: 6897
+  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: docs.aws.amazon.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: X2thmYgL8pXZBmFxMOPo3oIYAga5CTMEd-YMcJHk4Es
+    short-id: 54efd54cf3e7
+- name: MO - zhuhai.uk 02
+  type: vless
+  server: jpaws.ccwink.photos
+  port: 6897
+  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: docs.aws.amazon.com
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: X2thmYgL8pXZBmFxMOPo3oIYAga5CTMEd-YMcJHk4Es
+    short-id: 54efd54cf3e7
+- name: SG - zhuhai.uk 04
+  type: vless
+  server: jpaws.ccwink.photos
+  port: 64294
+  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: docs.aws.amazon.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: KmcS-yU6kDycbSojXgUYU1-fHwXmF1oBk_ke0gbGUy0
+    short-id: '7083'
 proxy-groups:
 - name: 选择出口
   type: select
@@ -395,11 +447,14 @@ proxy-groups:
   - JP - zhuhai.uk 03
   - SG - zhuhai.uk
   - SG - zhuhai.uk 02
-  - CO - zhuhai.uk 01
+  - GB - zhuhai.uk 02
+  - GB - zhuhai.uk 04
+  - SE - zhuhai.uk 01
+  - GB - zhuhai.uk 03
   - FI - zhuhai.uk 01
-  - GB - zhuhai.uk 01
-  - US - zhuhai.uk 01
-  - FI - zhuhai.uk 02
+  - MO - zhuhai.uk 01
+  - MO - zhuhai.uk 02
+  - SG - zhuhai.uk 04
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
