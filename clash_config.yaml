@@ -233,13 +233,20 @@ proxies:
     path: "/"
     headers:
       Host: liang92.dpdns.org
-- name: NL - zhuhai.uk 01
-  type: trojan
-  server: pro-crane.rooster465.autos
-  port: 443
-  password: FH72359861
+- name: DE - zhuhai.uk 01
+  type: ss
+  server: 130.61.239.112
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: "/ADkrzKspuf1eYWEst/8o4CstRyEzPzwZ58MYUzJ76Q="
   udp: true
-  sni: pro-crane.rooster465.autos
+- name: NL - zhuhai.uk 01
+  type: vless
+  server: 143.47.183.8
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  udp: true
+  network: tcp
 proxy-groups:
 - name: 选择出口
   type: select
@@ -275,6 +282,7 @@ proxy-groups:
   - CH - zhuhai.uk
   - IN - zhuhai.uk
   - US - zhuhai.uk 11
+  - DE - zhuhai.uk 01
   - NL - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
