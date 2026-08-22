@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-08-21T03:57:11.343Z
+生成时间：2026-08-22T03:52:22.448Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -32,13 +32,13 @@
 
 | 域名 | 出现次数 |
 | --- | --- |
-| github.com | 36 |
+| github.com | 32 |
 | youtube.com | 10 |
 | freeclashnode.com | 7 |
-| freenodes.github.io | 7 |
-| mibei77.com | 7 |
-| end-gfw.com | 5 |
-| cfmem.com | 4 |
+| freenodes.github.io | 6 |
+| mibei77.com | 6 |
+| cfmem.com | 5 |
+| end-gfw.com | 4 |
 | b.freev2.net | 3 |
 | linux.do | 3 |
 | v2rayshare.net | 3 |
@@ -49,17 +49,17 @@
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| clash | 152 |
-| v2ray | 146 |
+| clash | 145 |
+| v2ray | 139 |
 | 免费节点 | 70 |
-| 机场 | 66 |
 | trojan | 63 |
-| 小火箭 | 53 |
-| 节点订阅 | 35 |
-| 每日更新 | 29 |
-| shadowrocket | 26 |
-| shadowsocks | 25 |
-| mihomo | 22 |
+| 机场 | 62 |
+| 小火箭 | 50 |
+| 节点订阅 | 30 |
+| shadowsocks | 24 |
+| mihomo | 23 |
+| shadowrocket | 23 |
+| 每日更新 | 23 |
 | 免费订阅 | 15 |
 
 ## 自动策略
