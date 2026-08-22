@@ -1,175 +1,14 @@
 proxies:
-- name: US - zhuhai.uk 01
-  type: vless
-  server: 188.114.98.0
-  port: 80
-  uuid: 67e40783-6546-4fda-90f6-9ee3c5b2efff
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/CkgzR7qmHg0TxS4D"
-    headers:
-      Host: worker3.ragiki7564.workers.dev
-- name: HK - zhuhai.uk 03
-  type: vless
-  server: 104.17.148.111
-  port: 2053
-  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn-1fj.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/"
-    headers:
-      Host: vpn-1fj.pages.dev
-- name: HK - zhuhai.uk 01
-  type: vless
-  server: 104.17.112.90
-  port: 2053
-  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
-  udp: true
-  network: ws
-  tls: true
-  servername: vpn-1fj.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/"
-    headers:
-      Host: vpn-1fj.pages.dev
-- name: GB - zhuhai.uk 02
-  type: vless
-  server: mtn.v2plus.ovh
-  port: 80
-  uuid: 4ee7a384-4312-4dcb-8043-2ae51a15252d
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/yEehdR6POSWwzRXP"
-    headers:
-      Host: worker3.wateci1156.workers.dev
-- name: US - zhuhai.uk 02
-  type: vless
-  server: 104.25.213.184
+- name: NL - zhuhai.uk 01
+  type: trojan
+  server: pro-crane.rooster465.autos
   port: 443
-  uuid: '09a1022a-4435-4ee5-bf9c-21bf7a274eaf'
+  password: FH72359861
   udp: true
-  network: ws
-  tls: true
-  servername: edge-5fcec8e0.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/?ed=2048fp=unsafe"
-    headers:
-      Host: edge-5fcec8e0.pages.dev
-- name: GB - zhuhai.uk 01
+  sni: pro-crane.rooster465.autos
+- name: NL - zhuhai.uk 02
   type: vless
-  server: 95.154.237.47
-  port: 443
-  uuid: b113f831-8658-467f-a819-927d16a54d6a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lanacion.com.ar
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-- name: FR - zhuhai.uk 01
-  type: vless
-  server: 172.239.26.184
-  port: 17780
-  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
-    short-id: a0fbc54d937aaccb
-- name: FR - zhuhai.uk 03
-  type: vless
-  server: 172.239.26.184
-  port: 17780
-  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
-    short-id: a0fbc54d937aaccb
-- name: RO - zhuhai.uk 01
-  type: vless
-  server: 77.74.123.59
-  port: 443
-  uuid: 20df893e-dcf4-491d-8261-6dbb24f9566b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: s712.vps.moscow
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: FVTSrw9PURI_lAPdckwoV4Or7Jh7CoYth_KS1mrG63A
-- name: BR - zhuhai.uk 01
-  type: vless
-  server: 201.24.53.247
-  port: 8443
-  uuid: a237ca49-48d5-466f-aee5-c44f728a99ab
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.rumedia-cdn.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Z3dT5WeVvmrbBtZycHfI3kO6kyoLH3tAqpT_ReaMaxI
-    short-id: 4f676caa93313eab
-- name: HK - zhuhai.uk 02
-  type: vless
-  server: 104.18.43.36
-  port: 80
-  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/api/ws"
-    headers:
-      Host: web-app-aug8yr.app-f1qsy1.workers.dev
-- name: US - zhuhai.uk 03
-  type: vless
-  server: 45.130.125.73
-  port: 80
-  uuid: 50414e45-4c5f-5a45-5553-cea58e4acf49
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/api/ws"
-    headers:
-      Host: web-app-aug8yr.app-f1qsy1.workers.dev
-- name: FR - zhuhai.uk 02
-  type: vless
-  server: 163.5.153.153
-  port: 443
-  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
-    short-id: a91045bc
-- name: FI - zhuhai.uk 01
-  type: vless
-  server: 83.219.97.128
+  server: 5.180.42.210
   port: 443
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   udp: true
@@ -177,8 +16,7 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: nordic.cendora.ru
-  client-fingerprint: firefox
-  skip-cert-verify: true
+  client-fingerprint: chrome
   reality-opts:
     public-key: YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU
     short-id: 2186a755ed67b034
@@ -186,17 +24,5 @@ proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
-  - HK - zhuhai.uk 03
-  - HK - zhuhai.uk 01
-  - GB - zhuhai.uk 02
-  - US - zhuhai.uk 02
-  - GB - zhuhai.uk 01
-  - FR - zhuhai.uk 01
-  - FR - zhuhai.uk 03
-  - RO - zhuhai.uk 01
-  - BR - zhuhai.uk 01
-  - HK - zhuhai.uk 02
-  - US - zhuhai.uk 03
-  - FR - zhuhai.uk 02
-  - FI - zhuhai.uk 01
+  - NL - zhuhai.uk 01
+  - NL - zhuhai.uk 02
