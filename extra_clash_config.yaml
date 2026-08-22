@@ -1,14 +1,49 @@
 proxies:
-- name: DE - zhuhai.uk 01
-  type: ss
-  server: 130.61.239.112
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: "/ADkrzKspuf1eYWEst/8o4CstRyEzPzwZ58MYUzJ76Q="
+- name: ID - zhuhai.uk 01
+  type: vless
+  server: family.bucket.9.kfc-520.com
+  port: 10053
+  uuid: 7aecb4a5-f0a4-32a0-aabe-c9d5241e313f
   udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: o-ud3x7exNVYmknsVseZyUGMyK_680Nub0Cf6W4KiRw
+    short-id: cbbf64
+- name: IN - zhuhai.uk 01
+  type: vless
+  server: family.bucket.9.kfc-520.com
+  port: 10039
+  uuid: 7aecb4a5-f0a4-32a0-aabe-c9d5241e313f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.adobe.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: nLPPWVSNQ5n8V-VTrqf-Y_LxeEJ6qnmLv1O6xHNf22k
+    short-id: bf
+- name: VN - zhuhai.uk 01
+  type: vless
+  server: family.bucket.8.kfc-520.com
+  port: 10033
+  uuid: 7aecb4a5-f0a4-32a0-aabe-c9d5241e313f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.hp.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: mQvQHrpr_4068cLt-AOl44mQN6YccQv7yLfCP5Kp9HU
+    short-id: '667925235980'
 - name: NL - zhuhai.uk 01
   type: vless
-  server: 143.47.183.8
+  server: 92.5.227.75
   port: 62145
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   udp: true
@@ -17,5 +52,7 @@ proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - DE - zhuhai.uk 01
+  - ID - zhuhai.uk 01
+  - IN - zhuhai.uk 01
+  - VN - zhuhai.uk 01
   - NL - zhuhai.uk 01
