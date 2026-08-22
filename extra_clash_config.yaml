@@ -1,28 +1,21 @@
 proxies:
-- name: NL - zhuhai.uk 01
-  type: trojan
-  server: pro-crane.rooster465.autos
-  port: 443
-  password: FH72359861
+- name: DE - zhuhai.uk 01
+  type: ss
+  server: 130.61.239.112
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: "/ADkrzKspuf1eYWEst/8o4CstRyEzPzwZ58MYUzJ76Q="
   udp: true
-  sni: pro-crane.rooster465.autos
-- name: NL - zhuhai.uk 02
+- name: NL - zhuhai.uk 01
   type: vless
-  server: 5.180.42.210
-  port: 443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  server: 143.47.183.8
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nordic.cendora.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: YQTixaXzPVImuRc4TUbrFAekjIiaYV-t5S-HTKlH0AU
-    short-id: 2186a755ed67b034
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
+  - DE - zhuhai.uk 01
   - NL - zhuhai.uk 01
-  - NL - zhuhai.uk 02
