@@ -1,9 +1,162 @@
 proxies:
-- name: ID - zhuhai.uk 01
+- name: GB - zhuhai.uk 03
   type: vless
-  server: family.bucket.9.kfc-520.com
-  port: 10053
-  uuid: 7aecb4a5-f0a4-32a0-aabe-c9d5241e313f
+  server: 50.62.198.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: HK - zhuhai.uk 01
+  type: vless
+  server: 104.25.248.247
+  port: 80
+  uuid: b4f25b41-cc8e-49eb-bdb8-83dd8c7e542d
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/"
+    headers:
+      Host: cfnew.schzyc.cc.cd
+- name: GB - zhuhai.uk 02
+  type: vless
+  server: 172.67.132.85
+  port: 8080
+  uuid: 3a701524-30c8-45f3-8922-d7af5d024af0
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/eyJqdW5rIjoiWDRPODRLWDd2IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0="
+    headers:
+      Host: server14.peekconf.workers.dev
+- name: US - zhuhai.uk 01
+  type: vless
+  server: 172.64.151.254
+  port: 2096
+  uuid: 341832cc-ba98-425b-8225-b3db621a0da3
+  udp: true
+  network: ws
+  tls: true
+  servername: oyue.rainfall0705.cc.cd
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: oyue.rainfall0705.cc.cd
+- name: GB - zhuhai.uk 04
+  type: vless
+  server: 50.62.198.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/"
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: GB - zhuhai.uk 01
+  type: vless
+  server: 45.40.149.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/"
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: NL - zhuhai.uk 02
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 27315937-5479-49fd-867d-6b2f17246708
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053"
+    headers:
+      Host: pan1.global.ssl.fastly.net
+- name: NO - zhuhai.uk 01
+  type: vless
+  server: 194.110.207.48
+  port: 443
+  uuid: 474f10e3-c205-4204-999a-466ffcca1b10
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: kibi-institut.de
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+- name: TR - zhuhai.uk 01
+  type: vless
+  server: new3.api.go-vpn.club
+  port: 443
+  uuid: 41e71ba7-d389-47aa-94f7-ed1f55fdbcdf
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdnjs.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: E1te_g9q6EWQVOCgjwI4PF-cml9qqW7OEAf33tYkUxQ
+    short-id: 17d334ad29b2ff40
+- name: FI - zhuhai.uk 01
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 63650025-84ff-4272-cfd4-61e7b9ee8834
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN"
+    headers:
+      Host: c12.com
+- name: NL - zhuhai.uk 03
+  type: vless
+  server: 188.226.174.73
+  port: 443
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  udp: true
+  network: ws
+  tls: true
+  servername: cf3.schzyc.cc.cd
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/proxyip=ProxyIP.CMLiussss.net"
+    headers:
+      Host: cf3.schzyc.cc.cd
+- name: US - zhuhai.uk 02
+  type: vless
+  server: 2.26.147.118
+  port: 443
+  uuid: b97e287f-a24e-0021-a103-7e7ecef83139
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+- name: FI - zhuhai.uk 04
+  type: vless
+  server: 5.61.91.206
+  port: 443
+  uuid: bd99da97-265e-0021-82cc-4ec009fe9ce2
   udp: true
   network: tcp
   flow: xtls-rprx-vision
@@ -11,48 +164,155 @@ proxies:
   servername: www.amd.com
   client-fingerprint: firefox
   reality-opts:
-    public-key: o-ud3x7exNVYmknsVseZyUGMyK_680Nub0Cf6W4KiRw
-    short-id: cbbf64
-- name: IN - zhuhai.uk 01
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 0a4b7c3d
+- name: FI - zhuhai.uk 07
   type: vless
-  server: family.bucket.9.kfc-520.com
-  port: 10039
-  uuid: 7aecb4a5-f0a4-32a0-aabe-c9d5241e313f
+  server: 5.61.91.206
+  port: 443
+  uuid: b97e287f-a24e-0021-a103-7e7ecef83139
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.adobe.com
-  client-fingerprint: firefox
+  servername: www.amd.com
+  client-fingerprint: qq
   reality-opts:
-    public-key: nLPPWVSNQ5n8V-VTrqf-Y_LxeEJ6qnmLv1O6xHNf22k
-    short-id: bf
-- name: VN - zhuhai.uk 01
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+- name: FI - zhuhai.uk 06
   type: vless
-  server: family.bucket.8.kfc-520.com
-  port: 10033
-  uuid: 7aecb4a5-f0a4-32a0-aabe-c9d5241e313f
+  server: 185.218.194.71
+  port: 443
+  uuid: b97e287f-a24e-0021-a103-7e7ecef83139
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.hp.com
-  client-fingerprint: firefox
+  servername: www.amd.com
+  client-fingerprint: qq
   reality-opts:
-    public-key: mQvQHrpr_4068cLt-AOl44mQN6YccQv7yLfCP5Kp9HU
-    short-id: '667925235980'
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+- name: PL - zhuhai.uk 01
+  type: vless
+  server: pln.riotvpn.eu
+  port: 9443
+  uuid: 2e9d3568-f977-4cea-800d-fd9a876e7252
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.vkimages.io
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
+    short-id: b76dcf9e1183fe1b
 - name: NL - zhuhai.uk 01
   type: vless
-  server: 92.5.227.75
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  server: 85.198.70.200
+  port: 14406
+  uuid: 237f91bf-102e-4077-8cc3-baebccb42936
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: vk.ru
+  client-fingerprint: edge
+  reality-opts:
+    public-key: ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY
+    short-id: 1a2b3c4d5e6f7a8b
+- name: FI - zhuhai.uk 02
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: 63650025-84ff-4272-cfd4-61e7b9ee8834
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: c12.com
+- name: FI - zhuhai.uk 05
+  type: vless
+  server: 185.218.194.71
+  port: 443
+  uuid: 31216f81-3139-0021-bac4-646680314264
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+- name: FR - zhuhai.uk 02
+  type: vless
+  server: francervewcwerxr24231c42v423c4v23v4.soft421.ir
+  port: 1152
+  uuid: 3b3c1bd6-3009-4d17-a27a-095e43157265
+  udp: true
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 24qgQiNdIzdKYtFOQDFtB6kN9WKx0gviKirv8Bb4hhI
+    short-id: 86a68a48b7d45f43
+- name: FR - zhuhai.uk 04
+  type: vless
+  server: francervewcwerxr24231c42v423c4v23v4.soft421.ir
+  port: 1152
+  uuid: 3b3c1bd6-3009-4d17-a27a-095e43157265
+  udp: true
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 24qgQiNdIzdKYtFOQDFtB6kN9WKx0gviKirv8Bb4hhI
+    short-id: 86a68a48b7d45f43
+- name: FI - zhuhai.uk 03
+  type: vless
+  server: 5.61.91.206
+  port: 443
+  uuid: d427a02f-e0ea-0021-9cfb-66c1866ca3ce
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn-up.perecbass.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 6a2b5c9d
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - ID - zhuhai.uk 01
-  - IN - zhuhai.uk 01
-  - VN - zhuhai.uk 01
+  - GB - zhuhai.uk 03
+  - HK - zhuhai.uk 01
+  - GB - zhuhai.uk 02
+  - US - zhuhai.uk 01
+  - GB - zhuhai.uk 04
+  - GB - zhuhai.uk 01
+  - NL - zhuhai.uk 02
+  - NO - zhuhai.uk 01
+  - TR - zhuhai.uk 01
+  - FI - zhuhai.uk 01
+  - NL - zhuhai.uk 03
+  - US - zhuhai.uk 02
+  - FI - zhuhai.uk 04
+  - FI - zhuhai.uk 07
+  - FI - zhuhai.uk 06
+  - PL - zhuhai.uk 01
   - NL - zhuhai.uk 01
+  - FI - zhuhai.uk 02
+  - FI - zhuhai.uk 05
+  - FR - zhuhai.uk 02
+  - FR - zhuhai.uk 04
+  - FI - zhuhai.uk 03
