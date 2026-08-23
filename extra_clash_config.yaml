@@ -1,169 +1,59 @@
 proxies:
-- name: SG - zhuhai.uk 01
+- name: US - zhuhai.uk 02
   type: vless
-  server: 104.17.191.15
-  port: 8880
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
+  server: 192.220.55.133
+  port: 443
+  uuid: a54fec73-26a1-4c05-b948-6a01c157927e
   udp: true
-  network: ws
-  ws-opts:
-    path: "/pyip=ProxyIP.SG.CMLiussss.net"
-    headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
-- name: HK - zhuhai.uk 01
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HCa-dCIFGG7LF3wPOBlrRzk_T1m-YIkhmupepQy0bzI
+    short-id: 616ead1cdc4486ca
+- name: US - zhuhai.uk 04
   type: vless
-  server: 104.17.191.15
-  port: 8880
-  uuid: 80cead8e-0d28-4b0a-bacd-8005471a5c39
+  server: 34.222.2.182
+  port: 50159
+  uuid: 8c235628-4c27-44b5-9559-7ab1d53b7ff3
   udp: true
-  network: ws
-  ws-opts:
-    path: "/pyip=ProxyIP.KR.CMLiussss.net"
-    headers:
-      Host: flat-fire-40ed.96-042.workers.dev
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SX1vaYIIZcbcfO3RrAPhYQ1FAeA7bkcDZJtEDN9pbxw
+    short-id: 94c8a1b378da7250
 - name: NL - zhuhai.uk 02
   type: vless
-  server: 199.232.78.159
+  server: 85.155.226.38
   port: 443
-  uuid: 1a3829ce-f01a-4899-8537-1b4d188408ef
-  udp: true
-  network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053"
-    headers:
-      Host: pane2.global.ssl.fastly.net
-- name: GB - zhuhai.uk 07
-  type: vless
-  server: 109.169.37.129
-  port: 443
-  uuid: 2ed0d2a0-dbba-4cc2-95df-a197831d9978
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: foodnetwork.com
-  client-fingerprint: firefox
+  servername: getsavesafe.net
+  client-fingerprint: qq
   reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-- name: GB - zhuhai.uk 05
-  type: vless
-  server: 109.169.37.129
-  port: 443
-  uuid: 4c44adcd-d4ff-48fc-a35d-8c882381a9ef
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: foodnetwork.com
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-- name: GB - zhuhai.uk 03
-  type: vless
-  server: 109.169.37.129
-  port: 443
-  uuid: 2ed0d2a0-dbba-4cc2-95df-a197831d9978
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: foodnetwork.com
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
 - name: DE - zhuhai.uk 01
   type: vless
-  server: 93.123.101.78
+  server: 31.76.119.198
   port: 443
-  uuid: fbb74aa8-b89a-4f20-9504-6b25aadf6681
+  uuid: 45c595fa-988f-11f1-8024-54db13ea7d40
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: germ3.freeinternat.com
-  client-fingerprint: firefox
-  skip-cert-verify: true
+  servername: www.akamai.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-- name: GB - zhuhai.uk 02
-  type: vless
-  server: 217.179.6.228
-  port: 443
-  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lapa6.api3-max.ru
-  client-fingerprint: firefox
-- name: GB - zhuhai.uk 01
-  type: vless
-  server: 107.161.160.231
-  port: 443
-  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lapa3.api3-max.ru
-  client-fingerprint: firefox
-- name: NL - zhuhai.uk 03
-  type: vless
-  server: 2.27.57.154
-  port: 993
-  uuid: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ubuntu.com
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 6LSBBaOUWujvSovACjcP7m-DI9u9R584qdJxNYnu-24
-    short-id: 16f1f848d713b6b2
-- name: US - zhuhai.uk 05
-  type: vless
-  server: 64.49.13.198
-  port: 443
-  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: wok10.api3-max.ru
-  client-fingerprint: firefox
-- name: US - zhuhai.uk 06
-  type: vless
-  server: 64.49.13.249
-  port: 443
-  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: wok4.api3-max.ru
-  client-fingerprint: firefox
-- name: TR - zhuhai.uk 03
-  type: vless
-  server: 64.49.13.250
-  port: 443
-  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: wok8.api3-max.ru
-  client-fingerprint: firefox
+    public-key: gydLdekl4sNcE2j7vueKJJhpYWTBxlGs_VQ6-ZH55iQ
 - name: RS - zhuhai.uk 01
   type: vless
   server: 2.27.57.154
@@ -175,91 +65,24 @@ proxies:
   tls: true
   servername: ubuntu.com
   client-fingerprint: chrome
-  skip-cert-verify: true
   reality-opts:
     public-key: 6LSBBaOUWujvSovACjcP7m-DI9u9R584qdJxNYnu-24
     short-id: d5021eb1b04c37dd
-- name: FI - zhuhai.uk 01
+- name: NL - zhuhai.uk 01
   type: vless
-  server: 159.194.196.46
-  port: 8443
-  uuid: 663836b2-f676-43fb-977f-47c495b1b383
+  server: 85.198.70.200
+  port: 14406
+  uuid: 237f91bf-102e-4077-8cc3-baebccb42936
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: fi.chick-team.ru
+  servername: vk.ru
   client-fingerprint: edge
-  skip-cert-verify: true
   reality-opts:
-    public-key: MXfd9WXeMKb5RApiIBz3do37MVVs7eSjAolIRoVT6zk
-    short-id: 26b1888d30cae1f1
-- name: PL - zhuhai.uk 03
-  type: vless
-  server: 138.124.104.151
-  port: 443
-  uuid: 1a2edf79-257e-44c1-b17f-7299f04ce557
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pol.pinkmoon.pro
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-- name: PL - zhuhai.uk 01
-  type: vless
-  server: 138.124.104.136
-  port: 443
-  uuid: 1a2edf79-257e-44c1-b17f-7299f04ce557
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pol.pinkmoon.pro
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-- name: US - zhuhai.uk 08
-  type: vless
-  server: wok6.api3-max.ru
-  port: 443
-  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: wok6.api3-max.ru
-  client-fingerprint: firefox
-- name: GB - zhuhai.uk 06
-  type: vless
-  server: 31.76.21.178
-  port: 443
-  uuid: 1a2edf79-257e-44c1-b17f-7299f04ce557
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fin.pinkmoon.pro
-  client-fingerprint: qq
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-- name: US - zhuhai.uk 07
-  type: vless
-  server: wok10.api3-max.ru
-  port: 443
-  uuid: ac7fb60f-0b7a-465d-a002-05160ec04ed6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: wok10.api3-max.ru
-  client-fingerprint: firefox
-- name: NL - zhuhai.uk 04
+    public-key: ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY
+    short-id: 1a2b3c4d5e6f7a8b
+- name: NL - zhuhai.uk 03
   type: vless
   server: 85.198.70.200
   port: 14406
@@ -274,76 +97,14 @@ proxies:
   reality-opts:
     public-key: ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY
     short-id: 1a2b3c4d5e6f7a8b
-- name: US - zhuhai.uk 09
-  type: vless
-  server: 2.27.57.154
-  port: 995
-  uuid: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ubuntu.com
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 6LSBBaOUWujvSovACjcP7m-DI9u9R584qdJxNYnu-24
-    short-id: 93e1b426caffbf75
-- name: GB - zhuhai.uk 04
-  type: vless
-  server: 2.27.57.154
-  port: 587
-  uuid: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ubuntu.com
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 6LSBBaOUWujvSovACjcP7m-DI9u9R584qdJxNYnu-24
-    short-id: 57e286a9a132a3e8
-- name: CZ - zhuhai.uk 01
-  type: vless
-  server: 2.27.57.154
-  port: 110
-  uuid: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ubuntu.com
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 6LSBBaOUWujvSovACjcP7m-DI9u9R584qdJxNYnu-24
-    short-id: 513ba6a361f14cbe
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - SG - zhuhai.uk 01
-  - HK - zhuhai.uk 01
+  - US - zhuhai.uk 02
+  - US - zhuhai.uk 04
   - NL - zhuhai.uk 02
-  - GB - zhuhai.uk 07
-  - GB - zhuhai.uk 05
-  - GB - zhuhai.uk 03
   - DE - zhuhai.uk 01
-  - GB - zhuhai.uk 02
-  - GB - zhuhai.uk 01
-  - NL - zhuhai.uk 03
-  - US - zhuhai.uk 05
-  - US - zhuhai.uk 06
-  - TR - zhuhai.uk 03
   - RS - zhuhai.uk 01
-  - FI - zhuhai.uk 01
-  - PL - zhuhai.uk 03
-  - PL - zhuhai.uk 01
-  - US - zhuhai.uk 08
-  - GB - zhuhai.uk 06
-  - US - zhuhai.uk 07
-  - NL - zhuhai.uk 04
-  - US - zhuhai.uk 09
-  - GB - zhuhai.uk 04
-  - CZ - zhuhai.uk 01
+  - NL - zhuhai.uk 01
+  - NL - zhuhai.uk 03
