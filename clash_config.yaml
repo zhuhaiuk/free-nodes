@@ -253,9 +253,38 @@ proxies:
   password: 023c40e3394dd2c2f1b5d12556db2a6f
   sni: www.bing.com
   skip-cert-verify: true
-- name: NL - zhuhai.uk 02
+- name: NL - zhuhai.uk 05
   type: vless
-  server: 85.155.226.38
+  server: 199.232.78.159
+  port: 443
+  uuid: 27315937-5479-49fd-867d-6b2f17246708
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  ws-opts:
+    path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053"
+    headers:
+      Host: pan1.global.ssl.fastly.net
+- name: RU - zhuhai.uk 02
+  type: vless
+  server: 46.8.41.42
+  port: 443
+  uuid: 9aff0732-7ce4-4b34-ba20-e67c6df64fdd
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: uk1.panel11.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: L5qLDM9pWlBV6gU9yCT4_yc7jz982FiLi2CZWLo3Ki0
+    short-id: dcbf3f13ce2dbe37
+- name: NL - zhuhai.uk 03
+  type: vless
+  server: 85.155.226.133
   port: 443
   uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
   udp: true
@@ -267,48 +296,61 @@ proxies:
   reality-opts:
     public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
     short-id: 82f5d3a1e9c0b661
-- name: DE - zhuhai.uk 01
+- name: US - zhuhai.uk 09
   type: vless
-  server: 31.76.119.198
+  server: 51.81.223.225
+  port: 11094
+  uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 9dnXiXxP4xgvtTVRj9SBFdyO6mjGvVhWD8qVZZLCCCk
+    short-id: a356addf
+- name: FI - zhuhai.uk 01
+  type: vless
+  server: 151.101.56.6
   port: 443
-  uuid: 45c595fa-988f-11f1-8024-54db13ea7d40
+  uuid: 63650025-84ff-4272-cfd4-61e7b9ee8834
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: www.akamai.com
+  servername: ssl.fastly.com
   client-fingerprint: chrome
-  reality-opts:
-    public-key: gydLdekl4sNcE2j7vueKJJhpYWTBxlGs_VQ6-ZH55iQ
-- name: RS - zhuhai.uk 01
+  ws-opts:
+    path: "/?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN"
+    headers:
+      Host: c12.com
+- name: DE - zhuhai.uk 03
   type: vless
-  server: 2.27.57.154
-  port: 8888
-  uuid: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
+  server: 199.232.78.159
+  port: 443
+  uuid: 22fff84b-dd89-489d-bc4c-794f664b92a2
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: ubuntu.com
+  servername: ssl.fastly.com
   client-fingerprint: chrome
-  reality-opts:
-    public-key: 6LSBBaOUWujvSovACjcP7m-DI9u9R584qdJxNYnu-24
-    short-id: d5021eb1b04c37dd
-- name: NL - zhuhai.uk 01
+  ws-opts:
+    path: "/"
+    headers:
+      Host: 7wwwspeedtestnet.global.ssl.fastly.net
+- name: FR - zhuhai.uk 14
   type: vless
-  server: 85.198.70.200
-  port: 14406
-  uuid: 237f91bf-102e-4077-8cc3-baebccb42936
+  server: 45.87.104.185
+  port: 443
+  uuid: f463819c-5e64-458a-808b-6693afb47aa4
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
+  flow: xtls-rprx-vision-udp443
   tls: true
-  servername: vk.ru
-  client-fingerprint: edge
-  reality-opts:
-    public-key: ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY
-    short-id: 1a2b3c4d5e6f7a8b
-- name: NL - zhuhai.uk 03
+  servername: medicine.repaironline.biz
+  client-fingerprint: chrome
+- name: NL - zhuhai.uk 04
   type: vless
   server: 85.198.70.200
   port: 14406
@@ -323,6 +365,42 @@ proxies:
   reality-opts:
     public-key: ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY
     short-id: 1a2b3c4d5e6f7a8b
+- name: DK - zhuhai.uk 01
+  type: vless
+  server: 46.29.235.9
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+    short-id: a1b2c3d4
+- name: ID - zhuhai.uk 01
+  type: trojan
+  server: kkvlvvq-a.catcat321.com
+  port: 20056
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  udp: true
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: FR - zhuhai.uk 15
+  type: vless
+  server: 163.5.153.153
+  port: 443
+  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
+    short-id: a91045bc
 proxy-groups:
 - name: 选择出口
   type: select
@@ -361,11 +439,17 @@ proxy-groups:
   - KR - zhuhai.uk
   - SG - zhuhai.uk
   - SG - zhuhai.uk 02
-  - NL - zhuhai.uk 02
-  - DE - zhuhai.uk 01
-  - RS - zhuhai.uk 01
-  - NL - zhuhai.uk 01
+  - NL - zhuhai.uk 05
+  - RU - zhuhai.uk 02
   - NL - zhuhai.uk 03
+  - US - zhuhai.uk 09
+  - FI - zhuhai.uk 01
+  - DE - zhuhai.uk 03
+  - FR - zhuhai.uk 14
+  - NL - zhuhai.uk 04
+  - DK - zhuhai.uk 01
+  - ID - zhuhai.uk 01
+  - FR - zhuhai.uk 15
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
