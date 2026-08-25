@@ -247,19 +247,72 @@ proxies:
   password: 29204996-a723-4291-8c70-30843b592d40
   udp: true
   sni: flv02.swiftrelay.cc
-- name: DE - zhuhai.uk 01
+- name: NO - zhuhai.uk 01
   type: vless
-  server: 45.134.38.204
-  port: 8053
-  uuid: a88e2744-3555-4a0a-9635-0aae23e038f8
+  server: 46.29.238.136
+  port: 40443
+  uuid: 374181b9-44bf-44f1-a227-1184f3e9e47b
   udp: true
   network: tcp
   tls: true
-  servername: www.amd.com
+  servername: deepl.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: hjJ1VN2xwcl1n7vrwvOspB2NFWrXNySUNPexutOVvAM
-    short-id: 109754c5259066d1
+    public-key: Ic-S89gGVGw1RnKJHOi3CzAmdU8fIdlMZOd4DBV7A3M
+    short-id: bbb1
+- name: IS - zhuhai.uk 01
+  type: vless
+  server: 151.236.24.67
+  port: 8443
+  uuid: 85cc845e-644c-0045-8288-f0c03c83c1ec
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: auto.quattro-tech.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+- name: AT - zhuhai.uk 01
+  type: vless
+  server: node-fra02.rkitman.ru
+  port: 443
+  uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node-fra02.rkitman.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
+    short-id: 88d9dc52ef39c8bd
+- name: US - zhuhai.uk 01
+  type: vless
+  server: eeb.mythos-wargame.fun
+  port: 443
+  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
+  udp: true
+  network: grpc
+  tls: true
+  servername: eeb.mythos-wargame.fun
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: edge.sync.v1
+- name: AL - zhuhai.uk 01
+  type: vless
+  server: alonb.darklink.ir
+  port: 1580
+  uuid: 7659430c-4124-4f15-aee5-2be5d76f7e44
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: M3JXxo8ozG_kG2N5FpyQxwjZFLhXJpJJUP5bjhQrZks
+    short-id: bbbd20a50eb58709
 proxy-groups:
 - name: 选择出口
   type: select
@@ -297,7 +350,11 @@ proxy-groups:
   - SG - zhuhai.uk 02
   - TH - zhuhai.uk
   - PH - zhuhai.uk
-  - DE - zhuhai.uk 01
+  - NO - zhuhai.uk 01
+  - IS - zhuhai.uk 01
+  - AT - zhuhai.uk 01
+  - US - zhuhai.uk 01
+  - AL - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
