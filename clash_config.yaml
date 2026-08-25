@@ -225,134 +225,69 @@ proxies:
   type: socks5
   server: 43.164.136.189
   port: 1080
-- name: RU - zhuhai.uk 02
+- name: AE - zhuhai.uk 01
   type: vless
-  server: 46.149.66.9
-  port: 27700
-  uuid: 9e09f1ce-45d4-466d-b077-81b0dae00db2
-  udp: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: zuugrpc
-- name: AT - zhuhai.uk 01
-  type: vless
-  server: 157.173.7.200
+  server: 151.242.160.111
   port: 443
-  uuid: 64774bd8-3116-4eaa-a046-5ea4fc230b81
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: node-fra02.rkitman.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
-    short-id: 88d9dc52ef39c8bd
-- name: DE - zhuhai.uk 01
-  type: vless
-  server: 152.53.33.73
-  port: 443
-  uuid: 85cc845e-644c-4148-8288-f0c03c83c1ec
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: at.quattro-tech.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-- name: NL - zhuhai.uk 01
-  type: vless
-  server: nethnoad.whooisthebest.ir
-  port: 22216
-  uuid: 5c5619e4-0577-48d4-8d0c-6ad9c5cc0ecf
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: sTE0YXI6Pv6OQUNbM-hNpNOhzon0_m2YUd7B1_g-JAU
-    short-id: 0f4412d42129f080
-- name: US - zhuhai.uk 01
-  type: vless
-  server: eeb.mythos-wargame.fun
-  port: 443
-  uuid: 2dd48980-5c2a-4f3b-bc8f-e20a8ae24ab1
-  udp: true
-  network: grpc
-  tls: true
-  servername: eeb.mythos-wargame.fun
+  servername: eu-central.cendora.ru
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: edge.sync.v1
-- name: RU - zhuhai.uk 01
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+- name: TW - zhuhai.uk 01
+  type: trojan
+  server: rrr2.tube-cat.com
+  port: 18372
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  udp: true
+  sni: r.tw3.cat.bilibili.com
+  skip-cert-verify: true
+- name: DE - zhuhai.uk 03
   type: vless
-  server: 185.147.27.165
-  port: 8443
-  uuid: f230254f-d4cd-4d83-8a2d-e83927ef98ac
+  server: 31.76.34.203
+  port: 443
+  uuid: 423b1d79-08c4-0003-9d5e-c541f791b55f
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: user-6a8c51f9.noooo.win
-  client-fingerprint: edge
-- name: UA - zhuhai.uk 01
+  servername: russia.cendora.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ZXi0bwZwOe9e5CMticA2-bU7qamHgs_sN-2kHygbDyk
+    short-id: e91da98020a38be9
+- name: SE - zhuhai.uk 01
   type: vless
-  server: ukrnoad.whooisthebest.ir
-  port: 22216
-  uuid: 5c5619e4-0577-48d4-8d0c-6ad9c5cc0ecf
+  server: 31.76.34.102
+  port: 443
+  uuid: 423b1d79-08c4-0002-9d5e-c541f791b55f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: russia.cendora.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ZXi0bwZwOe9e5CMticA2-bU7qamHgs_sN-2kHygbDyk
+    short-id: e91da98020a38be9
+- name: FR - zhuhai.uk 04
+  type: vless
+  server: my.xavino-shop.ir
+  port: 40492
+  uuid: b2e4465d-3dae-46d8-82ec-4ddd521a9c59
   udp: true
   network: tcp
   tls: true
   servername: amp-api-edge.apps.apple.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: sTE0YXI6Pv6OQUNbM-hNpNOhzon0_m2YUd7B1_g-JAU
-    short-id: 0f4412d42129f080
-- name: SK - zhuhai.uk 01
-  type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  network: ws
-  tls: true
-  servername: web-socket.tgdaosheng.ggff.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/proxyip=bpb.yousef.isegaro.comfp=chrome"
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: GB - zhuhai.uk 03
-  type: vless
-  server: 104.171.128.225
-  port: 443
-  uuid: 75079a7f-75b5-418b-8a65-f7b2f438cd4a
-  udp: true
-  network: grpc
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: eNvO4-6_VFngHHC6D5AhcCpCpOdi5gY7-Srimhh-6Xw
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: GB - zhuhai.uk 04
-  type: vless
-  server: 104.171.128.225
-  port: 443
-  uuid: 82d145c1-d691-4eef-9de1-9c316db4859a
-  udp: true
-  network: grpc
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: eNvO4-6_VFngHHC6D5AhcCpCpOdi5gY7-Srimhh-6Xw
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+    public-key: qxTe4rYbyXphUF5L2zyEXzXfwJxky34-bEuX7zYcTDA
+    short-id: 206432f9
 proxy-groups:
 - name: 选择出口
   type: select
@@ -387,16 +322,11 @@ proxy-groups:
   - HK - zhuhai.uk 02
   - KR - zhuhai.uk
   - KR - zhuhai.uk 02
-  - RU - zhuhai.uk 02
-  - AT - zhuhai.uk 01
-  - DE - zhuhai.uk 01
-  - NL - zhuhai.uk 01
-  - US - zhuhai.uk 01
-  - RU - zhuhai.uk 01
-  - UA - zhuhai.uk 01
-  - SK - zhuhai.uk 01
-  - GB - zhuhai.uk 03
-  - GB - zhuhai.uk 04
+  - AE - zhuhai.uk 01
+  - TW - zhuhai.uk 01
+  - DE - zhuhai.uk 03
+  - SE - zhuhai.uk 01
+  - FR - zhuhai.uk 04
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
