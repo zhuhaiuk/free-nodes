@@ -1,7 +1,123 @@
 proxies:
-- name: AE - zhuhai.uk 01
+- name: US - zhuhai.uk 07
   type: vless
-  server: 151.242.160.111
+  server: 192.204.58.167
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: US - zhuhai.uk 05
+  type: vless
+  server: w1.lianjieni.com
+  port: 443
+  uuid: 56a51c04-56b0-4ef2-a4ea-9a90ff3e44a5
+  udp: true
+  network: ws
+  tls: true
+  servername: w1.lianjieni.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/cdnws"
+    headers:
+      Host: w1.lianjieni.com
+- name: DE - zhuhai.uk 06
+  type: ss
+  server: 89.168.121.246
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: pQSE/JNCbTTwg9CA8m9uAW30avkS6ILWPUsXZB8L3C0=
+  udp: true
+- name: JP - zhuhai.uk 02
+  type: vless
+  server: 161.33.181.105
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: FR - zhuhai.uk 05
+  type: vless
+  server: 185.24.151.36
+  port: 443
+  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: us.jobinvest.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: JP - zhuhai.uk 01
+  type: vless
+  server: 140.245.89.136
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: FR - zhuhai.uk 01
+  type: vless
+  server: youtube.sfproxy.fuck-rkn.dev
+  port: 443
+  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: US - zhuhai.uk 01
+  type: vless
+  server: 185.24.151.236
+  port: 443
+  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ai.jobinvest.ru
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: DE - zhuhai.uk 05
+  type: vless
+  server: 185.24.151.243
+  port: 443
+  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: IR - zhuhai.uk 01
+  type: vless
+  server: 31.59.125.49
   port: 443
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   udp: true
@@ -9,10 +125,53 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: eu-central.cendora.ru
-  client-fingerprint: qq
+  client-fingerprint: firefox
+  skip-cert-verify: true
   reality-opts:
     public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
     short-id: 00bca5982f82d083
+- name: FR - zhuhai.uk 08
+  type: vless
+  server: 217.60.37.28
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: AT - zhuhai.uk 01
+  type: vless
+  server: 185.24.151.243
+  port: 443
+  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de.jobinvest.ru
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: FR - zhuhai.uk 07
+  type: vless
+  server: 104.253.79.6
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
 - name: TW - zhuhai.uk 01
   type: trojan
   server: rrr2.tube-cat.com
@@ -21,7 +180,413 @@ proxies:
   udp: true
   sni: r.tw3.cat.bilibili.com
   skip-cert-verify: true
+- name: FR - zhuhai.uk 06
+  type: vless
+  server: 95.182.116.192
+  port: 2053
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: FR - zhuhai.uk 03
+  type: vless
+  server: 217.60.5.81
+  port: 2053
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: NL - zhuhai.uk 06
+  type: vless
+  server: 88.218.248.195
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: NL - zhuhai.uk 02
+  type: vless
+  server: 91.223.119.197
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: NL - zhuhai.uk 01
+  type: vless
+  server: 45.12.69.152
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: GB - zhuhai.uk 03
+  type: vless
+  server: 193.219.99.51
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: NL - zhuhai.uk 03
+  type: vless
+  server: 91.223.119.174
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: NL - zhuhai.uk 04
+  type: vless
+  server: 178.173.255.201
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: GB - zhuhai.uk 02
+  type: vless
+  server: 193.219.99.36
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: NL - zhuhai.uk 05
+  type: vless
+  server: 185.214.10.72
+  port: 2053
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: HK - zhuhai.uk 01
+  type: vless
+  server: 155.117.224.127
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: SE - zhuhai.uk 02
+  type: vless
+  server: 94.242.59.31
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: PL - zhuhai.uk 02
+  type: vless
+  server: 91.149.253.26
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: PL - zhuhai.uk 01
+  type: vless
+  server: 193.124.41.236
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: DE - zhuhai.uk 04
+  type: vless
+  server: 95.181.175.209
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: AT - zhuhai.uk 02
+  type: vless
+  server: 91.199.154.97
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: SE - zhuhai.uk 01
+  type: vless
+  server: 62.182.192.195
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: EE - zhuhai.uk 02
+  type: vless
+  server: 5.101.118.52
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: SE - zhuhai.uk 03
+  type: vless
+  server: 194.68.32.99
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: LV - zhuhai.uk 01
+  type: vless
+  server: 188.253.20.190
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: EE - zhuhai.uk 01
+  type: vless
+  server: 5.45.118.75
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: DE - zhuhai.uk 07
+  type: vless
+  server: 80.211.249.240
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: LT - zhuhai.uk 02
+  type: vless
+  server: 185.80.128.115
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: AT - zhuhai.uk 03
+  type: vless
+  server: 91.132.94.151
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: DE - zhuhai.uk 08
+  type: vless
+  server: 91.184.248.209
+  port: 2053
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: LT - zhuhai.uk 01
+  type: vless
+  server: 91.197.3.7
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: DE - zhuhai.uk 09
+  type: vless
+  server: 77.110.121.157
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
 - name: DE - zhuhai.uk 03
+  type: vless
+  server: 185.255.93.189
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: TR - zhuhai.uk 01
+  type: vless
+  server: 93.115.10.237
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: DE - zhuhai.uk 01
   type: vless
   server: 31.76.34.203
   port: 443
@@ -35,39 +600,66 @@ proxies:
   reality-opts:
     public-key: ZXi0bwZwOe9e5CMticA2-bU7qamHgs_sN-2kHygbDyk
     short-id: e91da98020a38be9
-- name: SE - zhuhai.uk 01
+- name: KR - zhuhai.uk 02
   type: vless
-  server: 31.76.34.102
+  server: 178.83.31.93
   port: 443
-  uuid: 423b1d79-08c4-0002-9d5e-c541f791b55f
+  uuid: 4a97788b-5d8a-410c-875c-ba36930e185e
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: russia.cendora.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ZXi0bwZwOe9e5CMticA2-bU7qamHgs_sN-2kHygbDyk
-    short-id: e91da98020a38be9
-- name: FR - zhuhai.uk 04
-  type: vless
-  server: my.xavino-shop.ir
-  port: 40492
-  uuid: b2e4465d-3dae-46d8-82ec-4ddd521a9c59
-  udp: true
-  network: tcp
-  tls: true
-  servername: amp-api-edge.apps.apple.com
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: qxTe4rYbyXphUF5L2zyEXzXfwJxky34-bEuX7zYcTDA
-    short-id: 206432f9
+    public-key: 989gq45ogQSZLDoUTcLNSYW5v_3ER7W_6Oi_8swZzXo
+    short-id: cb55f541
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - AE - zhuhai.uk 01
+  - US - zhuhai.uk 07
+  - US - zhuhai.uk 05
+  - DE - zhuhai.uk 06
+  - JP - zhuhai.uk 02
+  - FR - zhuhai.uk 05
+  - JP - zhuhai.uk 01
+  - FR - zhuhai.uk 01
+  - US - zhuhai.uk 01
+  - DE - zhuhai.uk 05
+  - IR - zhuhai.uk 01
+  - FR - zhuhai.uk 08
+  - AT - zhuhai.uk 01
+  - FR - zhuhai.uk 07
   - TW - zhuhai.uk 01
-  - DE - zhuhai.uk 03
+  - FR - zhuhai.uk 06
+  - FR - zhuhai.uk 03
+  - NL - zhuhai.uk 06
+  - NL - zhuhai.uk 02
+  - NL - zhuhai.uk 01
+  - GB - zhuhai.uk 03
+  - NL - zhuhai.uk 03
+  - NL - zhuhai.uk 04
+  - GB - zhuhai.uk 02
+  - NL - zhuhai.uk 05
+  - HK - zhuhai.uk 01
+  - SE - zhuhai.uk 02
+  - PL - zhuhai.uk 02
+  - PL - zhuhai.uk 01
+  - DE - zhuhai.uk 04
+  - AT - zhuhai.uk 02
   - SE - zhuhai.uk 01
-  - FR - zhuhai.uk 04
+  - EE - zhuhai.uk 02
+  - SE - zhuhai.uk 03
+  - LV - zhuhai.uk 01
+  - EE - zhuhai.uk 01
+  - DE - zhuhai.uk 07
+  - LT - zhuhai.uk 02
+  - AT - zhuhai.uk 03
+  - DE - zhuhai.uk 08
+  - LT - zhuhai.uk 01
+  - DE - zhuhai.uk 09
+  - DE - zhuhai.uk 03
+  - TR - zhuhai.uk 01
+  - DE - zhuhai.uk 01
+  - KR - zhuhai.uk 02
