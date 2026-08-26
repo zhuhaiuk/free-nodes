@@ -197,6 +197,138 @@ const SERVICE_PAGES = [
   },
 ];
 
+const AIRPORT_REVIEWS = [
+  {
+    slug: "xinghang",
+    name: "星航机场",
+    title: "星航机场测评：无限流量、不限设备、28 个节点与 9 个地区",
+    description:
+      "星航机场测评，整理无限流量、不限设备、28 个节点、9 个国家和地区、流媒体解锁、节点测速和 50% AFF 返利信息。",
+    url: "https://xinghang.space/#/register?code=RuQL8FOh",
+    highlights: ["8.9 元/月起", "无限流量", "不限设备", "28 个节点", "支持 50% AFF 返利"],
+    metrics: [
+      ["套餐价格", "8.9 元/月、25.9 元/季度、49.9 元/半年"],
+      ["节点总数", "28 个"],
+      ["覆盖地区", "德国、荷兰、韩国、美国、日本、台湾、新加坡、香港、英国"],
+      ["流量限制", "无限流量"],
+      ["设备限制", "不限设备"],
+      ["协议类型", "VLESS"],
+      ["AFF 返利", "50%"],
+    ],
+    testTime: "测速与流媒体截图测试时间：2026-08-22 08:50-08:51 CST。",
+    evidence: [
+      {
+        title: "星航机场套餐截图",
+        src: "assets/xinghang-plans.png",
+        width: 2446,
+        height: 788,
+        alt: "星航机场 Neo、Air、Pro 套餐价格截图，显示 8.9 元月付、25.9 元季付、49.9 元半年付",
+        caption: "套餐截图显示星航机场有 8.9 元/月、25.9 元/季度、49.9 元/半年三档，标注无限流量、不限设备、全部节点。",
+      },
+      {
+        title: "星航机场测速截图",
+        src: "assets/xinghang-speedtest.png",
+        width: 1600,
+        height: 1265,
+        alt: "星航机场节点测速截图，包含德国、荷兰、韩国、美国、日本、台湾、新加坡、香港、英国等节点延迟和速度",
+        caption: "测速截图中多条 VLESS 节点显示较高峰值速度，香港、日本、新加坡、美国等常用地区都有节点参与测试。",
+      },
+      {
+        title: "星航机场流媒体解锁截图",
+        src: "assets/xinghang-streaming.png",
+        width: 1600,
+        height: 1172,
+        alt: "星航机场流媒体解锁截图，显示 Disney+、Netflix、YouTube、BiliBili、ChatGPT 等测试结果",
+        caption: "流媒体截图显示 Disney+、Netflix、YouTube、BiliBili 和 ChatGPT 在多个地区有解锁结果，实际可用性仍需按购买后节点复测。",
+      },
+    ],
+    bestFor: ["多设备日常使用", "需要固定订阅入口的用户", "希望测试香港、日本、新加坡、美国等常用地区的用户"],
+    cautions: ["购买前建议先用短周期套餐测试晚高峰表现。", "流媒体和 AI 工具可用性会随节点与平台风控变化。"],
+  },
+  {
+    slug: "huanqiugang",
+    name: "环球港机场",
+    title: "环球港机场测评：1 元/月起、无限流量、不限设备与 50+ 节点",
+    description:
+      "环球港机场测评，整理 1 元/月起、无限流量、不限设备、50+ 节点、高速专线、流媒体解锁和购买前注意事项。",
+    url: "https://dash.fscloud.cc/#/register?code=o50IOzmo",
+    highlights: ["1 元/月起", "无限流量", "不限设备", "50+ 节点", "主打高速专线"],
+    metrics: [
+      ["入门价格", "1 元/月起"],
+      ["节点规模", "50+ 节点"],
+      ["流量限制", "无限流量"],
+      ["设备限制", "不限设备"],
+      ["协议类型", "VLESS"],
+      ["适合方向", "低成本试用、日常备用、常用地区测速"],
+    ],
+    testTime: "测速与流媒体截图测试时间：2026-08-26 11:00-11:17 CST。",
+    evidence: [
+      {
+        title: "环球港机场套餐截图",
+        src: "assets/huanqiugang-plans.png",
+        width: 2446,
+        height: 823,
+        alt: "环球港机场 Neo、Air、Pro 套餐价格截图，显示 1 元月付、2 元季付、4.9 元半年付",
+        caption: "套餐截图显示环球港机场入门价格低，有 1 元/月、2 元/季度、4.9 元/半年三档，标注无限流量、不限设备、50+ 节点。",
+      },
+      {
+        title: "环球港机场测速截图",
+        src: "assets/huanqiugang-speedtest.png",
+        width: 1600,
+        height: 1501,
+        alt: "环球港机场节点测速截图，包含 VLESS 节点的 TLS RTT、HTTPS 延迟、平均速度和最大速度",
+        caption: "测速截图显示部分高速专线节点峰值速度较高，也能看到部分节点为 0B 或不可用，适合提醒用户先短周期实测。",
+      },
+      {
+        title: "环球港机场流媒体解锁截图",
+        src: "assets/huanqiugang-streaming.png",
+        width: 1600,
+        height: 1046,
+        alt: "环球港机场流媒体解锁截图，显示 Disney+、Netflix、YouTube、BiliBili、Abema、ChatGPT 等测试结果",
+        caption: "流媒体截图显示常见地区节点对 Netflix、Disney+、YouTube、BiliBili、ChatGPT 有不同解锁结果，HBO Max 和 Abema 等项目存在失败或地区差异。",
+      },
+    ],
+    bestFor: ["想低成本先测试机场的新手", "需要不限设备导入的用户", "想对比免费节点与付费线路差异的用户"],
+    cautions: ["低价套餐适合先试用，不建议不了解线路表现就直接长期订阅。", "具体节点、套餐和可用功能以官网实时展示为准。"],
+  },
+  {
+    slug: "feituyun",
+    name: "飞兔云机场",
+    title: "飞兔云机场测评：AnyTLS 与 Shadowsocks、69 个节点、流媒体解锁",
+    description:
+      "飞兔云机场测评，整理 AnyTLS、Shadowsocks 协议、69 个节点、套餐价格、延迟测速、流媒体和 ChatGPT 解锁表现。",
+    url: "https://xn--9kq89d4y0g.com/#/register?code=YvP5BrR2",
+    highlights: ["AnyTLS / Shadowsocks", "69 个节点", "覆盖常用地区", "包含流媒体解锁观察", "适合短周期测试"],
+    metrics: [
+      ["协议类型", "AnyTLS、Shadowsocks"],
+      ["节点总数", "69 个"],
+      ["测试重点", "延迟、测速、流媒体、ChatGPT"],
+      ["适合方向", "日常浏览、视频平台、AI 工具可用性测试"],
+      ["购买建议", "先月付测试"],
+    ],
+    bestFor: ["想测试 AnyTLS 或 Shadowsocks 的用户", "关注节点数量和地区覆盖的用户", "需要观察流媒体与 ChatGPT 可用性的用户"],
+    cautions: ["节点数量不等于稳定性，仍要看晚高峰速度和丢包。", "解锁结果会变化，购买后应以自己常用节点实测为准。"],
+  },
+  {
+    slug: "taoqitu",
+    name: "淘气兔机场",
+    title: "淘气兔机场测评：AnyTLS 与 Shadowsocks、52 个节点、6 个地区",
+    description:
+      "淘气兔机场测评，整理 AnyTLS、Shadowsocks 协议、52 个节点、6 个国家地区、套餐价格、延迟测速、流媒体和 ChatGPT 解锁表现。",
+    url: "https://vip.xn--h5qy56dzhb.vip/#/register?code=cHnAfkST",
+    highlights: ["AnyTLS / Shadowsocks", "52 个节点", "覆盖 6 个国家和地区", "低价月付", "流媒体与 ChatGPT 测试"],
+    metrics: [
+      ["协议类型", "AnyTLS、Shadowsocks"],
+      ["节点总数", "52 个"],
+      ["覆盖地区", "香港、新加坡、日本、美国、萨摩亚、台湾"],
+      ["套餐观察", "低价月付与长期套餐并存"],
+      ["测试重点", "延迟、测速、流媒体、ChatGPT"],
+    ],
+    bestFor: ["想用低价月付先试的用户", "常用香港、新加坡、日本、美国节点的用户", "关注 Shadowrocket、Clash、Mihomo 导入体验的用户"],
+    cautions: ["长期套餐前建议先验证自己常用地区的速度。", "如套餐页标注不退款，应先用月付降低试错成本。"],
+  },
+];
+
 const TELEGRAM_PREMIUM_OFFERS = [
   {
     duration: "3 个月",
@@ -371,6 +503,14 @@ function topicFile(topic) {
   return `topics/${topic.slug}.html`;
 }
 
+function reviewFile(review) {
+  return `reviews/${review.slug}.html`;
+}
+
+function reviewHref(review) {
+  return `${SITE_URL}/${reviewFile(review)}`;
+}
+
 function statNumber(value) {
   if (value < 10) return String(value);
   return `${Math.floor(value / 10) * 10}+`;
@@ -435,11 +575,17 @@ function sharedStyles() {
     .pricing-card span { color: var(--muted); }
     .proof-list { display: grid; gap: 10px; margin: 14px 0 0; padding: 0; list-style: none; }
     .proof-list li { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .evidence-grid { display: grid; gap: 16px; margin: 16px 0 24px; }
+    .evidence-card { margin: 0; border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .evidence-card img { display: block; width: 100%; height: auto; background: var(--soft); }
+    .evidence-card figcaption { padding: 12px 14px; color: var(--muted); font-size: .95rem; line-height: 1.55; }
+    .evidence-card strong { display: block; margin-bottom: 4px; color: var(--ink); font-size: 1rem; }
     ul.clean { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
     ul.clean li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
     ul.clean li:last-child { border-bottom: 0; }
     table { width: 100%; border-collapse: collapse; margin: 20px 0; }
     th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 10px 8px; vertical-align: top; }
+    th { width: 34%; min-width: 7em; white-space: nowrap; }
     footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
     @media (max-width: 900px) { .tutorial-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 720px) { .stats, .lists, .topic-grid, .competitor-grid, .tutorial-grid, .trust-grid, .pricing-grid { grid-template-columns: 1fr; } main { padding-top: 24px; } .premium-visual { grid-template-columns: 1fr; } }
@@ -471,6 +617,28 @@ function topicCards() {
         <h3><a href="${topicFile(topic)}">${escapeHtml(topic.title)}</a></h3>
         <p>${escapeHtml(topic.description)}</p>
         <p class="intent">${escapeHtml(topic.intent)}</p>
+      </section>`
+  ).join("\n");
+}
+
+function reviewCards() {
+  return AIRPORT_REVIEWS.map(
+    (review) => `      <section class="topic-card">
+        <h3><a href="${
+          review.slug
+        }.html">${escapeHtml(review.name)}测评</a></h3>
+        <p>${escapeHtml(review.description)}</p>
+        <p class="intent">${escapeHtml(review.highlights.slice(0, 3).join(" · "))}</p>
+      </section>`
+  ).join("\n");
+}
+
+function homepageReviewCards() {
+  return AIRPORT_REVIEWS.map(
+    (review) => `      <section class="topic-card">
+        <h3><a href="${reviewFile(review)}">${escapeHtml(review.name)}测评</a></h3>
+        <p>${escapeHtml(review.description)}</p>
+        <p class="intent">${escapeHtml(review.highlights.slice(0, 3).join(" · "))}</p>
       </section>`
   ).join("\n");
 }
@@ -524,11 +692,11 @@ function homepageItemListJsonLd() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Zhuhai Free Nodes 专题入口",
-    itemListElement: TOPIC_PAGES.map((topic, index) => ({
+    itemListElement: [...TOPIC_PAGES, ...AIRPORT_REVIEWS].map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: topic.title,
-      url: topicHref(topic),
+      name: item.title,
+      url: "h1" in item ? topicHref(item) : reviewHref(item),
     })),
   });
 }
@@ -568,6 +736,186 @@ function accountButton(topic) {
 function accountSection(topic) {
   if (!topic.accountUrl) return "";
   return `    <p>小火箭账号入口：<a href="${topic.accountUrl}">${topic.accountUrl}</a>。页面会整理可用的 Shadowrocket 账号相关信息，账号状态可能变化，请以页面实时内容为准。</p>\n`;
+}
+
+function metricsRows(review) {
+  return review.metrics
+    .map(([label, value]) => `        <tr><th>${escapeHtml(label)}</th><td>${escapeHtml(value)}</td></tr>`)
+    .join("\n");
+}
+
+function evidenceMarkup(review) {
+  if (!review.evidence?.length) return "";
+  return `    <h2>套餐、测速与解锁截图</h2>
+    <p>${escapeHtml(review.testTime || "以下截图为本次测评记录，后续节点和解锁结果可能变化。")}</p>
+    <div class="evidence-grid">
+${review.evidence
+  .map(
+    (item) => `      <figure class="evidence-card">
+        <img src="${escapeHtml(item.src)}" width="${item.width}" height="${item.height}" loading="lazy" decoding="async" alt="${escapeHtml(item.alt)}">
+        <figcaption><strong>${escapeHtml(item.title)}</strong>${escapeHtml(item.caption)}</figcaption>
+      </figure>`
+  )
+  .join("\n")}
+    </div>
+`;
+}
+
+function reviewsIndexHtml(parts) {
+  return `<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>机场测评列表：星航、环球港、飞兔云、淘气兔 | Zhuhai Free Nodes</title>
+  <meta name="description" content="机场测评小板块，整理星航机场、环球港机场、飞兔云机场、淘气兔机场的套餐、节点、协议、流媒体和购买前注意事项。">
+  <meta name="keywords" content="机场测评, 机场推荐, 星航机场, 环球港机场, 飞兔云机场, 淘气兔机场, 稳定机场">
+  <link rel="canonical" href="${SITE_URL}/reviews/">
+  <style>${sharedStyles()}</style>
+  ${jsonLd({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "机场测评列表",
+    description: "星航、环球港、飞兔云、淘气兔机场测评入口。",
+    url: `${SITE_URL}/reviews/`,
+    dateModified: dateKey(parts),
+    isPartOf: { "@type": "WebSite", name: "Zhuhai Free Nodes", url: `${SITE_URL}/` },
+  })}
+  ${jsonLd({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "机场测评条目",
+    itemListElement: AIRPORT_REVIEWS.map((review, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: review.title,
+      url: reviewHref(review),
+    })),
+  })}
+</head>
+<body>
+  <main>
+    <header>
+      <h1>机场测评列表</h1>
+      <p>这个小板块承接免费节点用户的下一步搜索意图：当公开免费节点不够稳定时，先看机场套餐、节点、协议、测速和购买提醒，再决定是否短期测试。</p>
+      <div class="actions">
+        <a class="button" href="../">返回免费节点首页</a>
+        <a class="button secondary" href="../topics/free-nodes.html">免费节点订阅</a>
+        <a class="button secondary" href="../topics/clash-mihomo-nodes.html">Clash / Mihomo 节点</a>
+      </div>
+    </header>
+
+    <section class="service-callout" aria-labelledby="review-method">
+      <h2 id="review-method">测评口径</h2>
+      <p>本站先做轻量测评入口，重点记录价格、节点规模、协议、地区覆盖、适合人群和购买前风险。具体速度、解锁和可用性会随时间变化，建议用户购买前先短周期测试。</p>
+    </section>
+
+    <div class="topic-grid">
+${reviewCards()}
+    </div>
+
+    <h2>免费节点和机场怎么选</h2>
+    <p class="note">免费节点适合临时测试、客户端学习和备用连接；机场更适合长期日常使用、多设备、固定订阅入口和更明确的售后维护。新手不要直接年付，先月付测试更稳。</p>
+
+    <footer>
+      <p><a href="../">返回首页</a> · <a href="../sitemap.xml">sitemap.xml</a> · <a href="../llms.txt">llms.txt</a></p>
+    </footer>
+  </main>
+</body>
+</html>
+`;
+}
+
+function reviewHtml(review, parts) {
+  const keywordName = review.name.replace(/机场$/, "");
+  return `<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${escapeHtml(review.title)} - Zhuhai Free Nodes</title>
+  <meta name="description" content="${escapeHtml(review.description)}">
+  <meta name="keywords" content="${escapeHtml(`${review.name}测评, ${keywordName}机场, ${review.name}怎么样, 机场推荐, 稳定机场, 免费节点和机场区别`)}">
+  <link rel="canonical" href="${reviewHref(review)}">
+  <style>${sharedStyles()}</style>
+  ${jsonLd({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: review.title,
+    description: review.description,
+    url: reviewHref(review),
+    datePublished: "2026-08-26",
+    dateModified: dateKey(parts),
+    author: { "@type": "Organization", name: "Zhuhai Free Nodes" },
+    publisher: { "@type": "Organization", name: "Zhuhai Free Nodes" },
+    about: { "@type": "Service", name: review.name },
+    isPartOf: { "@type": "WebSite", name: "Zhuhai Free Nodes", url: `${SITE_URL}/` },
+  })}
+  ${jsonLd({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "首页", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "机场测评", item: `${SITE_URL}/reviews/` },
+      { "@type": "ListItem", position: 3, name: review.name, item: reviewHref(review) },
+    ],
+  })}
+</head>
+<body>
+  <main>
+    <header>
+      <p class="service-eyebrow">机场测评 · 免费节点之外的稳定选择</p>
+      <h1>${escapeHtml(review.title)}</h1>
+      <p>${escapeHtml(review.description)}</p>
+      <div class="actions">
+        <a class="button" href="${review.url}" rel="sponsored nofollow noreferrer">打开${escapeHtml(review.name)}官网</a>
+        <a class="button secondary" href="./">返回测评列表</a>
+        <a class="button secondary" href="../">免费节点首页</a>
+      </div>
+    </header>
+
+    <section class="stats" aria-label="${escapeHtml(review.name)}核心信息">
+${review.highlights
+  .slice(0, 3)
+  .map((item) => `      <div class="stat"><strong>${escapeHtml(item)}</strong><span>${escapeHtml(review.name)}重点</span></div>`)
+  .join("\n")}
+    </section>
+
+    <h2>${escapeHtml(review.name)}基本信息</h2>
+    <table>
+      <tbody>
+${metricsRows(review)}
+      </tbody>
+    </table>
+
+${evidenceMarkup(review)}
+
+    <h2>${escapeHtml(review.name)}适合哪些用户</h2>
+${listMarkup(review.bestFor, "step-list")}
+
+    <h2>购买前注意事项</h2>
+${listMarkup(review.cautions)}
+
+    <h2>${escapeHtml(review.name)}与免费节点怎么选</h2>
+    <p>如果只是临时测试客户端、验证订阅格式或备用连接，可以先用本站免费节点。若你需要固定订阅入口、更多节点地区、多设备使用、流媒体或 AI 工具长期可用，再考虑把 ${escapeHtml(review.name)} 作为候选。</p>
+    <p class="note">机场测评不是保证可用性的承诺。节点速度、流媒体解锁、ChatGPT 可用性和晚高峰体验都会变化，购买前建议先短周期测试。</p>
+
+    <h2>${escapeHtml(review.name)}访问入口</h2>
+    <p><a href="${review.url}" rel="sponsored nofollow noreferrer">打开${escapeHtml(review.name)}官网注册或查看套餐</a></p>
+
+    <h2>相关评测</h2>
+    <p>${AIRPORT_REVIEWS.filter((item) => item.slug !== review.slug)
+      .map((item) => `<a href="${item.slug}.html">${escapeHtml(item.name)}测评</a>`)
+      .join(" · ")}</p>
+
+    <footer>
+      <p>节点和机场信息仅供学习、研究和购买前参考。请遵守所在地法律法规和相关服务条款。</p>
+      <p><a href="./">机场测评列表</a> · <a href="../topics/free-nodes.html">免费节点订阅</a> · <a href="${REPO_URL}">GitHub 仓库</a></p>
+    </footer>
+  </main>
+</body>
+</html>
+`;
 }
 
 function indexHtml(stats, parts) {
@@ -613,6 +961,7 @@ function indexHtml(stats, parts) {
         <a class="button" href="#base64">V2Ray Base64 订阅</a>
         <a class="button secondary" href="#clash">Clash / Mihomo YAML</a>
         <a class="button secondary" href="#topics">关键词专题</a>
+        <a class="button secondary" href="reviews/">机场测评</a>
         <a class="button secondary" href="#tutorials">使用教程</a>
         <a class="button secondary" href="topics/telegram-premium.html">Telegram Premium</a>
       </div>
@@ -637,6 +986,15 @@ function indexHtml(stats, parts) {
     <div class="topic-grid">
 ${topicCards()}
     </div>
+
+    <section class="service-callout" aria-labelledby="airport-reviews">
+      <h2 id="airport-reviews">机场测评</h2>
+      <p>免费节点适合临时测试，长期使用更需要看节点地区、套餐价格、晚高峰表现、流媒体和售后。本站先整理星航、环球港、飞兔云、淘气兔四篇轻量测评，后续按数据继续补充。</p>
+      <div class="topic-grid">
+${homepageReviewCards()}
+      </div>
+      <p><a href="reviews/">查看全部机场测评</a></p>
+    </section>
 
     <section class="service-callout" aria-labelledby="services">
       <h2 id="services">附加服务</h2>
@@ -1074,7 +1432,9 @@ async function sitemapXml(parts) {
     { loc: `${SITE_URL}/`, freq: "hourly", priority: "1.0" },
     { loc: `${SITE_URL}/seo-insights.html`, freq: "daily", priority: "0.8" },
     { loc: `${SITE_URL}/competitors.html`, freq: "weekly", priority: "0.7" },
+    { loc: `${SITE_URL}/reviews/`, freq: "weekly", priority: "0.8" },
     ...TOPIC_PAGES.map((topic) => ({ loc: topicHref(topic), freq: "daily", priority: "0.9" })),
+    ...AIRPORT_REVIEWS.map((review) => ({ loc: reviewHref(review), freq: "weekly", priority: "0.7" })),
     ...SERVICE_PAGES.map((service) => ({ loc: service.url, freq: "weekly", priority: "0.6" })),
   ];
 
@@ -1149,6 +1509,11 @@ ${TOPIC_PAGES.map((topic) => `- ${topic.title}: ${topicHref(topic)}`).join("\n")
 
 ${SERVICE_PAGES.map((service) => `- ${service.title}: ${service.url}`).join("\n")}
 
+## Airport Reviews
+
+- Index: ${SITE_URL}/reviews/
+${AIRPORT_REVIEWS.map((review) => `- ${review.name}: ${reviewHref(review)}`).join("\n")}
+
 ## Keywords
 
 ${KEYWORDS.join(", ")}
@@ -1164,6 +1529,7 @@ function updateReadme(readme, parts) {
   const absoluteArchiveUrl = `${SITE_URL}/${archiveFile(parts)}`;
   const topicList = TOPIC_PAGES.map((topic) => `- ${topic.title}：[${topicHref(topic)}](${topicHref(topic)})`).join("\n");
   const serviceList = SERVICE_PAGES.map((service) => `- ${service.title}：[${service.url}](${service.url})`).join("\n");
+  const reviewList = AIRPORT_REVIEWS.map((review) => `- ${review.name}：[${reviewHref(review)}](${reviewHref(review)})`).join("\n");
   const section = `## GitHub Pages、SEO / GEO 与每日归档
 
 如果 GitHub Pages 已开启，可以访问项目页面：
@@ -1178,6 +1544,11 @@ function updateReadme(readme, parts) {
 关键词专题页：
 
 ${topicList}
+
+机场测评小板块：
+
+- 测评列表：[${SITE_URL}/reviews/](${SITE_URL}/reviews/)
+${reviewList}
 
 附加服务页：
 
@@ -1213,9 +1584,14 @@ const todayArchive = archiveFile(parts);
 
 await mkdir(path.dirname(todayArchive), { recursive: true });
 await mkdir("topics", { recursive: true });
+await mkdir("reviews", { recursive: true });
 await writeFile("index.html", indexHtml(stats, parts));
 for (const topic of TOPIC_PAGES) {
   await writeFile(topicFile(topic), topicHtml(topic, stats, parts));
+}
+await writeFile("reviews/index.html", reviewsIndexHtml(parts));
+for (const review of AIRPORT_REVIEWS) {
+  await writeFile(reviewFile(review), reviewHtml(review, parts));
 }
 await writeFile("topics/telegram-premium.html", telegramPremiumHtml(parts));
 await writeFile("competitors.html", competitorsHtml(parts));

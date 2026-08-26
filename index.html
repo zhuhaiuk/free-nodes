@@ -65,11 +65,17 @@
     .pricing-card span { color: var(--muted); }
     .proof-list { display: grid; gap: 10px; margin: 14px 0 0; padding: 0; list-style: none; }
     .proof-list li { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .evidence-grid { display: grid; gap: 16px; margin: 16px 0 24px; }
+    .evidence-card { margin: 0; border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .evidence-card img { display: block; width: 100%; height: auto; background: var(--soft); }
+    .evidence-card figcaption { padding: 12px 14px; color: var(--muted); font-size: .95rem; line-height: 1.55; }
+    .evidence-card strong { display: block; margin-bottom: 4px; color: var(--ink); font-size: 1rem; }
     ul.clean { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
     ul.clean li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
     ul.clean li:last-child { border-bottom: 0; }
     table { width: 100%; border-collapse: collapse; margin: 20px 0; }
     th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 10px 8px; vertical-align: top; }
+    th { width: 34%; min-width: 7em; white-space: nowrap; }
     footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
     @media (max-width: 900px) { .tutorial-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 720px) { .stats, .lists, .topic-grid, .competitor-grid, .tutorial-grid, .trust-grid, .pricing-grid { grid-template-columns: 1fr; } main { padding-top: 24px; } .premium-visual { grid-template-columns: 1fr; } }
@@ -169,6 +175,30 @@
       "position": 5,
       "name": "Shadowrocket 小火箭账号",
       "url": "https://nodes.zhuhai.uk/topics/shadowrocket-account.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "星航机场测评：无限流量、不限设备、28 个节点与 9 个地区",
+      "url": "https://nodes.zhuhai.uk/reviews/xinghang.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "环球港机场测评：1 元/月起、无限流量、不限设备与 50+ 节点",
+      "url": "https://nodes.zhuhai.uk/reviews/huanqiugang.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "飞兔云机场测评：AnyTLS 与 Shadowsocks、69 个节点、流媒体解锁",
+      "url": "https://nodes.zhuhai.uk/reviews/feituyun.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "淘气兔机场测评：AnyTLS 与 Shadowsocks、52 个节点、6 个地区",
+      "url": "https://nodes.zhuhai.uk/reviews/taoqitu.html"
     }
   ]
 }
@@ -183,6 +213,7 @@
         <a class="button" href="#base64">V2Ray Base64 订阅</a>
         <a class="button secondary" href="#clash">Clash / Mihomo YAML</a>
         <a class="button secondary" href="#topics">关键词专题</a>
+        <a class="button secondary" href="reviews/">机场测评</a>
         <a class="button secondary" href="#tutorials">使用教程</a>
         <a class="button secondary" href="topics/telegram-premium.html">Telegram Premium</a>
       </div>
@@ -231,6 +262,34 @@
         <p class="intent">寻找 Shadowrocket 小火箭账号入口、下载提醒和 iOS 免费节点导入说明。</p>
       </section>
     </div>
+
+    <section class="service-callout" aria-labelledby="airport-reviews">
+      <h2 id="airport-reviews">机场测评</h2>
+      <p>免费节点适合临时测试，长期使用更需要看节点地区、套餐价格、晚高峰表现、流媒体和售后。本站先整理星航、环球港、飞兔云、淘气兔四篇轻量测评，后续按数据继续补充。</p>
+      <div class="topic-grid">
+      <section class="topic-card">
+        <h3><a href="reviews/xinghang.html">星航机场测评</a></h3>
+        <p>星航机场测评，整理无限流量、不限设备、28 个节点、9 个国家和地区、流媒体解锁、节点测速和 50% AFF 返利信息。</p>
+        <p class="intent">8.9 元/月起 · 无限流量 · 不限设备</p>
+      </section>
+      <section class="topic-card">
+        <h3><a href="reviews/huanqiugang.html">环球港机场测评</a></h3>
+        <p>环球港机场测评，整理 1 元/月起、无限流量、不限设备、50+ 节点、高速专线、流媒体解锁和购买前注意事项。</p>
+        <p class="intent">1 元/月起 · 无限流量 · 不限设备</p>
+      </section>
+      <section class="topic-card">
+        <h3><a href="reviews/feituyun.html">飞兔云机场测评</a></h3>
+        <p>飞兔云机场测评，整理 AnyTLS、Shadowsocks 协议、69 个节点、套餐价格、延迟测速、流媒体和 ChatGPT 解锁表现。</p>
+        <p class="intent">AnyTLS / Shadowsocks · 69 个节点 · 覆盖常用地区</p>
+      </section>
+      <section class="topic-card">
+        <h3><a href="reviews/taoqitu.html">淘气兔机场测评</a></h3>
+        <p>淘气兔机场测评，整理 AnyTLS、Shadowsocks 协议、52 个节点、6 个国家地区、套餐价格、延迟测速、流媒体和 ChatGPT 解锁表现。</p>
+        <p class="intent">AnyTLS / Shadowsocks · 52 个节点 · 覆盖 6 个国家和地区</p>
+      </section>
+      </div>
+      <p><a href="reviews/">查看全部机场测评</a></p>
+    </section>
 
     <section class="service-callout" aria-labelledby="services">
       <h2 id="services">附加服务</h2>

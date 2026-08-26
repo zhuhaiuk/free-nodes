@@ -65,11 +65,17 @@
     .pricing-card span { color: var(--muted); }
     .proof-list { display: grid; gap: 10px; margin: 14px 0 0; padding: 0; list-style: none; }
     .proof-list li { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+    .evidence-grid { display: grid; gap: 16px; margin: 16px 0 24px; }
+    .evidence-card { margin: 0; border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .evidence-card img { display: block; width: 100%; height: auto; background: var(--soft); }
+    .evidence-card figcaption { padding: 12px 14px; color: var(--muted); font-size: .95rem; line-height: 1.55; }
+    .evidence-card strong { display: block; margin-bottom: 4px; color: var(--ink); font-size: 1rem; }
     ul.clean { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
     ul.clean li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 14px; border-bottom: 1px solid var(--line); }
     ul.clean li:last-child { border-bottom: 0; }
     table { width: 100%; border-collapse: collapse; margin: 20px 0; }
     th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 10px 8px; vertical-align: top; }
+    th { width: 34%; min-width: 7em; white-space: nowrap; }
     footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
     @media (max-width: 900px) { .tutorial-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 720px) { .stats, .lists, .topic-grid, .competitor-grid, .tutorial-grid, .trust-grid, .pricing-grid { grid-template-columns: 1fr; } main { padding-top: 24px; } .premium-visual { grid-template-columns: 1fr; } }

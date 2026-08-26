@@ -41,6 +41,14 @@
 - 免费 V2Ray 节点订阅链接：[https://nodes.zhuhai.uk/topics/v2ray-nodes.html](https://nodes.zhuhai.uk/topics/v2ray-nodes.html)
 - Shadowrocket 小火箭账号：[https://nodes.zhuhai.uk/topics/shadowrocket-account.html](https://nodes.zhuhai.uk/topics/shadowrocket-account.html)
 
+机场测评小板块：
+
+- 测评列表：[https://nodes.zhuhai.uk/reviews/](https://nodes.zhuhai.uk/reviews/)
+- 星航机场：[https://nodes.zhuhai.uk/reviews/xinghang.html](https://nodes.zhuhai.uk/reviews/xinghang.html)
+- 环球港机场：[https://nodes.zhuhai.uk/reviews/huanqiugang.html](https://nodes.zhuhai.uk/reviews/huanqiugang.html)
+- 飞兔云机场：[https://nodes.zhuhai.uk/reviews/feituyun.html](https://nodes.zhuhai.uk/reviews/feituyun.html)
+- 淘气兔机场：[https://nodes.zhuhai.uk/reviews/taoqitu.html](https://nodes.zhuhai.uk/reviews/taoqitu.html)
+
 附加服务页：
 
 - Telegram Premium 会员赠送：[https://nodes.zhuhai.uk/topics/telegram-premium.html](https://nodes.zhuhai.uk/topics/telegram-premium.html)

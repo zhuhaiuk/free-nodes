@@ -124,6 +124,29 @@ All spacing derives from 4px.
 - Spacing: --space-4 padding.
 - Accessibility: question text must be readable without expanding interaction.
 
+### Airport Review Card
+
+- Structure: section with H3 link, short review summary, and one intent/highlight line.
+- Variants: homepage preview, reviews index item.
+- Spacing: same as Topic Card.
+- States: link hover only; card remains a readable content block rather than a fake full-card button.
+- Accessibility: review names and claims must be visible text, not image-only content.
+
+### Review Detail Table
+
+- Structure: two-column table with metric label and value.
+- Variants: airport facts, subscription facts.
+- Spacing: table cell padding follows --space-2 to --space-3.
+- Accessibility: use real table markup for label/value comparison.
+
+### Evidence Figure
+
+- Structure: `figure` with one responsive screenshot and `figcaption`.
+- Variants: plan screenshot, speed test screenshot, streaming unlock screenshot.
+- Spacing: --space-4 external gap, --space-3 caption padding.
+- Accessibility: screenshots need specific alt text naming the airport, image type, and key facts visible in the image.
+- Performance: every image includes intrinsic width and height to prevent layout shift.
+
 ## 6. Motion & Interaction
 
 ### Timing
