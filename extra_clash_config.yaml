@@ -1,69 +1,222 @@
 proxies:
-- name: US - zhuhai.uk 07
+- name: HK - zhuhai.uk 03
   type: vless
-  server: 192.204.58.167
+  server: 91.193.58.145
+  port: 80
+  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/pyip=telegram-wangcai2\U0001F1E8\U0001F1F3"
+    headers:
+      Host: twilight-poetry-2bfe.218-699.workers.dev
+- name: US - zhuhai.uk 01
+  type: vless
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/pyip=Telegram\U0001F1E8\U0001F1F3+@WangCai2"
+    headers:
+      Host: round-haze-8783.294.workers.dev
+- name: US - zhuhai.uk 08
+  type: vless
+  server: 80.93.202.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/"
+    headers:
+      Host: vms.lifetime02.workers.dev
+- name: GB - zhuhai.uk 03
+  type: vless
+  server: 166.62.107.2
+  port: 8880
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/pyip=Telegram\U0001F1E8\U0001F1F3 @WangCai2"
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+- name: HK - zhuhai.uk 01
+  type: vless
+  server: 172.64.153.36
+  port: 80
+  uuid: b4f25b41-cc8e-49eb-bdb8-83dd8c7e542d
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: cfnew.schzyc.cc.cd
+- name: GB - zhuhai.uk 01
+  type: vless
+  server: 45.40.149.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/"
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: GB - zhuhai.uk 02
+  type: vless
+  server: mtn.v2plus.ovh
+  port: 80
+  uuid: 2cf79e40-74fe-4de9-ae0e-e496620a09a6
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/BMnajv3ovlpn8Abs"
+    headers:
+      Host: worker3.fexepit851.workers.dev
+- name: US - zhuhai.uk 09
+  type: vless
+  server: 188.164.248.67
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  network: ws
+  tls: true
+  servername: vp21.cc.cd
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: vp21.cc.cd
+- name: US - zhuhai.uk 10
+  type: vless
+  server: 188.164.248.123
   port: 8443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   network: ws
   tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  servername: vp21.cc.cd
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/"
     headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: US - zhuhai.uk 05
+      Host: vp21.cc.cd
+- name: US - zhuhai.uk 03
   type: vless
-  server: w1.lianjieni.com
+  server: 172.64.151.254
+  port: 2096
+  uuid: 341832cc-ba98-425b-8225-b3db621a0da3
+  udp: true
+  network: ws
+  tls: true
+  servername: oyue.rainfall0705.cc.cd
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: oyue.rainfall0705.cc.cd
+- name: NL - zhuhai.uk 02
+  type: vless
+  server: 199.232.78.159
   port: 443
-  uuid: 56a51c04-56b0-4ef2-a4ea-9a90ff3e44a5
+  uuid: 27315937-5479-49fd-867d-6b2f17246708
   udp: true
   network: ws
   tls: true
-  servername: w1.lianjieni.com
+  servername: ssl.fastly.com
   client-fingerprint: chrome
   ws-opts:
-    path: "/cdnws"
+    path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053"
     headers:
-      Host: w1.lianjieni.com
-- name: DE - zhuhai.uk 06
-  type: ss
-  server: 89.168.121.246
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: pQSE/JNCbTTwg9CA8m9uAW30avkS6ILWPUsXZB8L3C0=
-  udp: true
-- name: JP - zhuhai.uk 02
+      Host: pan1.global.ssl.fastly.net
+- name: NL - zhuhai.uk 01
   type: vless
-  server: 161.33.181.105
+  server: 199.232.78.159
   port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  uuid: ff4589d5-8c1b-4cd4-93d1-25db3635735d
   udp: true
   network: ws
   tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  servername: ssl.fastly.com
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053"
     headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: FR - zhuhai.uk 05
+      Host: pane3.global.ssl.fastly.net
+- name: NL - zhuhai.uk 04
   type: vless
-  server: 185.24.151.36
+  server: 151.101.56.7
+  port: 443
+  uuid: 363c62f2-3f2e-4b20-87eb-78765a67df25
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053"
+    headers:
+      Host: pane2.global.ssl.fastly.net
+- name: NL - zhuhai.uk 03
+  type: vless
+  server: 85.155.226.156
+  port: 443
+  uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: getsavesafe.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs
+    short-id: 82f5d3a1e9c0b661
+- name: FR - zhuhai.uk 07
+  type: vless
+  server: 185.24.151.242
   port: 443
   uuid: 8ff82100-8aad-4281-bf41-f318519d7182
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: us.jobinvest.ru
+  servername: jobinvest.ru
   client-fingerprint: firefox
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: JP - zhuhai.uk 01
+- name: IT - zhuhai.uk 03
   type: vless
-  server: 140.245.89.136
+  server: 104.105.78.231
+  port: 17780
+  uuid: a06119a7-4f1a-4592-86d9-e050a332b2b3
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
+    short-id: a0fbc54d937aaccb
+- name: US - zhuhai.uk 11
+  type: vless
+  server: sw.volnalink.uk
+  port: 2083
+  uuid: 4f8efa61-96db-1391-b134-9ce844e31228
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.booking.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: a3_DLO6p_ZfPf7I0JFTVlAI2pPAPtC-ji2diyPcHcQA
+    short-id: b4
+- name: NL - zhuhai.uk 09
+  type: vless
+  server: 91.223.119.174
   port: 443
   uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
   udp: true
@@ -72,49 +225,51 @@ proxies:
   servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/pg/10086-dfc816f117c49173fp=chrome"
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: FR - zhuhai.uk 01
+- name: IR - zhuhai.uk 02
   type: vless
-  server: youtube.sfproxy.fuck-rkn.dev
+  server: 31.59.125.49
   port: 443
-  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: jobinvest.ru
+  servername: eu-central.cendora.ru
   client-fingerprint: firefox
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: US - zhuhai.uk 01
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+- name: NL - zhuhai.uk 11
   type: vless
-  server: 185.24.151.236
-  port: 443
-  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
+  server: 185.214.10.72
+  port: 2053
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: ai.jobinvest.ru
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: DE - zhuhai.uk 05
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: NL - zhuhai.uk 10
   type: vless
-  server: 185.24.151.243
+  server: 188.226.174.73
   port: 443
-  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: jobinvest.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: cf3.schzyc.cc.cd
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/proxyip=ProxyIP.CMLiussss.net"
+    headers:
+      Host: cf3.schzyc.cc.cd
 - name: IR - zhuhai.uk 01
   type: vless
   server: 31.59.125.49
@@ -130,99 +285,7 @@ proxies:
   reality-opts:
     public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
     short-id: 00bca5982f82d083
-- name: FR - zhuhai.uk 08
-  type: vless
-  server: 217.60.37.28
-  port: 8443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: AT - zhuhai.uk 01
-  type: vless
-  server: 185.24.151.243
-  port: 443
-  uuid: 8ff82100-8aad-4281-bf41-f318519d7182
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: de.jobinvest.ru
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: FR - zhuhai.uk 07
-  type: vless
-  server: 104.253.79.6
-  port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: TW - zhuhai.uk 01
-  type: trojan
-  server: rrr2.tube-cat.com
-  port: 18372
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  udp: true
-  sni: r.tw3.cat.bilibili.com
-  skip-cert-verify: true
-- name: FR - zhuhai.uk 06
-  type: vless
-  server: 95.182.116.192
-  port: 2053
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: FR - zhuhai.uk 03
-  type: vless
-  server: 217.60.5.81
-  port: 2053
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: NL - zhuhai.uk 06
-  type: vless
-  server: 88.218.248.195
-  port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: NL - zhuhai.uk 02
+- name: NL - zhuhai.uk 08
   type: vless
   server: 91.223.119.197
   port: 443
@@ -233,107 +296,107 @@ proxies:
   servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/pg/10086-dfc816f117c49173fp=chrome"
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: NL - zhuhai.uk 01
+- name: IE - zhuhai.uk 03
   type: vless
-  server: 45.12.69.152
-  port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  server: 198.55.102.68
+  port: 2083
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
   network: ws
   tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  servername: eded-52n.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/"
     headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: GB - zhuhai.uk 03
+      Host: eded-52n.pages.dev
+- name: IE - zhuhai.uk 01
   type: vless
-  server: 193.219.99.51
+  server: 194.87.245.205
   port: 8443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
   network: ws
   tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  servername: eded-52n.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/"
     headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: NL - zhuhai.uk 03
+      Host: eded-52n.pages.dev
+- name: IE - zhuhai.uk 02
   type: vless
-  server: 91.223.119.174
+  server: 167.160.177.68
+  port: 2096
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: CZ - zhuhai.uk 01
+  type: vless
+  server: 194.182.80.100
   port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
   network: ws
   tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  servername: eded-52n.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/"
     headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: NL - zhuhai.uk 04
+      Host: eded-52n.pages.dev
+- name: NL - zhuhai.uk 06
   type: vless
-  server: 178.173.255.201
-  port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: GB - zhuhai.uk 02
-  type: vless
-  server: 193.219.99.36
+  server: 89.125.146.39
   port: 8443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
   udp: true
   network: ws
   tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  servername: cf3.schzyc.cc.cd
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/proxyip=ProxyIP.CMLiussss.net"
     headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: NL - zhuhai.uk 05
+      Host: cf3.schzyc.cc.cd
+- name: DE - zhuhai.uk 04
   type: vless
-  server: 185.214.10.72
-  port: 2053
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  server: 207.180.218.132
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
   network: ws
   tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  servername: eded-52n.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/"
     headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: HK - zhuhai.uk 01
+      Host: eded-52n.pages.dev
+- name: CH - zhuhai.uk 02
   type: vless
-  server: 155.117.224.127
+  server: 199.68.196.119
   port: 443
   uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
   udp: true
   network: ws
   tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
   client-fingerprint: chrome
   ws-opts:
     path: "/pg/10086-dfc816f117c49173"
     headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
 - name: SE - zhuhai.uk 02
   type: vless
   server: 94.242.59.31
@@ -348,77 +411,7 @@ proxies:
     path: "/pg/10086-dfc816f117c49173"
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: PL - zhuhai.uk 02
-  type: vless
-  server: 91.149.253.26
-  port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: PL - zhuhai.uk 01
-  type: vless
-  server: 193.124.41.236
-  port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: DE - zhuhai.uk 04
-  type: vless
-  server: 95.181.175.209
-  port: 8443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: AT - zhuhai.uk 02
-  type: vless
-  server: 91.199.154.97
-  port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: SE - zhuhai.uk 01
-  type: vless
-  server: 62.182.192.195
-  port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: EE - zhuhai.uk 02
+- name: EE - zhuhai.uk 03
   type: vless
   server: 5.101.118.52
   port: 443
@@ -432,9 +425,107 @@ proxies:
     path: "/pg/10086-dfc816f117c49173"
     headers:
       Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: SE - zhuhai.uk 03
+- name: SE - zhuhai.uk 04
   type: vless
-  server: 194.68.32.99
+  server: 185.239.141.89
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: DE - zhuhai.uk 08
+  type: vless
+  server: 85.192.26.210
+  port: 2053
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: BG - zhuhai.uk 01
+  type: vless
+  server: 13.140.29.253
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: BR - zhuhai.uk 01
+  type: vless
+  server: 216.238.110.198
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: EE - zhuhai.uk 02
+  type: vless
+  server: 5.45.118.220
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173fp=chrome"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: SE - zhuhai.uk 01
+  type: vless
+  server: 130.49.178.164
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: US - zhuhai.uk 06
+  type: vless
+  server: 13.140.29.144
+  port: 2087
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: US - zhuhai.uk 02
+  type: vless
+  server: 94.72.140.210
   port: 443
   uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
   udp: true
@@ -446,6 +537,34 @@ proxies:
     path: "/pg/10086-dfc816f117c49173"
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: DK - zhuhai.uk 01
+  type: vless
+  server: 77.37.97.204
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: DE - zhuhai.uk 07
+  type: vless
+  server: 31.76.34.203
+  port: 443
+  uuid: 423b1d79-08c4-0003-9d5e-c541f791b55f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: russia.cendora.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ZXi0bwZwOe9e5CMticA2-bU7qamHgs_sN-2kHygbDyk
+    short-id: e91da98020a38be9
 - name: LV - zhuhai.uk 01
   type: vless
   server: 188.253.20.190
@@ -460,49 +579,21 @@ proxies:
     path: "/pg/10086-dfc816f117c49173"
     headers:
       Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: EE - zhuhai.uk 01
+- name: NO - zhuhai.uk 03
   type: vless
-  server: 5.45.118.75
-  port: 8443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  server: 45.43.76.227
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
   network: ws
   tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  servername: eded-52n.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/"
     headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: DE - zhuhai.uk 07
-  type: vless
-  server: 80.211.249.240
-  port: 8443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: LT - zhuhai.uk 02
-  type: vless
-  server: 185.80.128.115
-  port: 8443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: AT - zhuhai.uk 03
+      Host: eded-52n.pages.dev
+- name: AT - zhuhai.uk 02
   type: vless
   server: 91.132.94.151
   port: 443
@@ -516,76 +607,76 @@ proxies:
     path: "/pg/10086-dfc816f117c49173"
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: DE - zhuhai.uk 08
+- name: AT - zhuhai.uk 01
   type: vless
-  server: 91.184.248.209
-  port: 2053
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  udp: true
-  network: ws
-  tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
-    headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: LT - zhuhai.uk 01
-  type: vless
-  server: 91.197.3.7
+  server: 91.132.94.151
   port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
   network: ws
   tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  servername: eded-52n.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/"
     headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: DE - zhuhai.uk 09
+      Host: eded-52n.pages.dev
+- name: US - zhuhai.uk 07
   type: vless
-  server: 77.110.121.157
+  server: 45.39.241.116
   port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
   network: ws
   tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  servername: eded-52n.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/"
     headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-- name: DE - zhuhai.uk 03
+      Host: eded-52n.pages.dev
+- name: PL - zhuhai.uk 01
   type: vless
-  server: 185.255.93.189
+  server: 191.44.32.253
   port: 443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
   network: ws
   tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  servername: eded-52n.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/"
     headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-- name: TR - zhuhai.uk 01
+      Host: eded-52n.pages.dev
+- name: PL - zhuhai.uk 03
   type: vless
-  server: 93.115.10.237
+  server: 91.108.237.23
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: SE - zhuhai.uk 03
+  type: vless
+  server: 46.8.71.115
   port: 8443
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
   network: ws
   tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  servername: eded-52n.pages.dev
   client-fingerprint: chrome
   ws-opts:
-    path: "/pg/10086-dfc816f117c49173"
+    path: "/"
     headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+      Host: eded-52n.pages.dev
 - name: DE - zhuhai.uk 01
   type: vless
   server: 31.76.34.203
@@ -600,66 +691,485 @@ proxies:
   reality-opts:
     public-key: ZXi0bwZwOe9e5CMticA2-bU7qamHgs_sN-2kHygbDyk
     short-id: e91da98020a38be9
-- name: KR - zhuhai.uk 02
+- name: DE - zhuhai.uk 05
   type: vless
-  server: 178.83.31.93
-  port: 443
-  uuid: 4a97788b-5d8a-410c-875c-ba36930e185e
+  server: 80.211.250.20
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: www.cloudflare.com
+  servername: eded-52n.pages.dev
   client-fingerprint: chrome
-  reality-opts:
-    public-key: 989gq45ogQSZLDoUTcLNSYW5v_3ER7W_6Oi_8swZzXo
-    short-id: cb55f541
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: IT - zhuhai.uk 01
+  type: trojan
+  server: kkvlvvq-a.catcat321.com
+  port: 20065
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  udp: true
+  sni: hk.catxstar.com
+- name: UA - zhuhai.uk 01
+  type: trojan
+  server: hkdcrtc-e.catcat321.com
+  port: 20066
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  udp: true
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: NO - zhuhai.uk 02
+  type: trojan
+  server: kkvlvvq-a.catcat321.com
+  port: 20085
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  udp: true
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 01
+  type: vless
+  server: 185.39.30.18
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: AL - zhuhai.uk 01
+  type: vless
+  server: 91.239.6.40
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: NO - zhuhai.uk 01
+  type: trojan
+  server: kkvlvvq-a.catcat321.com
+  port: 20085
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  udp: true
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: IT - zhuhai.uk 02
+  type: trojan
+  server: kkvlvvq-a.catcat321.com
+  port: 20065
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  udp: true
+  sni: hk.catxstar.com
+- name: MD - zhuhai.uk 01
+  type: vless
+  server: 193.36.38.222
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: RO - zhuhai.uk 02
+  type: vless
+  server: 81.180.92.55
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: HU - zhuhai.uk 01
+  type: vless
+  server: 38.180.109.174
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: UA - zhuhai.uk 02
+  type: vless
+  server: 213.111.149.58
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: RS - zhuhai.uk 01
+  type: vless
+  server: 185.48.250.138
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: DE - zhuhai.uk 06
+  type: vless
+  server: 62.60.228.84
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: US - zhuhai.uk 04
+  type: vless
+  server: 138.124.107.35
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: HK - zhuhai.uk 02
+  type: vless
+  server: 43.174.193.1
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: JP - zhuhai.uk 01
+  type: vless
+  server: 43.174.195.1
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: DE - zhuhai.uk 02
+  type: vless
+  server: 45.80.228.24
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: DE - zhuhai.uk 09
+  type: vless
+  server: 77.110.120.45
+  port: 8443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: IL - zhuhai.uk 02
+  type: vless
+  server: 192.71.27.237
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: US - zhuhai.uk 05
+  type: vless
+  server: 178.253.45.198
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: IN - zhuhai.uk 01
+  type: vless
+  server: 65.20.85.14
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: IL - zhuhai.uk 01
+  type: vless
+  server: 64.176.170.68
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: DE - zhuhai.uk 03
+  type: vless
+  server: 185.255.93.189
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+- name: MY - zhuhai.uk 01
+  type: vless
+  server: 149.118.158.90
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: MY - zhuhai.uk 02
+  type: vless
+  server: 216.173.67.119
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: ZA - zhuhai.uk 01
+  type: vless
+  server: 139.84.230.41
+  port: 443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: MO - zhuhai.uk 01
+  type: trojan
+  server: kkvlvvq-a.catcat321.com
+  port: 20068
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  udp: true
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: PL - zhuhai.uk 02
+  type: vless
+  server: 193.124.41.236
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/pg/10086-dfc816f117c49173"
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+- name: KG - zhuhai.uk 01
+  type: vless
+  server: 188.240.213.98
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
+- name: SK - zhuhai.uk 01
+  type: vless
+  server: 89.46.42.141
+  port: 8443
+  uuid: 2eadb97f-bba4-4471-8d55-bd461525a2dc
+  udp: true
+  network: ws
+  tls: true
+  servername: eded-52n.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: eded-52n.pages.dev
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 07
-  - US - zhuhai.uk 05
-  - DE - zhuhai.uk 06
-  - JP - zhuhai.uk 02
-  - FR - zhuhai.uk 05
-  - JP - zhuhai.uk 01
-  - FR - zhuhai.uk 01
+  - HK - zhuhai.uk 03
   - US - zhuhai.uk 01
-  - DE - zhuhai.uk 05
-  - IR - zhuhai.uk 01
-  - FR - zhuhai.uk 08
-  - AT - zhuhai.uk 01
-  - FR - zhuhai.uk 07
-  - TW - zhuhai.uk 01
-  - FR - zhuhai.uk 06
-  - FR - zhuhai.uk 03
-  - NL - zhuhai.uk 06
+  - US - zhuhai.uk 08
+  - GB - zhuhai.uk 03
+  - HK - zhuhai.uk 01
+  - GB - zhuhai.uk 01
+  - GB - zhuhai.uk 02
+  - US - zhuhai.uk 09
+  - US - zhuhai.uk 10
+  - US - zhuhai.uk 03
   - NL - zhuhai.uk 02
   - NL - zhuhai.uk 01
-  - GB - zhuhai.uk 03
-  - NL - zhuhai.uk 03
   - NL - zhuhai.uk 04
-  - GB - zhuhai.uk 02
-  - NL - zhuhai.uk 05
-  - HK - zhuhai.uk 01
-  - SE - zhuhai.uk 02
-  - PL - zhuhai.uk 02
-  - PL - zhuhai.uk 01
+  - NL - zhuhai.uk 03
+  - FR - zhuhai.uk 07
+  - IT - zhuhai.uk 03
+  - US - zhuhai.uk 11
+  - NL - zhuhai.uk 09
+  - IR - zhuhai.uk 02
+  - NL - zhuhai.uk 11
+  - NL - zhuhai.uk 10
+  - IR - zhuhai.uk 01
+  - NL - zhuhai.uk 08
+  - IE - zhuhai.uk 03
+  - IE - zhuhai.uk 01
+  - IE - zhuhai.uk 02
+  - CZ - zhuhai.uk 01
+  - NL - zhuhai.uk 06
   - DE - zhuhai.uk 04
-  - AT - zhuhai.uk 02
-  - SE - zhuhai.uk 01
-  - EE - zhuhai.uk 02
-  - SE - zhuhai.uk 03
-  - LV - zhuhai.uk 01
-  - EE - zhuhai.uk 01
-  - DE - zhuhai.uk 07
-  - LT - zhuhai.uk 02
-  - AT - zhuhai.uk 03
+  - CH - zhuhai.uk 02
+  - SE - zhuhai.uk 02
+  - EE - zhuhai.uk 03
+  - SE - zhuhai.uk 04
   - DE - zhuhai.uk 08
-  - LT - zhuhai.uk 01
-  - DE - zhuhai.uk 09
-  - DE - zhuhai.uk 03
-  - TR - zhuhai.uk 01
+  - BG - zhuhai.uk 01
+  - BR - zhuhai.uk 01
+  - EE - zhuhai.uk 02
+  - SE - zhuhai.uk 01
+  - US - zhuhai.uk 06
+  - US - zhuhai.uk 02
+  - DK - zhuhai.uk 01
+  - DE - zhuhai.uk 07
+  - LV - zhuhai.uk 01
+  - NO - zhuhai.uk 03
+  - AT - zhuhai.uk 02
+  - AT - zhuhai.uk 01
+  - US - zhuhai.uk 07
+  - PL - zhuhai.uk 01
+  - PL - zhuhai.uk 03
+  - SE - zhuhai.uk 03
   - DE - zhuhai.uk 01
-  - KR - zhuhai.uk 02
+  - DE - zhuhai.uk 05
+  - IT - zhuhai.uk 01
+  - UA - zhuhai.uk 01
+  - NO - zhuhai.uk 02
+  - RO - zhuhai.uk 01
+  - AL - zhuhai.uk 01
+  - NO - zhuhai.uk 01
+  - IT - zhuhai.uk 02
+  - MD - zhuhai.uk 01
+  - RO - zhuhai.uk 02
+  - HU - zhuhai.uk 01
+  - UA - zhuhai.uk 02
+  - RS - zhuhai.uk 01
+  - DE - zhuhai.uk 06
+  - US - zhuhai.uk 04
+  - HK - zhuhai.uk 02
+  - JP - zhuhai.uk 01
+  - DE - zhuhai.uk 02
+  - DE - zhuhai.uk 09
+  - IL - zhuhai.uk 02
+  - US - zhuhai.uk 05
+  - IN - zhuhai.uk 01
+  - IL - zhuhai.uk 01
+  - DE - zhuhai.uk 03
+  - MY - zhuhai.uk 01
+  - MY - zhuhai.uk 02
+  - ZA - zhuhai.uk 01
+  - MO - zhuhai.uk 01
+  - PL - zhuhai.uk 02
+  - KG - zhuhai.uk 01
+  - SK - zhuhai.uk 01
