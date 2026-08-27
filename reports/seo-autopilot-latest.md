@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-08-26T03:59:43.926Z
+生成时间：2026-08-27T14:05:28.489Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -26,41 +26,41 @@
 | free nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | free proxy nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | free Clash nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| free V2Ray nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| free V2Ray nodes | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
 
 ## Google 前排竞品域名
 
 | 域名 | 出现次数 |
 | --- | --- |
-| github.com | 35 |
-| youtube.com | 18 |
-| freeclashnode.com | 9 |
+| github.com | 32 |
+| google.com | 9 |
+| freeclashnode.com | 8 |
 | freenodes.github.io | 7 |
 | mibei77.com | 7 |
 | end-gfw.com | 5 |
+| b.freev2.net | 4 |
 | cfmem.com | 4 |
-| b.freev2.net | 3 |
+| youtube.com | 4 |
+| learncs.site | 3 |
 | linux.do | 3 |
-| v2rayshare.net | 3 |
 | ccbaohe.com | 2 |
-| freev2raynodes.github.io | 2 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| v2ray | 161 |
-| clash | 136 |
+| clash | 140 |
+| v2ray | 119 |
 | 免费节点 | 78 |
-| 机场 | 72 |
-| trojan | 64 |
-| 小火箭 | 57 |
-| 节点订阅 | 40 |
+| 机场 | 71 |
+| trojan | 56 |
+| 小火箭 | 51 |
 | 每日更新 | 37 |
-| shadowrocket | 27 |
-| shadowsocks | 26 |
-| mihomo | 25 |
-| 免费订阅 | 15 |
+| 节点订阅 | 35 |
+| shadowrocket | 32 |
+| shadowsocks | 24 |
+| 免费订阅 | 19 |
+| mihomo | 19 |
 
 ## 自动策略
 
