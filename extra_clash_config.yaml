@@ -1,34 +1,44 @@
 proxies:
-- name: JP - zhuhai.uk 03
+- name: DK - zhuhai.uk 01
   type: vless
-  server: xaxaxa.kdns.fr
+  server: 46.29.235.9
   port: 443
-  uuid: 5c958497-4461-499a-881b-b5e5bfeade62
+  uuid: d67af820-f54c-48ab-862c-19086357f276
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.oracle.com
+  servername: telegraf.lv
   client-fingerprint: chrome
   reality-opts:
-    public-key: 5qkRIcB3SAxOr6m76YHUHNFdhsaK7HXWPipELhPD8j4
-    short-id: 64299c2e
-- name: KR - zhuhai.uk 03
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: 9f7dddc4-6c77-4e2c-bfa4-7e5afdfd48f8
+    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+    short-id: a1b2c3d4
+- name: JP - zhuhai.uk 01
+  type: trojan
+  server: jp200m.jiasu.asia
+  port: 50000
+  password: '0964f6b7-6aab-4b84-9e80-dd078ed1f269'
   udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Wg07hKwQjSVmOsEHn7X1iLAXR2wkKRSyv8TZmq9ZsRA
-    short-id: 58186df4a95a1504
+  sni: jp200m.jiasu.asia
+- name: JP - zhuhai.uk 02
+  type: trojan
+  server: jp200m.jiasu.asia
+  port: 50000
+  password: d9ac7c6d-9ca8-4e1b-af9f-d268f69249b5
+  udp: true
+  sni: jp200m.jiasu.asia
+- name: JP - zhuhai.uk 03
+  type: trojan
+  server: jp200m.jiasu.asia
+  port: 50000
+  password: fd3f82cc-bf25-4d3a-a379-09834800ade9
+  udp: true
+  sni: jp200m.jiasu.asia
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
+  - DK - zhuhai.uk 01
+  - JP - zhuhai.uk 01
+  - JP - zhuhai.uk 02
   - JP - zhuhai.uk 03
-  - KR - zhuhai.uk 03
