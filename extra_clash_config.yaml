@@ -1,103 +1,34 @@
 proxies:
-- name: CO - zhuhai.uk 01
+- name: JP - zhuhai.uk 03
   type: vless
-  server: 158.247.120.174
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  udp: true
-  network: tcp
-- name: JP - zhuhai.uk 02
-  type: vless
-  server: 154.31.114.248
-  port: 50159
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: '091e1c5db8451757'
-- name: JP - zhuhai.uk 01
-  type: vless
-  server: 162.141.131.102
-  port: 50159
-  uuid: 063e01c2-4c0f-418e-9375-3cc1312f635b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: fLtEa_5BiN89xQDypfFMOu5o6DoUf6ch42jGdkXy6zE
-    short-id: 7f24526f7307c07a
-- name: SE - zhuhai.uk 01
-  type: vless
-  server: 88.216.189.177
+  server: xaxaxa.kdns.fr
   port: 443
-  uuid: bd1b4bd2-a312-433d-ae7b-d5d28f50af2a
+  uuid: 5c958497-4461-499a-881b-b5e5bfeade62
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: id.vk.com
+  servername: www.oracle.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5qkRIcB3SAxOr6m76YHUHNFdhsaK7HXWPipELhPD8j4
+    short-id: 64299c2e
+- name: KR - zhuhai.uk 03
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: 9f7dddc4-6c77-4e2c-bfa4-7e5afdfd48f8
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
   client-fingerprint: firefox
   reality-opts:
-    public-key: AjJEU0yOwxU1qq-6-M32xKTOOc0xI4dpTiRp5EzXIRM
-    short-id: '49'
-- name: AT - zhuhai.uk 01
-  type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: at.quattro-tech.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-- name: NO - zhuhai.uk 01
-  type: vless
-  server: 151.242.168.69
-  port: 335
-  uuid: 10000025-9365-7547-f000-30f4f61aa020
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: onlineraceentry.co.uk
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: XJhq5Vpqo6j5Xsd56EMAK8--8EWBZWc3tjf-WFnInio
-    short-id: ec2213ae33d5b43f
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: de.propollcenter.site
-  port: 34156
-  uuid: 16c50a3f-b9bd-45f5-9bcd-76bf878876f6
-  udp: true
-  network: tcp
-  tls: true
-  servername: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: BsCp88E9PdpEDjC5bxLMP2tiJYK6afCPQT_CoxCVgAI
-    short-id: d6cdfdd9a21f8d23
+    public-key: Wg07hKwQjSVmOsEHn7X1iLAXR2wkKRSyv8TZmq9ZsRA
+    short-id: 58186df4a95a1504
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - CO - zhuhai.uk 01
-  - JP - zhuhai.uk 02
-  - JP - zhuhai.uk 01
-  - SE - zhuhai.uk 01
-  - AT - zhuhai.uk 01
-  - NO - zhuhai.uk 01
-  - DE - zhuhai.uk 02
+  - JP - zhuhai.uk 03
+  - KR - zhuhai.uk 03
