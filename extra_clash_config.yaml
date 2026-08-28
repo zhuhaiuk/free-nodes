@@ -1,4 +1,74 @@
 proxies:
+- name: US - zhuhai.uk 02
+  type: vless
+  server: 38.77.133.141
+  port: 443
+  uuid: 0eb057bc-f4b2-425b-80c9-1ed982916480
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: mdw878be71y6U91o8i8ZruIkVILhcKf43yO98TGXZgo
+    short-id: bcef3e3d8584fa99
+- name: US - zhuhai.uk 05
+  type: vless
+  server: 172.235.38.85
+  port: 42942
+  uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.tesla.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
+    short-id: a56d7d8da977f860
+- name: US - zhuhai.uk 04
+  type: vless
+  server: 45.33.62.166
+  port: 43595
+  uuid: 2642f590-2bce-4031-8f93-7eed983621f5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: waNzNRIL_3TaF3UfgeAy1M5r8YVUeOA0nx3jPiXYZSE
+    short-id: e482c0320674c651
+- name: US - zhuhai.uk 01
+  type: vless
+  server: 45.33.107.60
+  port: 10974
+  uuid: da249715-4a6f-4873-ac3d-260f2b6e0065
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rQHsnXffkul9uYK50Efqzu-KBZ6ZwKNZts86r8u3iEw
+    short-id: a727f329ba2a22
+- name: GB - zhuhai.uk 01
+  type: vless
+  server: 31.76.9.56
+  port: 8443
+  uuid: a210cb80-f379-44e9-a103-97ba59357a46
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: xnod5x.artemida.live
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU
+    short-id: a1b2c3d4e5f6a7b8
 - name: PL - zhuhai.uk 01
   type: vless
   server: 217.60.25.51
@@ -15,6 +85,21 @@ proxies:
     short-id: ff776ff77be48b88
 - name: KR - zhuhai.uk 01
   type: vless
+  server: kr2-r.link-t7.com
+  port: 10047
+  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: KR - zhuhai.uk 02
+  type: vless
   server: kr5-r.link-t7.com
   port: 10050
   uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
@@ -28,7 +113,7 @@ proxies:
     short-id: 686c0ef0
   grpc-opts:
     grpc-service-name: update
-- name: KR - zhuhai.uk 02
+- name: KR - zhuhai.uk 03
   type: vless
   server: kr4-r.link-t7.com
   port: 10049
@@ -43,26 +128,16 @@ proxies:
     short-id: 686c0ef0
   grpc-opts:
     grpc-service-name: update
-- name: SG - zhuhai.uk 01
-  type: vless
-  server: sg3-r.link-t7.com
-  port: 10038
-  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
-  udp: true
-  network: grpc
-  tls: true
-  servername: d1.awsstatic.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: update
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
+  - US - zhuhai.uk 02
+  - US - zhuhai.uk 05
+  - US - zhuhai.uk 04
+  - US - zhuhai.uk 01
+  - GB - zhuhai.uk 01
   - PL - zhuhai.uk 01
   - KR - zhuhai.uk 01
   - KR - zhuhai.uk 02
-  - SG - zhuhai.uk 01
+  - KR - zhuhai.uk 03
