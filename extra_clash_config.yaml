@@ -1,44 +1,68 @@
 proxies:
-- name: DK - zhuhai.uk 01
+- name: PL - zhuhai.uk 01
   type: vless
-  server: 46.29.235.9
+  server: 217.60.25.51
   port: 443
-  uuid: d67af820-f54c-48ab-862c-19086357f276
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: telegraf.lv
+  servername: pol.freeinternat.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
+    short-id: ff776ff77be48b88
+- name: KR - zhuhai.uk 01
+  type: vless
+  server: kr5-r.link-t7.com
+  port: 10050
+  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
-    short-id: a1b2c3d4
-- name: JP - zhuhai.uk 01
-  type: trojan
-  server: jp200m.jiasu.asia
-  port: 50000
-  password: '0964f6b7-6aab-4b84-9e80-dd078ed1f269'
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: KR - zhuhai.uk 02
+  type: vless
+  server: kr4-r.link-t7.com
+  port: 10049
+  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
   udp: true
-  sni: jp200m.jiasu.asia
-- name: JP - zhuhai.uk 02
-  type: trojan
-  server: jp200m.jiasu.asia
-  port: 50000
-  password: d9ac7c6d-9ca8-4e1b-af9f-d268f69249b5
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: SG - zhuhai.uk 01
+  type: vless
+  server: sg3-r.link-t7.com
+  port: 10038
+  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
   udp: true
-  sni: jp200m.jiasu.asia
-- name: JP - zhuhai.uk 03
-  type: trojan
-  server: jp200m.jiasu.asia
-  port: 50000
-  password: fd3f82cc-bf25-4d3a-a379-09834800ade9
-  udp: true
-  sni: jp200m.jiasu.asia
+  network: grpc
+  tls: true
+  servername: d1.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - DK - zhuhai.uk 01
-  - JP - zhuhai.uk 01
-  - JP - zhuhai.uk 02
-  - JP - zhuhai.uk 03
+  - PL - zhuhai.uk 01
+  - KR - zhuhai.uk 01
+  - KR - zhuhai.uk 02
+  - SG - zhuhai.uk 01
