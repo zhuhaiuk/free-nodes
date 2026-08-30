@@ -229,6 +229,20 @@ proxies:
   port: 55443
   password: '083417772bc618cd61f0cca23dd91680'
   sni: gorbachev-new-th.kvnfreetest.uk
+- name: FR - zhuhai.uk 01
+  type: vless
+  server: 155.117.199.13
+  port: 29893
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdnjs.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
 - name: FR - zhuhai.uk 02
   type: vless
   server: 155.117.199.13
@@ -243,10 +257,10 @@ proxies:
   reality-opts:
     public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
     short-id: bc8e3658db7d1323
-- name: KR - zhuhai.uk 01
+- name: HK - zhuhai.uk 01
   type: vless
   server: 155.117.199.13
-  port: 39211
+  port: 31723
   uuid: f06c6039-a489-3d78-a676-ed43be6deca3
   udp: true
   network: tcp
@@ -257,6 +271,143 @@ proxies:
   reality-opts:
     public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
     short-id: bc8e3658db7d1323
+- name: HK - zhuhai.uk 02
+  type: vless
+  server: 155.117.199.13
+  port: 9713
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdnjs.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
+- name: SG - zhuhai.uk 06
+  type: vless
+  server: 140.245.109.76
+  port: 8444
+  uuid: e199ac6c-2528-485a-959d-8351a93f966b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tesla.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: OYHRKufAg09vpdsYBQB_vjikJ9DyE1KurtHQZRRLeWQ
+- name: SG - zhuhai.uk 05
+  type: vless
+  server: 140.245.109.76
+  port: 8444
+  uuid: e0a73956-4621-4772-9a8f-d15114a99d12
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tesla.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: OYHRKufAg09vpdsYBQB_vjikJ9DyE1KurtHQZRRLeWQ
+- name: CH - zhuhai.uk 01
+  type: vless
+  server: 152.67.81.171
+  port: 8444
+  uuid: e199ac6c-2528-485a-959d-8351a93f966b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tesla.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 7qOCfcEvImVg65UNXmT_84xj7yhUgDJ82ZIlsbA5Ejo
+- name: SG - zhuhai.uk 08
+  type: vless
+  server: 45.128.76.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  udp: true
+  network: ws
+  tls: true
+  servername: speed.dulacloud.store
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/dula?Telegram-WangCai2"
+    headers:
+      Host: speed.dulacloud.store
+- name: FR - zhuhai.uk 03
+  type: vless
+  server: 129.151.239.170
+  port: 8444
+  uuid: e199ac6c-2528-485a-959d-8351a93f966b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tesla.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: Pgzq-J8UfuBeYi0XSVTn3uYYmi9Rm2dpegks9Ko8M0Y
+- name: SG - zhuhai.uk 07
+  type: vless
+  server: 154.194.0.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  udp: true
+  network: ws
+  tls: true
+  servername: speed.dulacloud.store
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/dula?Telegram-WangCai2"
+    headers:
+      Host: speed.dulacloud.store
+- name: JP - zhuhai.uk 03
+  type: vless
+  server: 188.253.123.164
+  port: 39401
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdnjs.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
+- name: DE - zhuhai.uk 01
+  type: vless
+  server: rrr.windconnect.pro
+  port: 443
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rrr.windconnect.pro
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
+    short-id: 4da5d1853f04af6d
+- name: GB - zhuhai.uk 01
+  type: vless
+  server: 95.154.221.153
+  port: 443
+  uuid: 6c245314-225b-4999-9051-180b8dba117c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: strapi.io
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tPyAWkalFM4yi9lYY0zLDRxQyfSwPDwiexAy9QOjrWI
+    short-id: 42171a632f3b99ed
 proxy-groups:
 - name: 选择出口
   type: select
@@ -290,8 +441,19 @@ proxy-groups:
   - US - zhuhai.uk 03
   - TH - zhuhai.uk
   - TH - zhuhai.uk 02
+  - FR - zhuhai.uk 01
   - FR - zhuhai.uk 02
-  - KR - zhuhai.uk 01
+  - HK - zhuhai.uk 01
+  - HK - zhuhai.uk 02
+  - SG - zhuhai.uk 06
+  - SG - zhuhai.uk 05
+  - CH - zhuhai.uk 01
+  - SG - zhuhai.uk 08
+  - FR - zhuhai.uk 03
+  - SG - zhuhai.uk 07
+  - JP - zhuhai.uk 03
+  - DE - zhuhai.uk 01
+  - GB - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
