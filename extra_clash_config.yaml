@@ -1,8 +1,22 @@
 proxies:
-- name: FR - zhuhai.uk 01
+- name: FR - zhuhai.uk 02
   type: vless
   server: 155.117.199.13
   port: 39399
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdnjs.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: bc8e3658db7d1323
+- name: KR - zhuhai.uk 01
+  type: vless
+  server: 155.117.199.13
+  port: 39211
   uuid: f06c6039-a489-3d78-a676-ed43be6deca3
   udp: true
   network: tcp
@@ -17,4 +31,5 @@ proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - FR - zhuhai.uk 01
+  - FR - zhuhai.uk 02
+  - KR - zhuhai.uk 01
