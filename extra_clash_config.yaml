@@ -1,32 +1,30 @@
 proxies:
-- name: GB - zhuhai.uk 01
+- name: MX - zhuhai.uk 04
   type: vless
-  server: 95.154.221.153
-  port: 443
-  uuid: aca21480-2718-4f06-b408-a34f5908355c
+  server: 139.177.103.135
+  port: 8443
+  uuid: ca9df148-e636-47fe-9af6-fe8fe3eec197
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: strapi.io
-  client-fingerprint: firefox
+  servername: tesla.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: tPyAWkalFM4yi9lYY0zLDRxQyfSwPDwiexAy9QOjrWI
-    short-id: 42171a632f3b99ed
-- name: DE - zhuhai.uk 01
+    public-key: LiSrIOq9pojF5iZc2c660LUAESwEWbxzt1YR96xz4k4
+- name: MX - zhuhai.uk 01
   type: vless
-  server: 89.144.35.163
-  port: 443
-  uuid: 84491c04-b011-4fdc-b97d-770975586f3a
+  server: 139.177.103.135
+  port: 8443
+  uuid: 9d4e62b2-b2fd-46bf-b63b-e129edd1524d
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: ads.x5.ru
-  client-fingerprint: firefox
+  servername: tesla.com
+  client-fingerprint: safari
   reality-opts:
-    public-key: cszyeuoXE1nOdNWsVoh5ECs3yaZdMx_GHuPl7PaKwxc
-    short-id: 1004ce38
+    public-key: LiSrIOq9pojF5iZc2c660LUAESwEWbxzt1YR96xz4k4
 - name: FI - zhuhai.uk 01
   type: vless
   server: 138.124.8.117
@@ -37,45 +35,149 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: fin2.helper-internet.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
     public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
     short-id: ff776ff77be48b88
-- name: TR - zhuhai.uk 01
+- name: TH - zhuhai.uk 01
   type: vless
-  server: premium-tr.geodema.network
-  port: 8443
-  uuid: 78eb4455-0d07-4bc2-93e3-7c8654f11d74
+  server: 159.194.234.196
+  port: 16445
+  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.apple.com
+  servername: fr.aeternavpn.space
+  client-fingerprint: edge
+  reality-opts:
+    public-key: BfWH0Semc11YkTslIO_Igss921A5J3JMmq_i2FaZxDo
+    short-id: a1b2c3d4
+- name: PL - zhuhai.uk 01
+  type: vless
+  server: 62.113.106.165
+  port: 5012
+  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl.aeternavpn.space
+  client-fingerprint: qq
+  reality-opts:
+    public-key: S-hF71pRzH9xT1zd3spq6RGlXCrpzyWpTmVKHbdTERg
+    short-id: a1b2c3d4
+- name: SG - zhuhai.uk 03
+  type: vless
+  server: 140.245.109.76
+  port: 8444
+  uuid: 9d4e62b2-b2fd-46bf-b63b-e129edd1524d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tesla.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: OYHRKufAg09vpdsYBQB_vjikJ9DyE1KurtHQZRRLeWQ
+- name: SG - zhuhai.uk 01
+  type: vless
+  server: 140.245.109.76
+  port: 8444
+  uuid: ca9df148-e636-47fe-9af6-fe8fe3eec197
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tesla.com
+  client-fingerprint: edge
+  reality-opts:
+    public-key: OYHRKufAg09vpdsYBQB_vjikJ9DyE1KurtHQZRRLeWQ
+- name: US - zhuhai.uk 03
+  type: vless
+  server: 31.77.183.88
+  port: 5001
+  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: max.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: D-G2rTpSUTAF6Rj0C6Gxnk-uzsaGzM6MSbJX3jCyBBk
+    short-id: a1b2c3d4
+- name: US - zhuhai.uk 04
+  type: vless
+  server: 31.77.183.88
+  port: 5000
+  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: max.ru
+  client-fingerprint: qq
+  skip-cert-verify: true
+  reality-opts:
+    public-key: cpoZcpYNYSvFXGGB21tByHUoNd7-FYrJ0UP7ZDfSFCs
+    short-id: a1b2c3d4
+- name: US - zhuhai.uk 05
+  type: vless
+  server: 31.77.183.88
+  port: 5001
+  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: max.ru
   client-fingerprint: firefox
   skip-cert-verify: true
   reality-opts:
-    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-- name: GB - zhuhai.uk 02
+    public-key: D-G2rTpSUTAF6Rj0C6Gxnk-uzsaGzM6MSbJX3jCyBBk
+    short-id: a1b2c3d4
+- name: TR - zhuhai.uk 01
   type: vless
-  server: 95.154.196.62
+  server: 156.67.63.231
   port: 443
-  uuid: a6de5675-5bfe-4fc2-b9b4-4bf4a24f6474
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: foodnetwork.com
+  servername: sync-bridge.org
   client-fingerprint: chrome
-  skip-cert-verify: true
   reality-opts:
-    public-key: wiu5fVlBM7keSI48Oi3dEnQTR1BnJXgHtXo9xBpAnTA
-    short-id: 16498ac98306ce31
+    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
+    short-id: 5606d4a25c99e7af
+- name: US - zhuhai.uk 02
+  type: vless
+  server: 31.77.183.88
+  port: 5000
+  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: max.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cpoZcpYNYSvFXGGB21tByHUoNd7-FYrJ0UP7ZDfSFCs
+    short-id: a1b2c3d4
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - GB - zhuhai.uk 01
-  - DE - zhuhai.uk 01
+  - MX - zhuhai.uk 04
+  - MX - zhuhai.uk 01
   - FI - zhuhai.uk 01
+  - TH - zhuhai.uk 01
+  - PL - zhuhai.uk 01
+  - SG - zhuhai.uk 03
+  - SG - zhuhai.uk 01
+  - US - zhuhai.uk 03
+  - US - zhuhai.uk 04
+  - US - zhuhai.uk 05
   - TR - zhuhai.uk 01
-  - GB - zhuhai.uk 02
+  - US - zhuhai.uk 02
