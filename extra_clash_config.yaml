@@ -1,101 +1,112 @@
 proxies:
-- name: CA - zhuhai.uk 01
+- name: US - zhuhai.uk 01
   type: vless
-  server: 155.248.229.115
-  port: 8443
-  uuid: 5c9b8a5f-0863-4cfa-9c1d-aa1a5b7415df
+  server: us5-r.link-t7.com
+  port: 10242
+  uuid: 31904E3E-F57B-41D1-BDB2-CB6D3A496232
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: tesla.com
-  client-fingerprint: edge
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: SfFw8nx4WUjN5xs-4-al4coSfu31GWgWTpTJiwse420
-- name: DE - zhuhai.uk 01
-  type: vless
-  server: 188.220.67.198
-  port: 2087
-  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/8f2690e2d016"
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: movie
 - name: DE - zhuhai.uk 02
   type: vless
-  server: 5.83.129.124
+  server: 88.216.190.206
   port: 443
-  uuid: a9aceeb9-17cc-470e-a03b-b7c3ee0f9f14
+  uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: 50gport3.potatosubge20.org
-  client-fingerprint: firefox
-- name: HK - zhuhai.uk 01
+  servername: app4.goonars.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: u51rZT5vJj8nO80QBBHVW2-WA5OzzQ1eL6euvszWLQI
+    short-id: '09ef88a6'
+- name: DE - zhuhai.uk 01
   type: vless
-  server: hk4-r.link-t7.com
-  port: 10129
-  uuid: F2987FBA-B653-444D-8057-6B6474E448C6
+  server: app4.goonars.com
+  port: 443
+  uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app4.goonars.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: u51rZT5vJj8nO80QBBHVW2-WA5OzzQ1eL6euvszWLQI
+    short-id: '09ef88a6'
+- name: GB - zhuhai.uk 03
+  type: vless
+  server: 31.76.70.112
+  port: 8443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: auto.cendora.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+    short-id: a7f3c91b2e6d84c0
+- name: SG - zhuhai.uk 01
+  type: vless
+  server: sg5-r.link-t7.com
+  port: 10040
+  uuid: C1CE3941-AC6F-4E98-9791-3B33ABBAF64F
   udp: true
   network: grpc
   tls: true
-  servername: s0.awsstatic.com
+  servername: d1.awsstatic.com
   client-fingerprint: chrome
   reality-opts:
     public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
     short-id: 686c0ef0
   grpc-opts:
-    grpc-service-name: movie
-- name: SG - zhuhai.uk 11
+    grpc-service-name: update
+- name: US - zhuhai.uk 03
   type: vless
-  server: 140.245.109.76
-  port: 8444
-  uuid: 5c9b8a5f-0863-4cfa-9c1d-aa1a5b7415df
+  server: app3.goonars.com
+  port: 443
+  uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: tesla.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: OYHRKufAg09vpdsYBQB_vjikJ9DyE1KurtHQZRRLeWQ
-- name: HK - zhuhai.uk 02
-  type: vless
-  server: hk3-r.link-t7.com
-  port: 10128
-  uuid: F2987FBA-B653-444D-8057-6B6474E448C6
-  udp: true
-  network: grpc
-  tls: true
-  servername: s0.awsstatic.com
+  servername: app3.goonars.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: movie
-- name: FR - zhuhai.uk 05
+    public-key: mHlSdLyCi4y4Bit5YrV9SpNI4RxoC08gyxUJPDy2Ylg
+    short-id: a17b41ba
+- name: US - zhuhai.uk 02
   type: vless
-  server: 158.178.198.63
-  port: 8444
-  uuid: 5c9b8a5f-0863-4cfa-9c1d-aa1a5b7415df
+  server: 72.56.81.75
+  port: 443
+  uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: tesla.com
+  servername: app3.goonars.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: U2BHsyRo3bF289dW-3sDOyBxgAicl2AgoMjLpyIjNRo
+    public-key: mHlSdLyCi4y4Bit5YrV9SpNI4RxoC08gyxUJPDy2Ylg
+    short-id: a17b41ba
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - CA - zhuhai.uk 01
-  - DE - zhuhai.uk 01
+  - US - zhuhai.uk 01
   - DE - zhuhai.uk 02
-  - HK - zhuhai.uk 01
-  - SG - zhuhai.uk 11
-  - HK - zhuhai.uk 02
-  - FR - zhuhai.uk 05
+  - DE - zhuhai.uk 01
+  - GB - zhuhai.uk 03
+  - SG - zhuhai.uk 01
+  - US - zhuhai.uk 03
+  - US - zhuhai.uk 02
