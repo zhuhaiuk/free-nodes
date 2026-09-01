@@ -1,5 +1,16 @@
 proxies:
-- name: US - zhuhai.uk 01
+- name: TH - zhuhai.uk 01
+  type: vless
+  server: www.baipiao.eu.org
+  port: 8880
+  uuid: 86d998bc-a5a2-45d5-8169-b906259110a6
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/pyip=ProxyIP.US.CMLiussss.net"
+    headers:
+      Host: muddy-art-8cda.197-0c6.workers.dev
+- name: US - zhuhai.uk 02
   type: vless
   server: us5-r.link-t7.com
   port: 10242
@@ -14,63 +25,6 @@ proxies:
     short-id: 686c0ef0
   grpc-opts:
     grpc-service-name: movie
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: 88.216.190.206
-  port: 443
-  uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: app4.goonars.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: u51rZT5vJj8nO80QBBHVW2-WA5OzzQ1eL6euvszWLQI
-    short-id: '09ef88a6'
-- name: DE - zhuhai.uk 01
-  type: vless
-  server: app4.goonars.com
-  port: 443
-  uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: app4.goonars.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: u51rZT5vJj8nO80QBBHVW2-WA5OzzQ1eL6euvszWLQI
-    short-id: '09ef88a6'
-- name: GB - zhuhai.uk 03
-  type: vless
-  server: 31.76.70.112
-  port: 8443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: auto.cendora.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
-    short-id: a7f3c91b2e6d84c0
-- name: SG - zhuhai.uk 01
-  type: vless
-  server: sg5-r.link-t7.com
-  port: 10040
-  uuid: C1CE3941-AC6F-4E98-9791-3B33ABBAF64F
-  udp: true
-  network: grpc
-  tls: true
-  servername: d1.awsstatic.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: update
 - name: US - zhuhai.uk 03
   type: vless
   server: app3.goonars.com
@@ -85,28 +39,55 @@ proxies:
   reality-opts:
     public-key: mHlSdLyCi4y4Bit5YrV9SpNI4RxoC08gyxUJPDy2Ylg
     short-id: a17b41ba
-- name: US - zhuhai.uk 02
+- name: DE - zhuhai.uk 01
   type: vless
-  server: 72.56.81.75
+  server: 88.216.190.206
   port: 443
   uuid: 2f600710-9f4e-4eab-8de1-89f60a878e55
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: app3.goonars.com
+  servername: app4.goonars.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: mHlSdLyCi4y4Bit5YrV9SpNI4RxoC08gyxUJPDy2Ylg
-    short-id: a17b41ba
+    public-key: u51rZT5vJj8nO80QBBHVW2-WA5OzzQ1eL6euvszWLQI
+    short-id: '09ef88a6'
+- name: US - zhuhai.uk 01
+  type: vless
+  server: 31.77.183.88
+  port: 5000
+  uuid: 74f73fb2-49cc-4744-bd37-97c5f83963ab
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: max.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: cpoZcpYNYSvFXGGB21tByHUoNd7-FYrJ0UP7ZDfSFCs
+    short-id: a1b2c3d4
+- name: NL - zhuhai.uk 01
+  type: vless
+  server: 31.77.183.88
+  port: 5001
+  uuid: 74f73fb2-49cc-4744-bd37-97c5f83963ab
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: max.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: D-G2rTpSUTAF6Rj0C6Gxnk-uzsaGzM6MSbJX3jCyBBk
+    short-id: a1b2c3d4
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
-  - DE - zhuhai.uk 02
-  - DE - zhuhai.uk 01
-  - GB - zhuhai.uk 03
-  - SG - zhuhai.uk 01
-  - US - zhuhai.uk 03
+  - TH - zhuhai.uk 01
   - US - zhuhai.uk 02
+  - US - zhuhai.uk 03
+  - DE - zhuhai.uk 01
+  - US - zhuhai.uk 01
+  - NL - zhuhai.uk 01
