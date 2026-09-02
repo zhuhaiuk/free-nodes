@@ -23,8 +23,8 @@
     p { margin: 0 0 14px; color: var(--muted); }
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
-    .button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid var(--brand); border-radius: 6px; background: var(--brand); color: #fff; font-weight: 650; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; min-width: 0; }
+    .button { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; padding: 0 16px; border: 1px solid var(--brand); border-radius: 6px; background: var(--brand); color: #fff; font-weight: 650; text-align: center; white-space: normal; overflow-wrap: anywhere; }
     .button.secondary { background: #fff; color: var(--brand); }
     .button.telegram { border-color: #2aabee; background: #2aabee; }
     .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0; }

@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>免费节点订阅 - Zhuhai Free Nodes</title>
-  <meta name="description" content="Zhuhai Free Nodes 提供持续更新的免费节点订阅入口，包含通用 Base64 与 Clash / Mihomo YAML，适合临时测试和客户端学习。">
-  <meta name="keywords" content="免费节点, 免费节点订阅, 免费订阅, 每小时更新免费节点, free nodes">
+  <title>免费节点订阅使用指南：导入、更新与测试 - Zhuhai Free Nodes</title>
+  <meta name="description" content="免费节点订阅怎么用？本指南说明 Base64 与 Clash / Mihomo YAML 的导入、更新和连通性测试步骤，适合临时测试与客户端学习。">
+  <meta name="keywords" content="免费节点订阅使用指南, 免费节点怎么用, 免费节点订阅教程, Clash 订阅导入, V2Ray 订阅导入, free nodes">
   <link rel="canonical" href="https://nodes.zhuhai.uk/topics/free-nodes.html">
   <style>
     :root { color-scheme: light; --ink: #172033; --muted: #586174; --line: #d9e0ea; --brand: #1268d6; --soft: #f4f7fb; --ok: #137a4b; }
@@ -19,8 +19,8 @@
     p { margin: 0 0 14px; color: var(--muted); }
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
-    .button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid var(--brand); border-radius: 6px; background: var(--brand); color: #fff; font-weight: 650; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; min-width: 0; }
+    .button { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; padding: 0 16px; border: 1px solid var(--brand); border-radius: 6px; background: var(--brand); color: #fff; font-weight: 650; text-align: center; white-space: normal; overflow-wrap: anywhere; }
     .button.secondary { background: #fff; color: var(--brand); }
     .button.telegram { border-color: #2aabee; background: #2aabee; }
     .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0; }
@@ -80,8 +80,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "免费节点订阅 - Zhuhai Free Nodes",
-  "description": "Zhuhai Free Nodes 提供持续更新的免费节点订阅入口，包含通用 Base64 与 Clash / Mihomo YAML，适合临时测试和客户端学习。",
+  "name": "免费节点订阅使用指南：导入、更新与测试 - Zhuhai Free Nodes",
+  "description": "免费节点订阅怎么用？本指南说明 Base64 与 Clash / Mihomo YAML 的导入、更新和连通性测试步骤，适合临时测试与客户端学习。",
   "url": "https://nodes.zhuhai.uk/topics/free-nodes.html",
   "dateModified": "2026-09-02",
   "isPartOf": {
@@ -89,7 +89,7 @@
     "name": "Zhuhai Free Nodes",
     "url": "https://nodes.zhuhai.uk/"
   },
-  "keywords": "免费节点, 免费节点订阅, 免费订阅, 每小时更新免费节点, free nodes"
+  "keywords": "免费节点订阅使用指南, 免费节点怎么用, 免费节点订阅教程, Clash 订阅导入, V2Ray 订阅导入, free nodes"
 }
   </script>
   <script type="application/ld+json">
@@ -103,6 +103,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "订阅文件按自动任务持续更新，页面会保留固定入口，方便客户端长期使用。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Base64 和 Clash / Mihomo YAML 订阅该怎么选？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "v2rayN、v2rayNG、NekoBox、Hiddify 等通常优先使用 Base64 通用订阅；Clash、Mihomo、Clash Verge 和 Mihomo Party 优先使用 YAML。导入后以客户端的实际兼容性为准。"
       }
     },
     {
@@ -130,7 +138,7 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "免费节点订阅",
+      "name": "免费节点订阅使用指南：导入、更新与测试",
       "item": "https://nodes.zhuhai.uk/topics/free-nodes.html"
     }
   ]
@@ -140,8 +148,8 @@
 <body>
   <main>
     <header>
-      <h1>免费节点订阅，每小时自动更新</h1>
-      <p>Zhuhai Free Nodes 提供持续更新的免费节点订阅入口，包含通用 Base64 与 Clash / Mihomo YAML，适合临时测试和客户端学习。</p>
+      <h1>免费节点订阅使用指南：导入、更新与测试</h1>
+      <p>免费节点订阅怎么用？本指南说明 Base64 与 Clash / Mihomo YAML 的导入、更新和连通性测试步骤，适合临时测试与客户端学习。</p>
       <div class="actions">
         <a class="button" href="https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt">Base64 订阅</a>
         <a class="button secondary" href="https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml">Clash / Mihomo 订阅</a>
@@ -156,19 +164,19 @@
     </section>
 
     <h2>使用说明</h2>
-    <p>免费节点适合验证代理客户端是否配置正确，也适合临时备用。由于公开节点的在线时间和速度变化较快，导入订阅后建议先刷新、测速，再选择延迟较低的线路。</p>
+    <p>本页承接“免费节点怎么用”的信息型需求；固定订阅入口在首页。公开节点适合验证代理客户端是否配置正确和临时备用，导入后请刷新订阅、测速并检查连通性，再选择延迟较低的线路。</p>
 
     <p>订阅文件会定时更新。免费节点来自公开资源，适合临时测试、备用连接、订阅格式验证和客户端学习，不建议用于重要账号或敏感数据。</p>
 
     <h2>搜索意图</h2>
-    <p class="note">想快速找到可导入客户端的免费节点订阅，并确认订阅是否持续更新。</p>
+    <p class="note">学习如何在客户端导入、更新、测速和排查免费节点订阅，而不是寻找新的订阅地址。</p>
 
     <h2>适合场景</h2>
 <ul>
-      <li>临时备用连接</li>
       <li>代理客户端新手测试</li>
       <li>订阅格式验证</li>
-      <li>免费节点可用性观察</li>
+      <li>订阅更新与连通性排查</li>
+      <li>临时备用连接</li>
     </ul>
 
     <h2>导入建议</h2>
@@ -194,10 +202,11 @@
 
     <h2>相关关键词</h2>
     <div class="tag-list">
-      <span class="tag">免费节点</span>
-      <span class="tag">免费节点订阅</span>
-      <span class="tag">免费订阅</span>
-      <span class="tag">每小时更新免费节点</span>
+      <span class="tag">免费节点订阅使用指南</span>
+      <span class="tag">免费节点怎么用</span>
+      <span class="tag">免费节点订阅教程</span>
+      <span class="tag">Clash 订阅导入</span>
+      <span class="tag">V2Ray 订阅导入</span>
       <span class="tag">free nodes</span>
     </div>
 
@@ -217,6 +226,10 @@
       <div class="faq-item">
         <strong>免费节点订阅多久更新一次？</strong>
         <p>订阅文件按自动任务持续更新，页面会保留固定入口，方便客户端长期使用。</p>
+      </div>
+      <div class="faq-item">
+        <strong>Base64 和 Clash / Mihomo YAML 订阅该怎么选？</strong>
+        <p>v2rayN、v2rayNG、NekoBox、Hiddify 等通常优先使用 Base64 通用订阅；Clash、Mihomo、Clash Verge 和 Mihomo Party 优先使用 YAML。导入后以客户端的实际兼容性为准。</p>
       </div>
       <div class="faq-item">
         <strong>免费节点适合长期使用吗？</strong>

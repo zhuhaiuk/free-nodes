@@ -58,15 +58,15 @@ const COMPETITORS = [
 const TOPIC_PAGES = [
   {
     slug: "free-nodes",
-    title: "免费节点订阅",
-    h1: "免费节点订阅，每小时自动更新",
+    title: "免费节点订阅使用指南：导入、更新与测试",
+    h1: "免费节点订阅使用指南：导入、更新与测试",
     description:
-      "Zhuhai Free Nodes 提供持续更新的免费节点订阅入口，包含通用 Base64 与 Clash / Mihomo YAML，适合临时测试和客户端学习。",
-    keywords: ["免费节点", "免费节点订阅", "免费订阅", "每小时更新免费节点", "free nodes"],
+      "免费节点订阅怎么用？本指南说明 Base64 与 Clash / Mihomo YAML 的导入、更新和连通性测试步骤，适合临时测试与客户端学习。",
+    keywords: ["免费节点订阅使用指南", "免费节点怎么用", "免费节点订阅教程", "Clash 订阅导入", "V2Ray 订阅导入", "free nodes"],
     body:
-      "免费节点适合验证代理客户端是否配置正确，也适合临时备用。由于公开节点的在线时间和速度变化较快，导入订阅后建议先刷新、测速，再选择延迟较低的线路。",
-    intent: "想快速找到可导入客户端的免费节点订阅，并确认订阅是否持续更新。",
-    bestFor: ["临时备用连接", "代理客户端新手测试", "订阅格式验证", "免费节点可用性观察"],
+      "本页承接“免费节点怎么用”的信息型需求；固定订阅入口在首页。公开节点适合验证代理客户端是否配置正确和临时备用，导入后请刷新订阅、测速并检查连通性，再选择延迟较低的线路。",
+    intent: "学习如何在客户端导入、更新、测速和排查免费节点订阅，而不是寻找新的订阅地址。",
+    bestFor: ["代理客户端新手测试", "订阅格式验证", "订阅更新与连通性排查", "临时备用连接"],
     importSteps: [
       "复制 Base64 通用订阅地址。",
       "在 V2RayN、v2rayNG、NekoBox 或 Hiddify 中新增远程订阅。",
@@ -78,6 +78,7 @@ const TOPIC_PAGES = [
     ],
     faq: [
       ["免费节点订阅多久更新一次？", "订阅文件按自动任务持续更新，页面会保留固定入口，方便客户端长期使用。"],
+      ["Base64 和 Clash / Mihomo YAML 订阅该怎么选？", "v2rayN、v2rayNG、NekoBox、Hiddify 等通常优先使用 Base64 通用订阅；Clash、Mihomo、Clash Verge 和 Mihomo Party 优先使用 YAML。导入后以客户端的实际兼容性为准。"],
       ["免费节点适合长期使用吗？", "更适合临时测试、备用连接和学习客户端配置，不建议作为重要网络环境的唯一选择。"],
     ],
   },
@@ -533,8 +534,8 @@ function sharedStyles() {
     p { margin: 0 0 14px; color: var(--muted); }
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
-    .button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid var(--brand); border-radius: 6px; background: var(--brand); color: #fff; font-weight: 650; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; min-width: 0; }
+    .button { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; padding: 0 16px; border: 1px solid var(--brand); border-radius: 6px; background: var(--brand); color: #fff; font-weight: 650; text-align: center; white-space: normal; overflow-wrap: anywhere; }
     .button.secondary { background: #fff; color: var(--brand); }
     .button.telegram { border-color: #2aabee; background: #2aabee; }
     .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0; }

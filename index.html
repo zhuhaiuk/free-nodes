@@ -23,8 +23,8 @@
     p { margin: 0 0 14px; color: var(--muted); }
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
-    .button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid var(--brand); border-radius: 6px; background: var(--brand); color: #fff; font-weight: 650; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; min-width: 0; }
+    .button { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; padding: 0 16px; border: 1px solid var(--brand); border-radius: 6px; background: var(--brand); color: #fff; font-weight: 650; text-align: center; white-space: normal; overflow-wrap: anywhere; }
     .button.secondary { background: #fff; color: var(--brand); }
     .button.telegram { border-color: #2aabee; background: #2aabee; }
     .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 24px 0; }
@@ -149,7 +149,7 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "免费节点订阅",
+      "name": "免费节点订阅使用指南：导入、更新与测试",
       "url": "https://nodes.zhuhai.uk/topics/free-nodes.html"
     },
     {
@@ -237,9 +237,9 @@
     <p>这些页面覆盖免费节点、代理订阅、Clash、Mihomo、V2Ray、Shadowrocket 等搜索意图，帮助搜索引擎和 AI 摘要系统理解项目结构。</p>
     <div class="topic-grid">
       <section class="topic-card">
-        <h3><a href="topics/free-nodes.html">免费节点订阅</a></h3>
-        <p>Zhuhai Free Nodes 提供持续更新的免费节点订阅入口，包含通用 Base64 与 Clash / Mihomo YAML，适合临时测试和客户端学习。</p>
-        <p class="intent">想快速找到可导入客户端的免费节点订阅，并确认订阅是否持续更新。</p>
+        <h3><a href="topics/free-nodes.html">免费节点订阅使用指南：导入、更新与测试</a></h3>
+        <p>免费节点订阅怎么用？本指南说明 Base64 与 Clash / Mihomo YAML 的导入、更新和连通性测试步骤，适合临时测试与客户端学习。</p>
+        <p class="intent">学习如何在客户端导入、更新、测速和排查免费节点订阅，而不是寻找新的订阅地址。</p>
       </section>
       <section class="topic-card">
         <h3><a href="topics/free-proxy-nodes.html">免费代理节点订阅链接</a></h3>
