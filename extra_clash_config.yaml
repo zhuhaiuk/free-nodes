@@ -1,37 +1,8 @@
 proxies:
-- name: US - zhuhai.uk 07
+- name: HK - zhuhai.uk 06
   type: vless
-  server: 172.64.151.254
-  port: 2096
-  uuid: 341832cc-ba98-425b-8225-b3db621a0da3
-  udp: true
-  network: ws
-  tls: true
-  servername: oyue.rainfall0705.cc.cd
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/fp=chrome"
-    headers:
-      Host: oyue.rainfall0705.cc.cd
-- name: JP - zhuhai.uk 01
-  type: vless
-  server: jp5-r.link-t7.com
-  port: 10035
-  uuid: 31904E3E-F57B-41D1-BDB2-CB6D3A496232
-  udp: true
-  network: grpc
-  tls: true
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: update
-- name: HK - zhuhai.uk 02
-  type: vless
-  server: hk6-r.link-t7.com
-  port: 10136
+  server: hk4-r.link-t7.com
+  port: 10129
   uuid: F2987FBA-B653-444D-8057-6B6474E448C6
   udp: true
   network: grpc
@@ -43,63 +14,7 @@ proxies:
     short-id: 686c0ef0
   grpc-opts:
     grpc-service-name: movie
-- name: KR - zhuhai.uk 02
-  type: vless
-  server: kr5-r.link-t7.com
-  port: 10050
-  uuid: 31904E3E-F57B-41D1-BDB2-CB6D3A496232
-  udp: true
-  network: grpc
-  tls: true
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: update
-- name: HK - zhuhai.uk 04
-  type: vless
-  server: hk5-r.link-t7.com
-  port: 10130
-  uuid: C1CE3941-AC6F-4E98-9791-3B33ABBAF64F
-  udp: true
-  network: grpc
-  tls: true
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: movie
-- name: US - zhuhai.uk 05
-  type: vless
-  server: 148.135.184.46
-  port: 25349
-  uuid: 62a05f8e-eedf-4500-8c79-c9315f565bcc
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: proxy11.h1guro.ovh
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: N31z1jM2i1-b9eJ3Xkt2ibM6aXQN8qqWU25ZR12TSWI
-    short-id: c3005582c0fc496f
-- name: RU - zhuhai.uk 01
-  type: vless
-  server: 185.147.27.183
-  port: 8443
-  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: user-6a917f32.noooo.win
-  client-fingerprint: firefox
-- name: HK - zhuhai.uk 03
+- name: HK - zhuhai.uk 02
   type: vless
   server: hk2-r.link-t7.com
   port: 10127
@@ -114,10 +29,55 @@ proxies:
     short-id: 686c0ef0
   grpc-opts:
     grpc-service-name: update
-- name: SG - zhuhai.uk 02
+- name: HK - zhuhai.uk 03
   type: vless
-  server: sg1-r.link-t7.com
-  port: 10036
+  server: hk3-r.link-t7.com
+  port: 10128
+  uuid: F2987FBA-B653-444D-8057-6B6474E448C6
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: movie
+- name: HK - zhuhai.uk 04
+  type: vless
+  server: hk6-r.link-t7.com
+  port: 10136
+  uuid: F2987FBA-B653-444D-8057-6B6474E448C6
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: movie
+- name: HK - zhuhai.uk 01
+  type: vless
+  server: hk5-r.link-t7.com
+  port: 10130
+  uuid: C1CE3941-AC6F-4E98-9791-3B33ABBAF64F
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: movie
+- name: HK - zhuhai.uk 05
+  type: vless
+  server: hk1-r.link-t7.com
+  port: 10126
   uuid: C1CE3941-AC6F-4E98-9791-3B33ABBAF64F
   udp: true
   network: grpc
@@ -129,61 +89,61 @@ proxies:
     short-id: 686c0ef0
   grpc-opts:
     grpc-service-name: update
+- name: SG - zhuhai.uk 02
+  type: vless
+  server: sg5-r.link-t7.com
+  port: 10040
+  uuid: C1CE3941-AC6F-4E98-9791-3B33ABBAF64F
+  udp: true
+  network: grpc
+  tls: true
+  servername: d1.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: SG - zhuhai.uk 01
+  type: vless
+  server: sg4-r.link-t7.com
+  port: 10039
+  uuid: F2987FBA-B653-444D-8057-6B6474E448C6
+  udp: true
+  network: grpc
+  tls: true
+  servername: d1.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
 - name: SG - zhuhai.uk 03
   type: vless
-  server: do2sg1xxx.87544899.xyz
-  port: 443
-  uuid: 58c14e54-6db0-46fb-a1fb-8f3184197d94
+  server: sg2-r.link-t7.com
+  port: 10037
+  uuid: F2987FBA-B653-444D-8057-6B6474E448C6
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: bod.changiairport.com
+  servername: s0.awsstatic.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: M4VxY_IPnii4ldlg9Z3Av6VZ_lpC-njSq_JnRBSUM1s
-    short-id: 8e5a820d
-- name: DE - zhuhai.uk 01
-  type: vless
-  server: rrr.windconnect.pro
-  port: 443
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: rrr.windconnect.pro
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
-    short-id: 4da5d1853f04af6d
-- name: NO - zhuhai.uk 01
-  type: vless
-  server: 151.242.168.155
-  port: 443
-  uuid: 43ca296b-321f-4b61-a12c-ddf8370b9761
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: kibi-institut.de
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: mWzXDVWUhjGcuizZHA-rEnRpxv2wgeSZUIuHmQdteiA
-    short-id: f576da5e05a1d4d2
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 07
-  - JP - zhuhai.uk 01
+  - HK - zhuhai.uk 06
   - HK - zhuhai.uk 02
-  - KR - zhuhai.uk 02
-  - HK - zhuhai.uk 04
-  - US - zhuhai.uk 05
-  - RU - zhuhai.uk 01
   - HK - zhuhai.uk 03
+  - HK - zhuhai.uk 04
+  - HK - zhuhai.uk 01
+  - HK - zhuhai.uk 05
   - SG - zhuhai.uk 02
+  - SG - zhuhai.uk 01
   - SG - zhuhai.uk 03
-  - DE - zhuhai.uk 01
-  - NO - zhuhai.uk 01
