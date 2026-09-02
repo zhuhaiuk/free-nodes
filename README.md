@@ -44,8 +44,6 @@
 机场测评小板块：
 
 - 测评列表：[https://nodes.zhuhai.uk/reviews/](https://nodes.zhuhai.uk/reviews/)
-- 星航机场：[https://nodes.zhuhai.uk/reviews/xinghang.html](https://nodes.zhuhai.uk/reviews/xinghang.html)
-- 环球港机场：[https://nodes.zhuhai.uk/reviews/huanqiugang.html](https://nodes.zhuhai.uk/reviews/huanqiugang.html)
 - 飞兔云机场：[https://nodes.zhuhai.uk/reviews/feituyun.html](https://nodes.zhuhai.uk/reviews/feituyun.html)
 - 淘气兔机场：[https://nodes.zhuhai.uk/reviews/taoqitu.html](https://nodes.zhuhai.uk/reviews/taoqitu.html)
 

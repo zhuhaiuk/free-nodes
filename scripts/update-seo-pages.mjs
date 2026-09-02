@@ -200,99 +200,6 @@ const SERVICE_PAGES = [
 
 const AIRPORT_REVIEWS = [
   {
-    slug: "xinghang",
-    name: "星航机场",
-    title: "星航机场测评：无限流量、不限设备、28 个节点与 9 个地区",
-    description:
-      "星航机场测评，整理无限流量、不限设备、28 个节点、9 个国家和地区、流媒体解锁、节点测速和 50% AFF 返利信息。",
-    url: "https://xinghang.space/#/register?code=RuQL8FOh",
-    highlights: ["8.9 元/月起", "无限流量", "不限设备", "28 个节点", "支持 50% AFF 返利"],
-    metrics: [
-      ["套餐价格", "8.9 元/月、25.9 元/季度、49.9 元/半年"],
-      ["节点总数", "28 个"],
-      ["覆盖地区", "德国、荷兰、韩国、美国、日本、台湾、新加坡、香港、英国"],
-      ["流量限制", "无限流量"],
-      ["设备限制", "不限设备"],
-      ["协议类型", "VLESS"],
-      ["AFF 返利", "50%"],
-    ],
-    testTime: "测速与流媒体截图测试时间：2026-08-22 08:50-08:51 CST。",
-    evidence: [
-      {
-        title: "星航机场套餐截图",
-        src: "assets/xinghang-plans.png",
-        width: 2446,
-        height: 788,
-        alt: "星航机场 Neo、Air、Pro 套餐价格截图，显示 8.9 元月付、25.9 元季付、49.9 元半年付",
-        caption: "套餐截图显示星航机场有 8.9 元/月、25.9 元/季度、49.9 元/半年三档，标注无限流量、不限设备、全部节点。",
-      },
-      {
-        title: "星航机场测速截图",
-        src: "assets/xinghang-speedtest.png",
-        width: 1600,
-        height: 1265,
-        alt: "星航机场节点测速截图，包含德国、荷兰、韩国、美国、日本、台湾、新加坡、香港、英国等节点延迟和速度",
-        caption: "测速截图中多条 VLESS 节点显示较高峰值速度，香港、日本、新加坡、美国等常用地区都有节点参与测试。",
-      },
-      {
-        title: "星航机场流媒体解锁截图",
-        src: "assets/xinghang-streaming.png",
-        width: 1600,
-        height: 1172,
-        alt: "星航机场流媒体解锁截图，显示 Disney+、Netflix、YouTube、BiliBili、ChatGPT 等测试结果",
-        caption: "流媒体截图显示 Disney+、Netflix、YouTube、BiliBili 和 ChatGPT 在多个地区有解锁结果，实际可用性仍需按购买后节点复测。",
-      },
-    ],
-    bestFor: ["多设备日常使用", "需要固定订阅入口的用户", "希望测试香港、日本、新加坡、美国等常用地区的用户"],
-    cautions: ["购买前建议先用短周期套餐测试晚高峰表现。", "流媒体和 AI 工具可用性会随节点与平台风控变化。"],
-  },
-  {
-    slug: "huanqiugang",
-    name: "环球港机场",
-    title: "环球港机场测评：1 元/月起、无限流量、不限设备与 50+ 节点",
-    description:
-      "环球港机场测评，整理 1 元/月起、无限流量、不限设备、50+ 节点、高速专线、流媒体解锁和购买前注意事项。",
-    url: "https://dash.fscloud.cc/#/register?code=o50IOzmo",
-    highlights: ["1 元/月起", "无限流量", "不限设备", "50+ 节点", "主打高速专线"],
-    metrics: [
-      ["入门价格", "1 元/月起"],
-      ["节点规模", "50+ 节点"],
-      ["流量限制", "无限流量"],
-      ["设备限制", "不限设备"],
-      ["协议类型", "VLESS"],
-      ["适合方向", "低成本试用、日常备用、常用地区测速"],
-    ],
-    testTime: "测速与流媒体截图测试时间：2026-08-26 11:00-11:17 CST。",
-    evidence: [
-      {
-        title: "环球港机场套餐截图",
-        src: "assets/huanqiugang-plans.png",
-        width: 2446,
-        height: 823,
-        alt: "环球港机场 Neo、Air、Pro 套餐价格截图，显示 1 元月付、2 元季付、4.9 元半年付",
-        caption: "套餐截图显示环球港机场入门价格低，有 1 元/月、2 元/季度、4.9 元/半年三档，标注无限流量、不限设备、50+ 节点。",
-      },
-      {
-        title: "环球港机场测速截图",
-        src: "assets/huanqiugang-speedtest.png",
-        width: 1600,
-        height: 1501,
-        alt: "环球港机场节点测速截图，包含 VLESS 节点的 TLS RTT、HTTPS 延迟、平均速度和最大速度",
-        caption: "测速截图显示部分高速专线节点峰值速度较高，也能看到部分节点为 0B 或不可用，适合提醒用户先短周期实测。",
-      },
-      {
-        title: "环球港机场流媒体解锁截图",
-        src: "assets/huanqiugang-streaming.png",
-        width: 1600,
-        height: 1046,
-        alt: "环球港机场流媒体解锁截图，显示 Disney+、Netflix、YouTube、BiliBili、Abema、ChatGPT 等测试结果",
-        caption: "流媒体截图显示常见地区节点对 Netflix、Disney+、YouTube、BiliBili、ChatGPT 有不同解锁结果，HBO Max 和 Abema 等项目存在失败或地区差异。",
-      },
-    ],
-    bestFor: ["想低成本先测试机场的新手", "需要不限设备导入的用户", "想对比免费节点与付费线路差异的用户"],
-    cautions: ["低价套餐适合先试用，不建议不了解线路表现就直接长期订阅。", "具体节点、套餐和可用功能以官网实时展示为准。"],
-  },
-  {
     slug: "feituyun",
     name: "飞兔云机场",
     title: "飞兔云机场测评：AnyTLS 与 Shadowsocks、69 个节点、流媒体解锁",
@@ -768,16 +675,16 @@ function reviewsIndexHtml(parts) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>机场测评列表：星航、环球港、飞兔云、淘气兔 | Zhuhai Free Nodes</title>
-  <meta name="description" content="机场测评小板块，整理星航机场、环球港机场、飞兔云机场、淘气兔机场的套餐、节点、协议、流媒体和购买前注意事项。">
-  <meta name="keywords" content="机场测评, 机场推荐, 星航机场, 环球港机场, 飞兔云机场, 淘气兔机场, 稳定机场">
+  <title>机场测评列表：飞兔云、淘气兔 | Zhuhai Free Nodes</title>
+  <meta name="description" content="机场测评小板块，整理飞兔云机场、淘气兔机场的套餐、节点、协议、流媒体和购买前注意事项。">
+  <meta name="keywords" content="机场测评, 机场推荐, 飞兔云机场, 淘气兔机场, 稳定机场">
   <link rel="canonical" href="${SITE_URL}/reviews/">
   <style>${sharedStyles()}</style>
   ${jsonLd({
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "机场测评列表",
-    description: "星航、环球港、飞兔云、淘气兔机场测评入口。",
+    description: "飞兔云、淘气兔机场测评入口。",
     url: `${SITE_URL}/reviews/`,
     dateModified: dateKey(parts),
     isPartOf: { "@type": "WebSite", name: "Zhuhai Free Nodes", url: `${SITE_URL}/` },
@@ -990,7 +897,7 @@ ${topicCards()}
 
     <section class="service-callout" aria-labelledby="airport-reviews">
       <h2 id="airport-reviews">机场测评</h2>
-      <p>免费节点适合临时测试，长期使用更需要看节点地区、套餐价格、晚高峰表现、流媒体和售后。本站先整理星航、环球港、飞兔云、淘气兔四篇轻量测评，后续按数据继续补充。</p>
+      <p>免费节点适合临时测试，长期使用更需要看节点地区、套餐价格、晚高峰表现、流媒体和售后。本站先整理飞兔云、淘气兔轻量测评，后续按数据继续补充。</p>
       <div class="topic-grid">
 ${homepageReviewCards()}
       </div>
