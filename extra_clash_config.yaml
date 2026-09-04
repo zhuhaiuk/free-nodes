@@ -1,19 +1,45 @@
 proxies:
-- name: US - zhuhai.uk 01
+- name: RU - zhuhai.uk 01
   type: vless
-  server: 38.246.229.58
-  port: 47642
-  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  server: 193.233.255.45
+  port: 443
+  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sellflow.org
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: ES - zhuhai.uk 01
+  type: vless
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
   udp: true
   network: tcp
   tls: true
-  servername: sega.com
+  servername: www.apple.com
   client-fingerprint: firefox
-  skip-cert-verify: true
   reality-opts:
-    public-key: 9mg1QdPctekP9woKygHzBCxb8Hw2QTICXROQiiJB6Ag
-    short-id: 76ed3287
-- name: NL - zhuhai.uk 01
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+- name: DE - zhuhai.uk 03
+  type: vless
+  server: 80.253.249.193
+  port: 5005
+  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: special.aeternavpn.space
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: "-6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo"
+    short-id: a1b2c3d4
+- name: NL - zhuhai.uk 02
   type: vless
   server: meli-netbot-join.team-pluss.com
   port: 8080
@@ -26,38 +52,39 @@ proxies:
   reality-opts:
     public-key: a31ZnQOsnWUJq5bSLVWIeuGJZFPE52NidulBT5CV_z4
     short-id: f40ef36067
-- name: FI - zhuhai.uk 01
+- name: FR - zhuhai.uk 03
   type: vless
-  server: 172.67.175.9
-  port: 2083
-  uuid: 5e2be2b4-8af5-4d18-a15c-d4cb4b1d6ae6
-  udp: true
-  network: ws
-  tls: true
-  servername: shopki.dearhossein-taktaz.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/"
-    headers:
-      Host: shopki.dearhossein-taktaz.ir
-- name: KR - zhuhai.uk 03
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: 579ac5bd-a43d-49d4-b83e-a9e3ddd1f706
+  server: 45.131.212.62
+  port: 443
+  uuid: 3ba36a4e-9542-43d3-85c1-9f0177972231
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: www.apple.com
+  servername: fi.sellflow.org
   client-fingerprint: firefox
   reality-opts:
-    public-key: k9narlSK7fUqy94_p0rrqKl52W35QLNsp3W8xaGq_Go
-    short-id: 37b4f3ae8bf23763
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: FR - zhuhai.uk 02
+  type: vless
+  server: 45.131.212.62
+  port: 443
+  uuid: 3ba36a4e-9542-43d3-85c1-9f0177972231
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fi.sellflow.org
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
-  - NL - zhuhai.uk 01
-  - FI - zhuhai.uk 01
-  - KR - zhuhai.uk 03
+  - RU - zhuhai.uk 01
+  - ES - zhuhai.uk 01
+  - DE - zhuhai.uk 03
+  - NL - zhuhai.uk 02
+  - FR - zhuhai.uk 03
+  - FR - zhuhai.uk 02
