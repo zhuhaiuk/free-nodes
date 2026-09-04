@@ -283,72 +283,20 @@ proxies:
   reality-opts:
     public-key: R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM
     short-id: ed77ac35a310
-- name: RU - zhuhai.uk 01
+- name: NL - zhuhai.uk 01
   type: vless
-  server: 193.233.255.45
+  server: 84.32.177.6
   port: 443
-  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
+  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: sellflow.org
+  servername: apiv5.jarvesitw.ru
   client-fingerprint: firefox
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: ES - zhuhai.uk 01
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-- name: DE - zhuhai.uk 03
-  type: vless
-  server: 80.253.249.193
-  port: 5005
-  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: special.aeternavpn.space
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: "-6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo"
-    short-id: a1b2c3d4
-- name: FR - zhuhai.uk 03
-  type: vless
-  server: 45.131.212.62
-  port: 443
-  uuid: 3ba36a4e-9542-43d3-85c1-9f0177972231
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fi.sellflow.org
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: FR - zhuhai.uk 02
-  type: vless
-  server: 45.131.212.62
-  port: 443
-  uuid: 3ba36a4e-9542-43d3-85c1-9f0177972231
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fi.sellflow.org
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    public-key: Q6vABOUn6Uxtp0uDsfDG-SRJFLBh_oOofD9reec4iSg
+    short-id: cf41f778
 proxy-groups:
 - name: 选择出口
   type: select
@@ -386,11 +334,7 @@ proxy-groups:
   - KR - zhuhai.uk 02
   - TH - zhuhai.uk
   - MY - zhuhai.uk
-  - RU - zhuhai.uk 01
-  - ES - zhuhai.uk 01
-  - DE - zhuhai.uk 03
-  - FR - zhuhai.uk 03
-  - FR - zhuhai.uk 02
+  - NL - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
