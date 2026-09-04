@@ -1,35 +1,35 @@
 proxies:
-- name: NL - zhuhai.uk 01
+- name: DE - zhuhai.uk 01
   type: vless
-  server: 84.32.177.6
+  server: 88.216.190.205
   port: 443
   uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: apiv5.jarvesitw.ru
-  client-fingerprint: firefox
+  servername: apiv91.jarvesitw.ru
+  client-fingerprint: chrome
   reality-opts:
-    public-key: Q6vABOUn6Uxtp0uDsfDG-SRJFLBh_oOofD9reec4iSg
-    short-id: cf41f778
+    public-key: QMkh_UZF6wTVrYukjoZTbrRUziZxT-s0Oj8zVP_RuH0
+    short-id: b0ffeec3
 - name: DE - zhuhai.uk 02
   type: vless
-  server: 144.31.50.236
+  server: sv9.jarvesitw.ru
   port: 443
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: yandex.ru
+  servername: apiv91.jarvesitw.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
+    public-key: QMkh_UZF6wTVrYukjoZTbrRUziZxT-s0Oj8zVP_RuH0
+    short-id: b0ffeec3
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - NL - zhuhai.uk 01
+  - DE - zhuhai.uk 01
   - DE - zhuhai.uk 02
