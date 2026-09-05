@@ -1,21 +1,66 @@
 proxies:
-- name: NL - zhuhai.uk 01
+- name: TH - zhuhai.uk 01
   type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: d2299018-601d-488e-afd6-8f55b3f7439f
+  server: 144.124.225.48
+  port: 7443
+  uuid: ecf789a5-edc3-4eef-bdea-837d048afd9a
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: ssl.fastly.com
+  servername: setbacks.hb-website.ru-msk.vkcloud-storage.ru
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 8qUiIosG5-OQWo0tD29BQCbxb50neUg8BynxdAvDzB4
+    short-id: '132142'
+- name: PL - zhuhai.uk 01
+  type: vless
+  server: bridge.kolhoz.fuck-rkn.xyz
+  port: 443
+  uuid: ef5f6054-61c7-4ce8-a35b-dbcec449f242
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jobinvest.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: DE - zhuhai.uk 03
+  type: vless
+  server: sv9.jarvesitw.ru
+  port: 443
+  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: apiv91.jarvesitw.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: QMkh_UZF6wTVrYukjoZTbrRUziZxT-s0Oj8zVP_RuH0
+    short-id: b0ffeec3
+- name: DE - zhuhai.uk 04
+  type: vless
+  server: sv9.jarvesitw.ru
+  port: 443
+  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: apiv91.jarvesitw.ru
   client-fingerprint: chrome
   skip-cert-verify: true
-  ws-opts:
-    path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053"
-    headers:
-      Host: pan1.global.ssl.fastly.net
+  reality-opts:
+    public-key: QMkh_UZF6wTVrYukjoZTbrRUziZxT-s0Oj8zVP_RuH0
+    short-id: b0ffeec3
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - NL - zhuhai.uk 01
+  - TH - zhuhai.uk 01
+  - PL - zhuhai.uk 01
+  - DE - zhuhai.uk 03
+  - DE - zhuhai.uk 04
