@@ -1,38 +1,8 @@
 proxies:
-- name: KR - zhuhai.uk 03
-  type: vless
-  server: kr3-r.link-t7.com
-  port: 10048
-  uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
-  udp: true
-  network: grpc
-  tls: true
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: update
-- name: KR - zhuhai.uk 02
-  type: vless
-  server: kr5-r.link-t7.com
-  port: 10050
-  uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
-  udp: true
-  network: grpc
-  tls: true
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: update
 - name: HK - zhuhai.uk 01
   type: vless
-  server: hk2-r.link-t7.com
-  port: 10127
+  server: hk6-r.link-t7.com
+  port: 10136
   uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
   udp: true
   network: grpc
@@ -44,24 +14,40 @@ proxies:
     public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
     short-id: 686c0ef0
   grpc-opts:
-    grpc-service-name: update
-- name: GB - zhuhai.uk 03
+    grpc-service-name: movie
+- name: DE - zhuhai.uk 01
   type: vless
-  server: 82.40.62.197
-  port: 42546
-  uuid: ea603be5-a2f6-4a4d-b97d-7c976d93ee0d
+  server: mageia.ubuntuhosting.host
+  port: 443
+  uuid: d7430ae7-320c-4658-808b-3006d0627d82
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: amp-api-edge.apps.apple.com
+  servername: mageia.ubuntuhosting.host
   client-fingerprint: chrome
   reality-opts:
-    public-key: YYXAgMxWrqeSWpRqILvNRpjA4VFE_j9b3R0tYv0ULHI
+    public-key: QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng
+    short-id: 3fa234ea9feaa048
+  grpc-opts:
+    grpc-service-name: gun
+- name: PL - zhuhai.uk 01
+  type: vless
+  server: bridge2.kolhoz.fuck-rkn.xyz
+  port: 443
+  uuid: ef5f6054-61c7-4ce8-a35b-dbcec449f242
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - KR - zhuhai.uk 03
-  - KR - zhuhai.uk 02
   - HK - zhuhai.uk 01
-  - GB - zhuhai.uk 03
+  - DE - zhuhai.uk 01
+  - PL - zhuhai.uk 01
