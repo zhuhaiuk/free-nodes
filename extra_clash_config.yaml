@@ -1,66 +1,67 @@
 proxies:
-- name: TH - zhuhai.uk 01
+- name: KR - zhuhai.uk 03
   type: vless
-  server: 144.124.225.48
-  port: 7443
-  uuid: ecf789a5-edc3-4eef-bdea-837d048afd9a
+  server: kr3-r.link-t7.com
+  port: 10048
+  uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: setbacks.hb-website.ru-msk.vkcloud-storage.ru
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 8qUiIosG5-OQWo0tD29BQCbxb50neUg8BynxdAvDzB4
-    short-id: '132142'
-- name: PL - zhuhai.uk 01
-  type: vless
-  server: bridge.kolhoz.fuck-rkn.xyz
-  port: 443
-  uuid: ef5f6054-61c7-4ce8-a35b-dbcec449f242
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: jobinvest.ru
+  servername: s0.awsstatic.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: DE - zhuhai.uk 03
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: KR - zhuhai.uk 02
   type: vless
-  server: sv9.jarvesitw.ru
-  port: 443
-  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
+  server: kr5-r.link-t7.com
+  port: 10050
+  uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: apiv91.jarvesitw.ru
+  servername: s0.awsstatic.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: QMkh_UZF6wTVrYukjoZTbrRUziZxT-s0Oj8zVP_RuH0
-    short-id: b0ffeec3
-- name: DE - zhuhai.uk 04
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: HK - zhuhai.uk 01
   type: vless
-  server: sv9.jarvesitw.ru
-  port: 443
-  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
+  server: hk2-r.link-t7.com
+  port: 10127
+  uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: apiv91.jarvesitw.ru
+  servername: s0.awsstatic.com
   client-fingerprint: chrome
   skip-cert-verify: true
   reality-opts:
-    public-key: QMkh_UZF6wTVrYukjoZTbrRUziZxT-s0Oj8zVP_RuH0
-    short-id: b0ffeec3
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: GB - zhuhai.uk 03
+  type: vless
+  server: 82.40.62.197
+  port: 42546
+  uuid: ea603be5-a2f6-4a4d-b97d-7c976d93ee0d
+  udp: true
+  network: tcp
+  tls: true
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: YYXAgMxWrqeSWpRqILvNRpjA4VFE_j9b3R0tYv0ULHI
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - TH - zhuhai.uk 01
-  - PL - zhuhai.uk 01
-  - DE - zhuhai.uk 03
-  - DE - zhuhai.uk 04
+  - KR - zhuhai.uk 03
+  - KR - zhuhai.uk 02
+  - HK - zhuhai.uk 01
+  - GB - zhuhai.uk 03
