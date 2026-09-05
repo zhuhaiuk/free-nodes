@@ -1,35 +1,21 @@
 proxies:
-- name: DE - zhuhai.uk 01
+- name: NL - zhuhai.uk 01
   type: vless
-  server: 88.216.190.205
+  server: 151.101.56.7
   port: 443
-  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
+  uuid: d2299018-601d-488e-afd6-8f55b3f7439f
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: apiv91.jarvesitw.ru
+  servername: ssl.fastly.com
   client-fingerprint: chrome
-  reality-opts:
-    public-key: QMkh_UZF6wTVrYukjoZTbrRUziZxT-s0Oj8zVP_RuH0
-    short-id: b0ffeec3
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: sv9.jarvesitw.ru
-  port: 443
-  uuid: c6037cf7-d931-4027-af06-6bfb0f10684c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: apiv91.jarvesitw.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: QMkh_UZF6wTVrYukjoZTbrRUziZxT-s0Oj8zVP_RuH0
-    short-id: b0ffeec3
+  skip-cert-verify: true
+  ws-opts:
+    path: "/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053"
+    headers:
+      Host: pan1.global.ssl.fastly.net
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - DE - zhuhai.uk 01
-  - DE - zhuhai.uk 02
+  - NL - zhuhai.uk 01
