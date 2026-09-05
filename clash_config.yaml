@@ -4,14 +4,17 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: RO - zhuhai.uk
+- name: NL - zhuhai.uk
   type: http
-  server: 193.176.84.36
-  port: 9002
-  username: 'null'
-  password: 'null'
+  server: 5.255.118.82
+  port: 443
   tls: true
-  sni: 193.176.84.36
+  skip-cert-verify: true
+- name: PL - zhuhai.uk
+  type: http
+  server: 151.115.54.133
+  port: 443
+  tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk
   type: vless
@@ -26,206 +29,80 @@ proxies:
     path: "/JRr6VGcSLFc034DC6sDbwyWJLbB"
     headers:
       Host: 8-m16.paTtAya-8.kdns.FR
-- name: TH - zhuhai.uk
-  type: ss
-  server: 103.169.67.34
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 - name: US - zhuhai.uk 02
-  type: http
-  server: 138.199.35.207
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  sni: 138.199.35.207
-  skip-cert-verify: true
-- name: US - zhuhai.uk 03
-  type: http
-  server: 138.199.35.217
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: efr-marktplatz.club
-  port: 443
-  tls: true
-  sni: efr-marktplatz.club
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 02
-  type: http
-  server: 193.176.84.35
-  port: 9002
-  tls: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: DE - zhuhai.uk
-  type: http
-  server: 141.17.83.73
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 05
   type: vless
-  server: 172.67.190.103
+  server: 172.67.156.222
   port: 443
   uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   tls: true
-  servername: 6-m16.CHIANG-rai2036.KDnS.fR
+  servername: 5-m16.CHiAn-Mai-6.KDNS.fr
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: "/JRr6VGcSLFc034DC6sDbwyWJLbB"
     headers:
-      Host: 6-m16.chIAnG-rAI2036.kDNS.FR
-- name: NL - zhuhai.uk
-  type: http
-  server: 5.255.118.82
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 06
-  type: http
-  server: 138.199.35.215
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 07
-  type: http
-  server: 138.199.35.217
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  sni: 138.199.35.217
-  skip-cert-verify: true
-- name: US - zhuhai.uk 08
-  type: vless
-  server: 104.21.45.198
-  port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
-  tls: true
-  servername: Img-EDGE-m16-2.caNaDa-ONliNE.eu.Cc
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/JRr6VGcSLFc034DC6sDbwyWJLbB"
-    headers:
-      Host: IMG-eDgE-m16-2.CaNaDA-online.eu.cc
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  ws-opts:
-    path: "/29c8fed7ca22"
-- name: NL - zhuhai.uk 02
-  type: http
-  server: 84.17.47.147
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 84.17.47.147
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 03
+      Host: 5-M16.CHian-MAi-6.KDnS.fr
+- name: RO - zhuhai.uk
   type: http
   server: 193.176.84.32
   port: 9002
-  username: 'null'
-  password: 'null'
   tls: true
   skip-cert-verify: true
-- name: NL - zhuhai.uk 03
+- name: US - zhuhai.uk 03
   type: http
-  server: 84.17.47.150
+  server: 138.199.35.211
   port: 9002
   tls: true
+  sni: 138.199.35.211
   skip-cert-verify: true
-- name: DE - zhuhai.uk 03
+- name: FI - zhuhai.uk
   type: vless
-  server: 31.76.71.140
-  port: 443
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  server: 31.76.4.128
+  port: 5001
+  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
   flow: xtls-rprx-vision
   tls: true
-  servername: rrr.windconnect.pro
-  client-fingerprint: firefox
+  servername: fi.aeternavpn.space
+  skip-cert-verify: true
+  client-fingerprint: qq
   reality-opts:
-    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
-    short-id: 4da5d1853f04af6d
-- name: US - zhuhai.uk 09
-  type: http
-  server: 138.199.35.214
-  port: 9002
-  tls: true
-  sni: 138.199.35.214
-  skip-cert-verify: true
-- name: US - zhuhai.uk 10
+    public-key: HNjZe5pYUhcuE8sASYVVrVSMW_jFfekgLnrnO4xXIyQ
+    short-id: a1b2c3d4
+- name: US - zhuhai.uk 04
   type: vless
-  server: 172.67.206.48
-  port: 443
-  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
-  tls: true
-  servername: 1-M16.AyUTthaYa2030.kdNS.FR
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/JRr6VGcSLFc034DC6sDbwyWJLbB"
-    headers:
-      Host: 1-M16.AyUtTHAYA2030.KdNS.fR
-- name: NL - zhuhai.uk 04
-  type: http
-  server: 84.17.47.149
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: KR - zhuhai.uk
-  type: ss
-  server: 121.46.230.138
-  port: 65443
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: NL - zhuhai.uk 05
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 04
-  type: http
-  server: 193.176.84.35
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: SG - zhuhai.uk
-  type: hysteria2
-  server: sg1.xiaoliyu.cyou
-  port: 1933
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: sg1.xiaoliyu.cyou
-  skip-cert-verify: true
+  server: jp.sofast.live
+  port: 52683
+  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
 - name: HK - zhuhai.uk
   type: http
-  server: fan.240104.xyz
+  server: hk40.240104.xyz
   port: 443
   tls: true
   skip-cert-verify: true
 - name: HK - zhuhai.uk 02
   type: socks5
-  server: 47.242.19.215
-  port: 8899
+  server: 47.239.116.165
+  port: 1080
   username: admin
   password: admin
+- name: DE - zhuhai.uk
+  type: ss
+  server: 92.5.50.105
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: zL960jw6OF04fxIhkzA7FKtTrPP2EgAPXhglszWnTWU=
+- name: DE - zhuhai.uk 02
+  type: ss
+  server: 130.61.231.223
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: "/UtWDfxcFcX9CFdFmZRhxPyk24i/1G8UOH1kuu4vaoQ="
+- name: US - zhuhai.uk 05
+  type: http
+  server: 138.199.35.215
+  port: 9002
+  tls: true
+  skip-cert-verify: true
 - name: JP - zhuhai.uk
   type: http
   server: fan.571589.xyz
@@ -233,13 +110,140 @@ proxies:
   username: 'null'
   password: 'null'
   tls: true
-  sni: fan.571589.xyz
+  skip-cert-verify: true
+- name: US - zhuhai.uk 06
+  type: http
+  server: 138.199.35.220
+  port: 9002
+  tls: true
+  skip-cert-verify: true
 - name: JP - zhuhai.uk 02
   type: http
   server: fan.571589.xyz
   port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: fan.571589.xyz
+  skip-cert-verify: true
+- name: US - zhuhai.uk 07
+  type: http
+  server: efr-marktplatz.club
+  port: 443
+  tls: true
+  sni: efr-marktplatz.club
+  skip-cert-verify: true
+- name: JP - zhuhai.uk 03
+  type: ss
+  server: 121.46.230.137
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: JP - zhuhai.uk 04
+  type: http
+  server: fan.571589.xyz
+  port: 443
+  username: bnVsbDpudWxs
+  tls: true
+- name: US - zhuhai.uk 08
+  type: http
+  server: 209.148.53.153
+  port: 8090
+  tls: true
+  sni: 209.148.53.153
+  skip-cert-verify: true
+- name: US - zhuhai.uk 09
+  type: http
+  server: 138.199.35.209
+  port: 9002
   tls: true
   skip-cert-verify: true
+- name: HK - zhuhai.uk 03
+  type: socks5
+  server: 47.242.19.215
+  port: 8899
+  username: admin
+  password: admin
+- name: DE - zhuhai.uk 03
+  type: http
+  server: fan.973511.xyz
+  port: 443
+  tls: true
+  sni: fan.973511.xyz
+- name: US - zhuhai.uk 10
+  type: vless
+  server: 172.67.204.201
+  port: 443
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  servername: 7-m16.CHiaN-MAi-8.KDNs.FR
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/JRr6VGcSLFc034DC6sDbwyWJLbB"
+    headers:
+      Host: 7-m16.CHiaN-MAi-8.KDNS.Fr
+- name: US - zhuhai.uk 11
+  type: vless
+  server: 172.67.190.103
+  port: 443
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  servername: 9-M16.ChiaNG-RAI2036.KDNS.fR
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/JRr6VGcSLFc034DC6sDbwyWJLbB"
+    headers:
+      Host: 9-m16.chiAng-rAI2036.kDNS.Fr
+- name: KR - zhuhai.uk
+  type: vless
+  server: kr3-r.link-t7.com
+  port: 10048
+  uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
+  tls: true
+  servername: s0.awsstatic.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+- name: KR - zhuhai.uk 02
+  type: ss
+  server: 121.46.230.138
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: SG - zhuhai.uk
+  type: hysteria2
+  server: 138.2.73.238
+  port: 50160
+  password: f87376e17da040ed04c9665ce8972930
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: SG - zhuhai.uk 02
+  type: http
+  server: 154.26.139.24
+  port: 443
+  tls: true
+  sni: 154.26.139.24
+  skip-cert-verify: true
+- name: TH - zhuhai.uk
+  type: ss
+  server: 103.169.67.34
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: ID - zhuhai.uk
+  type: http
+  server: sr2-id.freeconnect.link
+  port: 9251
+  username: freeuser1
+  password: freeuser1
+  tls: true
 - name: DE - zhuhai.uk 01
   type: vless
   server: 88.216.190.205
@@ -259,35 +263,37 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
-  - RO - zhuhai.uk
-  - US - zhuhai.uk
-  - TH - zhuhai.uk
-  - US - zhuhai.uk 02
-  - US - zhuhai.uk 03
-  - US - zhuhai.uk 04
-  - RO - zhuhai.uk 02
-  - DE - zhuhai.uk
-  - US - zhuhai.uk 05
   - NL - zhuhai.uk
-  - US - zhuhai.uk 06
-  - US - zhuhai.uk 07
-  - US - zhuhai.uk 08
-  - DE - zhuhai.uk 02
-  - NL - zhuhai.uk 02
-  - RO - zhuhai.uk 03
-  - NL - zhuhai.uk 03
-  - DE - zhuhai.uk 03
-  - US - zhuhai.uk 09
-  - US - zhuhai.uk 10
-  - NL - zhuhai.uk 04
-  - KR - zhuhai.uk
-  - NL - zhuhai.uk 05
-  - RO - zhuhai.uk 04
-  - SG - zhuhai.uk
+  - PL - zhuhai.uk
+  - US - zhuhai.uk
+  - US - zhuhai.uk 02
+  - RO - zhuhai.uk
+  - US - zhuhai.uk 03
+  - FI - zhuhai.uk
+  - US - zhuhai.uk 04
   - HK - zhuhai.uk
   - HK - zhuhai.uk 02
+  - DE - zhuhai.uk
+  - DE - zhuhai.uk 02
+  - US - zhuhai.uk 05
   - JP - zhuhai.uk
+  - US - zhuhai.uk 06
   - JP - zhuhai.uk 02
+  - US - zhuhai.uk 07
+  - JP - zhuhai.uk 03
+  - JP - zhuhai.uk 04
+  - US - zhuhai.uk 08
+  - US - zhuhai.uk 09
+  - HK - zhuhai.uk 03
+  - DE - zhuhai.uk 03
+  - US - zhuhai.uk 10
+  - US - zhuhai.uk 11
+  - KR - zhuhai.uk
+  - KR - zhuhai.uk 02
+  - SG - zhuhai.uk
+  - SG - zhuhai.uk 02
+  - TH - zhuhai.uk
+  - ID - zhuhai.uk
   - DE - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
