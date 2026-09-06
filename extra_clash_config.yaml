@@ -1,48 +1,21 @@
 proxies:
-- name: PL - zhuhai.uk 02
+- name: HK - zhuhai.uk 02
   type: vless
-  server: 31.77.61.214
-  port: 443
-  uuid: ef5f6054-61c7-4ce8-a35b-dbcec449f242
+  server: hk6-r.link-t7.com
+  port: 10136
+  uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: jobinvest.ru
-  client-fingerprint: firefox
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: PL - zhuhai.uk 03
-  type: vless
-  server: 31.77.61.213
-  port: 443
-  uuid: ef5f6054-61c7-4ce8-a35b-dbcec449f242
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: jobinvest.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: PL - zhuhai.uk 01
-  type: vless
-  server: bridge2.kolhoz.fuck-rkn.xyz
-  port: 443
-  uuid: ef5f6054-61c7-4ce8-a35b-dbcec449f242
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: jobinvest.ru
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: movie
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - PL - zhuhai.uk 02
-  - PL - zhuhai.uk 03
-  - PL - zhuhai.uk 01
+  - HK - zhuhai.uk 02
