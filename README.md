@@ -44,6 +44,7 @@
 机场测评小板块：
 
 - 测评列表：[https://nodes.zhuhai.uk/reviews/](https://nodes.zhuhai.uk/reviews/)
+- 飞鱼机场：[https://nodes.zhuhai.uk/reviews/feiyu.html](https://nodes.zhuhai.uk/reviews/feiyu.html)
 - 飞兔云机场：[https://nodes.zhuhai.uk/reviews/feituyun.html](https://nodes.zhuhai.uk/reviews/feituyun.html)
 - 淘气兔机场：[https://nodes.zhuhai.uk/reviews/taoqitu.html](https://nodes.zhuhai.uk/reviews/taoqitu.html)
 
