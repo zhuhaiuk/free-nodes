@@ -1,38 +1,19 @@
 proxies:
-- name: HK - zhuhai.uk 01
+- name: GB - zhuhai.uk 02
   type: vless
-  server: hk6-r.link-t7.com
-  port: 10136
-  uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
+  server: 82.40.62.39
+  port: 35745
+  uuid: 9d36046b-b249-4efc-954b-59d078cad769
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: movie
-- name: DE - zhuhai.uk 01
-  type: vless
-  server: mageia.ubuntuhosting.host
-  port: 443
-  uuid: d7430ae7-320c-4658-808b-3006d0627d82
-  udp: true
-  network: grpc
-  tls: true
-  servername: mageia.ubuntuhosting.host
+  servername: amp-api-edge.apps.apple.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng
-    short-id: 3fa234ea9feaa048
-  grpc-opts:
-    grpc-service-name: gun
+    public-key: wCxG46NhMGffE2VezAgfPj9PJckGUo07yEBvItYUAGI
 - name: PL - zhuhai.uk 01
   type: vless
-  server: bridge2.kolhoz.fuck-rkn.xyz
+  server: 31.77.61.89
   port: 443
   uuid: ef5f6054-61c7-4ce8-a35b-dbcec449f242
   udp: true
@@ -41,13 +22,25 @@ proxies:
   tls: true
   servername: jobinvest.ru
   client-fingerprint: firefox
-  skip-cert-verify: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: PL - zhuhai.uk 02
+  type: vless
+  server: 31.77.61.214
+  port: 443
+  uuid: ef5f6054-61c7-4ce8-a35b-dbcec449f242
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jobinvest.ru
+  client-fingerprint: firefox
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - HK - zhuhai.uk 01
-  - DE - zhuhai.uk 01
+  - GB - zhuhai.uk 02
   - PL - zhuhai.uk 01
+  - PL - zhuhai.uk 02
