@@ -1,21 +1,20 @@
 proxies:
-- name: HK - zhuhai.uk 02
+- name: US - zhuhai.uk 01
   type: vless
-  server: hk6-r.link-t7.com
-  port: 10136
-  uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
+  server: 5.253.38.67
+  port: 40444
+  uuid: 996ae979-ec8b-4f0f-900c-3cbbe8010138
   udp: true
-  network: grpc
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: s0.awsstatic.com
+  servername: www.lovelive-anime.jp
   client-fingerprint: chrome
   reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  grpc-opts:
-    grpc-service-name: movie
+    public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU
+    short-id: b3f2a1c9
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - HK - zhuhai.uk 02
+  - US - zhuhai.uk 01
