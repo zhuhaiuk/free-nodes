@@ -1,43 +1,105 @@
 proxies:
-- name: US - zhuhai.uk 03
+- name: GB - zhuhai.uk 03
   type: vless
-  server: 38.244.20.160
+  server: 130.12.102.26
   port: 443
-  uuid: 461396cc-2f0a-42cc-b224-d122ba073a2a
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  udp: true
+  network: tcp
+  tls: true
+  servername: localhost
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+- name: GB - zhuhai.uk 04
+  type: vless
+  server: 130.12.102.62
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  udp: true
+  network: tcp
+  tls: true
+  servername: localhost
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+- name: DE - zhuhai.uk 02
+  type: ss
+  server: 130.61.231.219
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: IqGBz5QqcOCmSLFq3Byz30nz+eafkJ98Zxlffhvc48A=
+  udp: true
+- name: GB - zhuhai.uk 02
+  type: vless
+  server: freshjuniper.download
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  udp: true
+  network: tcp
+  tls: true
+  servername: localhost
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+- name: FI - zhuhai.uk 03
+  type: vless
+  server: 194.34.175.98
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.apple.com
-  client-fingerprint: safari
+  servername: localhost
+  client-fingerprint: chrome
   reality-opts:
-    public-key: 1wd_6aAjmtQ3lIbMeNq5zs-5x_z9fL7h9rZwFjBPaG8
-    short-id: 041cf34629de8469
-- name: GB - zhuhai.uk 01
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+- name: GB - zhuhai.uk 05
   type: vless
-  server: 176.109.88.216
+  server: brightharbor.download
   port: 443
-  uuid: 2c7f1414-87ae-4a01-9796-a02c067891a6
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: qq
+  servername: localhost
+  client-fingerprint: chrome
   reality-opts:
-    public-key: oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk
-    short-id: a9c4f17e3b62d8
-- name: NL - zhuhai.uk 01
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+- name: PL - zhuhai.uk 01
   type: vless
-  server: 158.180.12.191
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  server: plll.banibus.ir
+  port: 8118
+  uuid: 8b54a46a-e66b-48cc-bf5a-88f0855a3598
   udp: true
   network: tcp
+  tls: true
+  servername: play.googleapis.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM
+- name: DE - zhuhai.uk 01
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/29c8fed7ca22"
+    headers:
+      Host: "/?--v2rayNplus--v2rayNplus--v2rayNplus--"
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 03
-  - GB - zhuhai.uk 01
-  - NL - zhuhai.uk 01
+  - GB - zhuhai.uk 03
+  - GB - zhuhai.uk 04
+  - DE - zhuhai.uk 02
+  - GB - zhuhai.uk 02
+  - FI - zhuhai.uk 03
+  - GB - zhuhai.uk 05
+  - PL - zhuhai.uk 01
+  - DE - zhuhai.uk 01
