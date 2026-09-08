@@ -231,7 +231,7 @@ const AIRPORT_REVIEWS = [
         height: 3055,
         title: "飞鱼机场节点测速截图",
         caption:
-          "测试包含香港、新加坡、美国、日本、台湾等 Vmess 节点，部分节点平均速度可到 80MB/s 至 109MB/s 区间，个别 CF 或长链路节点速度较低。",
+          "测试包含香港、新加坡、美国、日本、台湾等 Vmess 节点，部分节点平均速度可到 80MB/s 至 109MB/s 区间，个别 CF 节点在不同运营商下测试效果不同。",
         alt: "飞鱼机场节点测速截图，展示 Vmess 节点的 TLS RTT、HTTPS 延迟、平均速度、最大速度和 UDP 类型",
       },
       {
@@ -240,7 +240,7 @@ const AIRPORT_REVIEWS = [
         height: 3055,
         title: "飞鱼机场流媒体解锁截图",
         caption:
-          "测试覆盖 YouTube、BiliBili、Bahamut、ChatGPT、Netflix、Disney+、Abema 等项目，香港、台湾、新加坡、日本、美国节点表现存在差异。",
+          "测试覆盖 YouTube、BiliBili、Bahamut、ChatGPT、Netflix、Disney+、Abema 等项目，香港、台湾、新加坡、日本、美国节点表现存在差异。总结：主流流媒体及 AI 服务全部满足。",
         alt: "飞鱼机场流媒体解锁截图，展示 YouTube、BiliBili、Bahamut、ChatGPT、Netflix、Disney+、Abema 等解锁结果",
       },
       {
@@ -249,7 +249,7 @@ const AIRPORT_REVIEWS = [
         height: 3705,
         title: "飞鱼机场延迟与网络拓扑截图",
         caption:
-          "拓扑图显示出口涉及 Microsoft、Amazon、Google、Sakura Link、Data Communication Business Group、Cloudflare、HKT 等 ASN，适合判断节点落地和线路组成。",
+          "拓扑图显示出口涉及 Microsoft、Amazon、Google、Sakura Link、Data Communication Business Group、Cloudflare、HKT 等 ASN，适合判断节点落地和线路组成。多入口负载均衡，保证晚高峰流畅使用。",
         alt: "飞鱼机场网络拓扑分析截图，展示地区、AS 编号、组织、出口数量和节点入口出口关系",
       },
     ],
