@@ -4,177 +4,147 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+- name: ID - zhuhai.uk
+  type: http
+  server: sr2-id.freeconnect.link
+  port: 9251
+  username: freeuser1
+  password: freeuser1
+  tls: true
+  sni: sr2-id.freeconnect.link
+  skip-cert-verify: true
 - name: US - zhuhai.uk
-  type: http
-  server: 138.199.35.218
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  sni: 138.199.35.218
-  skip-cert-verify: true
-- name: NL - zhuhai.uk
-  type: http
-  server: 84.17.47.146
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 02
   type: vless
-  server: ct.877774.xyz
+  server: 172.67.190.103
   port: 443
-  uuid: 7b1897ec-afb5-425c-afbf-d79634b6b317
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   tls: true
-  servername: us-lax.xhs152.shop
+  servername: 6-m16.CHIANG-rai2036.KDnS.fR
   skip-cert-verify: true
-  client-fingerprint: random
   network: ws
   ws-opts:
-    path: "/announcement"
+    path: "/JRr6VGcSLFc034DC6sDbwyWJLbB"
     headers:
-      Host: us-lax.xhs152.shop
-- name: KR - zhuhai.uk
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-  username: Og%3D%3D
-- name: SG - zhuhai.uk
-  type: vless
-  server: www.visa.com.hk
-  port: 443
-  uuid: 7b1897ec-afb5-425c-afbf-d79634b6b317
-  tls: true
-  servername: ap-south.xhs152.shop
-  skip-cert-verify: true
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: "/announcement"
-    headers:
-      Host: ap-south.xhs152.shop
+      Host: 6-m16.chIAnG-rAI2036.kDNS.FR
 - name: JP - zhuhai.uk
-  type: http
-  server: fan.571589.xyz
-  port: 443
-  username: bnVsbDpudWxs
-  tls: true
-  skip-cert-verify: true
-- name: DE - zhuhai.uk
-  type: http
-  server: 138.201.56.241
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: TW - zhuhai.uk
-  type: http
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  port: 1443
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 03
-  type: http
-  server: mmgr.club
-  port: 443
-  tls: true
-  sni: mmgr.club
-- name: RO - zhuhai.uk
-  type: http
-  server: 193.176.84.26
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: kimberlymilano.icu
-  port: 443
-  username: Ok5vbmU=
-  tls: true
-- name: JP - zhuhai.uk 02
   type: vless
   server: freshjuniper.download
   port: 443
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   tls: true
-  servername: localhost
+  servername: freshjuniper.download
   client-fingerprint: chrome
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-- name: US - zhuhai.uk 05
+- name: CY - zhuhai.uk
   type: http
-  server: 138.199.35.210
-  port: 9002
+  server: 213.207.130.34
+  port: 443
   tls: true
-  sni: 138.199.35.210
+  sni: 213.207.130.34
   skip-cert-verify: true
-- name: NL - zhuhai.uk 02
+- name: US - zhuhai.uk 02
   type: http
-  server: 84.17.47.148
+  server: 138.199.35.198
   port: 9002
   username: 'null'
   password: 'null'
   tls: true
+  sni: 138.199.35.198
   skip-cert-verify: true
-- name: FR - zhuhai.uk
+- name: KR - zhuhai.uk
+  type: socks5
+  server: 121.169.46.116
+  port: 1090
+  username: T2c9PTo=
+- name: US - zhuhai.uk 03
   type: http
-  server: fan.132031.xyz
+  server: 38.28.193.188
   port: 443
+  username: 'null'
+  password: 'null'
   tls: true
   skip-cert-verify: true
-- name: NL - zhuhai.uk 03
-  type: vless
-  server: pr-media.pepro.site
-  port: 14443
-  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+- name: DE - zhuhai.uk
+  type: http
+  server: 141.17.83.78
+  port: 443
+  username: 'null'
+  password: 'null'
   tls: true
-  servername: pr-media.pepro.site
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: "/ws"
+  skip-cert-verify: true
+- name: NL - zhuhai.uk
+  type: http
+  server: 185.246.153.28
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 185.246.153.28
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: socks5
+  server: 185.145.99.41
+  port: 1080
+  username: test123
+  password: test123
+- name: RO - zhuhai.uk
+  type: http
+  server: 193.176.84.21
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: DE - zhuhai.uk 02
+  type: hysteria2
+  server: gta.internet-card.sbs
+  port: 443
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: gta.internet-card.sbs
+- name: US - zhuhai.uk 05
+  type: http
+  server: 138.199.35.197
+  port: 9002
+  username: 'null'
+  password: None
+  tls: true
+  sni: 138.199.35.197
+  skip-cert-verify: true
 - name: US - zhuhai.uk 06
+  type: http
+  server: 138.199.35.196
+  port: 9002
+  username: 'null'
+  password: None
+  tls: true
+  sni: 138.199.35.196
+  skip-cert-verify: true
+- name: US - zhuhai.uk 07
   type: ss
-  server: 121.46.230.233
+  server: 121.46.230.232
   port: 65443
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: SE - zhuhai.uk
-  type: vless
-  server: 200.169.182.57
-  port: 443
-  uuid: 7a97f64d-5fc7-4011-9028-58d2ba751595
-  flow: xtls-rprx-vision
-  tls: true
-  servername: defaultenginedimly.rivetpress.me
-  client-fingerprint: edge
-  reality-opts:
-    public-key: niL0fb-4IaVHr5VCg2yN_5wDTNYEq9W8wi7pDWLPcVg
-    short-id: 7505bfa3b6b933e6
-- name: US - zhuhai.uk 07
+- name: US - zhuhai.uk 08
   type: http
-  server: 138.199.35.203
+  server: 138.199.35.200
   port: 9002
+  username: 'null'
+  password: 'null'
   tls: true
-  sni: 138.199.35.203
+  sni: 138.199.35.200
   skip-cert-verify: true
-- name: BR - zhuhai.uk
-  type: vless
-  server: ct.877774.xyz
+- name: US - zhuhai.uk 09
+  type: http
+  server: purecambogiasl.live
   port: 443
-  uuid: 7b1897ec-afb5-425c-afbf-d79634b6b317
   tls: true
-  servername: br-gru.xhs152.shop
   skip-cert-verify: true
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: "/announcement"
-    headers:
-      Host: br-gru.xhs152.shop
-- name: NL - zhuhai.uk 04
+- name: FI - zhuhai.uk
+  type: socks5
+  server: 83.147.216.208
+  port: 1080
+  username: Og==
+- name: NL - zhuhai.uk 02
   type: http
   server: 51.159.225.196
   port: 23856
@@ -182,47 +152,56 @@ proxies:
   password: 'null'
   tls: true
   skip-cert-verify: true
-- name: US - zhuhai.uk 08
-  type: http
-  server: 138.199.35.196
-  port: 9002
-  tls: true
-  sni: 138.199.35.196
-  skip-cert-verify: true
-- name: US - zhuhai.uk 09
-  type: http
-  server: 138.199.35.211
-  port: 9002
-  tls: true
-  sni: 138.199.35.211
-  skip-cert-verify: true
 - name: US - zhuhai.uk 10
   type: http
-  server: 138.199.35.198
+  server: 138.199.35.202
   port: 9002
+  username: 'null'
+  password: None
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 11
   type: http
-  server: 138.199.35.204
-  port: 9002
+  server: 52.55.81.168
+  port: 443
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
 - name: HK - zhuhai.uk
   type: socks5
-  server: 47.239.116.165
-  port: 1080
-  username: admin
-  password: admin
-- name: HK - zhuhai.uk 02
-  type: socks5
   server: 47.242.19.215
   port: 8899
   username: admin
   password: admin
-- name: GB - zhuhai.uk 04
+- name: HK - zhuhai.uk 02
+  type: http
+  server: hk40.240104.xyz
+  port: 443
+  tls: true
+  sni: hk40.240104.xyz
+  skip-cert-verify: true
+- name: SG - zhuhai.uk
+  type: http
+  server: 146.70.29.45
+  port: 443
+  username: testuser1
+  password: e4b72b531a2d10900519
+  tls: true
+  sni: 92461d2d.acsnet.co
+- name: GB - zhuhai.uk 03
+  type: vless
+  server: 130.12.102.26
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  udp: true
+  network: tcp
+  tls: true
+  servername: localhost
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+- name: GB - zhuhai.uk 02
   type: vless
   server: 130.12.102.125
   port: 443
@@ -236,56 +215,6 @@ proxies:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
 - name: GB - zhuhai.uk 01
   type: vless
-  server: 130.12.102.62
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  network: tcp
-  tls: true
-  servername: localhost
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-- name: GB - zhuhai.uk 05
-  type: vless
-  server: 130.12.102.26
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  network: tcp
-  tls: true
-  servername: localhost
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-- name: GB - zhuhai.uk 07
-  type: vless
-  server: 130.12.102.26
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  network: tcp
-  tls: true
-  servername: localhost
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-- name: GB - zhuhai.uk 08
-  type: vless
-  server: 130.12.102.125
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  network: tcp
-  tls: true
-  servername: localhost
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-- name: GB - zhuhai.uk 03
-  type: vless
   server: freshjuniper.download
   port: 443
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
@@ -296,28 +225,13 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-- name: GB - zhuhai.uk 02
+- name: GB - zhuhai.uk 04
   type: vless
-  server: brightharbor.download
+  server: freshjuniper.download
   port: 443
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: localhost
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-- name: GB - zhuhai.uk 06
-  type: vless
-  server: brightharbor.download
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
   tls: true
   servername: localhost
   client-fingerprint: chrome
@@ -329,41 +243,34 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
+  - ID - zhuhai.uk
   - US - zhuhai.uk
-  - NL - zhuhai.uk
+  - JP - zhuhai.uk
+  - CY - zhuhai.uk
   - US - zhuhai.uk 02
   - KR - zhuhai.uk
-  - SG - zhuhai.uk
-  - JP - zhuhai.uk
-  - DE - zhuhai.uk
-  - TW - zhuhai.uk
   - US - zhuhai.uk 03
-  - RO - zhuhai.uk
+  - DE - zhuhai.uk
+  - NL - zhuhai.uk
   - US - zhuhai.uk 04
-  - JP - zhuhai.uk 02
+  - RO - zhuhai.uk
+  - DE - zhuhai.uk 02
   - US - zhuhai.uk 05
-  - NL - zhuhai.uk 02
-  - FR - zhuhai.uk
-  - NL - zhuhai.uk 03
   - US - zhuhai.uk 06
-  - SE - zhuhai.uk
   - US - zhuhai.uk 07
-  - BR - zhuhai.uk
-  - NL - zhuhai.uk 04
   - US - zhuhai.uk 08
   - US - zhuhai.uk 09
+  - FI - zhuhai.uk
+  - NL - zhuhai.uk 02
   - US - zhuhai.uk 10
   - US - zhuhai.uk 11
   - HK - zhuhai.uk
   - HK - zhuhai.uk 02
-  - GB - zhuhai.uk 04
-  - GB - zhuhai.uk 01
-  - GB - zhuhai.uk 05
-  - GB - zhuhai.uk 07
-  - GB - zhuhai.uk 08
+  - SG - zhuhai.uk
   - GB - zhuhai.uk 03
   - GB - zhuhai.uk 02
-  - GB - zhuhai.uk 06
+  - GB - zhuhai.uk 01
+  - GB - zhuhai.uk 04
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
