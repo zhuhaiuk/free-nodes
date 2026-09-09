@@ -969,6 +969,7 @@ function indexHtml(stats, parts) {
 
     <h2 id="topics">关键词专题</h2>
     <p>这些页面覆盖免费节点、代理订阅、Clash、Mihomo、V2Ray、Shadowrocket 等搜索意图，帮助搜索引擎和 AI 摘要系统理解项目结构。</p>
+    <p>需要查看 2026 年免费 V2Ray 订阅链接、Base64 导入与更新说明时，请进入<a href="topics/v2ray-nodes.html">免费 V2Ray 节点订阅链接</a>专题；首页继续提供通用订阅入口。</p>
     <div class="topic-grid">
 ${topicCards()}
     </div>
