@@ -192,20 +192,7 @@ proxies:
   password: freeuser1
   tls: true
   sni: sr2-id.freeconnect.link
-- name: GB - zhuhai.uk 01
-  type: vless
-  server: 130.12.102.26
-  port: 443
-  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-  udp: true
-  network: tcp
-  tls: true
-  servername: localhost
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-- name: GB - zhuhai.uk 04
+- name: GB - zhuhai.uk 06
   type: vless
   server: 130.12.102.125
   port: 443
@@ -218,15 +205,15 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-- name: GB - zhuhai.uk 02
+- name: GB - zhuhai.uk 03
   type: vless
-  server: freshjuniper.download
+  server: 130.12.102.26
   port: 443
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   udp: true
   network: tcp
   tls: true
-  servername: freshjuniper.download
+  servername: localhost
   client-fingerprint: chrome
   skip-cert-verify: true
   reality-opts:
@@ -241,9 +228,10 @@ proxies:
   tls: true
   servername: localhost
   client-fingerprint: chrome
+  skip-cert-verify: true
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-- name: GB - zhuhai.uk 03
+- name: GB - zhuhai.uk 04
   type: vless
   server: freshjuniper.download
   port: 443
@@ -251,11 +239,111 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: localhost
+  servername: freshjuniper.download
   client-fingerprint: chrome
   skip-cert-verify: true
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+- name: GB - zhuhai.uk 01
+  type: vless
+  server: freshjuniper.download
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  udp: true
+  network: tcp
+  tls: true
+  servername: freshjuniper.download
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+- name: KR - zhuhai.uk 03
+  type: vless
+  server: kr3-r.link-t7.com
+  port: 10048
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: KR - zhuhai.uk 05
+  type: vless
+  server: kr1-r.link-t7.com
+  port: 10046
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: KR - zhuhai.uk 04
+  type: vless
+  server: kr4-r.link-t7.com
+  port: 10049
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: KR - zhuhai.uk 02
+  type: vless
+  server: kr2-r.link-t7.com
+  port: 10047
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
+- name: GB - zhuhai.uk 02
+  type: vless
+  server: brightharbor.download
+  port: 443
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: localhost
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+- name: SG - zhuhai.uk 01
+  type: vless
+  server: sg2-r.link-t7.com
+  port: 10037
+  uuid: D2436339-0F26-479A-8064-4D91C2B93652
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
 proxy-groups:
 - name: 选择出口
   type: select
@@ -288,11 +376,17 @@ proxy-groups:
   - SG - zhuhai.uk
   - SG - zhuhai.uk 02
   - ID - zhuhai.uk
-  - GB - zhuhai.uk 01
-  - GB - zhuhai.uk 04
-  - GB - zhuhai.uk 02
-  - GB - zhuhai.uk 05
+  - GB - zhuhai.uk 06
   - GB - zhuhai.uk 03
+  - GB - zhuhai.uk 05
+  - GB - zhuhai.uk 04
+  - GB - zhuhai.uk 01
+  - KR - zhuhai.uk 03
+  - KR - zhuhai.uk 05
+  - KR - zhuhai.uk 04
+  - KR - zhuhai.uk 02
+  - GB - zhuhai.uk 02
+  - SG - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
