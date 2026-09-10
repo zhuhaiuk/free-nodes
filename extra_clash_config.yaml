@@ -1,20 +1,200 @@
 proxies:
-- name: PL - zhuhai.uk 01
+- name: US - zhuhai.uk 08
   type: vless
-  server: 82.118.22.161
+  server: 5.34.178.120
   port: 443
-  uuid: '05488656-d4bf-4634-8b2e-e4ff5a56c7e2'
+  uuid: 9063f9fb-e88a-4ee0-b4a4-a92ca7316a9f
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
+    public-key: EVhq2BxKuw2Cody1DmF_HPvUYKwzdXbHP47blUv-eRM
+    short-id: 55ab5559e3a6d10a
+- name: HK - zhuhai.uk 02
+  type: trojan
+  server: 62.234.223.235
+  port: 44005
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: CA - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44007
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: trojan
+  server: 62.234.223.235
+  port: 44006
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: SG - zhuhai.uk 02
+  type: trojan
+  server: 62.234.223.235
+  port: 44012
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: JP - zhuhai.uk 03
+  type: trojan
+  server: 62.234.223.235
+  port: 44029
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: SG - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44000
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: JP - zhuhai.uk 02
+  type: trojan
+  server: 62.234.223.235
+  port: 44002
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: MY - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44054
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: ID - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44058
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: IN - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44057
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: TH - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44060
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: KR - zhuhai.uk 02
+  type: trojan
+  server: 62.234.223.235
+  port: 44052
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: trojan
+  server: 62.234.223.235
+  port: 44009
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: US - zhuhai.uk 02
+  type: trojan
+  server: 62.234.223.235
+  port: 44001
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: DE - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44064
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: AU - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44063
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: GB - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44053
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: TR - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44055
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: BR - zhuhai.uk 01
+  type: trojan
+  server: 62.234.223.235
+  port: 44062
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
+- name: CA - zhuhai.uk 02
+  type: trojan
+  server: 62.234.223.235
+  port: 44065
+  password: 4e7c56ed-68dc-358d-8b4b-fe5c2e74632d
+  udp: true
+  sni: baidu.com
+  skip-cert-verify: true
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - PL - zhuhai.uk 01
+  - US - zhuhai.uk 08
+  - HK - zhuhai.uk 02
+  - CA - zhuhai.uk 01
+  - US - zhuhai.uk 03
+  - SG - zhuhai.uk 02
+  - JP - zhuhai.uk 03
+  - SG - zhuhai.uk 01
+  - JP - zhuhai.uk 02
+  - MY - zhuhai.uk 01
+  - ID - zhuhai.uk 01
+  - IN - zhuhai.uk 01
+  - TH - zhuhai.uk 01
+  - KR - zhuhai.uk 02
+  - US - zhuhai.uk 04
+  - US - zhuhai.uk 02
+  - DE - zhuhai.uk 01
+  - AU - zhuhai.uk 01
+  - GB - zhuhai.uk 01
+  - TR - zhuhai.uk 01
+  - BR - zhuhai.uk 01
+  - CA - zhuhai.uk 02
