@@ -1,35 +1,35 @@
 proxies:
-- name: US - zhuhai.uk 02
+- name: LT - zhuhai.uk 02
   type: vless
-  server: 129.146.134.26
-  port: 34237
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  server: 88.119.176.24
+  port: 443
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: cf3.schzyc.cc.cd
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/proxyip=ProxyIP.CMLiussss.net"
-    headers:
-      Host: cf3.schzyc.cc.cd
-- name: NL - zhuhai.uk 01
+  servername: lit9.helper-internet.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+- name: LT - zhuhai.uk 01
   type: vless
-  server: 89.125.146.39
-  port: 8443
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  server: lit9.helper-internet.com
+  port: 443
+  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: cf3.schzyc.cc.cd
+  servername: lit9.helper-internet.com
   client-fingerprint: chrome
-  ws-opts:
-    path: "/proxyip=ProxyIP.CMLiussss.net"
-    headers:
-      Host: cf3.schzyc.cc.cd
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 02
-  - NL - zhuhai.uk 01
+  - LT - zhuhai.uk 02
+  - LT - zhuhai.uk 01
