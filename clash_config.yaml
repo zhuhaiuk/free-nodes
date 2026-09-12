@@ -4,62 +4,166 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: HK - zhuhai.uk
-  type: socks5
-  server: 123.58.219.171
-  port: 10808
-- name: US - zhuhai.uk
+- name: NL - zhuhai.uk
   type: http
-  server: 138.199.35.201
+  server: 84.17.47.147
   port: 9002
   tls: true
-  sni: 138.199.35.201
+  sni: 84.17.47.147
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 02
+  type: http
+  server: 84.17.47.147
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: HK - zhuhai.uk
+  type: vless
+  server: 172.67.78.4
+  port: 2096
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  tls: true
+  servername: cvhpyn.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/"
+    headers:
+      Host: cvhpyn.pages.dev
+- name: HK - zhuhai.uk 02
+  type: vless
+  server: 172.67.74.90
+  port: 443
+  uuid: a4a951b9-901d-4db8-8a7d-6df82c4b5c23
+  tls: true
+  servername: cvhpyn.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/"
+    headers:
+      Host: cvhpyn.pages.dev
+- name: US - zhuhai.uk
+  type: http
+  server: 138.199.35.195
+  port: 9002
+  tls: true
+  sni: 138.199.35.195
+  skip-cert-verify: true
+- name: FR - zhuhai.uk
+  type: http
+  server: fan.132031.xyz
+  port: 443
+  tls: true
+  sni: fan.132031.xyz
+- name: JP - zhuhai.uk
+  type: http
+  server: fan.571589.xyz
+  port: 443
+  tls: true
+- name: NL - zhuhai.uk 03
+  type: http
+  server: 51.159.225.196
+  port: 23856
+  tls: true
+  sni: 51.159.225.196
   skip-cert-verify: true
 - name: US - zhuhai.uk 02
   type: http
-  server: 138.199.35.210
+  server: 138.199.35.198
   port: 9002
   username: 'null'
   password: 'null'
   tls: true
+  sni: 138.199.35.198
   skip-cert-verify: true
-- name: RO - zhuhai.uk
+- name: JP - zhuhai.uk 02
   type: http
-  server: 193.176.84.21
+  server: 110.80.25.76
+  port: 8094
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: http
+  server: 138.199.35.209
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: BD - zhuhai.uk
+- name: US - zhuhai.uk 04
   type: http
-  server: 35.247.136.78
+  server: efr-marktplatz.club
   port: 443
   tls: true
   skip-cert-verify: true
+- name: US - zhuhai.uk 05
+  type: http
+  server: 138.199.35.208
+  port: 9002
+  username: 'null'
+  password: None
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk
+  type: http
+  server: 193.176.84.34
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 04
+  type: http
+  server: 157.22.183.72
+  port: 443
+  tls: true
+- name: US - zhuhai.uk 06
+  type: http
+  server: 138.199.35.201
+  port: 9002
+  username: 'null'
+  password: None
+  tls: true
+  sni: 138.199.35.201
+  skip-cert-verify: true
 - name: RO - zhuhai.uk 02
   type: http
-  server: 193.176.84.22
+  server: 193.176.84.38
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: KR - zhuhai.uk
+- name: DE - zhuhai.uk
+  type: http
+  server: 167.172.172.190
+  port: 443
+  username: testuser1
+  password: e4b72b531a2d10900519
+  tls: true
+  sni: a7acacbe.acsnet.co
+  skip-cert-verify: true
+- name: NL - zhuhai.uk 05
   type: vless
-  server: kr2.miyazono-kaori.com
+  server: nl2.miyazono-kaori.com
   port: 443
   uuid: 0edbdf9a-3cae-4234-889a-1ec5c59c9c2c
   flow: xtls-rprx-vision
   tls: true
-  servername: www.coway.com
+  servername: www.philips.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
-    short-id: c8af1462debbc1
-- name: JP - zhuhai.uk
+    public-key: Ncb78PVwvwU2tB1eiOlJd0ZCG2CbqG7-dPIHztlq2yM
+    short-id: 69cc4c0d5e
+- name: US - zhuhai.uk 07
   type: http
-  server: fan.587475.xyz
+  server: efr-marktplatz.club
   port: 443
   tls: true
-  skip-cert-verify: true
-- name: KR - zhuhai.uk 02
+- name: TR - zhuhai.uk
+  type: vless
+  server: connect3.nyxserver.ir
+  port: 8444
+  uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
+  tls: true
+  client-fingerprint: chrome
+- name: KR - zhuhai.uk
   type: vless
   server: kr1.miyazono-kaori.com
   port: 443
@@ -71,43 +175,18 @@ proxies:
   reality-opts:
     public-key: aVGSSemhxqqDg75lUDBxCNZZXfuBb4QrU8yZYnJD6nk
     short-id: f554f56d31
-- name: HU - zhuhai.uk
-  type: http
-  server: 146.70.203.18
+- name: KR - zhuhai.uk 02
+  type: vless
+  server: kr2.miyazono-kaori.com
   port: 443
+  uuid: 0edbdf9a-3cae-4234-889a-1ec5c59c9c2c
+  flow: xtls-rprx-vision
   tls: true
-  skip-cert-verify: true
-- name: HK - zhuhai.uk 02
-  type: http
-  server: hk40.240104.xyz
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: JP - zhuhai.uk 02
-  type: http
-  server: fan.571589.xyz
-  port: 443
-  username: bnVsbDpudWxs
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 03
-  type: http
-  server: fan.226278.xyz
-  port: 443
-  tls: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: fan.596189.xyz
-  port: 443
-  tls: true
-  sni: fan.596189.xyz
-  skip-cert-verify: true
-- name: JP - zhuhai.uk 03
-  type: http
-  server: 110.80.25.76
-  port: 8094
-  tls: true
-  skip-cert-verify: true
+  servername: www.coway.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
+    short-id: c8af1462debbc1
 - name: SG - zhuhai.uk
   type: vless
   server: sg1.miyazono-kaori.com
@@ -120,46 +199,11 @@ proxies:
   reality-opts:
     public-key: vUhHTgZiXSho6Nv84w_JZW7Mo7XjJr0TsOBf19Dpols
     short-id: 37c94ae25b69a93a
-- name: US - zhuhai.uk 05
-  type: vless
-  server: 8.39.125.23
-  port: 8443
-  uuid: 4c3f4c91-fb76-46bf-8758-15e708486374
-  tls: true
-  servername: flywall.666986.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: "/mistyhill"
-    headers:
-      Host: flywall.666986.xyz
-- name: NL - zhuhai.uk
+- name: SG - zhuhai.uk 02
   type: http
-  server: 84.17.47.147
-  port: 9002
-  tls: true
-  sni: 84.17.47.147
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 03
-  type: http
-  server: 193.176.84.39
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: JP - zhuhai.uk 04
-  type: http
-  server: fan.571589.xyz
+  server: 154.26.139.24
   port: 443
-  username: 'null'
-  password: 'null'
   tls: true
-  skip-cert-verify: true
-- name: NL - zhuhai.uk 02
-  type: http
-  server: 84.17.47.149
-  port: 9002
-  tls: true
-  sni: 84.17.47.149
   skip-cert-verify: true
 - name: MY - zhuhai.uk
   type: ss
@@ -207,27 +251,31 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
+  - NL - zhuhai.uk
+  - NL - zhuhai.uk 02
   - HK - zhuhai.uk
-  - US - zhuhai.uk
-  - US - zhuhai.uk 02
-  - RO - zhuhai.uk
-  - BD - zhuhai.uk
-  - RO - zhuhai.uk 02
-  - KR - zhuhai.uk
-  - JP - zhuhai.uk
-  - KR - zhuhai.uk 02
-  - HU - zhuhai.uk
   - HK - zhuhai.uk 02
+  - US - zhuhai.uk
+  - FR - zhuhai.uk
+  - JP - zhuhai.uk
+  - NL - zhuhai.uk 03
+  - US - zhuhai.uk 02
   - JP - zhuhai.uk 02
   - US - zhuhai.uk 03
   - US - zhuhai.uk 04
-  - JP - zhuhai.uk 03
-  - SG - zhuhai.uk
   - US - zhuhai.uk 05
-  - NL - zhuhai.uk
-  - RO - zhuhai.uk 03
-  - JP - zhuhai.uk 04
-  - NL - zhuhai.uk 02
+  - RO - zhuhai.uk
+  - NL - zhuhai.uk 04
+  - US - zhuhai.uk 06
+  - RO - zhuhai.uk 02
+  - DE - zhuhai.uk
+  - NL - zhuhai.uk 05
+  - US - zhuhai.uk 07
+  - TR - zhuhai.uk
+  - KR - zhuhai.uk
+  - KR - zhuhai.uk 02
+  - SG - zhuhai.uk
+  - SG - zhuhai.uk 02
   - MY - zhuhai.uk
   - ID - zhuhai.uk
   - US - zhuhai.uk 01
