@@ -1,35 +1,35 @@
 proxies:
-- name: LT - zhuhai.uk 02
+- name: US - zhuhai.uk 01
   type: vless
-  server: 88.119.176.24
+  server: cdn12usa.goonars.com
   port: 443
-  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  uuid: 02722550-1915-4629-a653-cbe95e594f70
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: lit9.helper-internet.com
+  servername: cdn12usa.goonars.com
   client-fingerprint: firefox
   reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-- name: LT - zhuhai.uk 01
+    public-key: vFnG0SzHIv43o3L8bw4reKp3EIFuSS-BCyBqbWUsYCo
+    short-id: 6591f200
+- name: RU - zhuhai.uk 01
   type: vless
-  server: lit9.helper-internet.com
+  server: 5.35.91.96
   port: 443
-  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  uuid: 52d1d193-7a49-4d2e-9d52-c2615704034b
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: lit9.helper-internet.com
+  servername: rus1.baboon.digital
   client-fingerprint: chrome
   reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
+    public-key: GKuFgxMDHNxodlhM5bVclxDtFSdb1vSadmpD7fYRERo
+    short-id: c3248f699ea5d8d0
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - LT - zhuhai.uk 02
-  - LT - zhuhai.uk 01
+  - US - zhuhai.uk 01
+  - RU - zhuhai.uk 01
