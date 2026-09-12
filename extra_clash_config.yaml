@@ -1,14 +1,14 @@
 proxies:
-- name: GB - zhuhai.uk 02
+- name: GB - zhuhai.uk 01
   type: vless
-  server: 31.76.20.209
+  server: 31.76.21.179
   port: 443
   uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: de.pinkmoon.pro
+  servername: fin.pinkmoon.pro
   client-fingerprint: firefox
   reality-opts:
     public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
@@ -17,4 +17,4 @@ proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - GB - zhuhai.uk 02
+  - GB - zhuhai.uk 01
