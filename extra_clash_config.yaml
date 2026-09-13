@@ -1,20 +1,62 @@
 proxies:
-- name: US - zhuhai.uk 03
+- name: NL - zhuhai.uk 01
   type: vless
-  server: 104.245.242.8
-  port: 8443
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  server: 94.237.6.214
+  port: 80
+  uuid: c600d298-2d16-4e5d-b760-2b405ef1ab03
   udp: true
-  network: grpc
+  network: ws
+  ws-opts:
+    path: "/pgcfws-r4"
+    headers:
+      Host: 94.237.6.214
+- name: DE - zhuhai.uk 01
+  type: vless
+  server: 193.58.121.189
+  port: 443
+  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: download.nvidia.com
-  client-fingerprint: chrome
+  servername: de.pinkmoon.pro
+  client-fingerprint: firefox
   reality-opts:
-    public-key: FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk
-  grpc-opts:
-    grpc-service-name: TunService
+    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
+    short-id: 8ffa160e608bf539
+- name: DE - zhuhai.uk 03
+  type: vless
+  server: 94.156.179.46
+  port: 443
+  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de.pinkmoon.pro
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
+    short-id: 8ffa160e608bf539
+- name: DE - zhuhai.uk 02
+  type: vless
+  server: 212.80.7.141
+  port: 443
+  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: de.pinkmoon.pro
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
+    short-id: 8ffa160e608bf539
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 03
+  - NL - zhuhai.uk 01
+  - DE - zhuhai.uk 01
+  - DE - zhuhai.uk 03
+  - DE - zhuhai.uk 02
