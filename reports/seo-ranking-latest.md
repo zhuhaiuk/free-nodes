@@ -9,18 +9,18 @@
 
 | 关键词 | 当前结果 | 匹配链接 |
 | --- | --- | --- |
-| 免费节点 | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| 免费代理节点 | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| 免费节点订阅 | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%E8%AE%A2%E9%98%85&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| 每小时更新免费节点 | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=%E6%AF%8F%E5%B0%8F%E6%97%B6%E6%9B%B4%E6%96%B0%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| Clash 节点 | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=Clash+%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| Mihomo 节点 | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=Mihomo+%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| V2Ray 节点 | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=V2Ray+%E8%8A%82%E7%82%B9&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| Shadowrocket 共享账号 | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=Shadowrocket+%E5%85%B1%E4%BA%AB%E8%B4%A6%E5%8F%B7&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| free nodes | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=free+nodes&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| free proxy nodes | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=free+proxy+nodes&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| free Clash nodes | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=free+Clash+nodes&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
-| free V2Ray nodes | 未配置 | 429 Too Many Requests for https://serpapi.com/search.json?engine=google&q=free+V2Ray+nodes&hl=zh-cn&gl=us&num=20&api_key=a75285becfdcd21a3ef1eac78fd345c23067b7363bfd3465ad0c0fcd2a039db5 |
+| 免费节点 | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| 免费代理节点 | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| 免费节点订阅 | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| 每小时更新免费节点 | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| Clash 节点 | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| Mihomo 节点 | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| V2Ray 节点 | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| Shadowrocket 共享账号 | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| free nodes | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| free proxy nodes | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| free Clash nodes | 未配置 | 429 Too Many Requests for https://serpapi.com |
+| free V2Ray nodes | 未配置 | 429 Too Many Requests for https://serpapi.com |
 
 > 如需启用 Google 排名查询，请在 GitHub Secrets 中配置 `SERPAPI_KEY`。可选环境变量：`GOOGLE_GL`、`GOOGLE_HL`、`SEO_KEYWORDS`。
 

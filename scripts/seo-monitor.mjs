@@ -48,7 +48,7 @@ function headers() {
 async function fetchJson(url, options = {}) {
   const response = await fetch(url, options);
   if (!response.ok) {
-    throw new Error(`${response.status} ${response.statusText} for ${url}`);
+    throw new Error(`${response.status} ${response.statusText} for ${new URL(url).origin}`);
   }
   return response.json();
 }
@@ -186,7 +186,7 @@ for (const keyword of keywords) {
     googleRanks.push({
       keyword,
       status: "error",
-      reason: error.message,
+      reason: serpApiKey ? error.message.replaceAll(serpApiKey, "[REDACTED]") : error.message,
       target: null,
     });
   }

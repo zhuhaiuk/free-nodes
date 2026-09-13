@@ -62,7 +62,7 @@ async function fetchJson(url) {
     },
   });
   if (!response.ok) {
-    throw new Error(`${response.status} ${response.statusText} for ${url}`);
+    throw new Error(`${response.status} ${response.statusText} for ${new URL(url).origin}`);
   }
   return response.json();
 }
@@ -293,7 +293,7 @@ for (const keyword of KEYWORDS) {
     serps.push({
       keyword,
       status: "error",
-      reason: error.message,
+      reason: serpApiKey ? error.message.replaceAll(serpApiKey, "[REDACTED]") : error.message,
       organicResults: [],
       target: null,
     });
