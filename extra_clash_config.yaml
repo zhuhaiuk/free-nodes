@@ -1,20 +1,20 @@
 proxies:
-- name: DE - zhuhai.uk 01
+- name: US - zhuhai.uk 03
   type: vless
-  server: 77.90.52.36
-  port: 443
-  uuid: 60300afa-3366-4ae3-959a-7b50438acebb
+  server: 104.245.242.8
+  port: 8443
+  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: de5.wequ.host
+  servername: download.nvidia.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: sL-WH6OA3-ed-5vxu5wWuTmQ-8Y4Fbfpx24kkgu3s1M
-    short-id: 17b3b79c
+    public-key: FOQzn10eHqu4F5xOxiXW2bTDG8lH4TdOXP6A5rDqKFk
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - DE - zhuhai.uk 01
+  - US - zhuhai.uk 03
