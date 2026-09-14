@@ -1,62 +1,161 @@
 proxies:
-- name: NL - zhuhai.uk 01
+- name: US - zhuhai.uk 01
   type: vless
-  server: 94.237.6.214
-  port: 80
-  uuid: c600d298-2d16-4e5d-b760-2b405ef1ab03
+  server: us1-r.link-t7.com
+  port: 10238
+  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
+  udp: true
+  network: grpc
+  tls: true
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: movie
+- name: US - zhuhai.uk 02
+  type: vless
+  server: 38.244.20.149
+  port: 443
+  uuid: a2e2d5e7-5d23-40d8-baad-088b9e26b9c2
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: safari
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA
+    short-id: 0631f6666e3e7035
+- name: US - zhuhai.uk 03
+  type: vless
+  server: 38.244.20.41
+  port: 443
+  uuid: 2869896f-424d-481a-bd68-f2fcae11b0c4
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA
+    short-id: 802db6d56acb5d79
+- name: US - zhuhai.uk 07
+  type: vless
+  server: 38.244.20.149
+  port: 443
+  uuid: a2e2d5e7-5d23-40d8-baad-088b9e26b9c2
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA
+    short-id: 0631f6666e3e7035
+- name: JP - zhuhai.uk 01
+  type: vless
+  server: 103.76.85.156
+  port: 443
+  uuid: 4082b282-dc67-40df-b114-f70d71d61f6f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: safari
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8
+    short-id: 41dd2ebdd7e0a61a
+- name: JP - zhuhai.uk 02
+  type: vless
+  server: 103.76.85.156
+  port: 443
+  uuid: 4082b282-dc67-40df-b114-f70d71d61f6f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8
+    short-id: 41dd2ebdd7e0a61a
+- name: TR - zhuhai.uk 01
+  type: vless
+  server: 13.143.137.164
+  port: 9443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: plaincanvas.videoclothing.xyz
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
+    short-id: e336c9a786fae301
+- name: TR - zhuhai.uk 02
+  type: vless
+  server: 13.143.137.164
+  port: 9443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: plaincanvas.videoclothing.xyz
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
+    short-id: e336c9a786fae301
+- name: TH - zhuhai.uk 01
+  type: vless
+  server: news.zoom.us
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
   network: ws
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: "/pgcfws-r4"
+    path: "/"
     headers:
-      Host: 94.237.6.214
-- name: DE - zhuhai.uk 01
+      Host: u.srilankangrill.online
+- name: KR - zhuhai.uk 01
   type: vless
-  server: 193.58.121.189
-  port: 443
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
+  server: kr3-r.link-t7.com
+  port: 10048
+  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: de.pinkmoon.pro
-  client-fingerprint: firefox
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-- name: DE - zhuhai.uk 03
-  type: vless
-  server: 94.156.179.46
-  port: 443
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: de.pinkmoon.pro
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: 212.80.7.141
-  port: 443
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: de.pinkmoon.pro
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  grpc-opts:
+    grpc-service-name: update
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - NL - zhuhai.uk 01
-  - DE - zhuhai.uk 01
-  - DE - zhuhai.uk 03
-  - DE - zhuhai.uk 02
+  - US - zhuhai.uk 01
+  - US - zhuhai.uk 02
+  - US - zhuhai.uk 03
+  - US - zhuhai.uk 07
+  - JP - zhuhai.uk 01
+  - JP - zhuhai.uk 02
+  - TR - zhuhai.uk 01
+  - TR - zhuhai.uk 02
+  - TH - zhuhai.uk 01
+  - KR - zhuhai.uk 01
