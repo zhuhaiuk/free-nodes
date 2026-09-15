@@ -1,96 +1,20 @@
 proxies:
-- name: US - zhuhai.uk 04
+- name: US - zhuhai.uk 01
   type: vless
-  server: us15.zuoai.cf
+  server: vf670.cc.cd
   port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: 14b9ccc8-9a79-4c54-90a6-6b3c85a6f9ae
   udp: true
   network: ws
   tls: true
-  servername: xi.tbv.ccwu.cc
+  servername: somersby.pt.vf670.cc.cd
   client-fingerprint: chrome
   ws-opts:
-    path: "/proxyip=us.xiabibi.cf"
+    path: "/sg-cntb"
     headers:
-      Host: xi.tbv.ccwu.cc
-- name: GB - zhuhai.uk 02
-  type: vless
-  server: 46.33.8.20
-  port: 443
-  uuid: 6806dc9a-8f5c-4981-b64d-3527b9522b62
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: filesconvert.org
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
-    short-id: a61d99e920140145
-- name: AE - zhuhai.uk 01
-  type: vless
-  server: 217.60.98.56
-  port: 443
-  uuid: '069ba4cf-e8af-4561-b11e-18bd07b0dbd3'
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: west.blackbigdog.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
-- name: NL - zhuhai.uk 02
-  type: vless
-  server: 51.194.251.114
-  port: 61592
-  uuid: BD1F7E5E-9E0B-4919-A7F1-84BC9E69426D
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: store.storeimages.cdn-apple.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jnu0rNHECTe_v7H9Fmgg0iUSepHz4QQQRPW0XpX5URs
-    short-id: 1359c9bf9f7442e5
-- name: NL - zhuhai.uk 01
-  type: vless
-  server: 51.194.251.114
-  port: 61592
-  uuid: BD1F7E5E-9E0B-4919-A7F1-84BC9E69426D
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: store.storeimages.cdn-apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: jnu0rNHECTe_v7H9Fmgg0iUSepHz4QQQRPW0XpX5URs
-    short-id: 1359c9bf9f7442e5
-- name: TR - zhuhai.uk 01
-  type: vless
-  server: 13.143.137.164
-  port: 9443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: plaincanvas.videoclothing.xyz
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
-    short-id: e336c9a786fae301
+      Host: somersby.pt.vf670.cc.cd
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 04
-  - GB - zhuhai.uk 02
-  - AE - zhuhai.uk 01
-  - NL - zhuhai.uk 02
-  - NL - zhuhai.uk 01
-  - TR - zhuhai.uk 01
+  - US - zhuhai.uk 01
