@@ -1,33 +1,21 @@
 proxies:
 - name: DE - zhuhai.uk 01
   type: vless
-  server: 212.16.92.111
-  port: 443
-  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  server: 185.217.108.229
+  port: 23351
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: jobinvest.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: JP - zhuhai.uk 01
-  type: vless
-  server: 202.144.192.76
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  network: tcp
-  tls: true
-  servername: tesla.com
+  servername: cdn8848.776676.xyz
   client-fingerprint: chrome
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
+  skip-cert-verify: true
+  ws-opts:
+    path: "/help?ed=2560"
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
   - DE - zhuhai.uk 01
-  - JP - zhuhai.uk 01
