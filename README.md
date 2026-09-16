@@ -36,7 +36,7 @@
 关键词专题页：
 
 - 免费节点订阅使用指南：导入、更新与测试：[https://nodes.zhuhai.uk/topics/free-nodes.html](https://nodes.zhuhai.uk/topics/free-nodes.html)
-- 免费代理节点订阅链接：[https://nodes.zhuhai.uk/topics/free-proxy-nodes.html](https://nodes.zhuhai.uk/topics/free-proxy-nodes.html)
+- 免费代理节点订阅链接：Base64 与 Clash / Mihomo YAML：[https://nodes.zhuhai.uk/topics/free-proxy-nodes.html](https://nodes.zhuhai.uk/topics/free-proxy-nodes.html)
 - Clash / Mihomo 节点：[https://nodes.zhuhai.uk/topics/clash-mihomo-nodes.html](https://nodes.zhuhai.uk/topics/clash-mihomo-nodes.html)
 - 免费 V2Ray 节点订阅链接：[https://nodes.zhuhai.uk/topics/v2ray-nodes.html](https://nodes.zhuhai.uk/topics/v2ray-nodes.html)
 - Shadowrocket 小火箭账号：[https://nodes.zhuhai.uk/topics/shadowrocket-account.html](https://nodes.zhuhai.uk/topics/shadowrocket-account.html)
