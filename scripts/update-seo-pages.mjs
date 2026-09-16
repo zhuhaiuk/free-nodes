@@ -84,7 +84,7 @@ const TOPIC_PAGES = [
   },
   {
     slug: "free-proxy-nodes",
-    title: "免费代理节点订阅链接",
+    title: "免费代理节点订阅链接：Base64 与 Clash / Mihomo YAML",
     h1: "免费代理节点订阅链接与导入说明",
     description:
       "免费代理节点订阅链接：提供通用 Base64 与 Clash / Mihomo YAML 固定入口，适合导入、更新、测速和公开节点格式验证。",
