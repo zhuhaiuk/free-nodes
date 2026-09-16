@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-09-15T08:36:09.219Z
+生成时间：2026-09-16T08:30:13.337Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -10,9 +10,9 @@
 | 关键词 | 当前排名 | 匹配页面 | 自动优化方向 |
 | --- | --- | --- | --- |
 | 免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 免费代理节点 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
+| 免费代理节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费节点订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 每小时更新免费节点 | 未配置 |  | 等待 SERPAPI_KEY 配置后开始真实 Google 排名分析。 |
+| 每小时更新免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Clash 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Mihomo 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | V2Ray 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
@@ -32,35 +32,35 @@
 
 | 域名 | 出现次数 |
 | --- | --- |
-| github.com | 32 |
-| youtube.com | 7 |
-| freeclashnode.com | 6 |
-| end-gfw.com | 4 |
-| freenodes.github.io | 4 |
+| github.com | 36 |
+| youtube.com | 12 |
+| freeclashnode.com | 7 |
+| freenodes.github.io | 6 |
+| mibei77.com | 6 |
+| end-gfw.com | 5 |
 | b.freev2.net | 3 |
 | linux.do | 3 |
-| mibei77.com | 3 |
+| v2free.org | 3 |
 | ccbaohe.com | 2 |
+| clashgithub.com | 2 |
 | ermao.net | 2 |
-| freev2raynodes.github.io | 2 |
-| getafreenode.com | 2 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| clash | 136 |
-| v2ray | 129 |
-| 机场 | 67 |
-| 免费节点 | 53 |
-| trojan | 48 |
-| 小火箭 | 48 |
+| v2ray | 144 |
+| clash | 131 |
+| 机场 | 73 |
+| 免费节点 | 70 |
+| trojan | 57 |
+| 小火箭 | 50 |
+| shadowrocket | 30 |
+| 每日更新 | 30 |
 | 节点订阅 | 29 |
-| shadowrocket | 27 |
-| 每日更新 | 26 |
-| mihomo | 18 |
-| shadowsocks | 18 |
-| free proxy | 14 |
+| shadowsocks | 19 |
+| 免费订阅 | 18 |
+| mihomo | 16 |
 
 ## 自动策略
 
