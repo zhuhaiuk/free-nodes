@@ -1,5 +1,5 @@
 proxies:
-- name: DE - zhuhai.uk 02
+- name: DE - zhuhai.uk 01
   type: vless
   server: 212.16.92.111
   port: 443
@@ -12,125 +12,22 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: DE - zhuhai.uk 01
+- name: JP - zhuhai.uk 01
   type: vless
-  server: 212.16.92.112
-  port: 443
-  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  server: 202.144.192.76
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: jobinvest.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: AE - zhuhai.uk 01
-  type: vless
-  server: 94.183.170.147
-  port: 8443
-  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
-  udp: true
-  network: grpc
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
-    short-id: 72ccd4a7563c2953
-  grpc-opts:
-    grpc-service-name: 9d30d49278
-- name: JP - zhuhai.uk 02
-  type: vless
-  server: 45.32.248.233
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  network: ws
-  tls: true
-  servername: mia12.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/TG:@MiaChatChannel"
-    headers:
-      Host: mia12.pages.dev
-- name: HK - zhuhai.uk 01
-  type: vless
-  server: sie824.node2.top
-  port: 32001
-  uuid: 7eb44724-d792-4133-90ef-0bc0f55fec20
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: itunes.apple.com
+  servername: tesla.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA
-    short-id: dfa28122
-- name: HK - zhuhai.uk 02
-  type: vless
-  server: sie824.node2.top
-  port: 32001
-  uuid: 8ea00d02-1e73-48bf-8708-ed35b5639559
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA
-    short-id: dfa28122
-- name: HK - zhuhai.uk 03
-  type: vless
-  server: sie824.node2.top
-  port: 32001
-  uuid: c2d6f052-d3c4-4a59-bed9-9d7b0a66198c
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA
-    short-id: dfa28122
-- name: SG - zhuhai.uk 02
-  type: vless
-  server: 45.80.111.45
-  port: 8880
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/cdn/assets/stream"
-    headers:
-      Host: cnd.singapure.mygold.stream
-- name: KR - zhuhai.uk 01
-  type: vless
-  server: 119.28.162.39
-  port: 8443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  network: ws
-  tls: true
-  servername: mia11.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/TG:@MiaChatChannel"
-    headers:
-      Host: mia11.pages.dev
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - DE - zhuhai.uk 02
   - DE - zhuhai.uk 01
-  - AE - zhuhai.uk 01
-  - JP - zhuhai.uk 02
-  - HK - zhuhai.uk 01
-  - HK - zhuhai.uk 02
-  - HK - zhuhai.uk 03
-  - SG - zhuhai.uk 02
-  - KR - zhuhai.uk 01
+  - JP - zhuhai.uk 01
