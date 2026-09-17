@@ -1,8 +1,19 @@
 proxies:
-- name: DE - zhuhai.uk 01
+- name: US - zhuhai.uk 03
   type: vless
-  server: 185.217.108.229
-  port: 23351
+  server: 188.114.97.2
+  port: 2086
+  uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/vl/ikccafxfZ8tDV11MQjtVmuGhgJbO8?ed=2560"
+    headers:
+      Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
+- name: FR - zhuhai.uk 09
+  type: vless
+  server: 31.59.121.156
+  port: 2053
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   network: ws
@@ -11,11 +22,115 @@ proxies:
   client-fingerprint: chrome
   skip-cert-verify: true
   ws-opts:
-    path: "/help?ed=2560"
+    path: "/go/library/channel?ed=2560"
     headers:
       Host: cdn8848.776676.xyz
+- name: DE - zhuhai.uk 01
+  type: vless
+  server: 212.16.92.121
+  port: 443
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: AT - zhuhai.uk 01
+  type: vless
+  server: 212.16.92.111
+  port: 443
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: DE - zhuhai.uk 04
+  type: vless
+  server: 212.16.92.112
+  port: 443
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: JP - zhuhai.uk 02
+  type: vless
+  server: 45.32.248.233
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  udp: true
+  network: ws
+  tls: true
+  servername: mia12.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/TG:@MiaChatChannel"
+    headers:
+      Host: mia12.pages.dev
+- name: FI - zhuhai.uk 01
+  type: vless
+  server: fxe3.sorixset.ir
+  port: 443
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  udp: true
+  network: ws
+  tls: true
+  servername: global.fastly.com
+  client-fingerprint: firefox
+  ws-opts:
+    path: "/"
+    headers:
+      Host: kayko.global.ssl.fastly.net
+- name: KR - zhuhai.uk 03
+  type: vless
+  server: 134.185.99.52
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  udp: true
+  network: ws
+  tls: true
+  servername: mia9.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/TG:@MiaChatChannel"
+    headers:
+      Host: mia9.pages.dev
+- name: US - zhuhai.uk 01
+  type: vless
+  server: 176.123.162.100
+  port: 9880
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabb
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
+  - US - zhuhai.uk 03
+  - FR - zhuhai.uk 09
   - DE - zhuhai.uk 01
+  - AT - zhuhai.uk 01
+  - DE - zhuhai.uk 04
+  - JP - zhuhai.uk 02
+  - FI - zhuhai.uk 01
+  - KR - zhuhai.uk 03
+  - US - zhuhai.uk 01
