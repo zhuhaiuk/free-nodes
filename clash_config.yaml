@@ -4,177 +4,182 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: HK - zhuhai.uk
-  type: socks5
-  server: 47.242.19.215
-  port: 8899
-  username: admin
-  password: admin
-- name: SE - zhuhai.uk
-  type: http
-  server: 146.70.242.130
-  port: 443
-  tls: true
-  skip-cert-verify: true
 - name: US - zhuhai.uk
   type: http
-  server: berniesbodybla.fun
+  server: zebpay.site
   port: 443
+  username: Ok5vbmU=
   tls: true
-- name: DE - zhuhai.uk
-  type: http
-  server: 149.36.50.1
-  port: 443
-  tls: true
-  skip-cert-verify: true
 - name: US - zhuhai.uk 02
   type: http
-  server: fullmanfirm.icu
-  port: 443
+  server: 138.199.35.209
+  port: 9002
+  username: 'null'
+  password: 'null'
   tls: true
+  sni: 138.199.35.209
   skip-cert-verify: true
 - name: RO - zhuhai.uk
   type: http
-  server: 193.176.84.30
+  server: 193.176.84.16
   port: 9002
+  username: 'null'
+  password: None
   tls: true
-  sni: www.bing.com
   skip-cert-verify: true
 - name: RO - zhuhai.uk 02
   type: http
-  server: 193.176.84.39
+  server: 193.176.84.34
   port: 9002
   tls: true
-  sni: 193.176.84.39
-  skip-cert-verify: true
-- name: JP - zhuhai.uk
-  type: http
-  server: fan.571589.xyz
-  port: 443
-  username: bnVsbDpudWxs
-  tls: true
-- name: DE - zhuhai.uk 02
-  type: http
-  server: 167.172.172.190
-  port: 443
-  username: testuser1
-  password: e4b72b531a2d10900519
-  tls: true
-  sni: 167.172.172.190
+  sni: 193.176.84.34
   skip-cert-verify: true
 - name: US - zhuhai.uk 03
-  type: http
-  server: 138.199.35.196
-  port: 9002
-  tls: true
-  sni: 138.199.35.196
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: 138.199.35.195
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 05
-  type: http
-  server: 38.28.193.1
-  port: 443
-  tls: true
-  sni: 38.28.193.1
-  skip-cert-verify: true
-- name: US - zhuhai.uk 06
-  type: http
-  server: 138.199.35.197
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: NL - zhuhai.uk
-  type: http
-  server: 84.17.47.150
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 84.17.47.150
-  skip-cert-verify: true
-- name: US - zhuhai.uk 07
-  type: ss
-  server: 3.141.200.225
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: NL - zhuhai.uk 02
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 08
   type: http
   server: 138.199.35.200
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: JP - zhuhai.uk 02
+- name: US - zhuhai.uk 04
   type: http
-  server: fan.571589.xyz
-  port: 443
-  username: bnVsbDpudWxs
+  server: 138.199.35.217
+  port: 9002
   tls: true
-  sni: fan.571589.xyz
+  sni: 138.199.35.217
   skip-cert-verify: true
-- name: GB - zhuhai.uk
-  type: ss
-  server: 129.151.73.188
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: XXq8087l/F/17nlKDoxF5yHMha+CZIJKCj0UwWf0wRA=
+- name: US - zhuhai.uk 05
+  type: http
+  server: jewelscollecti.icu
+  port: 443
+  tls: true
+  sni: jewelscollecti.icu
+  skip-cert-verify: true
+- name: US - zhuhai.uk 06
+  type: http
+  server: 138.199.35.195
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 03
+  type: http
+  server: 193.176.84.24
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 07
+  type: http
+  server: 138.199.35.203
+  port: 9002
+  tls: true
+  sni: 138.199.35.203
+  skip-cert-verify: true
+- name: US - zhuhai.uk 08
+  type: http
+  server: purposebydesig.club
+  port: 443
+  tls: true
 - name: US - zhuhai.uk 09
   type: http
-  server: crosscards.site
+  server: webdrone.club
+  port: 443
+  username: Ok5vbmU=
+  tls: true
+  sni: webdrone.club
+  skip-cert-verify: true
+- name: FR - zhuhai.uk
+  type: http
+  server: 141.94.16.4
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: US - zhuhai.uk 10
+  type: http
+  server: webdrone.club
+  port: 443
+  tls: true
+  sni: webdrone.club
+- name: HK - zhuhai.uk
+  type: http
+  server: fan.240104.xyz
+  port: 443
+  tls: true
+  sni: fan.240104.xyz
+- name: US - zhuhai.uk 11
+  type: http
+  server: mmgr.club
   port: 443
   username: bnVsbDpudWxs
   tls: true
+- name: US - zhuhai.uk 12
+  type: http
+  server: 138.199.35.201
+  port: 9002
+  username: 'null'
+  password: None
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 04
+  type: http
+  server: 193.176.84.16
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk
+  type: http
+  server: 51.158.243.91
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 51.158.243.91
+  skip-cert-verify: true
+- name: US - zhuhai.uk 13
+  type: http
+  server: fan.596189.xyz
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: fan.596189.xyz
+- name: US - zhuhai.uk 14
+  type: http
+  server: 138.199.35.196
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: JP - zhuhai.uk
+  type: http
+  server: fan.587475.xyz
+  port: 443
+  tls: true
+  sni: fan.587475.xyz
+  skip-cert-verify: true
 - name: KR - zhuhai.uk
   type: socks5
   server: 121.169.46.116
   port: 1090
-  username: Og%3D%3D
-  password: Og%3D%3D
+  username: VDJjbE0wUWxNMFE2Og
+  password: VDJjbE0wUWxNMFE2Og
 - name: KR - zhuhai.uk 02
   type: socks5
   server: 121.169.46.116
   port: 1090
-  username: T2clM0QlM0Q6T2clM0QlM0Q=
-- name: SG - zhuhai.uk
-  type: ss
-  server: 129.150.52.139
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: cAUXme9Y9EAWi28SXTU+es4KTr42+2hpNvFd7VohRO8=
-- name: SG - zhuhai.uk 02
-  type: http
-  server: 146.70.29.45
-  port: 443
-  username: testuser1
-  password: e4b72b531a2d10900519
-  tls: true
-  sni: 92461d2d.acsnet.co
-  skip-cert-verify: true
-- name: IN - zhuhai.uk
-  type: http
-  server: 35.197.129.84
-  port: 443
-  tls: true
-  skip-cert-verify: true
+  username: Og%3D%3D
 - name: ID - zhuhai.uk
   type: http
-  server: efr-marktplatz.club
+  server: kimberlymilano.icu
   port: 443
+  username: bnVsbDpudWxs
   tls: true
-  sni: efr-marktplatz.club
+- name: ID - zhuhai.uk 02
+  type: http
+  server: sr2-id.freeconnect.link
+  port: 9251
+  username: freeuser1
+  password: freeuser1
+  tls: true
 - name: TR - zhuhai.uk
   type: vless
   server: 13.143.137.164
@@ -199,6 +204,28 @@ proxies:
   reality-opts:
     public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
     short-id: e336c9a786fae301
+- name: HK - zhuhai.uk 02
+  type: anytls
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  port: 443
+  password: 9sK2mP8xQ7vL3nZ6
+  udp: true
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: US - zhuhai.uk 15
+  type: anytls
+  server: awefd2313fefarg23fr24.pnuqcnp.cn
+  port: 443
+  password: 9sK2mP8xQ7vL3nZ6
+  udp: true
+  sni: images.ctfassets.net
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: HK - zhuhai.uk 01
   type: vless
   server: 8.222.70.238
@@ -219,34 +246,36 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
-  - HK - zhuhai.uk
-  - SE - zhuhai.uk
   - US - zhuhai.uk
-  - DE - zhuhai.uk
   - US - zhuhai.uk 02
   - RO - zhuhai.uk
   - RO - zhuhai.uk 02
-  - JP - zhuhai.uk
-  - DE - zhuhai.uk 02
   - US - zhuhai.uk 03
   - US - zhuhai.uk 04
   - US - zhuhai.uk 05
   - US - zhuhai.uk 06
-  - NL - zhuhai.uk
+  - RO - zhuhai.uk 03
   - US - zhuhai.uk 07
-  - NL - zhuhai.uk 02
   - US - zhuhai.uk 08
-  - JP - zhuhai.uk 02
-  - GB - zhuhai.uk
   - US - zhuhai.uk 09
+  - FR - zhuhai.uk
+  - US - zhuhai.uk 10
+  - HK - zhuhai.uk
+  - US - zhuhai.uk 11
+  - US - zhuhai.uk 12
+  - RO - zhuhai.uk 04
+  - NL - zhuhai.uk
+  - US - zhuhai.uk 13
+  - US - zhuhai.uk 14
+  - JP - zhuhai.uk
   - KR - zhuhai.uk
   - KR - zhuhai.uk 02
-  - SG - zhuhai.uk
-  - SG - zhuhai.uk 02
-  - IN - zhuhai.uk
   - ID - zhuhai.uk
+  - ID - zhuhai.uk 02
   - TR - zhuhai.uk
   - TR - zhuhai.uk 02
+  - HK - zhuhai.uk 02
+  - US - zhuhai.uk 15
   - HK - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
