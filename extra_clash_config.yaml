@@ -1,36 +1,21 @@
 proxies:
-- name: NL - zhuhai.uk 01
+- name: HK - zhuhai.uk 01
   type: vless
-  server: 146.103.100.242
+  server: 8.222.70.238
   port: 443
-  uuid: a7c35c0c-e8b6-49a4-9d2c-1acee63fe2d6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: dzen.ru
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CxjnGHCI3HXN2RAXwytela7jXyOGDCBqzMAqTfm60D0
-    short-id: 4ed920401771c4ab
-- name: FI - zhuhai.uk 01
-  type: vless
-  server: fxe3.sorixset.ir
-  port: 443
-  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   network: ws
   tls: true
-  servername: global.fastly.com
-  client-fingerprint: firefox
+  servername: cdn8848.776676.xyz
+  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: "/"
+    path: "/mall/china/doc?ed=2560"
     headers:
-      Host: kayko.global.ssl.fastly.net
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - NL - zhuhai.uk 01
-  - FI - zhuhai.uk 01
+  - HK - zhuhai.uk 01
