@@ -1,21 +1,49 @@
 proxies:
-- name: HK - zhuhai.uk 01
+- name: FI - zhuhai.uk 02
   type: vless
-  server: 8.222.70.238
+  server: k2.cloud--vpn.site
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
   udp: true
   network: ws
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: ssl.fastly.com
   client-fingerprint: chrome
-  skip-cert-verify: true
   ws-opts:
-    path: "/mall/china/doc?ed=2560"
+    path: "/"
     headers:
-      Host: cdn8848.776676.xyz
+      Host: c12.com
+- name: FI - zhuhai.uk 01
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: c12.com
+- name: AT - zhuhai.uk 01
+  type: vless
+  server: g1.haxat.bestvbest.ir
+  port: 20610
+  uuid: d65a82af-a403-405e-8b7b-27a68b830511
+  udp: true
+  network: tcp
+  tls: true
+  servername: doctor-yab.ir
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI
+    short-id: 1d1a8f9fefeff5e6
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - HK - zhuhai.uk 01
+  - FI - zhuhai.uk 02
+  - FI - zhuhai.uk 01
+  - AT - zhuhai.uk 01
