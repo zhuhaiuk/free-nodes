@@ -4,188 +4,65 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: US - zhuhai.uk
-  type: vless
-  server: cmcc.cloudflare.seeck.cn
-  port: 443
-  uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-  tls: true
-  servername: gy-cffc6-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: "/channels/new/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
-    headers:
-      Host: gy-cffc6-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
 - name: JP - zhuhai.uk
   type: http
-  server: fan.571589.xyz
+  server: fan.587475.xyz
   port: 443
   tls: true
-- name: KR - zhuhai.uk
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-  username: VDJjbE0wUWxNMFE2Og
-  password: VDJjbE0wUWxNMFE2Og
-- name: RO - zhuhai.uk
-  type: http
-  server: 193.176.84.17
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  sni: 193.176.84.17
-  skip-cert-verify: true
-- name: ID - zhuhai.uk
-  type: http
-  server: crosscards.site
-  port: 443
-  tls: true
-- name: US - zhuhai.uk 02
-  type: vless
-  server: 172.64.151.66
-  port: 443
-  uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-  tls: true
-  servername: gy-cffc3-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: "/club/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
-    headers:
-      Host: gy-cffc3-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-- name: US - zhuhai.uk 03
-  type: vless
-  server: 195.211.98.43
-  port: 443
-  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
-    short-id: 9c56fddf237e8eaf
-- name: US - zhuhai.uk 04
-  type: vless
-  server: cucc.cloudflare.seeck.cn
-  port: 443
-  uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-  tls: true
-  servername: gy-cffc2-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: "/friends/setting/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
-    headers:
-      Host: gy-cffc2-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-- name: US - zhuhai.uk 05
-  type: vless
-  server: 172.64.159.196
-  port: 443
-  uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-  tls: true
-  servername: gy-cffc4-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: "/new/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
-    headers:
-      Host: gy-cffc4-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-- name: DE - zhuhai.uk
-  type: ss
-  server: 130.61.176.44
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: AQqPf1u0AmCFWLNBxK7ve1ODd1cTFFCg+q5qsF3hwoM=
-- name: DE - zhuhai.uk 02
-  type: ss
-  server: 130.61.235.30
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: m/CrE+EuNElAAVP1IrhSyQYq0EUT+XiDckrdlPOdMFA=
-- name: NL - zhuhai.uk
-  type: vless
-  server: 150.251.141.28
-  port: 443
-  uuid: 129799e0-a9b1-4ae8-80bd-fa92db813f85
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nolan.shhflow.xyz
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: iKiBA7VUMrGy7J3puIr6rbsEj7FMtRazqQywedgGeCA
 - name: JP - zhuhai.uk 02
   type: http
   server: fan.571589.xyz
   port: 443
+  username: bnVsbDpudWxs
   tls: true
+  sni: fan.571589.xyz
+- name: US - zhuhai.uk
+  type: ss
+  server: 129.146.75.221
+  port: 50356
+  cipher: 2022-blake3-chacha20-poly1305
+  password: ko88AO1Lj50PH3xGQ/SzJChWovcD99np3GwLcJwj/Eo=
+- name: JP - zhuhai.uk 03
+  type: hysteria2
+  server: jp1.xiaoliyu.us
+  port: 27102
+  password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
+  sni: jp1.xiaoliyu.us
   skip-cert-verify: true
-- name: US - zhuhai.uk 06
+- name: DE - zhuhai.uk
+  type: ss
+  server: 130.61.85.241
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8DHlrsArgAkSt0/XFCIPJRbGvI/s0QTeTlVLkxhpUoI=
+- name: US - zhuhai.uk 02
   type: http
-  server: 138.199.35.214
+  server: 138.199.35.200
   port: 9002
   username: 'null'
-  password: 'null'
+  password: None
   tls: true
   skip-cert-verify: true
-- name: KR - zhuhai.uk 02
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-  username: VkRKamJFMHdVV3hOTUZFMk9nOlZESmpiRTB3VVd4Tk1GRTJPZw==
-- name: US - zhuhai.uk 07
-  type: vless
-  server: 172.64.152.145
-  port: 443
-  uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
-  tls: true
-  servername: gy-cffc2-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: "/groups/episode/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
-    headers:
-      Host: gy-cffc2-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-- name: DE - zhuhai.uk 03
-  type: hysteria2
-  server: fl2.xiaoliyu.us
-  port: 2052
-  password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
-  sni: fl2.xiaoliyu.us
-  skip-cert-verify: true
-- name: NL - zhuhai.uk 02
-  type: ss
-  server: 134.98.137.0
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: obsyfpIrP+GQN6kHnDrbnC3c7lvGgiCBm9yVI/srhJs=
-- name: FR - zhuhai.uk
-  type: socks5
-  server: 144.91.111.48
-  port: 1088
-- name: US - zhuhai.uk 08
+- name: US - zhuhai.uk 03
   type: http
-  server: 138.199.35.198
+  server: 138.199.35.212
   port: 9002
+  username: 'null'
+  password: None
   tls: true
-  sni: 138.199.35.198
   skip-cert-verify: true
-- name: US - zhuhai.uk 09
-  type: vless
-  server: ctcc.cloudflare.seeck.cn
+- name: CZ - zhuhai.uk
+  type: http
+  server: 193.35.104.196
   port: 443
-  uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
   tls: true
-  servername: gy-cffc3-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: "/go.php/novel/soft/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
-    headers:
-      Host: gy-cffc3-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
+  skip-cert-verify: true
+- name: FI - zhuhai.uk
+  type: socks5
+  server: 83.147.216.208
+  port: 1080
+  username: 'null'
+  password: 'null'
 - name: SG - zhuhai.uk
   type: hysteria2
   server: sg3.xiaoliyu.us
@@ -193,52 +70,139 @@ proxies:
   password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
   sni: sg3.xiaoliyu.us
   skip-cert-verify: true
-- name: US - zhuhai.uk 10
+- name: FI - zhuhai.uk 02
+  type: socks5
+  server: 83.147.216.208
+  port: 1080
+- name: NL - zhuhai.uk
+  type: ss
+  server: 134.98.135.73
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4N//P9aTIqr3+Klmz+94CIOkuI4tigVfm5NX/O6Ad7E=
+- name: RO - zhuhai.uk
   type: http
-  server: fullmanfirm.icu
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 11
-  type: http
-  server: 138.199.35.219
+  server: 193.176.84.26
   port: 9002
   tls: true
-  sni: 138.199.35.219
   skip-cert-verify: true
-- name: HK - zhuhai.uk
-  type: vless
-  server: cf.090227.xyz
+- name: US - zhuhai.uk 04
+  type: trojan
+  server: 43.173.90.202
   port: 443
-  uuid: 49b5c5d1-8fb0-4fd2-8129-01bd2178e8d1
+  password: sg-trojan-2026
   tls: true
-  servername: gy-cffc5-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: "/f/lesson/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
-    headers:
-      Host: gy-cffc5-ch-node-x4hbj8y3aar0kil1.lancelot.dpdns.org
-- name: HK - zhuhai.uk 02
+  sni: sg-proxy.local
+  skip-cert-verify: true
+- name: JP - zhuhai.uk 04
   type: socks5
-  server: 47.242.19.215
-  port: 8899
-  username: admin
-  password: admin
-- name: FI - zhuhai.uk 02
-  type: vless
-  server: k2.cloud--vpn.site
+  server: 101.36.104.239
+  port: 10808
+- name: BD - zhuhai.uk
+  type: http
+  server: 35.247.136.78
   port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  udp: true
-  network: ws
   tls: true
-  servername: ssl.fastly.com
+  skip-cert-verify: true
+- name: JP - zhuhai.uk 05
+  type: http
+  server: fan.571589.xyz
+  port: 443
+  tls: true
+- name: FR - zhuhai.uk
+  type: socks5
+  server: 51.178.49.241
+  port: 1088
+- name: DE - zhuhai.uk 02
+  type: ss
+  server: 130.61.46.224
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: QzoZDLFsugBaayOFoit59+peLgfv3Vk+5MGnHhdhPAo=
+- name: US - zhuhai.uk 05
+  type: http
+  server: 138.199.35.207
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 138.199.35.207
+  skip-cert-verify: true
+- name: US - zhuhai.uk 06
+  type: http
+  server: 138.199.35.218
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 138.199.35.218
+  skip-cert-verify: true
+- name: LK - zhuhai.uk
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 8443
+  uuid: c73ffa6e-a102-4984-9176-3e6242c1925e
+  tls: true
+  servername: zoom.us
+  skip-cert-verify: true
   client-fingerprint: chrome
+  network: ws
   ws-opts:
     path: "/"
-    headers:
-      Host: c12.com
+- name: US - zhuhai.uk 07
+  type: http
+  server: 138.199.35.205
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 138.199.35.205
+  skip-cert-verify: true
+- name: US - zhuhai.uk 08
+  type: http
+  server: 138.199.35.200
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 138.199.35.200
+  skip-cert-verify: true
+- name: HK - zhuhai.uk
+  type: socks5
+  server: 123.58.219.171
+  port: 10808
+- name: HK - zhuhai.uk 02
+  type: anytls
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  port: 443
+  password: 9sK2mP8xQ7vL3nZ6
+  udp: true
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: KR - zhuhai.uk
+  type: socks5
+  server: 121.169.46.116
+  port: 1090
+  username: VmtSS2FtSkZNSGRWVjNoT1RVWkZNazluT2xaRVNtcGlSVEIzVlZkNFRrMUdSVEpQWnc9PTo=
+- name: KR - zhuhai.uk 02
+  type: socks5
+  server: 121.169.46.116
+  port: 1090
+  username: Vm10U1MyRnJPVmRSYkZacFpXcEJNazluUFQwNjo=
+- name: ID - zhuhai.uk
+  type: http
+  server: crosscards.site
+  port: 443
+  tls: true
+- name: ID - zhuhai.uk 02
+  type: http
+  server: goedkoopgeluid.icu
+  port: 443
+  tls: true
+  skip-cert-verify: true
 - name: FI - zhuhai.uk 01
   type: vless
   server: a2.arshia-nova.ir
@@ -271,33 +235,36 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
-  - US - zhuhai.uk
   - JP - zhuhai.uk
-  - KR - zhuhai.uk
-  - RO - zhuhai.uk
-  - ID - zhuhai.uk
+  - JP - zhuhai.uk 02
+  - US - zhuhai.uk
+  - JP - zhuhai.uk 03
+  - DE - zhuhai.uk
   - US - zhuhai.uk 02
   - US - zhuhai.uk 03
-  - US - zhuhai.uk 04
-  - US - zhuhai.uk 05
-  - DE - zhuhai.uk
-  - DE - zhuhai.uk 02
-  - NL - zhuhai.uk
-  - JP - zhuhai.uk 02
-  - US - zhuhai.uk 06
-  - KR - zhuhai.uk 02
-  - US - zhuhai.uk 07
-  - DE - zhuhai.uk 03
-  - NL - zhuhai.uk 02
-  - FR - zhuhai.uk
-  - US - zhuhai.uk 08
-  - US - zhuhai.uk 09
+  - CZ - zhuhai.uk
+  - FI - zhuhai.uk
   - SG - zhuhai.uk
-  - US - zhuhai.uk 10
-  - US - zhuhai.uk 11
+  - FI - zhuhai.uk 02
+  - NL - zhuhai.uk
+  - RO - zhuhai.uk
+  - US - zhuhai.uk 04
+  - JP - zhuhai.uk 04
+  - BD - zhuhai.uk
+  - JP - zhuhai.uk 05
+  - FR - zhuhai.uk
+  - DE - zhuhai.uk 02
+  - US - zhuhai.uk 05
+  - US - zhuhai.uk 06
+  - LK - zhuhai.uk
+  - US - zhuhai.uk 07
+  - US - zhuhai.uk 08
   - HK - zhuhai.uk
   - HK - zhuhai.uk 02
-  - FI - zhuhai.uk 02
+  - KR - zhuhai.uk
+  - KR - zhuhai.uk 02
+  - ID - zhuhai.uk
+  - ID - zhuhai.uk 02
   - FI - zhuhai.uk 01
   - AT - zhuhai.uk 01
 rules:
