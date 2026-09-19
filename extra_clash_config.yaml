@@ -1,49 +1,125 @@
 proxies:
-- name: FI - zhuhai.uk 02
+- name: US - zhuhai.uk 07
   type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
+  server: 172.67.183.52
+  port: 80
+  uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856
   udp: true
   network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
   ws-opts:
-    path: "/"
+    path: "/vl/2INL39K32mKsOBKt?ed=2560"
     headers:
-      Host: c12.com
-- name: FI - zhuhai.uk 01
+      Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
+- name: US - zhuhai.uk 02
   type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
+  server: 172.67.179.98
+  port: 8880
+  uuid: 6d613d5f-1d65-48ca-b2e8-d83a2c3a17d9
   udp: true
   network: ws
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
   ws-opts:
-    path: "/"
+    path: "/pyip=ProxyIP.JP.CMLiussss.net"
     headers:
-      Host: c12.com
-- name: AT - zhuhai.uk 01
+      Host: tight-star-08eb.331-729.workers.dev
+- name: US - zhuhai.uk 03
   type: vless
-  server: g1.haxat.bestvbest.ir
-  port: 20610
-  uuid: d65a82af-a403-405e-8b7b-27a68b830511
+  server: 172.67.179.98
+  port: 8880
+  uuid: 18a7834f-bf89-4c87-ad57-49927a56deed
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/pyip=ProxyIP.SG.CMLiussss.net"
+    headers:
+      Host: holy-violet-858e.471.workers.dev
+- name: US - zhuhai.uk 01
+  type: vless
+  server: 172.67.179.98
+  port: 8880
+  uuid: 129b50b6-060d-475c-b1de-b87c2a67051f
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/pyip=ProxyIP.JP.CMLiussss.net"
+    headers:
+      Host: shrill-waterfall-bfe2.416.workers.dev
+- name: US - zhuhai.uk 04
+  type: vless
+  server: 172.67.179.98
+  port: 8880
+  uuid: 81b3fa7e-12b0-4c2b-9866-324edd26ef7f
+  udp: true
+  network: ws
+  ws-opts:
+    path: "/pyip=ProxyIP.US.CMLiussss.net"
+    headers:
+      Host: falling-lake-0b5a.192-3e2.workers.dev
+- name: NL - zhuhai.uk 02
+  type: vless
+  server: hhhorp.plus-hit.ru
+  port: 443
+  uuid: 84a794a5-2420-4ca7-8e08-8d21571f36f3
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: doctor-yab.ir
+  servername: hhhorp.plus-hit.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI
-    short-id: 1d1a8f9fefeff5e6
+    public-key: N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA
+    short-id: 7c8e3d4a9b1f26d3
+- name: FI - zhuhai.uk 02
+  type: vless
+  server: 87.58.147.66
+  port: 443
+  uuid: ba6b7300-be34-43ef-a883-eee182dfb2d6
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: Miro.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
+    short-id: 7a0300af51a1c4cf
+- name: FI - zhuhai.uk 01
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: '029fc301-ac31-4aae-9fd8-5d0bff6ec5c0'
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/?TELEGRAM-TOOTFFARANGI"
+    headers:
+      Host: c12.com
+- name: SG - zhuhai.uk 01
+  type: vless
+  server: 18.140.28.73
+  port: 443
+  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  udp: true
+  network: ws
+  tls: true
+  servername: mia11.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/TG:@MiaChatChannel"
+    headers:
+      Host: mia11.pages.dev
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
+  - US - zhuhai.uk 07
+  - US - zhuhai.uk 02
+  - US - zhuhai.uk 03
+  - US - zhuhai.uk 01
+  - US - zhuhai.uk 04
+  - NL - zhuhai.uk 02
   - FI - zhuhai.uk 02
   - FI - zhuhai.uk 01
-  - AT - zhuhai.uk 01
+  - SG - zhuhai.uk 01
