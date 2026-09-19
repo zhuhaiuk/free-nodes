@@ -1,21 +1,20 @@
 proxies:
-- name: SE - zhuhai.uk 01
+- name: LT - zhuhai.uk 01
   type: vless
-  server: 109.107.155.76
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: lt.aether-runet.top
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn8848.776676.xyz
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  ws-opts:
-    path: "/tv/member/auth?ed=2560"
-    headers:
-      Host: cdn8848.776676.xyz
+  servername: lt.aether-runet.top
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - SE - zhuhai.uk 01
+  - LT - zhuhai.uk 01
