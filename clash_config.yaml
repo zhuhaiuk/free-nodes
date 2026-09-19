@@ -4,329 +4,311 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: US - zhuhai.uk
-  type: http
-  server: 138.199.35.195
-  port: 9002
-  tls: true
-  sni: 138.199.35.195
-  skip-cert-verify: true
-- name: TR - zhuhai.uk
+- name: NL - zhuhai.uk
+  type: ss
+  server: 141.148.229.103
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: KOLZr7qVwyJNusNd8YM/k5XvmLA5bfjB3hwCjpmvRMs=
+- name: SG - zhuhai.uk
+  type: ss
+  server: 129.150.59.192
+  port: 56927
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2t7ioVN2zeH8TORMF3lxl8mKAb+1Db7YlFKCQBS424k=
+- name: KR - zhuhai.uk
   type: vless
-  server: 13.143.137.164
-  port: 9443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  flow: xtls-rprx-vision
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
   tls: true
-  servername: plaincanvas.videoclothing.xyz
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
-    short-id: e336c9a786fae301
-- name: TR - zhuhai.uk 02
-  type: vless
-  server: 13.143.137.164
-  port: 9443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: plaincanvas.videoclothing.xyz
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
-    short-id: e336c9a786fae301
-- name: DE - zhuhai.uk
-  type: ss
-  server: 130.61.130.160
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Agibj1Vmrbe4+wbHOjbYmeiae3Wi3nnIMa1mmgiKcu0=
-- name: NL - zhuhai.uk
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+    short-id: 3fd0a8ddef3ae5c6
+- name: US - zhuhai.uk
   type: http
-  server: 84.17.47.147
+  server: 138.199.35.197
   port: 9002
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 02
-  type: http
-  server: 138.199.35.208
-  port: 9002
-  tls: true
-  sni: 138.199.35.208
-  skip-cert-verify: true
-- name: JP - zhuhai.uk
-  type: http
-  server: fan.571589.xyz
-  port: 443
-  username: bnVsbDpudWxs
-  tls: true
-- name: NL - zhuhai.uk 02
   type: vless
-  server: 150.251.141.28
+  server: 172.67.212.195
   port: 443
-  uuid: 129799e0-a9b1-4ae8-80bd-fa92db813f85
-  flow: xtls-rprx-vision
+  uuid: a1a6a3be-2bf9-46a2-bc24-328306e49ab7
   tls: true
-  servername: nolan.shhflow.xyz
+  servername: 2-m17.KUWAIT-AIrLInE.kDNS.Fr
   client-fingerprint: chrome
-  reality-opts:
-    public-key: iKiBA7VUMrGy7J3puIr6rbsEj7FMtRazqQywedgGeCA
-- name: CZ - zhuhai.uk
+  network: ws
+  ws-opts:
+    path: "/fVs1qv0xm8dxmnwuaPwokxgY4XlP"
+    headers:
+      Host: 2-m17.KuwAIT-aiRliNE.KDns.Fr
+- name: US - zhuhai.uk 03
   type: http
-  server: 193.35.104.196
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk
-  type: http
-  server: 193.176.84.25
+  server: 138.199.35.205
   port: 9002
   tls: true
   skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: anytls
+  server: awefd2313fefarg23fr24.pnuqcnp.cn
+  port: 443
+  password: 9sK2mP8xQ7vL3nZ6
+  udp: true
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- name: FR - zhuhai.uk
+  type: http
+  server: 149.102.245.65
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: UA - zhuhai.uk
+  type: vless
+  server: 104.245.240.9
+  port: 8443
+  uuid: bb20d3fc-fc15-0935-11c5-82775c39e6b0
+  tls: true
+  servername: cdn.steamstatic.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+  reality-opts:
+    public-key: jYD82Xg6TRu2lR0XINMWxKb8dNycDwF-H28ZrtiafUo
 - name: IT - zhuhai.uk
   type: http
   server: 178.237.4.200
   port: 443
   tls: true
   skip-cert-verify: true
-- name: NL - zhuhai.uk 03
-  type: ss
-  server: 158.178.151.166
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: gfUQDQFFyto9dzLAec5MeJgPRwSwEedoPiuWL6+NTPA=
-- name: JP - zhuhai.uk 02
+- name: US - zhuhai.uk 05
   type: http
-  server: fan.571589.xyz
+  server: 138.199.35.218
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: DE - zhuhai.uk
+  type: ss
+  server: 130.61.130.160
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Agibj1Vmrbe4+wbHOjbYmeiae3Wi3nnIMa1mmgiKcu0=
+- name: PL - zhuhai.uk
+  type: vless
+  server: 34.118.43.133
   port: 443
+  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
+  tls: true
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "-bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ"
+    short-id: 7e7623474d41f032
+- name: NL - zhuhai.uk 02
+  type: http
+  server: 84.17.47.146
+  port: 9002
   tls: true
   skip-cert-verify: true
 - name: FI - zhuhai.uk
   type: socks5
   server: 83.147.216.208
   port: 1080
-  username: Og==
-- name: JP - zhuhai.uk 03
+  username: T2c9PTo=
+- name: RO - zhuhai.uk
+  type: http
+  server: 193.176.84.37
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: PL - zhuhai.uk 02
+  type: http
+  server: 37.120.156.18
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: PL - zhuhai.uk 03
+  type: vless
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rusbid.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+- name: NL - zhuhai.uk 03
+  type: vless
+  server: 144.21.43.119
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- name: FR - zhuhai.uk 02
+  type: vless
+  server: 34.155.10.226
+  port: 443
+  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  tls: true
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
+    short-id: ae682368818bd6c5
+- name: NL - zhuhai.uk 04
+  type: ss
+  server: 150.230.23.94
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: KwT6JM5cthwFzkjJ7MNDvFwSFtXqYgAAj6q7kkJjLOY=
+- name: BE - zhuhai.uk
+  type: vless
+  server: 34.156.242.126
+  port: 443
+  uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
+  tls: true
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
+    short-id: b4f2c0e3d8668c2f
+- name: FI - zhuhai.uk 02
+  type: vless
+  server: 94.156.79.93
+  port: 443
+  uuid: 1a5e7720-abf3-4b9b-bc9b-9a900a04b434
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
+    short-id: f129dcdbf64f
+- name: RU - zhuhai.uk
+  type: hysteria2
+  server: msk.frkn.org
+  port: 443
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+- name: BE - zhuhai.uk 02
+  type: vless
+  server: 34.38.82.200
+  port: 443
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  tls: true
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+    short-id: 31f187650d9530bb
+- name: HK - zhuhai.uk
+  type: hysteria2
+  server: h.zz2233.cyou
+  port: 10444
+  password: f4927789e58bcd24b6f6
+  sni: h.zz2233.cyou
+- name: HK - zhuhai.uk 02
+  type: socks5
+  server: 47.242.19.215
+  port: 8899
+  username: admin
+  password: admin
+- name: JP - zhuhai.uk
   type: http
   server: fan.571589.xyz
   port: 443
   tls: true
-- name: US - zhuhai.uk 03
-  type: http
-  server: 209.148.53.153
-  port: 8090
-  tls: true
   skip-cert-verify: true
-- name: JP - zhuhai.uk 04
-  type: vless
-  server: 8.209.248.218
-  port: 443
-  uuid: caab26f1-c2e0-438d-8342-5d2125fb45df
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amazon.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: V94ws5oTIja_a6Hui3rSjomr7hZ-QCtYlsT7BWmxTzk
-    short-id: 973bd4f3d8d217fd
-- name: RO - zhuhai.uk 02
-  type: http
-  server: 193.176.84.22
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 03
-  type: http
-  server: 193.176.84.23
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: FR - zhuhai.uk
+- name: JP - zhuhai.uk 02
   type: socks5
-  server: 144.91.121.61
-  port: 1088
-- name: AT - zhuhai.uk
-  type: http
-  server: 146.70.244.18
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: HK - zhuhai.uk
-  type: http
-  server: fan.240104.xyz
-  port: 443
-  tls: true
-- name: HK - zhuhai.uk 02
-  type: anytls
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  port: 443
-  password: 9sK2mP8xQ7vL3nZ6
-  udp: true
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  skip-cert-verify: true
-- name: KR - zhuhai.uk
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-  username: VmtSS2FrOVdRbFZpZWpBMk9nPT06
-- name: KR - zhuhai.uk 02
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-  username: Og%3D%3D
-  password: Og%3D%3D
-- name: SG - zhuhai.uk
-  type: http
-  server: 146.70.29.45
-  port: 443
-  username: testuser1
-  password: e4b72b531a2d10900519
-  tls: true
-  sni: 92461d2d.acsnet.co
-  skip-cert-verify: true
-- name: SG - zhuhai.uk 02
-  type: http
-  server: 149.88.99.209
-  port: 9443
-  tls: true
-  skip-cert-verify: true
+  server: 101.36.104.239
+  port: 10808
 - name: ID - zhuhai.uk
-  type: http
-  server: sr2-id.freeconnect.link
-  port: 9251
-  username: freeuser1
-  password: freeuser1
-  tls: true
-- name: ID - zhuhai.uk 02
-  type: http
-  server: sr2-id.freeconnect.link
-  port: 9251
-  username: freeuser1
-  password: freeuser1
-  tls: true
-  sni: sr2-id.freeconnect.link
-- name: US - zhuhai.uk 07
   type: vless
-  server: 172.67.183.52
-  port: 80
-  uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/vl/2INL39K32mKsOBKt?ed=2560"
-    headers:
-      Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
-- name: US - zhuhai.uk 01
-  type: vless
-  server: 172.67.179.98
-  port: 8880
-  uuid: 129b50b6-060d-475c-b1de-b87c2a67051f
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/pyip=ProxyIP.JP.CMLiussss.net"
-    headers:
-      Host: shrill-waterfall-bfe2.416.workers.dev
-- name: US - zhuhai.uk 04
-  type: vless
-  server: 172.67.179.98
-  port: 8880
-  uuid: 81b3fa7e-12b0-4c2b-9866-324edd26ef7f
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/pyip=ProxyIP.US.CMLiussss.net"
-    headers:
-      Host: falling-lake-0b5a.192-3e2.workers.dev
-- name: FI - zhuhai.uk 02
-  type: vless
-  server: 87.58.147.66
+  server: 34.128.66.66
   port: 443
-  uuid: ba6b7300-be34-43ef-a883-eee182dfb2d6
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  uuid: e440fa81-fe9d-4ca1-b711-f7b72c3d79ed
   tls: true
-  servername: Miro.com
+  servername: www.cloudflare.com
+  skip-cert-verify: true
   client-fingerprint: chrome
   reality-opts:
-    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
-    short-id: 7a0300af51a1c4cf
-- name: FI - zhuhai.uk 01
+    public-key: "-9nhbWBjFTNIE5q0kg76hjyzCS2giPfZ-fbd8xvmRX0"
+    short-id: 409192cee72716d7
+- name: TH - zhuhai.uk
   type: vless
-  server: 151.101.56.6
+  server: 34.15.162.1
   port: 443
-  uuid: '029fc301-ac31-4aae-9fd8-5d0bff6ec5c0'
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+- name: SE - zhuhai.uk 01
+  type: vless
+  server: 109.107.155.76
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   network: ws
   tls: true
-  servername: ssl.fastly.com
+  servername: cdn8848.776676.xyz
   client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: "/?TELEGRAM-TOOTFFARANGI"
+    path: "/tv/member/auth?ed=2560"
     headers:
-      Host: c12.com
-- name: SG - zhuhai.uk 01
-  type: vless
-  server: 18.140.28.73
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  network: ws
-  tls: true
-  servername: mia11.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/TG:@MiaChatChannel"
-    headers:
-      Host: mia11.pages.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: 选择出口
   type: select
   proxies:
   - DIRECT
-  - US - zhuhai.uk
-  - TR - zhuhai.uk
-  - TR - zhuhai.uk 02
-  - DE - zhuhai.uk
   - NL - zhuhai.uk
+  - SG - zhuhai.uk
+  - KR - zhuhai.uk
+  - US - zhuhai.uk
   - US - zhuhai.uk 02
-  - JP - zhuhai.uk
-  - NL - zhuhai.uk 02
-  - CZ - zhuhai.uk
-  - RO - zhuhai.uk
-  - IT - zhuhai.uk
-  - NL - zhuhai.uk 03
-  - JP - zhuhai.uk 02
-  - FI - zhuhai.uk
-  - JP - zhuhai.uk 03
   - US - zhuhai.uk 03
-  - JP - zhuhai.uk 04
-  - RO - zhuhai.uk 02
-  - RO - zhuhai.uk 03
+  - US - zhuhai.uk 04
   - FR - zhuhai.uk
-  - AT - zhuhai.uk
+  - UA - zhuhai.uk
+  - IT - zhuhai.uk
+  - US - zhuhai.uk 05
+  - DE - zhuhai.uk
+  - PL - zhuhai.uk
+  - NL - zhuhai.uk 02
+  - FI - zhuhai.uk
+  - RO - zhuhai.uk
+  - PL - zhuhai.uk 02
+  - PL - zhuhai.uk 03
+  - NL - zhuhai.uk 03
+  - FR - zhuhai.uk 02
+  - NL - zhuhai.uk 04
+  - BE - zhuhai.uk
+  - FI - zhuhai.uk 02
+  - RU - zhuhai.uk
+  - BE - zhuhai.uk 02
   - HK - zhuhai.uk
   - HK - zhuhai.uk 02
-  - KR - zhuhai.uk
-  - KR - zhuhai.uk 02
-  - SG - zhuhai.uk
-  - SG - zhuhai.uk 02
+  - JP - zhuhai.uk
+  - JP - zhuhai.uk 02
   - ID - zhuhai.uk
-  - ID - zhuhai.uk 02
-  - US - zhuhai.uk 07
-  - US - zhuhai.uk 01
-  - US - zhuhai.uk 04
-  - FI - zhuhai.uk 02
-  - FI - zhuhai.uk 01
-  - SG - zhuhai.uk 01
+  - TH - zhuhai.uk
+  - SE - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
