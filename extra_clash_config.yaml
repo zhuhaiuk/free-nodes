@@ -1,20 +1,80 @@
 proxies:
-- name: LT - zhuhai.uk 01
+- name: DE - zhuhai.uk 01
   type: vless
-  server: lt.aether-runet.top
+  server: de10.delivery-4f1c.com
   port: 443
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: lt.aether-runet.top
-  client-fingerprint: firefox
+  servername: de10.delivery-4f1c.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
-    short-id: 4fa44664f6a566d3
+    public-key: z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs
+    short-id: 59eee550a1014198
+- name: FI - zhuhai.uk 01
+  type: vless
+  server: 31.77.7.122
+  port: 2087
+  uuid: 36cd557b-2b3d-46d3-8071-c77dd9cf7623
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.nokia.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: TqsHQWg0oFULyLiaXe9vuwYXmLR6mRLiL376GJbX2Cs
+    short-id: 407f4d9be75efc56
+- name: FI - zhuhai.uk 02
+  type: vless
+  server: 2.26.9.243
+  port: 3454
+  uuid: 5adaf80e-2347-481f-84cb-46109d582c95
+  udp: true
+  network: grpc
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Bz2EFAfox-uD9nn8qAVKy86A1kDKO2OpYQhMO4fCrCg
+    short-id: 159b4efc
+  grpc-opts:
+    grpc-service-name: google.android.location.SyncService
+- name: AU - zhuhai.uk 02
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+- name: SE - zhuhai.uk 01
+  type: vless
+  server: 185.231.103.20
+  port: 443
+  uuid: 89104901-966e-4c7e-8e83-99d8712c5417
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: se.convexia.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: dAywk2CpVoA14GcQBWxgkamea0yaLkF6jUmy4--vHAU
+    short-id: fd
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - LT - zhuhai.uk 01
+  - DE - zhuhai.uk 01
+  - FI - zhuhai.uk 01
+  - FI - zhuhai.uk 02
+  - AU - zhuhai.uk 02
+  - SE - zhuhai.uk 01
