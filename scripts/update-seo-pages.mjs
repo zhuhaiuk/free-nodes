@@ -200,64 +200,6 @@ const SERVICE_PAGES = [
 
 const AIRPORT_REVIEWS = [
   {
-    slug: "feiyu",
-    name: "飞鱼机场",
-    title: "飞鱼机场测评：45+ 组多线、Vmess 节点、流媒体解锁与网络拓扑",
-    description:
-      "飞鱼机场测评，整理 Pro 专业版套餐、45+ 组高级多线、Vmess 节点测速、流媒体解锁、延迟和网络拓扑表现。",
-    url: "https://rs.r6r6.xyz/fyu",
-    datePublished: "2026-09-06",
-    highlights: ["45+ 组高级多线", "150G / 300G / 800G 套餐", "Vmess 节点测速", "流媒体解锁", "网络拓扑分析"],
-    metrics: [
-      ["协议类型", "Vmess"],
-      ["套餐价格", "19.99 元/月付起，年付 599 元"],
-      ["高速流量", "150G、300G、800G 可选，每月首日重置"],
-      ["设备限制", "个人使用 5、10、20 设备 IP，按套餐区分"],
-      ["线路规模", "45+ 组高级多线，另含 2+ 无限量线路"],
-      ["传输规格", "标称 1Gbps 高速传输"],
-      ["测试重点", "测速、流媒体解锁、延迟和网络拓扑"],
-    ],
-    plans: [
-      ["Pro 专业版（月 · 150G）", "19.99 元/月付", "5 设备 IP，150G 高速流量，每月首日重置"],
-      ["Pro 专业版（月 · 300G）", "24.99 元/月付", "5 设备 IP，300G 高速流量，每月首日重置"],
-      ["Pro 专业版（季）", "74.99 元/季度", "5 设备 IP，300G 高速流量，每月首日重置"],
-      ["Pro 专业版（半年）", "149.99 元/半年付", "10 设备 IP，300G 高速流量，每月首日重置"],
-      ["Pro 专业版（年）", "599 元/年付", "20 设备 IP，800G 高速流量，每月首日重置"],
-    ],
-    evidence: [
-      {
-        src: "assets/feiyu-speedtest.png",
-        width: 2546,
-        height: 3055,
-        title: "飞鱼机场节点测速截图",
-        caption:
-          "测试包含香港、新加坡、美国、日本、台湾等 Vmess 节点，部分节点平均速度可到 80MB/s 至 109MB/s 区间，个别 CF 节点在不同运营商下测试效果不同。",
-        alt: "飞鱼机场节点测速截图，展示 Vmess 节点的 TLS RTT、HTTPS 延迟、平均速度、最大速度和 UDP 类型",
-      },
-      {
-        src: "assets/feiyu-streaming.png",
-        width: 3858,
-        height: 3055,
-        title: "飞鱼机场流媒体解锁截图",
-        caption:
-          "测试覆盖 YouTube、BiliBili、Bahamut、ChatGPT、Netflix、Disney+、Abema 等项目，香港、台湾、新加坡、日本、美国节点表现存在差异。总结：主流流媒体及 AI 服务全部满足。",
-        alt: "飞鱼机场流媒体解锁截图，展示 YouTube、BiliBili、Bahamut、ChatGPT、Netflix、Disney+、Abema 等解锁结果",
-      },
-      {
-        src: "assets/feiyu-topology.png",
-        width: 2372,
-        height: 3705,
-        title: "飞鱼机场延迟与网络拓扑截图",
-        caption:
-          "拓扑图显示出口涉及 Microsoft、Amazon、Google、Sakura Link、Data Communication Business Group、Cloudflare、HKT 等 ASN，适合判断节点落地和线路组成。多入口负载均衡，保证晚高峰流畅使用。",
-        alt: "飞鱼机场网络拓扑分析截图，展示地区、AS 编号、组织、出口数量和节点入口出口关系",
-      },
-    ],
-    testTime: "测速截图测试时间：2026-09-06 07:20:38 CST；流媒体与拓扑截图测试时间：2026-09-05 16:16-16:18 CST。",
-    bestFor: ["需要香港、台湾、新加坡、日本和美国节点的用户", "关注流媒体平台解锁表现的用户", "想用月付套餐先测试稳定性的用户"],
-    cautions: ["套餐流量有限，不是无限流量机场，重度下载或多人共享前要先估算用量。", "测速截图是单次测试结果，晚高峰速度和丢包仍需复测。", "年付价格更高，建议先用月付或季付验证常用节点。"],
-  },
-  {
     slug: "feituyun",
     name: "飞兔云机场",
     title: "飞兔云机场测评：AnyTLS 与 Shadowsocks、69 个节点、流媒体解锁",
@@ -728,15 +670,15 @@ ${review.evidence
 }
 
 function reviewsIndexHtml(parts) {
-  const reviewNames = AIRPORT_REVIEWS.map((review) => review.name).join("、");
+  const reviewNames = AIRPORT_REVIEWS.map((review) => review.name.replace(/机场$/, "")).join("、");
   return `<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>机场测评列表：飞鱼、飞兔云、淘气兔 | Zhuhai Free Nodes</title>
+  <title>机场测评列表：${escapeHtml(reviewNames)} | Zhuhai Free Nodes</title>
   <meta name="description" content="机场测评小板块，整理${escapeHtml(reviewNames)}的套餐、节点、协议、流媒体和购买前注意事项。">
-  <meta name="keywords" content="机场测评, 机场推荐, 飞鱼机场, 飞兔云机场, 淘气兔机场, 稳定机场">
+  <meta name="keywords" content="机场测评, 机场推荐, ${AIRPORT_REVIEWS.map((review) => `${escapeHtml(review.name)}, ${escapeHtml(review.name.replace(/机场$/, ""))}怎么样`).join(", ")}, 稳定机场">
   <link rel="canonical" href="${SITE_URL}/reviews/">
   <style>${sharedStyles()}</style>
   ${jsonLd({
@@ -976,7 +918,7 @@ ${topicCards()}
 
     <section class="service-callout" aria-labelledby="airport-reviews">
       <h2 id="airport-reviews">机场测评</h2>
-      <p>免费节点适合临时测试，长期使用更需要看节点地区、套餐价格、晚高峰表现、流媒体和售后。本站先整理飞鱼、飞兔云、淘气兔轻量测评，后续按数据继续补充。</p>
+      <p>免费节点适合临时测试，长期使用更需要看节点地区、套餐价格、晚高峰表现、流媒体和售后。本站整理${escapeHtml(AIRPORT_REVIEWS.map((review) => review.name.replace(/机场$/, "")).join("、"))}轻量测评，后续按数据继续补充。</p>
       <div class="topic-grid">
 ${homepageReviewCards()}
       </div>
