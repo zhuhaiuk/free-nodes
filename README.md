@@ -31,12 +31,12 @@
 - AI / GEO 摘要：[https://nodes.zhuhai.uk/llms.txt](https://nodes.zhuhai.uk/llms.txt)
 - SEO 自动分析：[https://nodes.zhuhai.uk/seo-insights.html](https://nodes.zhuhai.uk/seo-insights.html)
 - 竞品对比：[https://nodes.zhuhai.uk/competitors.html](https://nodes.zhuhai.uk/competitors.html)
-- 每日快照：[2026年09月16日免费节点订阅](https://nodes.zhuhai.uk/archive/2026-09-16-free-nodes.html)
+- 每日快照：[2026年09月21日免费节点订阅](https://nodes.zhuhai.uk/archive/2026-09-21-free-nodes.html)
 
 关键词专题页：
 
 - 免费节点订阅使用指南：导入、更新与测试：[https://nodes.zhuhai.uk/topics/free-nodes.html](https://nodes.zhuhai.uk/topics/free-nodes.html)
-- 免费代理节点订阅链接：[https://nodes.zhuhai.uk/topics/free-proxy-nodes.html](https://nodes.zhuhai.uk/topics/free-proxy-nodes.html)
+- 免费代理节点订阅链接：Base64 与 Clash / Mihomo YAML：[https://nodes.zhuhai.uk/topics/free-proxy-nodes.html](https://nodes.zhuhai.uk/topics/free-proxy-nodes.html)
 - Clash / Mihomo 节点：[https://nodes.zhuhai.uk/topics/clash-mihomo-nodes.html](https://nodes.zhuhai.uk/topics/clash-mihomo-nodes.html)
 - 免费 V2Ray 节点订阅链接：[https://nodes.zhuhai.uk/topics/v2ray-nodes.html](https://nodes.zhuhai.uk/topics/v2ray-nodes.html)
 - Shadowrocket 小火箭账号：[https://nodes.zhuhai.uk/topics/shadowrocket-account.html](https://nodes.zhuhai.uk/topics/shadowrocket-account.html)
