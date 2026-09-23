@@ -1,73 +1,20 @@
 proxies:
-- name: NL - zhuhai.uk 01
+- name: TH - zhuhai.uk 01
   type: vless
-  server: 141.144.193.219
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  udp: true
-  network: tcp
-- name: NL - zhuhai.uk 02
-  type: ss
-  server: 158.178.156.189
-  port: 45819
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3pAryH5891fJwNy5c1rzLBaytwn79ojJ5iVQt6Yli60=
-  udp: true
-- name: GB - zhuhai.uk 01
-  type: ss
-  server: 129.151.73.227
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EG7gd6f1FSkm+x/OoWRHzsRT1Jl/tSx0EWxkprEGZSo=
-  udp: true
-- name: US - zhuhai.uk 04
-  type: vless
-  server: 136.117.218.86
+  server: 34.15.176.240
   port: 443
-  uuid: dffab367-7769-4c6c-86f2-66fc6bd03003
+  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
   udp: true
   network: tcp
   tls: true
   servername: www.cloudflare.com
   client-fingerprint: chrome
+  skip-cert-verify: true
   reality-opts:
-    public-key: LYnDDS0AkBwVeeTyIEE5MhrTV_PZO5f1qBAbMN6z4HM
-    short-id: f1955f72763eb2fb
-- name: NL - zhuhai.uk 04
-  type: vless
-  server: 34.147.59.126
-  port: 443
-  uuid: f76627ae-2626-4c53-ab57-da0e4d377a53
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ODBW9YQs2TYvh_KBUQvbvAh61EULeZvqvwjc2RysKTs
-    short-id: 973452cd8674dbaf
-- name: FR - zhuhai.uk 01
-  type: vless
-  server: 77.110.104.125
-  port: 8443
-  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
-  udp: true
-  network: grpc
-  tls: true
-  servername: maps.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY
-    short-id: 2da4299da566b7
-  grpc-opts:
-    grpc-service-name: your-custom-path
+    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
+    short-id: 856c0a3cd1426a5c
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - NL - zhuhai.uk 01
-  - NL - zhuhai.uk 02
-  - GB - zhuhai.uk 01
-  - US - zhuhai.uk 04
-  - NL - zhuhai.uk 04
-  - FR - zhuhai.uk 01
+  - TH - zhuhai.uk 01
