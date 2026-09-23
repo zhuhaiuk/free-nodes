@@ -1,20 +1,20 @@
 proxies:
-- name: TH - zhuhai.uk 01
+- name: DE - zhuhai.uk 03
   type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  server: 77.91.76.156
+  port: 57160
+  uuid: 68ad9a6d-2463-4c31-92a7-31547b9d4783
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
+  servername: funpay.com
+  client-fingerprint: firefox
   reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-    short-id: 856c0a3cd1426a5c
+    public-key: Tbu7sr_pvHngDWFIa0ApL5UL9vEGxlHESd9g53KQehw
+    short-id: 77b5
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - TH - zhuhai.uk 01
+  - DE - zhuhai.uk 03
