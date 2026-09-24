@@ -1,17 +1,20 @@
 proxies:
-- name: US - zhuhai.uk 03
+- name: SG - zhuhai.uk 01
   type: vless
-  server: openai.com
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  server: 154.194.0.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   udp: true
   network: ws
+  tls: true
+  servername: speed.dulacloud.store
+  client-fingerprint: chrome
   ws-opts:
-    path: "/"
+    path: "/dula?Telegram-WangCai2"
     headers:
-      Host: llm-api.sofurry.dpdns.org
+      Host: speed.dulacloud.store
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 03
+  - SG - zhuhai.uk 01
