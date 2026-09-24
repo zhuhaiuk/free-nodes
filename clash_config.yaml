@@ -185,6 +185,20 @@ proxies:
   password: 'null'
   tls: true
   sni: jewelscollecti.icu
+- name: SG - zhuhai.uk 01
+  type: vless
+  server: 154.194.0.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  udp: true
+  network: ws
+  tls: true
+  servername: speed.dulacloud.store
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/dula?Telegram-WangCai2"
+    headers:
+      Host: speed.dulacloud.store
 proxy-groups:
 - name: 选择出口
   type: select
@@ -216,6 +230,7 @@ proxy-groups:
   - KR - zhuhai.uk 02
   - IN - zhuhai.uk
   - ID - zhuhai.uk
+  - SG - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
