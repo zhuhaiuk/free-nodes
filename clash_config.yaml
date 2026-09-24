@@ -223,47 +223,6 @@ proxies:
   port: 56927
   cipher: 2022-blake3-chacha20-poly1305
   password: CCfsnvFZe4t1K0KIgQDv7syWOwYGtqCTS6zwlKWr+J8=
-- name: NL - zhuhai.uk 01
-  type: vless
-  server: assets-nl.pleiades.codes
-  port: 443
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  udp: true
-  network: grpc
-  tls: true
-  servername: assets-nl.pleiades.codes
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: RU - zhuhai.uk 02
-  type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  network: ws
-  tls: true
-  servername: fbsv6.guardora.pro
-  client-fingerprint: firefox
-  ws-opts:
-    path: "/ws"
-    headers:
-      Host: fbsv6.guardora.pro
-- name: FR - zhuhai.uk 01
-  type: vless
-  server: 77.110.104.125
-  port: 8443
-  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
-  udp: true
-  network: grpc
-  tls: true
-  servername: maps.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY
-    short-id: 2da4299da566b7
-  grpc-opts:
-    grpc-service-name: your-custom-path
 proxy-groups:
 - name: 选择出口
   type: select
@@ -297,9 +256,6 @@ proxy-groups:
   - KR - zhuhai.uk 02
   - SG - zhuhai.uk
   - SG - zhuhai.uk 02
-  - NL - zhuhai.uk 01
-  - RU - zhuhai.uk 02
-  - FR - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
