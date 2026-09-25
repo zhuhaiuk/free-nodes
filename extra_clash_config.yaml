@@ -1,20 +1,17 @@
 proxies:
-- name: SG - zhuhai.uk 02
+- name: IL - zhuhai.uk 01
   type: vless
-  server: 163.128.99.14
-  port: 443
-  uuid: bda35755-c838-49c3-a19e-3712f2d54275
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: "-LuhwN_cSgNr7nYIfCcu_XAjviKVSGwVGHxmB-s1AD0"
-    short-id: e3a4bdfe3d6fd8ec
+  network: ws
+  ws-opts:
+    path: "/platform101"
+    headers:
+      Host: platform101.halalkhor.info
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - SG - zhuhai.uk 02
+  - IL - zhuhai.uk 01
