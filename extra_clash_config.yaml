@@ -1,9 +1,9 @@
 proxies:
-- name: US - zhuhai.uk 01
+- name: SG - zhuhai.uk 02
   type: vless
-  server: 38.244.20.25
+  server: 163.128.99.14
   port: 443
-  uuid: 5272cd9f-a028-4452-ad8a-9bc21f87bb19
+  uuid: bda35755-c838-49c3-a19e-3712f2d54275
   udp: true
   network: tcp
   flow: xtls-rprx-vision
@@ -11,26 +11,10 @@ proxies:
   servername: www.apple.com
   client-fingerprint: safari
   reality-opts:
-    public-key: 0dIyov95G3A1ySANsJzdYY9DGLvaIFU8ofJf3Jtv1Ds
-    short-id: befa80d97af98b74
-- name: KZ - zhuhai.uk 01
-  type: vless
-  server: kazartip.thewalkingded.life
-  port: 443
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: kazartip.thewalkingded.life
-  client-fingerprint: firefox
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
-    short-id: 7cf408996c82639f
+    public-key: "-LuhwN_cSgNr7nYIfCcu_XAjviKVSGwVGHxmB-s1AD0"
+    short-id: e3a4bdfe3d6fd8ec
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
-  - KZ - zhuhai.uk 01
+  - SG - zhuhai.uk 02
