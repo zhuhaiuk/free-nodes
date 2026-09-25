@@ -4,520 +4,365 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: SG - zhuhai.uk
-  type: vless
-  server: 45.80.111.45
-  port: 8880
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  network: ws
-  ws-opts:
-    path: "/cdn/assets/stream"
-    headers:
-      Host: cnd.singapure.mygold.stream
+- name: US - zhuhai.uk
+  type: socks5
+  server: 193.25.215.182
+  port: 22222
+  username: bnVsbDpudWxs
 - name: NL - zhuhai.uk
   type: http
-  server: 84.17.47.125
+  server: 84.17.47.150
   port: 9002
   tls: true
   skip-cert-verify: true
+- name: BE - zhuhai.uk
+  type: http
+  server: 146.70.176.242
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: SE - zhuhai.uk
+  type: ss
+  server: creativeboxse.zanity.net
+  port: 5228
+  cipher: chacha20-ietf-poly1305
+  password: f8Llc9OigAChSUgWakI7ZW
+- name: US - zhuhai.uk 02
+  type: vless
+  server: 107.149.159.190
+  port: 4433
+  uuid: 443d55c9-9b78-4ad4-ac34-5ada5b98e97e
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.postgresql.org
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ptrxM_lwiuXte-ynRSfM7AyayGbWrfCzkV1gQ5EgeSw
+    short-id: 0fa5bc397af019a2
+- name: RO - zhuhai.uk
+  type: http
+  server: 193.176.84.34
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: US - zhuhai.uk 03
+  type: http
+  server: 138.199.35.218
+  port: 9002
+  tls: true
+  sni: 138.199.35.218
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 02
+  type: http
+  server: 193.176.84.38
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 03
+  type: http
+  server: 193.176.84.24
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: FR - zhuhai.uk
+  type: hysteria2
+  server: 62.210.7.139
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: FR - zhuhai.uk 02
+  type: hysteria2
+  server: 62.210.7.139
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: google.com
+  skip-cert-verify: true
+- name: US - zhuhai.uk 04
+  type: http
+  server: 138.199.35.211
+  port: 9002
+  tls: true
+  skip-cert-verify: true
+- name: KZ - zhuhai.uk
+  type: vless
+  server: kazartip.thewalkingded.life
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: kazartip.thewalkingded.life
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
+    short-id: 7cf408996c82639f
 - name: NL - zhuhai.uk 02
   type: vless
-  server: 141.148.236.91
+  server: 92.5.200.0
   port: 62145
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- name: FR - zhuhai.uk 03
+  type: socks5
+  server: 109.123.251.109
+  port: 1080
+- name: RO - zhuhai.uk 04
+  type: http
+  server: 193.176.84.36
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- name: RO - zhuhai.uk 05
+  type: http
+  server: 193.176.84.37
+  port: 9002
+  tls: true
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: TW - zhuhai.uk
   type: anytls
   server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
   port: 443
   password: 9sK2mP8xQ7vL3nZ6
   udp: true
-  sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
+  sni: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
   skip-cert-verify: true
-- name: NL - zhuhai.uk 03
-  type: vless
-  server: 158.101.195.112
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- name: RU - zhuhai.uk
-  type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  servername: fbsv6.guardora.pro
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: "/ws"
-    headers:
-      Host: fbsv6.guardora.pro
-- name: US - zhuhai.uk
-  type: http
-  server: goedkoopgeluid.icu
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk
-  type: http
-  server: 193.176.84.40
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 02
-  type: http
-  server: 193.176.84.39
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 02
-  type: http
-  server: mmgr.club
-  port: 443
-  username: 'null'
-  password: None
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 03
-  type: http
-  server: 138.199.35.217
-  port: 9002
-  tls: true
-  sni: 138.199.35.217
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: 138.199.35.208
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 138.199.35.208
-  skip-cert-verify: true
-- name: NL - zhuhai.uk 04
-  type: http
-  server: 51.158.243.91
-  port: 443
-  username: 'null'
-  password: None
-  tls: true
-  sni: 51.158.243.91
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 03
+- name: RO - zhuhai.uk 06
   type: http
   server: 193.176.84.22
   port: 9002
   tls: true
-  sni: www.bing.com
   skip-cert-verify: true
 - name: US - zhuhai.uk 05
-  type: http
-  server: 138.199.35.198
-  port: 9002
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 06
-  type: http
-  server: 138.199.35.208
-  port: 9002
-  username: 'null'
-  password: None
-  tls: true
-  skip-cert-verify: true
-- name: FR - zhuhai.uk
-  type: http
-  server: 141.94.16.4
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: RO - zhuhai.uk 04
-  type: http
-  server: 193.176.84.27
-  port: 9002
-  tls: true
-  sni: 193.176.84.27
-  skip-cert-verify: true
-- name: US - zhuhai.uk 07
   type: vless
-  server: 172.67.207.26
-  port: 8880
-  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
+  server: tg.juntham.cn
+  port: 8443
+  uuid: da8aa4cc-4f76-4248-a289-41f25713b6e2
+  tls: true
+  servername: tg.juntham.cn
   network: ws
   ws-opts:
-    path: "/pyip=ProxyIP.JP.CMLiussss.net"
-    headers:
-      Host: twilight-poetry-2bfe.218-699.workers.dev
-- name: RU - zhuhai.uk 02
-  type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  servername: fbsv6.guardora.pro
+- name: HK - zhuhai.uk
+  type: socks5
+  server: 47.239.116.165
+  port: 1080
+  username: admin
+  password: admin
+- name: HK - zhuhai.uk 02
+  type: hysteria2
+  server: hk01.kfc-520.com
+  port: 60001
+  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  sni: hk01.kfc-520.com
   skip-cert-verify: true
+- name: JP - zhuhai.uk
+  type: vless
+  server: family.bucket.x1.kfc-520.com
+  port: 10202
+  uuid: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: "/ws"
-    headers:
-      Host: fbsv6.guardora.pro
-- name: TR - zhuhai.uk
+  reality-opts:
+    public-key: E0R7f_nEkbcnc97Z82aDMo2bUVGgcIzChCVYwsQmXnc
+    short-id: 88bd7f
+- name: JP - zhuhai.uk 02
   type: vless
-  server: tr3.wba-pn.ru
+  server: proxyip.jp.cmliussss.net
   port: 443
-  uuid: af2a0c18-b08c-471f-baa3-259ac2ce3a85
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   tls: true
-  servername: tr3.wba-pn.ru
+  servername: vp10.pages.dev
   skip-cert-verify: true
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: "/"
-- name: US - zhuhai.uk 08
-  type: http
-  server: 138.199.35.206
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 138.199.35.206
-  skip-cert-verify: true
-- name: HK - zhuhai.uk
-  type: anytls
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  port: 443
-  password: 9sK2mP8xQ7vL3nZ6
-  udp: true
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  skip-cert-verify: true
-- name: HK - zhuhai.uk 02
-  type: anytls
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  port: 443
-  password: 9sK2mP8xQ7vL3nZ6
-  udp: true
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  skip-cert-verify: true
-- name: JP - zhuhai.uk
-  type: http
-  server: fan.571589.xyz
-  port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-- name: JP - zhuhai.uk 02
-  type: vless
-  server: 34.84.126.188
-  port: 443
-  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
-    short-id: 780152c21e234b5a
-- name: KR - zhuhai.uk
-  type: vless
-  server: 123.111.169.70
-  port: 2096
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  tls: true
-  servername: mia12.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: "/TG:@MiaChatChannel"
     headers:
-      Host: mia12.pages.dev
+      Host: vp10.pages.dev
+- name: KR - zhuhai.uk
+  type: socks5
+  server: 121.169.46.116
+  port: 1090
+  username: Vm10U1MyRnRTa1pOU0dSV1ZqTm9UMVJWV2taTmF6bHVUMnhhUlZOdGNHbFNWRUl6Vmxaa05GUnJNVWRTVkVwUVduYzlQVG89Og==
 - name: KR - zhuhai.uk 02
   type: socks5
   server: 121.169.46.116
   port: 1090
-  username: T2clM0QlM0Q6
-- name: MY - zhuhai.uk
-  type: hysteria2
-  server: 103.117.141.103
-  port: 2060
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: mlxy.mangshe.xyz
+- name: SG - zhuhai.uk
+  type: http
+  server: 154.26.139.24
+  port: 443
+  tls: true
   skip-cert-verify: true
-- name: SG - zhuhai.uk 16
+- name: ID - zhuhai.uk
+  type: http
+  server: webdrone.club
+  port: 443
+  username: 'null'
+  password: None
+  tls: true
+- name: FI - zhuhai.uk 02
   type: vless
-  server: 185.158.133.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: 151.101.56.6
+  port: 443
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   udp: true
   network: ws
   tls: true
-  servername: speed.dulacloud.store
+  servername: ssl.fastly.com
   client-fingerprint: chrome
   ws-opts:
-    path: "/dula?Telegram-WangCai2"
+    path: "/"
     headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 15
+      Host: c12.com
+- name: FI - zhuhai.uk 01
   type: vless
-  server: 80.93.202.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   udp: true
   network: ws
   tls: true
-  servername: speed.dulacloud.store
+  servername: ssl.fastly.com
   client-fingerprint: chrome
   ws-opts:
-    path: "/dula?Telegram-WangCai2"
+    path: "/"
     headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 04
+      Host: c12.com
+- name: DE - zhuhai.uk 04
   type: vless
-  server: 185.135.9.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: gerwai1488.vvzzkontaktezzvv.garden
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gerwai1488.vvzzkontaktezzvv.garden
+  client-fingerprint: edge
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+    short-id: 0c13e8822e7f58aa
+- name: PL - zhuhai.uk 01
+  type: vless
+  server: 194.93.63.246
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl.bubahero.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
+    short-id: 9c2378562188c3cb
+- name: FI - zhuhai.uk 03
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   udp: true
   network: ws
   tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
   ws-opts:
-    path: "/dula?Telegram-WangCai2"
+    path: "/"
     headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 11
+      Host: c12.com
+- name: PL - zhuhai.uk 02
   type: vless
-  server: 89.116.250.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: pl.bubahero.com
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: speed.dulacloud.store
+  servername: pl.bubahero.com
   client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 05
+  reality-opts:
+    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
+    short-id: 9c2378562188c3cb
+- name: KZ - zhuhai.uk 01
   type: vless
-  server: 5.10.215.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: kazartip.thewalkingded.life
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 03
+  servername: kazartip.thewalkingded.life
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
+    short-id: 7cf408996c82639f
+- name: FI - zhuhai.uk 04
   type: vless
-  server: 154.194.0.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: 196.196.206.37
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 08
-  type: vless
-  server: 45.80.108.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 02
-  type: vless
-  server: 188.42.88.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 14
-  type: vless
-  server: 185.156.19.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 10
-  type: vless
-  server: 88.216.66.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 09
-  type: vless
-  server: 88.216.67.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 06
-  type: vless
-  server: 185.7.240.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 01
-  type: vless
-  server: 46.202.30.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 13
-  type: vless
-  server: 164.38.155.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 12
-  type: vless
-  server: 139.64.235.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 07
-  type: vless
-  server: 185.207.199.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
+  servername: fintanil228.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+    short-id: d110331f200987ae
 proxy-groups:
 - name: 选择出口
   type: select
   proxies:
   - DIRECT
-  - SG - zhuhai.uk
-  - NL - zhuhai.uk
-  - NL - zhuhai.uk 02
-  - TW - zhuhai.uk
-  - NL - zhuhai.uk 03
-  - RU - zhuhai.uk
   - US - zhuhai.uk
-  - RO - zhuhai.uk
-  - RO - zhuhai.uk 02
+  - NL - zhuhai.uk
+  - BE - zhuhai.uk
+  - SE - zhuhai.uk
   - US - zhuhai.uk 02
+  - RO - zhuhai.uk
   - US - zhuhai.uk 03
-  - US - zhuhai.uk 04
-  - NL - zhuhai.uk 04
+  - RO - zhuhai.uk 02
   - RO - zhuhai.uk 03
-  - US - zhuhai.uk 05
-  - US - zhuhai.uk 06
   - FR - zhuhai.uk
+  - FR - zhuhai.uk 02
+  - US - zhuhai.uk 04
+  - KZ - zhuhai.uk
+  - NL - zhuhai.uk 02
+  - FR - zhuhai.uk 03
   - RO - zhuhai.uk 04
-  - US - zhuhai.uk 07
-  - RU - zhuhai.uk 02
-  - TR - zhuhai.uk
-  - US - zhuhai.uk 08
+  - RO - zhuhai.uk 05
+  - TW - zhuhai.uk
+  - RO - zhuhai.uk 06
+  - US - zhuhai.uk 05
   - HK - zhuhai.uk
   - HK - zhuhai.uk 02
   - JP - zhuhai.uk
   - JP - zhuhai.uk 02
   - KR - zhuhai.uk
   - KR - zhuhai.uk 02
-  - MY - zhuhai.uk
-  - SG - zhuhai.uk 16
-  - SG - zhuhai.uk 15
-  - SG - zhuhai.uk 04
-  - SG - zhuhai.uk 11
-  - SG - zhuhai.uk 05
-  - SG - zhuhai.uk 03
-  - SG - zhuhai.uk 08
-  - SG - zhuhai.uk 02
-  - SG - zhuhai.uk 14
-  - SG - zhuhai.uk 10
-  - SG - zhuhai.uk 09
-  - SG - zhuhai.uk 06
-  - SG - zhuhai.uk 01
-  - SG - zhuhai.uk 13
-  - SG - zhuhai.uk 12
-  - SG - zhuhai.uk 07
+  - SG - zhuhai.uk
+  - ID - zhuhai.uk
+  - FI - zhuhai.uk 02
+  - FI - zhuhai.uk 01
+  - DE - zhuhai.uk 04
+  - PL - zhuhai.uk 01
+  - FI - zhuhai.uk 03
+  - PL - zhuhai.uk 02
+  - KZ - zhuhai.uk 01
+  - FI - zhuhai.uk 04
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
