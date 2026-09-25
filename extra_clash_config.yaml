@@ -1,245 +1,126 @@
 proxies:
-- name: SG - zhuhai.uk 16
+- name: FI - zhuhai.uk 02
   type: vless
-  server: 185.158.133.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: 151.101.56.6
+  port: 443
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   udp: true
   network: ws
   tls: true
-  servername: speed.dulacloud.store
+  servername: ssl.fastly.com
   client-fingerprint: chrome
   ws-opts:
-    path: "/dula?Telegram-WangCai2"
+    path: "/"
     headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 15
+      Host: c12.com
+- name: FI - zhuhai.uk 01
   type: vless
-  server: 80.93.202.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   udp: true
   network: ws
   tls: true
-  servername: speed.dulacloud.store
+  servername: ssl.fastly.com
   client-fingerprint: chrome
   ws-opts:
-    path: "/dula?Telegram-WangCai2"
+    path: "/"
     headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 04
+      Host: c12.com
+- name: DE - zhuhai.uk 04
   type: vless
-  server: 185.135.9.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: gerwai1488.vvzzkontaktezzvv.garden
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gerwai1488.vvzzkontaktezzvv.garden
+  client-fingerprint: edge
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
+    short-id: 0c13e8822e7f58aa
+- name: PL - zhuhai.uk 01
+  type: vless
+  server: 194.93.63.246
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl.bubahero.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
+    short-id: 9c2378562188c3cb
+- name: FI - zhuhai.uk 03
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   udp: true
   network: ws
   tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
   ws-opts:
-    path: "/dula?Telegram-WangCai2"
+    path: "/"
     headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 11
+      Host: c12.com
+- name: PL - zhuhai.uk 02
   type: vless
-  server: 89.116.250.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: pl.bubahero.com
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: speed.dulacloud.store
+  servername: pl.bubahero.com
   client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 05
+  reality-opts:
+    public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
+    short-id: 9c2378562188c3cb
+- name: KZ - zhuhai.uk 01
   type: vless
-  server: 5.10.215.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: kazartip.thewalkingded.life
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 03
+  servername: kazartip.thewalkingded.life
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
+    short-id: 7cf408996c82639f
+- name: FI - zhuhai.uk 04
   type: vless
-  server: 154.194.0.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: 196.196.206.37
+  port: 443
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 08
-  type: vless
-  server: 45.80.108.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 02
-  type: vless
-  server: 188.42.88.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 14
-  type: vless
-  server: 185.156.19.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 10
-  type: vless
-  server: 88.216.66.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 09
-  type: vless
-  server: 88.216.67.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 06
-  type: vless
-  server: 185.7.240.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 01
-  type: vless
-  server: 46.202.30.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 13
-  type: vless
-  server: 164.38.155.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 12
-  type: vless
-  server: 139.64.235.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
-- name: SG - zhuhai.uk 07
-  type: vless
-  server: 185.207.199.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  network: ws
-  tls: true
-  servername: speed.dulacloud.store
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/dula?Telegram-WangCai2"
-    headers:
-      Host: speed.dulacloud.store
+  servername: fintanil228.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+    short-id: d110331f200987ae
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - SG - zhuhai.uk 16
-  - SG - zhuhai.uk 15
-  - SG - zhuhai.uk 04
-  - SG - zhuhai.uk 11
-  - SG - zhuhai.uk 05
-  - SG - zhuhai.uk 03
-  - SG - zhuhai.uk 08
-  - SG - zhuhai.uk 02
-  - SG - zhuhai.uk 14
-  - SG - zhuhai.uk 10
-  - SG - zhuhai.uk 09
-  - SG - zhuhai.uk 06
-  - SG - zhuhai.uk 01
-  - SG - zhuhai.uk 13
-  - SG - zhuhai.uk 12
-  - SG - zhuhai.uk 07
+  - FI - zhuhai.uk 02
+  - FI - zhuhai.uk 01
+  - DE - zhuhai.uk 04
+  - PL - zhuhai.uk 01
+  - FI - zhuhai.uk 03
+  - PL - zhuhai.uk 02
+  - KZ - zhuhai.uk 01
+  - FI - zhuhai.uk 04
