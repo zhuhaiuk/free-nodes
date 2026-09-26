@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-09-25T08:44:39.150Z
+生成时间：2026-09-26T08:31:13.650Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -32,35 +32,35 @@
 
 | 域名 | 出现次数 |
 | --- | --- |
-| youtube.com | 26 |
-| github.com | 12 |
-| sites.google.com | 11 |
-| reddit.com | 10 |
-| apps.apple.com | 5 |
-| clashxiazai.com | 4 |
-| greasyfork.org | 4 |
-| lingualeo.com | 3 |
-| linkedin.com | 3 |
-| tiktok.com | 3 |
-| wiki.metacubex.one | 3 |
-| clashandroid.com | 2 |
+| youtube.com | 32 |
+| github.com | 15 |
+| sites.google.com | 9 |
+| reddit.com | 6 |
+| lingualeo.com | 4 |
+| apps.apple.com | 3 |
+| clashverge.v2rayfast.com | 3 |
+| greasyfork.org | 3 |
+| clashxiazai.com | 2 |
+| gist.github.com | 2 |
+| linux.do | 2 |
+| service.govdelivery.com | 2 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| clash | 105 |
-| 机场 | 94 |
-| v2ray | 77 |
-| 免费节点 | 73 |
-| 小火箭 | 45 |
-| shadowrocket | 39 |
-| trojan | 34 |
-| 节点订阅 | 27 |
-| shadowsocks | 20 |
-| mihomo | 13 |
-| free nodes | 8 |
-| 免费订阅 | 6 |
+| clash | 100 |
+| v2ray | 97 |
+| 免费节点 | 75 |
+| 机场 | 30 |
+| 节点订阅 | 29 |
+| trojan | 29 |
+| shadowsocks | 22 |
+| 小火箭 | 21 |
+| free nodes | 21 |
+| shadowrocket | 19 |
+| mihomo | 12 |
+| free proxy | 7 |
 
 ## 自动策略
 
