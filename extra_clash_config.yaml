@@ -1,17 +1,19 @@
 proxies:
-- name: IL - zhuhai.uk 01
+- name: PL - zhuhai.uk 01
   type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: 31.77.13.19
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
   udp: true
-  network: ws
-  ws-opts:
-    path: "/platform101"
-    headers:
-      Host: platform101.halalkhor.info
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rusbid.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - IL - zhuhai.uk 01
+  - PL - zhuhai.uk 01
