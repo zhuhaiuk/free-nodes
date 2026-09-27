@@ -255,19 +255,33 @@ proxies:
   username: 'null'
   password: None
   tls: true
-- name: PL - zhuhai.uk 01
+- name: LT - zhuhai.uk 01
   type: vless
-  server: 31.77.13.19
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  server: 84.32.51.238
+  port: 45977
+  uuid: 25284368-40d5-4abe-9f56-54a07e88a7af
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: rusbid.de
+  servername: lt-1.dzvn.space
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5JPUCm5vkIUyBfwcgnkWXJNIW4CaWgBzXgT61cvWVVA
+    short-id: f688ff32ece6b15f
+- name: DE - zhuhai.uk 02
+  type: vless
+  server: freeman.curtvip.ir
+  port: 20410
+  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
+  udp: true
+  network: tcp
+  tls: true
+  servername: secureconnect-pa.mtls.clients6.google.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
+    short-id: e2ce3e050232978c
 proxy-groups:
 - name: 选择出口
   type: select
@@ -302,7 +316,8 @@ proxy-groups:
   - SG - zhuhai.uk 02
   - IN - zhuhai.uk
   - ID - zhuhai.uk
-  - PL - zhuhai.uk 01
+  - LT - zhuhai.uk 01
+  - DE - zhuhai.uk 02
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
