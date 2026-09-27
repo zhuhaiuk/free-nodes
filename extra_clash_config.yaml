@@ -1,19 +1,328 @@
 proxies:
-- name: FI - zhuhai.uk 01
+- name: US - zhuhai.uk 03
   type: vless
-  server: cosw.ggisopi.su
+  server: 172.67.73.170
   port: 443
-  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  network: ws
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: US - zhuhai.uk 05
+  type: vless
+  server: 104.26.10.213
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  network: ws
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: US - zhuhai.uk 04
+  type: vless
+  server: 104.26.0.226
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  network: ws
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: HK - zhuhai.uk 01
+  type: vless
+  server: 104.17.150.17
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  network: ws
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: NL - zhuhai.uk 01
+  type: vless
+  server: 51.170.176.145
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  udp: true
+  network: tcp
+- name: US - zhuhai.uk 02
+  type: vless
+  server: w3.lianjieni.com
+  port: 443
+  uuid: 73619cbe-aac3-4635-bb83-ca16bcfc5eaf
+  udp: true
+  network: ws
+  tls: true
+  servername: w3.lianjieni.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/cdnws"
+    headers:
+      Host: w3.lianjieni.com
+- name: HK - zhuhai.uk 02
+  type: vless
+  server: cf.877774.xyz
+  port: 2053
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  network: ws
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: SE - zhuhai.uk 01
+  type: vless
+  server: 103.177.249.40
+  port: 2083
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  udp: true
+  network: ws
+  tls: true
+  servername: yf.962456.xyz
+  client-fingerprint: random
+  ws-opts:
+    path: "/proxyip=kr.william.us.ci"
+    headers:
+      Host: yf.962456.xyz
+- name: SE - zhuhai.uk 02
+  type: vless
+  server: 144.31.243.120
+  port: 8443
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  udp: true
+  network: ws
+  tls: true
+  servername: yf.962456.xyz
+  client-fingerprint: random
+  ws-opts:
+    path: "/proxyip=kr.william.us.ci"
+    headers:
+      Host: yf.962456.xyz
+- name: TW - zhuhai.uk 01
+  type: vless
+  server: 141.11.87.48
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  network: ws
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: HK - zhuhai.uk 03
+  type: vless
+  server: 39.109.50.142
+  port: 443
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  udp: true
+  network: ws
+  tls: true
+  servername: yf.962456.xyz
+  client-fingerprint: random
+  ws-opts:
+    path: "/proxyip=kr.william.us.ci"
+    headers:
+      Host: yf.962456.xyz
+- name: AT - zhuhai.uk 01
+  type: vless
+  server: 173.242.63.235
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  network: ws
+  tls: true
+  servername: edgetunnel-4uw.pages.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: SG - zhuhai.uk 04
+  type: vless
+  server: 91.193.58.218
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  network: ws
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/free-server.techsonic.dev"
+    headers:
+      Host: free-server.techsonic.dev
+- name: SG - zhuhai.uk 07
+  type: vless
+  server: 91.193.58.61
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  network: ws
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/free-server.techsonic.dev"
+    headers:
+      Host: free-server.techsonic.dev
+- name: SG - zhuhai.uk 03
+  type: vless
+  server: 91.193.58.108
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  network: ws
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/free-server.techsonic.dev"
+    headers:
+      Host: free-server.techsonic.dev
+- name: JP - zhuhai.uk 05
+  type: vless
+  server: lbb-sanwang-youhua.lbbzz.com
+  port: 23801
+  uuid: 9cad4134-f6f0-4e83-adca-53ae98c08852
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: cosw.ggisopi.su
-  client-fingerprint: qq
+  servername: www.amd.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+    public-key: 7ogEKTScQCeqqPGOaUgWZMwX5Xdizvk9JKtu5MMfJ1o
+    short-id: 274ab0bb
+- name: JP - zhuhai.uk 06
+  type: vless
+  server: lbb-sanwang-youhua.lbbzz.com
+  port: 23801
+  uuid: e29d3b64-c6c8-4b10-b6fe-b75bcc1891f4
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.amd.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 7ogEKTScQCeqqPGOaUgWZMwX5Xdizvk9JKtu5MMfJ1o
+    short-id: 274ab0bb
+- name: SG - zhuhai.uk 10
+  type: vless
+  server: 91.193.58.118
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  network: ws
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/free-server.techsonic.dev"
+    headers:
+      Host: free-server.techsonic.dev
+- name: SG - zhuhai.uk 05
+  type: vless
+  server: 91.193.58.15
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  network: ws
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/free-server.techsonic.dev"
+    headers:
+      Host: free-server.techsonic.dev
+- name: SG - zhuhai.uk 08
+  type: vless
+  server: 91.193.58.45
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  network: ws
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/free-server.techsonic.dev"
+    headers:
+      Host: free-server.techsonic.dev
+- name: SG - zhuhai.uk 09
+  type: vless
+  server: 91.193.58.52
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  network: ws
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/free-server.techsonic.dev"
+    headers:
+      Host: free-server.techsonic.dev
+- name: SG - zhuhai.uk 06
+  type: vless
+  server: 91.193.58.57
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  network: ws
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/free-server.techsonic.dev"
+    headers:
+      Host: free-server.techsonic.dev
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - FI - zhuhai.uk 01
+  - US - zhuhai.uk 03
+  - US - zhuhai.uk 05
+  - US - zhuhai.uk 04
+  - HK - zhuhai.uk 01
+  - NL - zhuhai.uk 01
+  - US - zhuhai.uk 02
+  - HK - zhuhai.uk 02
+  - SE - zhuhai.uk 01
+  - SE - zhuhai.uk 02
+  - TW - zhuhai.uk 01
+  - HK - zhuhai.uk 03
+  - AT - zhuhai.uk 01
+  - SG - zhuhai.uk 04
+  - SG - zhuhai.uk 07
+  - SG - zhuhai.uk 03
+  - JP - zhuhai.uk 05
+  - JP - zhuhai.uk 06
+  - SG - zhuhai.uk 10
+  - SG - zhuhai.uk 05
+  - SG - zhuhai.uk 08
+  - SG - zhuhai.uk 09
+  - SG - zhuhai.uk 06
