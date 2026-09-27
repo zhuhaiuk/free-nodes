@@ -1,49 +1,19 @@
 proxies:
-- name: LT - zhuhai.uk 01
+- name: FI - zhuhai.uk 01
   type: vless
-  server: 84.32.51.238
-  port: 45977
-  uuid: 25284368-40d5-4abe-9f56-54a07e88a7af
+  server: cosw.ggisopi.su
+  port: 443
+  uuid: d0f0a880-0df1-0003-bdf1-5669fb9483ce
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: lt-1.dzvn.space
-  client-fingerprint: firefox
+  servername: cosw.ggisopi.su
+  client-fingerprint: qq
   reality-opts:
-    public-key: 5JPUCm5vkIUyBfwcgnkWXJNIW4CaWgBzXgT61cvWVVA
-    short-id: f688ff32ece6b15f
-- name: FI - zhuhai.uk 02
-  type: vless
-  server: 122.8.45.2
-  port: 8443
-  uuid: 3ae00194-1bc0-0bf4-9564-3c55b1c6d485
-  udp: true
-  network: grpc
-  tls: true
-  servername: www.hp.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: QzFNQqkvBnDKIyjXUHJQe9jruaw9G5AV44vDC-qvnlo
-  grpc-opts:
-    grpc-service-name: TunService
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: freeman.curtvip.ir
-  port: 20410
-  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
-  udp: true
-  network: tcp
-  tls: true
-  servername: secureconnect-pa.mtls.clients6.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
-    short-id: e2ce3e050232978c
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - LT - zhuhai.uk 01
-  - FI - zhuhai.uk 02
-  - DE - zhuhai.uk 02
+  - FI - zhuhai.uk 01
