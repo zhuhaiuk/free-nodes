@@ -1,19 +1,264 @@
 proxies:
-- name: SG - zhuhai.uk 04
+- name: US - zhuhai.uk 07
   type: vless
-  server: 91.193.58.118
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  server: 104.26.11.253
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   network: ws
   tls: true
-  servername: free-server.techsonic.dev
+  servername: shephe.dpdns.org
   client-fingerprint: chrome
   ws-opts:
-    path: "/free-server.techsonic.dev"
+    path: "/"
     headers:
-      Host: free-server.techsonic.dev
-- name: SG - zhuhai.uk 03
+      Host: shephe.dpdns.org
+- name: US - zhuhai.uk 08
+  type: vless
+  server: 104.26.11.189
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  network: ws
+  tls: true
+  servername: shephe.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: shephe.dpdns.org
+- name: US - zhuhai.uk 06
+  type: vless
+  server: 172.67.79.81
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  network: ws
+  tls: true
+  servername: shephe.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: shephe.dpdns.org
+- name: HK - zhuhai.uk 03
+  type: vless
+  server: 104.18.33.120
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  network: ws
+  tls: true
+  servername: shephe.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: shephe.dpdns.org
+- name: DE - zhuhai.uk 04
+  type: vless
+  server: 91.132.160.209
+  port: 443
+  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: dlcdn.apache.org
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9XSdNkmBhBszLYoODqMrm7r_JRur2PRbzF9T1Uf2AV0
+    short-id: f1004027e382c2fa
+- name: TR - zhuhai.uk 03
+  type: vless
+  server: 85.192.48.142
+  port: 443
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nvidia.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+- name: FR - zhuhai.uk 03
+  type: vless
+  server: 45.38.228.94
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  network: ws
+  tls: true
+  servername: shephe.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: shephe.dpdns.org
+- name: FI - zhuhai.uk 01
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: a819a5fb-6177-486b-c6fc-35adb29a2b0c
+  udp: true
+  network: ws
+  tls: true
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray"
+    headers:
+      Host: c12.com
+- name: FR - zhuhai.uk 04
+  type: vless
+  server: assets-fr4.pleiades.codes
+  port: 443
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  udp: true
+  network: grpc
+  tls: true
+  servername: assets-fr4.pleiades.codes
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: DE - zhuhai.uk 02
+  type: vless
+  server: 72.4.65.116
+  port: 443
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  udp: true
+  network: grpc
+  tls: true
+  servername: assets-de2.pleiades.codes
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: PL - zhuhai.uk 01
+  type: vless
+  server: 31.77.13.19
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rusbid.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+- name: PL - zhuhai.uk 03
+  type: vless
+  server: 31.77.13.19
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rusbid.de
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+- name: CA - zhuhai.uk 01
+  type: vless
+  server: 104.129.183.69
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  network: ws
+  tls: true
+  servername: shephe.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: shephe.dpdns.org
+- name: HU - zhuhai.uk 01
+  type: vless
+  server: 45.9.168.211
+  port: 443
+  uuid: 7de5e70d-b95e-4019-affb-636151647b52
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mzone.hu.3cloudhost.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
+- name: TH - zhuhai.uk 01
+  type: vless
+  server: 62.60.159.81
+  port: 2053
+  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
+  udp: true
+  network: grpc
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
+    short-id: d0ea1847066af5a6
+  grpc-opts:
+    grpc-service-name: grpce5bb9e71
+- name: LT - zhuhai.uk 01
+  type: vless
+  server: 94.176.234.161
+  port: 443
+  uuid: d448490d-4ee6-442f-80e1-5e1c186c4ce1
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
+    short-id: dbb2ef1c7c
+- name: IN - zhuhai.uk 01
+  type: vless
+  server: 139.84.177.239
+  port: 443
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: googleapis.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
+- name: KR - zhuhai.uk 01
+  type: vless
+  server: 61.111.247.80
+  port: 443
+  uuid: 82C94E17-B27E-4356-82C1-2F9C79B0CF6D
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gateway.icloud.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: Cn5_Bic3VFQ2ONvH5_npnbMYZ-oxkl4BxawPKxoRdCQ
+    short-id: f8f2875b3b4cb65b
+- name: PL - zhuhai.uk 02
+  type: vless
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rusbid.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+- name: SG - zhuhai.uk 08
   type: vless
   server: 91.193.58.45
   port: 2096
@@ -27,7 +272,49 @@ proxies:
     path: "/free-server.techsonic.dev"
     headers:
       Host: free-server.techsonic.dev
-- name: SG - zhuhai.uk 01
+- name: SG - zhuhai.uk 07
+  type: vless
+  server: 91.193.58.118
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  network: ws
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/free-server.techsonic.dev"
+    headers:
+      Host: free-server.techsonic.dev
+- name: SG - zhuhai.uk 06
+  type: vless
+  server: 132.243.238.192
+  port: 8443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  network: ws
+  tls: true
+  servername: shephe.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: shephe.dpdns.org
+- name: SG - zhuhai.uk 09
+  type: vless
+  server: 91.193.58.218
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  network: ws
+  tls: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/free-server.techsonic.dev"
+    headers:
+      Host: free-server.techsonic.dev
+- name: SG - zhuhai.uk 03
   type: vless
   server: 104.17.70.206
   port: 2096
@@ -41,10 +328,46 @@ proxies:
     path: "/free-server.techsonic.dev"
     headers:
       Host: free-server.techsonic.dev
+- name: TH - zhuhai.uk 03
+  type: vless
+  server: 117.55.233.250
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  network: ws
+  tls: true
+  servername: shephe.dpdns.org
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: shephe.dpdns.org
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - SG - zhuhai.uk 04
+  - US - zhuhai.uk 07
+  - US - zhuhai.uk 08
+  - US - zhuhai.uk 06
+  - HK - zhuhai.uk 03
+  - DE - zhuhai.uk 04
+  - TR - zhuhai.uk 03
+  - FR - zhuhai.uk 03
+  - FI - zhuhai.uk 01
+  - FR - zhuhai.uk 04
+  - DE - zhuhai.uk 02
+  - PL - zhuhai.uk 01
+  - PL - zhuhai.uk 03
+  - CA - zhuhai.uk 01
+  - HU - zhuhai.uk 01
+  - TH - zhuhai.uk 01
+  - LT - zhuhai.uk 01
+  - IN - zhuhai.uk 01
+  - KR - zhuhai.uk 01
+  - PL - zhuhai.uk 02
+  - SG - zhuhai.uk 08
+  - SG - zhuhai.uk 07
+  - SG - zhuhai.uk 06
+  - SG - zhuhai.uk 09
   - SG - zhuhai.uk 03
-  - SG - zhuhai.uk 01
+  - TH - zhuhai.uk 03
