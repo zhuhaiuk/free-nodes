@@ -1,50 +1,95 @@
 proxies:
-- name: NL - zhuhai.uk 03
-  type: vless
-  server: 13.143.141.136
-  port: 443
-  uuid: 8878cbc9-0e35-408f-be5f-2f8e382042f1
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: hrl.booklibrary.sbs
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 7C6dU9Qow8H-G65M-6bG5-_TQKlYK6IpPOV_f1-fz1M
-    short-id: c1e0fca9b587c5c0
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: 91.132.160.209
-  port: 443
-  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: dlcdn.apache.org
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9XSdNkmBhBszLYoODqMrm7r_JRur2PRbzF9T1Uf2AV0
-    short-id: f1004027e382c2fa
 - name: JP - zhuhai.uk 01
   type: vless
-  server: family.bucket.x1.kfc-520.com
-  port: 10202
-  uuid: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: 976bf067-9865-4184-938a-204463938c09
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.apple.com
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: gaFVpIOW9RJGuFFisfXVvITfYY5ikKn-4gB89ZQCFHI
+    short-id: 89fecfdaf45cd76d
+- name: NL - zhuhai.uk 01
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  network: ws
+  tls: true
+  servername: tgmansion.site
+  client-fingerprint: firefox
+  ws-opts:
+    path: "/vless-il"
+    headers:
+      Host: tgmansion.site
+- name: HK - zhuhai.uk 05
+  type: vless
+  server: china.letsconnectpoint.com
+  port: 443
+  uuid: 914f3806-07a1-4158-9624-e183de065a38
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: china.letsconnectpoint.com
+  client-fingerprint: random
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+- name: HK - zhuhai.uk 03
+  type: vless
+  server: 139.28.168.201
+  port: 443
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: china.letsconnectpoint.com
   client-fingerprint: firefox
   reality-opts:
-    public-key: E0R7f_nEkbcnc97Z82aDMo2bUVGgcIzChCVYwsQmXnc
-    short-id: 88bd7f
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+- name: HK - zhuhai.uk 06
+  type: vless
+  server: 85.149.211.28
+  port: 8443
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  udp: true
+  network: ws
+  tls: true
+  servername: hk.152568.xyz
+  client-fingerprint: edge
+  ws-opts:
+    path: "/cdn/packages/runtime-core.tar.gz"
+    headers:
+      Host: hk.152568.xyz
+- name: PL - zhuhai.uk 01
+  type: vless
+  server: pl-2.omuvpn.tech
+  port: 443
+  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ozone.nl
+  client-fingerprint: random
+  reality-opts:
+    public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
+    short-id: c2798cd4032a02b8
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - NL - zhuhai.uk 03
-  - DE - zhuhai.uk 02
   - JP - zhuhai.uk 01
+  - NL - zhuhai.uk 01
+  - HK - zhuhai.uk 05
+  - HK - zhuhai.uk 03
+  - HK - zhuhai.uk 06
+  - PL - zhuhai.uk 01
