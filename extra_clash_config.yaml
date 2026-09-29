@@ -1,142 +1,50 @@
 proxies:
-- name: US - zhuhai.uk 11
+- name: NL - zhuhai.uk 03
   type: vless
-  server: 104.16.99.215
-  port: 8880
-  uuid: 0c13ef54-3890-4bbc-baec-e80335db9fe7
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/pyip=proxyip.us.cmliussss.net"
-    headers:
-      Host: plain-dawn-765f.452.workers.dev
-- name: GB - zhuhai.uk 02
-  type: vless
-  server: 172.67.214.193
-  port: 2086
-  uuid: e5583623-53ef-4177-8070-8c553f70bcfa
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/vl/NnAT20AqcYOuOLe1r?ed=2560"
-    headers:
-      Host: fvfb8xac5j0nthxzqf.dr5945ov0z598kfft573isahdj3fmmv4.workers.dev
-- name: FR - zhuhai.uk 13
-  type: vless
-  server: assets-fr4.pleiades.codes
+  server: 13.143.141.136
   port: 443
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  udp: true
-  network: grpc
-  tls: true
-  servername: assets-fr4.pleiades.codes
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: PL - zhuhai.uk 01
-  type: vless
-  server: 31.77.13.19
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  uuid: 8878cbc9-0e35-408f-be5f-2f8e382042f1
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: rusbid.de
-  client-fingerprint: chrome
+  servername: hrl.booklibrary.sbs
+  client-fingerprint: safari
   reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-- name: PL - zhuhai.uk 02
+    public-key: 7C6dU9Qow8H-G65M-6bG5-_TQKlYK6IpPOV_f1-fz1M
+    short-id: c1e0fca9b587c5c0
+- name: DE - zhuhai.uk 02
   type: vless
-  server: pl-waw.dontblockmepls.com
-  port: 2063
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: rusbid.de
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-- name: JP - zhuhai.uk 03
-  type: vless
-  server: lbb-sanwang-youhua.lbbzz.com
-  port: 23801
-  uuid: 51023c2a-3053-43f5-8561-180587805f46
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 7ogEKTScQCeqqPGOaUgWZMwX5Xdizvk9JKtu5MMfJ1o
-    short-id: 274ab0bb
-- name: JP - zhuhai.uk 02
-  type: vless
-  server: lbb-sanwang-youhua.lbbzz.com
-  port: 23801
-  uuid: 131aaef3-abad-4cda-a54f-5a0084c1f162
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amd.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 7ogEKTScQCeqqPGOaUgWZMwX5Xdizvk9JKtu5MMfJ1o
-    short-id: 274ab0bb
-- name: OM - zhuhai.uk 01
-  type: vless
-  server: 146.70.37.253
+  server: 91.132.160.209
   port: 443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  udp: true
-  network: ws
-  tls: true
-  servername: kkkk-xcd.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/?ed=2048"
-    headers:
-      Host: kkkk-xcd.pages.dev
-- name: FI - zhuhai.uk 01
-  type: vless
-  server: fi.astrafic.ru
-  port: 443
-  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
-  udp: true
-  network: grpc
-  tls: true
-  servername: fi.astrafic.ru
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: vless-grpc
-- name: NL - zhuhai.uk 04
-  type: vless
-  server: 51.15.16.68
-  port: 2053
-  uuid: 7d0fd363-16d2-43ce-9d6d-ed2c15d2cb7c
+  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: dlcdn.apache.org
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9XSdNkmBhBszLYoODqMrm7r_JRur2PRbzF9T1Uf2AV0
+    short-id: f1004027e382c2fa
+- name: JP - zhuhai.uk 01
+  type: vless
+  server: family.bucket.x1.kfc-520.com
+  port: 10202
+  uuid: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
   reality-opts:
-    public-key: Zotx4F9CI6_q9yeKCKIHDjwzCv_Aq7WSo7N0Zc1A6Sc
-    short-id: 3c99c85cbb6b3b44
+    public-key: E0R7f_nEkbcnc97Z82aDMo2bUVGgcIzChCVYwsQmXnc
+    short-id: 88bd7f
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 11
-  - GB - zhuhai.uk 02
-  - FR - zhuhai.uk 13
-  - PL - zhuhai.uk 01
-  - PL - zhuhai.uk 02
-  - JP - zhuhai.uk 03
-  - JP - zhuhai.uk 02
-  - OM - zhuhai.uk 01
-  - FI - zhuhai.uk 01
-  - NL - zhuhai.uk 04
+  - NL - zhuhai.uk 03
+  - DE - zhuhai.uk 02
+  - JP - zhuhai.uk 01
