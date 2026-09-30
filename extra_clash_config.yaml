@@ -1,15 +1,19 @@
 proxies:
-- name: US - zhuhai.uk 01
+- name: US - zhuhai.uk 04
   type: vless
-  server: 104.21.11.152
-  port: 8080
-  uuid: d7a8ae86-9904-4f71-8fe4-d754ded610d7
+  server: 104.26.0.138
+  port: 443
+  uuid: 37665857-8b6e-4daa-8231-3e2927221558
   udp: true
   network: ws
+  tls: true
+  servername: spjd.cbc.qzz.io
+  client-fingerprint: chrome
+  skip-cert-verify: true
   ws-opts:
-    path: "/eyJqdW5rIjoiOHNqQ3Bqc2dTZlppTEl1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19"
+    path: "/proxyip=ProxyIP.US.CMLiussss.net"
     headers:
-      Host: server6.diwir81236.workers.dev
+      Host: spjd.cbc.qzz.io
 - name: PL - zhuhai.uk 01
   type: vless
   server: 151.241.166.181
@@ -23,48 +27,21 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
-- name: PL - zhuhai.uk 02
+- name: NL - zhuhai.uk 01
   type: vless
-  server: pl.gazladder.work
+  server: 177.3.208.65
   port: 443
-  uuid: e9844617-e393-4876-afa7-11859695f4ee
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: ws
   tls: true
-  servername: pl.gazladder.work
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
-- name: SG - zhuhai.uk 01
-  type: vless
-  server: 216.195.196.86
-  port: 8443
-  uuid: 7c973569-71da-4d18-8c80-aa4c8ee2f257
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5wGgDloyck_L25Y5rkWorpV3IK00pK0Lki7LR0VY0io
-    short-id: 4fba6fd2c74fd18f
-- name: RO - zhuhai.uk 01
-  type: vless
-  server: 193.163.203.253
-  port: 443
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
-- name: RO - zhuhai.uk 02
+  servername: tgmansion.site
+  client-fingerprint: firefox
+  ws-opts:
+    path: "/vless-il"
+    headers:
+      Host: tgmansion.site
+- name: RO - zhuhai.uk 03
   type: vless
   server: bl3fk52.sysopnova.art
   port: 443
@@ -78,28 +55,57 @@ proxies:
   reality-opts:
     public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
     short-id: 5ee019e02e6ed99a
-- name: PL - zhuhai.uk 03
+- name: RO - zhuhai.uk 04
   type: vless
-  server: pl-3.omuvpn.tech
+  server: 193.163.203.253
   port: 443
-  uuid: 228ecfd3-9bf0-42fd-a50e-581f84022513
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: ozone.nl
+  servername: yandex.ru
+  client-fingerprint: chrome
+  skip-cert-verify: true
+  reality-opts:
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
+- name: RO - zhuhai.uk 01
+  type: vless
+  server: bl3fk52.sysopnova.art
+  port: 443
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
+- name: RO - zhuhai.uk 02
+  type: vless
+  server: 193.163.203.253
+  port: 443
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yandex.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
-    short-id: 1b066aef44
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
+  - US - zhuhai.uk 04
   - PL - zhuhai.uk 01
-  - PL - zhuhai.uk 02
-  - SG - zhuhai.uk 01
+  - NL - zhuhai.uk 01
+  - RO - zhuhai.uk 03
+  - RO - zhuhai.uk 04
   - RO - zhuhai.uk 01
   - RO - zhuhai.uk 02
-  - PL - zhuhai.uk 03
