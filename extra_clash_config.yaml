@@ -1,95 +1,105 @@
 proxies:
-- name: JP - zhuhai.uk 01
+- name: US - zhuhai.uk 01
   type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 976bf067-9865-4184-938a-204463938c09
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: gaFVpIOW9RJGuFFisfXVvITfYY5ikKn-4gB89ZQCFHI
-    short-id: 89fecfdaf45cd76d
-- name: NL - zhuhai.uk 01
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  server: 104.21.11.152
+  port: 8080
+  uuid: d7a8ae86-9904-4f71-8fe4-d754ded610d7
   udp: true
   network: ws
-  tls: true
-  servername: tgmansion.site
-  client-fingerprint: firefox
   ws-opts:
-    path: "/vless-il"
+    path: "/eyJqdW5rIjoiOHNqQ3Bqc2dTZlppTEl1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19"
     headers:
-      Host: tgmansion.site
-- name: HK - zhuhai.uk 05
-  type: vless
-  server: china.letsconnectpoint.com
-  port: 443
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: china.letsconnectpoint.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-- name: HK - zhuhai.uk 03
-  type: vless
-  server: 139.28.168.201
-  port: 443
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: china.letsconnectpoint.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-- name: HK - zhuhai.uk 06
-  type: vless
-  server: 85.149.211.28
-  port: 8443
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  udp: true
-  network: ws
-  tls: true
-  servername: hk.152568.xyz
-  client-fingerprint: edge
-  ws-opts:
-    path: "/cdn/packages/runtime-core.tar.gz"
-    headers:
-      Host: hk.152568.xyz
+      Host: server6.diwir81236.workers.dev
 - name: PL - zhuhai.uk 01
   type: vless
-  server: pl-2.omuvpn.tech
+  server: 151.241.166.181
   port: 443
-  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
+  uuid: e9844617-e393-4876-afa7-11859695f4ee
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl.gazladder.work
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
+- name: PL - zhuhai.uk 02
+  type: vless
+  server: pl.gazladder.work
+  port: 443
+  uuid: e9844617-e393-4876-afa7-11859695f4ee
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl.gazladder.work
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
+- name: SG - zhuhai.uk 01
+  type: vless
+  server: 216.195.196.86
+  port: 8443
+  uuid: 7c973569-71da-4d18-8c80-aa4c8ee2f257
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5wGgDloyck_L25Y5rkWorpV3IK00pK0Lki7LR0VY0io
+    short-id: 4fba6fd2c74fd18f
+- name: RO - zhuhai.uk 01
+  type: vless
+  server: 193.163.203.253
+  port: 443
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
+- name: RO - zhuhai.uk 02
+  type: vless
+  server: bl3fk52.sysopnova.art
+  port: 443
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yandex.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
+- name: PL - zhuhai.uk 03
+  type: vless
+  server: pl-3.omuvpn.tech
+  port: 443
+  uuid: 228ecfd3-9bf0-42fd-a50e-581f84022513
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
   servername: ozone.nl
-  client-fingerprint: random
+  client-fingerprint: chrome
   reality-opts:
     public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
-    short-id: c2798cd4032a02b8
+    short-id: 1b066aef44
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - JP - zhuhai.uk 01
-  - NL - zhuhai.uk 01
-  - HK - zhuhai.uk 05
-  - HK - zhuhai.uk 03
-  - HK - zhuhai.uk 06
+  - US - zhuhai.uk 01
   - PL - zhuhai.uk 01
+  - PL - zhuhai.uk 02
+  - SG - zhuhai.uk 01
+  - RO - zhuhai.uk 01
+  - RO - zhuhai.uk 02
+  - PL - zhuhai.uk 03
