@@ -109,10 +109,10 @@ const TOPIC_PAGES = [
   },
   {
     slug: "clash-mihomo-nodes",
-    title: "Clash / Mihomo 节点",
+    title: "免费 Clash / Mihomo 节点 YAML 订阅链接",
     h1: "Clash 节点与 Mihomo 节点 YAML 订阅",
     description:
-      "提供 Clash、Clash Meta、Mihomo、Stash 等客户端可用的 YAML 订阅链接，并按地区整理节点名称。",
+      "免费 Clash / Mihomo 节点 YAML 订阅链接：适用于 Clash Meta、Mihomo、Stash 等客户端导入、更新与节点测试。",
     keywords: ["Clash 节点", "Mihomo 节点", "free Clash nodes", "Clash Meta", "Stash"],
     body:
       "Clash / Mihomo 用户可以直接导入 YAML 订阅。节点名称会统一成国家或地区代码，便于在规则模式、全局模式和测速页面里快速识别线路。",
