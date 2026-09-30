@@ -14,19 +14,6 @@ proxies:
     path: "/proxyip=ProxyIP.US.CMLiussss.net"
     headers:
       Host: spjd.cbc.qzz.io
-- name: PL - zhuhai.uk 01
-  type: vless
-  server: 151.241.166.181
-  port: 443
-  uuid: e9844617-e393-4876-afa7-11859695f4ee
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl.gazladder.work
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
 - name: NL - zhuhai.uk 01
   type: vless
   server: 177.3.208.65
@@ -41,9 +28,9 @@ proxies:
     path: "/vless-il"
     headers:
       Host: tgmansion.site
-- name: RO - zhuhai.uk 03
+- name: RO - zhuhai.uk 02
   type: vless
-  server: bl3fk52.sysopnova.art
+  server: 193.163.203.253
   port: 443
   uuid: 441afe11-a180-4516-bb80-80a8a6b38705
   udp: true
@@ -84,9 +71,9 @@ proxies:
   reality-opts:
     public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
     short-id: 5ee019e02e6ed99a
-- name: RO - zhuhai.uk 02
+- name: RO - zhuhai.uk 03
   type: vless
-  server: 193.163.203.253
+  server: bl3fk52.sysopnova.art
   port: 443
   uuid: 441afe11-a180-4516-bb80-80a8a6b38705
   udp: true
@@ -103,9 +90,8 @@ proxy-groups:
   type: select
   proxies:
   - US - zhuhai.uk 04
-  - PL - zhuhai.uk 01
   - NL - zhuhai.uk 01
-  - RO - zhuhai.uk 03
+  - RO - zhuhai.uk 02
   - RO - zhuhai.uk 04
   - RO - zhuhai.uk 01
-  - RO - zhuhai.uk 02
+  - RO - zhuhai.uk 03
