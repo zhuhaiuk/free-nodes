@@ -1,97 +1,157 @@
 proxies:
-- name: US - zhuhai.uk 04
+- name: HK - zhuhai.uk 01
   type: vless
-  server: 104.26.0.138
-  port: 443
-  uuid: 37665857-8b6e-4daa-8231-3e2927221558
+  server: 104.17.191.15
+  port: 8880
+  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
   udp: true
   network: ws
-  tls: true
-  servername: spjd.cbc.qzz.io
-  client-fingerprint: chrome
-  skip-cert-verify: true
   ws-opts:
-    path: "/proxyip=ProxyIP.US.CMLiussss.net"
+    path: "/pyip=ProxyIP.SG.CMLiussss.net"
     headers:
-      Host: spjd.cbc.qzz.io
+      Host: fancy-haze-ab00.236-68b.workers.dev
+- name: MX - zhuhai.uk 01
+  type: vless
+  server: 34.51.119.243
+  port: 443
+  uuid: 79bc7b01-6e4e-4365-a120-fefac8182bd9
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI
+    short-id: 65f01b4b99e52015
 - name: NL - zhuhai.uk 01
   type: vless
-  server: 177.3.208.65
+  server: 95.85.247.62
   port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  network: ws
-  tls: true
-  servername: tgmansion.site
-  client-fingerprint: firefox
-  ws-opts:
-    path: "/vless-il"
-    headers:
-      Host: tgmansion.site
-- name: RO - zhuhai.uk 02
-  type: vless
-  server: 193.163.203.253
-  port: 443
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  uuid: b0490f49-7201-4f8e-b456-f99a4d222f5b
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: yandex.ru
+  servername: neder.yandex-mul.fun
   client-fingerprint: chrome
   reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
-- name: RO - zhuhai.uk 04
-  type: vless
-  server: 193.163.203.253
+    public-key: 55-Q43xORYP1vJOssALwSj1t07qUaUiES8PurqO7ZWs
+- name: IE - zhuhai.uk 01
+  type: trojan
+  server: ie.tronsg.com
   port: 443
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  password: Trojan@82164024
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yandex.ru
-  client-fingerprint: chrome
+  sni: ie.tronsg.com
   skip-cert-verify: true
-  reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
-- name: RO - zhuhai.uk 01
+- name: ES - zhuhai.uk 01
   type: vless
-  server: bl3fk52.sysopnova.art
+  server: 34.175.107.233
   port: 443
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: yandex.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
-- name: RO - zhuhai.uk 03
-  type: vless
-  server: bl3fk52.sysopnova.art
-  port: 443
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yandex.ru
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
+    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
+    short-id: 1c9e101e99bf86bb
+- name: SE - zhuhai.uk 01
+  type: vless
+  server: 34.51.240.236
+  port: 443
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+    short-id: b4a6faed784ff461
+- name: DE - zhuhai.uk 02
+  type: vless
+  server: 176.109.111.154
+  port: 9881
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aabbccdd
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: DE - zhuhai.uk 01
+  type: vless
+  server: 176.108.245.167
+  port: 9881
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aabbccdd
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: DE - zhuhai.uk 03
+  type: vless
+  server: 176.109.111.7
+  port: 9881
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aa
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: IT - zhuhai.uk 01
+  type: vless
+  server: 34.154.18.129
+  port: 443
+  uuid: fffe33b6-5735-4a71-adb1-1c154def9024
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: "-Tb9KKp870JxcZ3Ka7Rx5ez3QBYryX4e8_jdyNZu2wE"
+    short-id: ed278463058a6dc9
+- name: CL - zhuhai.uk 01
+  type: vless
+  server: 34.176.187.219
+  port: 443
+  uuid: ad5325f8-f0b3-41c4-a561-113529b60e70
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc
+    short-id: 2c2d919f5183d0b7
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 04
+  - HK - zhuhai.uk 01
+  - MX - zhuhai.uk 01
   - NL - zhuhai.uk 01
-  - RO - zhuhai.uk 02
-  - RO - zhuhai.uk 04
-  - RO - zhuhai.uk 01
-  - RO - zhuhai.uk 03
+  - IE - zhuhai.uk 01
+  - ES - zhuhai.uk 01
+  - SE - zhuhai.uk 01
+  - DE - zhuhai.uk 02
+  - DE - zhuhai.uk 01
+  - DE - zhuhai.uk 03
+  - IT - zhuhai.uk 01
+  - CL - zhuhai.uk 01
