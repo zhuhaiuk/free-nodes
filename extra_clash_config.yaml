@@ -1,157 +1,19 @@
 proxies:
-- name: HK - zhuhai.uk 01
+- name: RU - zhuhai.uk 01
   type: vless
-  server: 104.17.191.15
-  port: 8880
-  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/pyip=ProxyIP.SG.CMLiussss.net"
-    headers:
-      Host: fancy-haze-ab00.236-68b.workers.dev
-- name: MX - zhuhai.uk 01
-  type: vless
-  server: 34.51.119.243
+  server: 31.76.34.216
   port: 443
-  uuid: 79bc7b01-6e4e-4365-a120-fefac8182bd9
+  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
   udp: true
   network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
+  servername: ru-c-1.minzt.su
   client-fingerprint: chrome
   reality-opts:
-    public-key: vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI
-    short-id: 65f01b4b99e52015
-- name: NL - zhuhai.uk 01
-  type: vless
-  server: 95.85.247.62
-  port: 443
-  uuid: b0490f49-7201-4f8e-b456-f99a4d222f5b
-  udp: true
-  network: tcp
-  tls: true
-  servername: neder.yandex-mul.fun
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 55-Q43xORYP1vJOssALwSj1t07qUaUiES8PurqO7ZWs
-- name: IE - zhuhai.uk 01
-  type: trojan
-  server: ie.tronsg.com
-  port: 443
-  password: Trojan@82164024
-  udp: true
-  sni: ie.tronsg.com
-  skip-cert-verify: true
-- name: ES - zhuhai.uk 01
-  type: vless
-  server: 34.175.107.233
-  port: 443
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-    short-id: 1c9e101e99bf86bb
-- name: SE - zhuhai.uk 01
-  type: vless
-  server: 34.51.240.236
-  port: 443
-  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
-    short-id: b4a6faed784ff461
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: 176.109.111.154
-  port: 9881
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  udp: true
-  network: grpc
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabbccdd
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: DE - zhuhai.uk 01
-  type: vless
-  server: 176.108.245.167
-  port: 9881
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  udp: true
-  network: grpc
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabbccdd
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: DE - zhuhai.uk 03
-  type: vless
-  server: 176.109.111.7
-  port: 9881
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  udp: true
-  network: grpc
-  tls: true
-  servername: dl.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aa
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: IT - zhuhai.uk 01
-  type: vless
-  server: 34.154.18.129
-  port: 443
-  uuid: fffe33b6-5735-4a71-adb1-1c154def9024
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: "-Tb9KKp870JxcZ3Ka7Rx5ez3QBYryX4e8_jdyNZu2wE"
-    short-id: ed278463058a6dc9
-- name: CL - zhuhai.uk 01
-  type: vless
-  server: 34.176.187.219
-  port: 443
-  uuid: ad5325f8-f0b3-41c4-a561-113529b60e70
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc
-    short-id: 2c2d919f5183d0b7
+    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - HK - zhuhai.uk 01
-  - MX - zhuhai.uk 01
-  - NL - zhuhai.uk 01
-  - IE - zhuhai.uk 01
-  - ES - zhuhai.uk 01
-  - SE - zhuhai.uk 01
-  - DE - zhuhai.uk 02
-  - DE - zhuhai.uk 01
-  - DE - zhuhai.uk 03
-  - IT - zhuhai.uk 01
-  - CL - zhuhai.uk 01
+  - RU - zhuhai.uk 01
