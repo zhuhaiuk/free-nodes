@@ -1,4 +1,18 @@
 proxies:
+- name: DE - zhuhai.uk 01
+  type: vless
+  server: 177.1.186.44
+  port: 443
+  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mcde.67resserv67.info
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
+    short-id: 29455a3a790acbd0
 - name: RU - zhuhai.uk 01
   type: vless
   server: 31.76.34.216
@@ -12,8 +26,24 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
+- name: SG - zhuhai.uk 01
+  type: vless
+  server: trackydev.site
+  port: 443
+  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  udp: true
+  network: ws
+  tls: true
+  servername: trackydev.site
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/"
+    headers:
+      Host: trackydev.site
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
+  - DE - zhuhai.uk 01
   - RU - zhuhai.uk 01
+  - SG - zhuhai.uk 01
