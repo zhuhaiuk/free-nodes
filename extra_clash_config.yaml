@@ -12,22 +12,8 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: IL - zhuhai.uk 01
-  type: vless
-  server: 34.165.56.30
-  port: 443
-  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
-    short-id: fffff8acddadcac3
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
   - FR - zhuhai.uk 01
-  - IL - zhuhai.uk 01
