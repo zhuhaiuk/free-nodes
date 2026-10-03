@@ -1,49 +1,33 @@
 proxies:
-- name: DE - zhuhai.uk 01
+- name: FR - zhuhai.uk 01
   type: vless
-  server: 177.1.186.44
+  server: 45.131.212.231
   port: 443
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  uuid: 19513b1b-d29a-4f3e-ba9a-888261e4e048
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: mcde.67resserv67.info
-  client-fingerprint: chrome
+  servername: sellflow.org
+  client-fingerprint: firefox
   reality-opts:
-    public-key: 4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE
-    short-id: 29455a3a790acbd0
-- name: RU - zhuhai.uk 01
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: IL - zhuhai.uk 01
   type: vless
-  server: 31.76.34.216
+  server: 34.165.56.30
   port: 443
-  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: ru-c-1.minzt.su
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
-- name: SG - zhuhai.uk 01
-  type: vless
-  server: trackydev.site
-  port: 443
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
-  udp: true
-  network: ws
-  tls: true
-  servername: trackydev.site
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/"
-    headers:
-      Host: trackydev.site
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+    short-id: fffff8acddadcac3
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - DE - zhuhai.uk 01
-  - RU - zhuhai.uk 01
-  - SG - zhuhai.uk 01
+  - FR - zhuhai.uk 01
+  - IL - zhuhai.uk 01
