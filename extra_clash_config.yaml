@@ -1,19 +1,44 @@
 proxies:
-- name: FR - zhuhai.uk 01
+- name: KR - zhuhai.uk 01
   type: vless
-  server: 45.131.212.231
-  port: 443
-  uuid: 19513b1b-d29a-4f3e-ba9a-888261e4e048
+  server: 47.80.19.173
+  port: 2053
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: sellflow.org
-  client-fingerprint: firefox
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+- name: HK - zhuhai.uk 02
+  type: trojan
+  server: node1.luoye.ee
+  port: 443
+  password: 80dd183b-0ca3-4039-bd18-e85b61a1d584
+  udp: true
+  sni: node1.luoye.ee
+- name: HK - zhuhai.uk 08
+  type: trojan
+  server: node1.luoye.ee
+  port: 443
+  password: bc96cf70-9c62-4f52-aa7b-70b1814a94cf
+  udp: true
+  sni: node1.luoye.ee
+- name: HK - zhuhai.uk 04
+  type: trojan
+  server: node1.luoye.ee
+  port: 443
+  password: a72513ad-90f9-4ae0-8ef5-c25b7fb81d77
+  udp: true
+  sni: node1.luoye.ee
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - FR - zhuhai.uk 01
+  - KR - zhuhai.uk 01
+  - HK - zhuhai.uk 02
+  - HK - zhuhai.uk 08
+  - HK - zhuhai.uk 04
