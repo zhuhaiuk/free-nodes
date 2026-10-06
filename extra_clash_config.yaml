@@ -13,32 +13,23 @@ proxies:
   reality-opts:
     public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
     short-id: 3c4041d3
-- name: HK - zhuhai.uk 02
-  type: trojan
-  server: node1.luoye.ee
-  port: 443
-  password: 80dd183b-0ca3-4039-bd18-e85b61a1d584
+- name: DE - zhuhai.uk 01
+  type: vless
+  server: 188.114.97.3
+  port: 2087
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
   udp: true
-  sni: node1.luoye.ee
-- name: HK - zhuhai.uk 08
-  type: trojan
-  server: node1.luoye.ee
-  port: 443
-  password: bc96cf70-9c62-4f52-aa7b-70b1814a94cf
-  udp: true
-  sni: node1.luoye.ee
-- name: HK - zhuhai.uk 04
-  type: trojan
-  server: node1.luoye.ee
-  port: 443
-  password: a72513ad-90f9-4ae0-8ef5-c25b7fb81d77
-  udp: true
-  sni: node1.luoye.ee
+  network: ws
+  tls: true
+  servername: s4ws.ragingbull.de5.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/wsrb7k2m"
+    headers:
+      Host: s4ws.ragingbull.de5.net
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
   - KR - zhuhai.uk 01
-  - HK - zhuhai.uk 02
-  - HK - zhuhai.uk 08
-  - HK - zhuhai.uk 04
+  - DE - zhuhai.uk 01
