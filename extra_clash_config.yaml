@@ -1,35 +1,13 @@
 proxies:
-- name: KR - zhuhai.uk 01
-  type: vless
-  server: 47.80.19.173
-  port: 2053
-  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
+- name: HK - zhuhai.uk 03
+  type: trojan
+  server: node1.luoye.ee
+  port: 443
+  password: 654d0888-1452-4e1b-8077-ab00b45409fb
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
-    short-id: 3c4041d3
-- name: DE - zhuhai.uk 01
-  type: vless
-  server: 188.114.97.3
-  port: 2087
-  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
-  udp: true
-  network: ws
-  tls: true
-  servername: s4ws.ragingbull.de5.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/wsrb7k2m"
-    headers:
-      Host: s4ws.ragingbull.de5.net
+  sni: node1.luoye.ee
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - KR - zhuhai.uk 01
-  - DE - zhuhai.uk 01
+  - HK - zhuhai.uk 03
