@@ -1,31 +1,17 @@
 proxies:
-- name: FI - zhuhai.uk 01
+- name: NL - zhuhai.uk 01
   type: vless
-  server: psf-3.weedly.top
-  port: 80
-  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/"
-    headers:
-      Host: machinemag.ir
-- name: FI - zhuhai.uk 02
-  type: vless
-  server: 159.194.250.154
-  port: 443
-  uuid: f0482c9d-ff67-4a43-af8e-76fc5d55c250
+  server: alb1.keepverify.net
+  port: 8443
+  uuid: 595a6246-d7b0-48bc-a5f0-17068aec2e88
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: api-maps.yandex.ru
+  servername: alb1.keepverify.net
   client-fingerprint: chrome
-  reality-opts:
-    public-key: x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - FI - zhuhai.uk 01
-  - FI - zhuhai.uk 02
+  - NL - zhuhai.uk 01
