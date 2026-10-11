@@ -1,15 +1,18 @@
 proxies:
 - name: NL - zhuhai.uk 01
   type: vless
-  server: alb1.keepverify.net
-  port: 8443
-  uuid: 595a6246-d7b0-48bc-a5f0-17068aec2e88
+  server: c20s5.portablesubmarines.com
+  port: 443
+  uuid: 85fe968d-fbb5-40dc-8422-30635eccb149
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: alb1.keepverify.net
+  servername: portal.citygrainla.com
   client-fingerprint: chrome
+  reality-opts:
+    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+    short-id: 051f20c2344a2dfd
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
