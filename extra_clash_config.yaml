@@ -1,20 +1,17 @@
 proxies:
-- name: US - zhuhai.uk 01
+- name: GB - zhuhai.uk 01
   type: vless
-  server: 38.180.137.143
-  port: 9443
-  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
+  server: 194.76.18.2
+  port: 8880
+  uuid: bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amazon.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
+  network: ws
+  ws-opts:
+    path: "/pyip=Telegram\U0001F1E8\U0001F1F3 @WangCai2"
+    headers:
+      Host: yellow-mouse-fcce.400-318.workers.dev
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
+  - GB - zhuhai.uk 01
