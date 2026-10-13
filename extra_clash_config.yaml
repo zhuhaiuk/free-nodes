@@ -1,20 +1,20 @@
 proxies:
-- name: NL - zhuhai.uk 01
+- name: US - zhuhai.uk 01
   type: vless
-  server: c20s5.portablesubmarines.com
-  port: 443
-  uuid: 85fe968d-fbb5-40dc-8422-30635eccb149
+  server: 38.180.137.143
+  port: 9443
+  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: portal.citygrainla.com
-  client-fingerprint: chrome
+  servername: www.amazon.com
+  client-fingerprint: random
   reality-opts:
-    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-    short-id: 051f20c2344a2dfd
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - NL - zhuhai.uk 01
+  - US - zhuhai.uk 01
