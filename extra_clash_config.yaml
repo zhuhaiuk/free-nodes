@@ -1,17 +1,20 @@
 proxies:
-- name: GB - zhuhai.uk 01
+- name: DE - zhuhai.uk 01
   type: vless
-  server: 194.76.18.2
-  port: 8880
-  uuid: bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa
+  server: 31.58.95.10
+  port: 443
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
   udp: true
-  network: ws
-  ws-opts:
-    path: "/pyip=Telegram\U0001F1E8\U0001F1F3 @WangCai2"
-    headers:
-      Host: yellow-mouse-fcce.400-318.workers.dev
+  network: grpc
+  tls: true
+  servername: de-gdd-1.unturned-rust-dead.lol
+  client-fingerprint: random
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  grpc-opts:
+    grpc-service-name: gdd-grpc
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - GB - zhuhai.uk 01
+  - DE - zhuhai.uk 01
