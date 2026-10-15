@@ -1,18 +1,15 @@
 proxies:
 - name: DE - zhuhai.uk 01
   type: vless
-  server: 31.58.95.10
+  server: 152.53.186.202
   port: 443
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: 5538eaaa-ac3d-4414-a1f5-280212949ed9
   udp: true
-  network: grpc
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: de-gdd-1.unturned-rust-dead.lol
-  client-fingerprint: random
-  reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  grpc-opts:
-    grpc-service-name: gdd-grpc
+  servername: deinfo.chaosnetwork.app
+  client-fingerprint: firefox
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
