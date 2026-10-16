@@ -1,17 +1,20 @@
 proxies:
-- name: US - zhuhai.uk 01
+- name: SG - zhuhai.uk 01
   type: vless
-  server: www.epicgames.com
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  server: 141.193.213.21
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
   udp: true
   network: ws
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
   ws-opts:
     path: "/"
     headers:
-      Host: openapi.next-ai.us.ci
+      Host: u.srilankangrill.online
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
+  - SG - zhuhai.uk 01
