@@ -246,17 +246,47 @@ proxies:
   reality-opts:
     public-key: AavBPGGJUpyGWiriV_Fbx-SrAvR5t-9mHeQY8uIltyo
     short-id: 41b9cb10b696
-- name: DE - zhuhai.uk 01
+- name: PL - zhuhai.uk 01
   type: vless
-  server: 152.53.186.202
+  server: 45.198.0.24
   port: 443
-  uuid: 5538eaaa-ac3d-4414-a1f5-280212949ed9
+  uuid: e5544327-834c-455a-9db5-2454c788fa17
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: deinfo.chaosnetwork.app
-  client-fingerprint: firefox
+  servername: pl.ru-msk.club
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: nFJCJ2tvxLdLrc9G-O1laW8KDir5SDnaOTmYndVaOGQ
+    short-id: 7a3f9e2b1c8d4f6a
+- name: RU - zhuhai.uk 01
+  type: vless
+  server: 37.143.15.206
+  port: 443
+  uuid: 4599572f-bcfa-461e-bc73-d80e1ea65aa6
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 5post-gate.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+- name: AE - zhuhai.uk 01
+  type: vless
+  server: 45.59.120.217
+  port: 443
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  udp: true
+  network: tcp
+  tls: true
+  servername: strm.yandex.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+    short-id: 29c2dd1e3ef7c4d4
 proxy-groups:
 - name: 选择出口
   type: select
@@ -290,7 +320,9 @@ proxy-groups:
   - RU - zhuhai.uk 03
   - TH - zhuhai.uk
   - VN - zhuhai.uk
-  - DE - zhuhai.uk 01
+  - PL - zhuhai.uk 01
+  - RU - zhuhai.uk 01
+  - AE - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
