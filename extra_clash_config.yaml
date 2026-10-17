@@ -1,20 +1,16 @@
 proxies:
-- name: SG - zhuhai.uk 01
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+- name: PL - zhuhai.uk 01
+  type: trojan
+  server: 78.17.171.62
+  port: 443
+  password: u93yPGuY2zgIsisJZKS2QzJzg
   udp: true
+  sni: FREETOPLAY-2.TETRIS-GAME.WORLD
   network: ws
-  tls: true
-  servername: u.srilankangrill.online
-  client-fingerprint: chrome
   ws-opts:
-    path: "/"
-    headers:
-      Host: u.srilankangrill.online
+    path: "/f2fc2a1f"
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - SG - zhuhai.uk 01
+  - PL - zhuhai.uk 01
