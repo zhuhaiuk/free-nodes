@@ -1,16 +1,21 @@
 proxies:
-- name: PL - zhuhai.uk 01
-  type: trojan
-  server: 78.17.171.62
-  port: 443
-  password: u93yPGuY2zgIsisJZKS2QzJzg
+- name: JP - zhuhai.uk 01
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 56656
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   udp: true
-  sni: FREETOPLAY-2.TETRIS-GAME.WORLD
-  network: ws
-  ws-opts:
-    path: "/f2fc2a1f"
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn-dynmedia-1.microsoft.com
+  client-fingerprint: ios
+  skip-cert-verify: true
+  reality-opts:
+    public-key: QFM3jTzb5n-E9L2cfFo6GHqioGmIkjmG60l8wXA4IXc
+    short-id: aae6d935
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - PL - zhuhai.uk 01
+  - JP - zhuhai.uk 01
