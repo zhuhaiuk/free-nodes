@@ -1,21 +1,17 @@
 proxies:
-- name: JP - zhuhai.uk 01
+- name: US - zhuhai.uk 01
   type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 56656
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  server: www.epicgames.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn-dynmedia-1.microsoft.com
-  client-fingerprint: ios
-  skip-cert-verify: true
-  reality-opts:
-    public-key: QFM3jTzb5n-E9L2cfFo6GHqioGmIkjmG60l8wXA4IXc
-    short-id: aae6d935
+  network: ws
+  ws-opts:
+    path: "/"
+    headers:
+      Host: openapi.pure-ai.us.ci
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - JP - zhuhai.uk 01
+  - US - zhuhai.uk 01
