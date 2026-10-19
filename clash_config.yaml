@@ -243,6 +243,13 @@ proxies:
   password: ec74bb6a86c2
   udp: true
   skip-cert-verify: true
+- name: DE - zhuhai.uk 01
+  type: trojan
+  server: de7.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de7.dedushka.top
 proxy-groups:
 - name: 选择出口
   type: select
@@ -282,6 +289,7 @@ proxy-groups:
   - ID - zhuhai.uk
   - TW - zhuhai.uk
   - TW - zhuhai.uk 02
+  - DE - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
