@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-19T13:09:48Z",
+  "checked_at": "2026-10-19T22:19:35Z",
   "source": "https://raw.githubusercontent.com/kooker/FreeSubsCheck/main/base64.txt",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
@@ -7,9 +7,14 @@
   "live_nodes": [
     {
       "name": "DE - zhuhai.uk 02",
-      "delay": 644,
+      "delay": 516,
       "type": "vless"
+    },
+    {
+      "name": "DE - zhuhai.uk 01",
+      "delay": 577,
+      "type": "trojan"
     }
   ],
-  "live_count": 1
+  "live_count": 2
 }

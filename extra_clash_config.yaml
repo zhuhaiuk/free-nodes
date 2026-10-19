@@ -13,8 +13,16 @@ proxies:
   reality-opts:
     public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
     short-id: 2c9a2790ad5900b2
+- name: DE - zhuhai.uk 01
+  type: trojan
+  server: de7.dedushka.top
+  port: 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  udp: true
+  sni: de7.dedushka.top
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
   - DE - zhuhai.uk 02
+  - DE - zhuhai.uk 01
