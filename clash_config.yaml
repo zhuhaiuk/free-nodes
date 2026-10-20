@@ -4,28 +4,26 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: TW - zhuhai.uk
-  type: anytls
-  server: er8u54dh.df6h451rh.xin
+- name: ID - zhuhai.uk
+  type: vmess
+  server: YV0UtumY21lQdrmq.v.3dns.vip
   port: 443
-  password: 0324fbc29561
-  udp: true
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: HK - zhuhai.uk
-  type: http
-  server: 118.25.131.160
-  port: 10039
+  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
+  alterId: 0
+  cipher: auto
   tls: true
-  skip-cert-verify: true
-- name: CA - zhuhai.uk
-  type: http
-  server: 198.44.157.27
-  port: 9443
-  tls: true
-  skip-cert-verify: true
+  servername: YV0UtumY21lQdrmq.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: "/ws-vmess"
+    headers:
+      Host: YV0UtumY21lQdrmq.v.3dns.vip
+- name: US - zhuhai.uk
+  type: socks5
+  server: 104.168.249.36
+  port: 1080
+  username: test123
+  password: test123
 - name: TH - zhuhai.uk
   type: vless
   server: funagfrdfs.alixxplay.com
@@ -38,81 +36,125 @@ proxies:
   reality-opts:
     public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
     short-id: cbd39bea0805e2
-- name: RO - zhuhai.uk
+- name: NL - zhuhai.uk
+  type: socks5
+  server: 51.15.20.32
+  port: 1088
+- name: NL - zhuhai.uk 02
   type: http
-  server: 193.176.84.22
+  server: 84.17.47.147
   port: 9002
   tls: true
   skip-cert-verify: true
-- name: US - zhuhai.uk
-  type: http
-  server: 138.199.35.202
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 138.199.35.202
+- name: FR - zhuhai.uk
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::3
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
-- name: KR - zhuhai.uk
-  type: vmess
-  server: ugklUlR10zFoYPRf.v.3dns.vip
+- name: CH - zhuhai.uk
+  type: http
+  server: 31.7.62.50
   port: 443
-  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
-  alterId: 0
-  cipher: auto
   tls: true
-  servername: ugklUlR10zFoYPRf.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: "/ws-vmess"
-    headers:
-      Host: ugklUlR10zFoYPRf.v.3dns.vip
-- name: DE - zhuhai.uk
-  type: vmess
-  server: AUSbEb7vTjqR13wy.v.3dns.vip
-  port: 443
-  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: AUSbEb7vTjqR13wy.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: "/ws-vmess"
-    headers:
-      Host: AUSbEb7vTjqR13wy.v.3dns.vip
-- name: ID - zhuhai.uk
-  type: vmess
-  server: pO6PBZ8gPVBUX3ar.v.3dns.vip
-  port: 443
-  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: pO6PBZ8gPVBUX3ar.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: "/ws-vmess"
-    headers:
-      Host: pO6PBZ8gPVBUX3ar.v.3dns.vip
+  skip-cert-verify: true
 - name: JP - zhuhai.uk
   type: http
-  server: fan.571589.xyz
+  server: fan.587475.xyz
   port: 443
-  username: 'null'
-  password: 'null'
   tls: true
+  sni: fan.587475.xyz
 - name: US - zhuhai.uk 02
   type: http
-  server: 121.127.34.82
-  port: 443
+  server: 138.199.35.220
+  port: 9002
+  username: 'null'
+  password: 'null'
   tls: true
   skip-cert-verify: true
 - name: US - zhuhai.uk 03
+  type: http
+  server: mmgr.club
+  port: 443
+  username: 'null'
+  password: None
+  tls: true
+- name: EE - zhuhai.uk
+  type: http
+  server: 95.153.32.2
+  port: 9443
+  tls: true
+  skip-cert-verify: true
+- name: GB - zhuhai.uk
+  type: http
+  server: 212.102.63.61
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: DE - zhuhai.uk
+  type: vmess
+  server: 3E89CNW0HGtiFiDE.v.3dns.vip
+  port: 443
+  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 3E89CNW0HGtiFiDE.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: "/ws-vmess"
+    headers:
+      Host: 3E89CNW0HGtiFiDE.v.3dns.vip
+- name: JP - zhuhai.uk 02
+  type: vless
+  server: 103.180.20.100
+  port: 20004
+  uuid: 5e6cd021-d3ac-48fc-b2fd-203862ed9712
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: zVIESiLSczwOhE1qKC6yX-bIGMp5WrGGcKxE7X7_8TA
+    short-id: 686a51fda2f48e40
+- name: US - zhuhai.uk 04
+  type: ss
+  server: ruot.ayucloudservices.nl
+  port: 40035
+  cipher: aes-128-gcm
+  password: 585f0e10-7b51-4f2e-a13d-479b045171bd
+- name: SG - zhuhai.uk
+  type: vmess
+  server: E2tOd0km6eJAPPba.v.3dns.vip
+  port: 443
+  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: E2tOd0km6eJAPPba.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: "/ws-vmess"
+    headers:
+      Host: E2tOd0km6eJAPPba.v.3dns.vip
+- name: HK - zhuhai.uk
+  type: ss
+  server: ruot.ayucloudservices.nl
+  port: 40015
+  cipher: aes-128-gcm
+  password: 585f0e10-7b51-4f2e-a13d-479b045171bd
+- name: US - zhuhai.uk 05
+  type: http
+  server: 68.235.56.51
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: TW - zhuhai.uk
   type: vmess
   server: 120.232.202.14
-  port: 8037
-  uuid: 506cf8a1-d80b-4c7c-9c36-449e258e9b25
+  port: 8072
+  uuid: 74499dd9-f4c0-4450-8a4a-e06c8b25b77d
   alterId: 0
   cipher: auto
   network: ws
@@ -120,66 +162,27 @@ proxies:
     path: "/3ff53f15-4c9a-45b0-99ad-c8dfa3825d8f"
     headers:
       Host: tms.dingtalk.com
-- name: ID - zhuhai.uk 02
-  type: vmess
-  server: 9d3bQSFxJk72LuXg.v.3dns.vip
-  port: 443
-  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 9d3bQSFxJk72LuXg.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: "/ws-vmess"
-    headers:
-      Host: 9d3bQSFxJk72LuXg.v.3dns.vip
-- name: SE - zhuhai.uk
-  type: http
-  server: 217.210.129.243
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 04
-  type: http
-  server: purecambogiasl.live
-  port: 443
-  username: Ok5vbmU=
-  tls: true
-- name: JP - zhuhai.uk 02
-  type: socks5
-  server: 217.142.236.180
-  port: 1080
-- name: NL - zhuhai.uk
-  type: http
-  server: 5.255.118.82
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: US - zhuhai.uk 05
+- name: US - zhuhai.uk 06
   type: vless
   server: funagfrdfs.alixxplay.com
-  port: 34379
+  port: 30892
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
   servername: us1p1.xn--ghq880n3na965a.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   reality-opts:
-    public-key: KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA
-    short-id: e51285e3
-- name: US - zhuhai.uk 06
+    public-key: YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4
+    short-id: 3d31326f95
+- name: US - zhuhai.uk 07
   type: http
-  server: 138.199.35.209
+  server: 138.199.35.198
   port: 9002
+  username: 'null'
+  password: None
   tls: true
   skip-cert-verify: true
-- name: KR - zhuhai.uk 02
-  type: socks5
-  server: 121.169.46.116
-  port: 1090
-  username: VkRKamJFMHdVV3hOTUZFMk9nPT06
-- name: ID - zhuhai.uk 03
+- name: ID - zhuhai.uk 02
   type: vmess
   server: TnmXPIFVwfvyFZvf.v.3dns.vip
   port: 443
@@ -193,57 +196,57 @@ proxies:
     path: "/ws-vmess"
     headers:
       Host: TnmXPIFVwfvyFZvf.v.3dns.vip
-- name: HK - zhuhai.uk 02
-  type: vless
-  server: pccw01.fualta.org
-  port: 443
-  uuid: 285c4b67-5c15-3317-b2b1-d2ffac34d1e0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Vc8ycAgKqfRvtXjvGP0ry_U91o5wgrQlqOhHq72HYRs
-    short-id: 1bc2c1ef1c
-- name: ID - zhuhai.uk 04
+- name: DE - zhuhai.uk 02
   type: vmess
-  server: nnC6qmd3wukHOkWb.v.3dns.vip
+  server: JiMNLR9iE52lpJpw.v.3dns.vip
   port: 443
   uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
   alterId: 0
   cipher: auto
   tls: true
-  servername: nnC6qmd3wukHOkWb.v.3dns.vip
+  servername: JiMNLR9iE52lpJpw.v.3dns.vip
   network: ws
   ws-opts:
     path: "/ws-vmess"
     headers:
-      Host: nnC6qmd3wukHOkWb.v.3dns.vip
-- name: HK - zhuhai.uk 03
-  type: vless
-  server: 45.202.248.173
-  port: 9443
-  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-- name: US - zhuhai.uk 07
+      Host: JiMNLR9iE52lpJpw.v.3dns.vip
+- name: SG - zhuhai.uk 02
   type: vmess
-  server: 120.232.202.14
-  port: 8039
-  uuid: 74499dd9-f4c0-4450-8a4a-e06c8b25b77d
+  server: qMWqdDXc2WiYb6OH.v.3dns.vip
+  port: 443
+  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
   alterId: 0
   cipher: auto
+  tls: true
+  servername: qMWqdDXc2WiYb6OH.v.3dns.vip
   network: ws
   ws-opts:
-    path: "/3ff53f15-4c9a-45b0-99ad-c8dfa3825d8f"
+    path: "/ws-vmess"
     headers:
-      Host: tms.dingtalk.com
-- name: SG - zhuhai.uk
+      Host: qMWqdDXc2WiYb6OH.v.3dns.vip
+- name: KR - zhuhai.uk
+  type: socks5
+  server: 121.169.46.116
+  port: 1090
+- name: KR - zhuhai.uk 02
+  type: ss
+  server: ruot.ayucloudservices.nl
+  port: 40028
+  cipher: aes-128-gcm
+  password: 585f0e10-7b51-4f2e-a13d-479b045171bd
+- name: SG - zhuhai.uk 03
+  type: vless
+  server: hok.the16personalities.com
+  port: 17996
+  uuid: b2332eff-b231-4c10-8552-5dfad84f5521
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  client-fingerprint: safari
+  reality-opts:
+    public-key: tHjJIk24exRD1dG7QobTztuPFF3GhqDDZlpAPI_aVFo
+    short-id: 6f5cebd9ad8b8493
+- name: SG - zhuhai.uk 04
   type: vless
   server: funagfrdfs.alixxplay.com
   port: 46105
@@ -251,22 +254,10 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: www.lamer.com.sg
-  client-fingerprint: chrome
+  client-fingerprint: safari
   reality-opts:
     public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
     short-id: 28f5c1f8f98a
-- name: SG - zhuhai.uk 02
-  type: vless
-  server: sgp01.fualta.org
-  port: 443
-  uuid: 285c4b67-5c15-3317-b2b1-d2ffac34d1e0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Vc8ycAgKqfRvtXjvGP0ry_U91o5wgrQlqOhHq72HYRs
-    short-id: 1bc2c1ef1c
 - name: DE - zhuhai.uk 01
   type: trojan
   server: de7.dedushka.top
@@ -279,33 +270,34 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
-  - TW - zhuhai.uk
-  - HK - zhuhai.uk
-  - CA - zhuhai.uk
-  - TH - zhuhai.uk
-  - RO - zhuhai.uk
-  - US - zhuhai.uk
-  - KR - zhuhai.uk
-  - DE - zhuhai.uk
   - ID - zhuhai.uk
+  - US - zhuhai.uk
+  - TH - zhuhai.uk
+  - NL - zhuhai.uk
+  - NL - zhuhai.uk 02
+  - FR - zhuhai.uk
+  - CH - zhuhai.uk
   - JP - zhuhai.uk
   - US - zhuhai.uk 02
   - US - zhuhai.uk 03
-  - ID - zhuhai.uk 02
-  - SE - zhuhai.uk
-  - US - zhuhai.uk 04
+  - EE - zhuhai.uk
+  - GB - zhuhai.uk
+  - DE - zhuhai.uk
   - JP - zhuhai.uk 02
-  - NL - zhuhai.uk
-  - US - zhuhai.uk 05
-  - US - zhuhai.uk 06
-  - KR - zhuhai.uk 02
-  - ID - zhuhai.uk 03
-  - HK - zhuhai.uk 02
-  - ID - zhuhai.uk 04
-  - HK - zhuhai.uk 03
-  - US - zhuhai.uk 07
+  - US - zhuhai.uk 04
   - SG - zhuhai.uk
+  - HK - zhuhai.uk
+  - US - zhuhai.uk 05
+  - TW - zhuhai.uk
+  - US - zhuhai.uk 06
+  - US - zhuhai.uk 07
+  - ID - zhuhai.uk 02
+  - DE - zhuhai.uk 02
   - SG - zhuhai.uk 02
+  - KR - zhuhai.uk
+  - KR - zhuhai.uk 02
+  - SG - zhuhai.uk 03
+  - SG - zhuhai.uk 04
   - DE - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
