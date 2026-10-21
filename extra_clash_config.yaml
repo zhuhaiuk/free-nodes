@@ -1,13 +1,19 @@
 proxies:
-- name: DE - zhuhai.uk 01
-  type: trojan
-  server: de7.dedushka.top
-  port: 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+- name: FR - zhuhai.uk 01
+  type: vless
+  server: tun2.w-ert.org
+  port: 42924
+  uuid: 3e16033f-71d8-417b-abea-7756253f3c3d
   udp: true
-  sni: de7.dedushka.top
+  network: tcp
+  tls: true
+  servername: www.aparat.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: woId47r1U8pEuDwHoC026bJHVWha2RHjufq1Kw3QoRU
+    short-id: ca4134a0ed2592b6
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - DE - zhuhai.uk 01
+  - FR - zhuhai.uk 01
