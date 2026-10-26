@@ -1,19 +1,49 @@
 proxies:
-- name: RU - zhuhai.uk 01
+- name: US - zhuhai.uk 02
   type: vless
-  server: 45.128.78.176
+  server: 47.251.108.158
   port: 443
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
+  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: ozon.ru
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
+    short-id: 896f52ba2cfca903
+- name: RU - zhuhai.uk 01
+  type: vless
+  server: 193.160.141.27
+  port: 443
+  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: abuse.ozon.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: LV - zhuhai.uk 01
+  type: vless
+  server: 195.123.213.28
+  port: 443
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
+  - US - zhuhai.uk 02
   - RU - zhuhai.uk 01
+  - LV - zhuhai.uk 01
