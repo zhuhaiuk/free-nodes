@@ -1,19 +1,19 @@
 proxies:
-- name: DE - zhuhai.uk 01
+- name: RU - zhuhai.uk 01
   type: vless
-  server: 193.223.107.107
-  port: 1932
-  uuid: b8f083b6-ae01-431f-9b41-9e2eb96f352b
+  server: 45.128.78.176
+  port: 443
+  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.vk.com
-  client-fingerprint: qq
+  servername: ozon.ru
+  client-fingerprint: chrome
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - DE - zhuhai.uk 01
+  - RU - zhuhai.uk 01
