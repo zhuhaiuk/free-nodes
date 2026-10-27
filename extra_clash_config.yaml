@@ -1,18 +1,4 @@
 proxies:
-- name: US - zhuhai.uk 02
-  type: vless
-  server: 47.251.108.158
-  port: 443
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
 - name: RU - zhuhai.uk 01
   type: vless
   server: 193.160.141.27
@@ -44,6 +30,5 @@ proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 02
   - RU - zhuhai.uk 01
   - LV - zhuhai.uk 01
