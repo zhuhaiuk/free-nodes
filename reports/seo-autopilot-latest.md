@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-10-26T08:47:17.342Z
+生成时间：2026-10-27T08:53:03.473Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -12,7 +12,7 @@
 | 免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费代理节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费节点订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 每小时更新免费节点 | #7 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
+| 每小时更新免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Clash 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Mihomo 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | V2Ray 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
@@ -32,35 +32,35 @@
 
 | 域名 | 出现次数 |
 | --- | --- |
-| github.com | 31 |
-| youtube.com | 15 |
-| freeclashnode.com | 7 |
-| mibei77.com | 6 |
-| end-gfw.com | 5 |
-| freenodes.github.io | 5 |
-| b.freev2.net | 4 |
-| cfmem.com | 4 |
-| ermao.net | 3 |
-| wiki.metacubex.one | 3 |
+| github.com | 22 |
+| youtube.com | 6 |
+| freeclashnode.com | 5 |
+| gist.github.com | 4 |
+| v2rayfree.eu.org | 4 |
+| freevpnnode.github.io | 3 |
+| mihomo-party.com | 3 |
+| sites.google.com | 3 |
+| v2free.org | 3 |
 | ccbaohe.com | 2 |
-| id.bocchi2b.top | 2 |
+| clashverge.v2rayfast.com | 2 |
+| clashvip.com | 2 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| clash | 139 |
-| v2ray | 118 |
-| 机场 | 76 |
-| 免费节点 | 74 |
-| 小火箭 | 49 |
-| trojan | 42 |
-| shadowrocket | 24 |
-| 每日更新 | 23 |
-| 节点订阅 | 22 |
-| 免费订阅 | 20 |
-| mihomo | 17 |
-| shadowsocks | 17 |
+| v2ray | 159 |
+| clash | 154 |
+| 机场 | 98 |
+| 免费节点 | 82 |
+| 小火箭 | 48 |
+| 节点订阅 | 43 |
+| shadowrocket | 43 |
+| trojan | 34 |
+| 每日更新 | 27 |
+| mihomo | 20 |
+| shadowsocks | 18 |
+| free proxy | 7 |
 
 ## 自动策略
 
