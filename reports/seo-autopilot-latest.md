@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-10-27T08:53:03.473Z
+生成时间：2026-10-28T09:33:08.963Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -23,7 +23,7 @@
 | 机场推荐 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 代理订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| free nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| free nodes | #4 | https://github.com/zhuhaiuk/free-nodes/blob/main/README.md | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
 | free proxy nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | free Clash nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | free V2Ray nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
@@ -32,35 +32,35 @@
 
 | 域名 | 出现次数 |
 | --- | --- |
-| github.com | 22 |
+| github.com | 32 |
 | youtube.com | 6 |
 | freeclashnode.com | 5 |
-| gist.github.com | 4 |
-| v2rayfree.eu.org | 4 |
-| freevpnnode.github.io | 3 |
-| mihomo-party.com | 3 |
-| sites.google.com | 3 |
+| t.me | 5 |
+| 85la.com | 3 |
+| freenode.openrunner.net | 3 |
+| nodebaba.com | 3 |
+| shadowrocket.one | 3 |
 | v2free.org | 3 |
+| b.freev2.net | 2 |
 | ccbaohe.com | 2 |
-| clashverge.v2rayfast.com | 2 |
-| clashvip.com | 2 |
+| clashgithub.com | 2 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| v2ray | 159 |
-| clash | 154 |
-| 机场 | 98 |
-| 免费节点 | 82 |
-| 小火箭 | 48 |
-| 节点订阅 | 43 |
-| shadowrocket | 43 |
-| trojan | 34 |
-| 每日更新 | 27 |
-| mihomo | 20 |
-| shadowsocks | 18 |
-| free proxy | 7 |
+| clash | 160 |
+| v2ray | 141 |
+| 机场 | 97 |
+| 免费节点 | 90 |
+| 小火箭 | 52 |
+| trojan | 48 |
+| 每日更新 | 42 |
+| 节点订阅 | 40 |
+| shadowrocket | 38 |
+| mihomo | 21 |
+| shadowsocks | 19 |
+| free proxy | 13 |
 
 ## 自动策略
 
