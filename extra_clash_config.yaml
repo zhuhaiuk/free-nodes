@@ -1,20 +1,49 @@
 proxies:
-- name: US - zhuhai.uk 02
+- name: US - zhuhai.uk 01
   type: vless
-  server: 47.251.108.158
+  server: 155.117.232.61
   port: 443
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
+  servername: node-usa.blok-signalon.top
   client-fingerprint: chrome
   reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
+    public-key: aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms
+    short-id: 336c2cff6e3717c4
+- name: US - zhuhai.uk 02
+  type: vless
+  server: node-usa.blok-signalon.top
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: node-usa.blok-signalon.top
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms
+    short-id: 336c2cff6e3717c4
+- name: EE - zhuhai.uk 01
+  type: vless
+  server: 79.182.39.232
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
+  - US - zhuhai.uk 01
   - US - zhuhai.uk 02
+  - EE - zhuhai.uk 01
