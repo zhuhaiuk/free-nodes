@@ -1,49 +1,20 @@
 proxies:
-- name: US - zhuhai.uk 01
+- name: JP - zhuhai.uk 01
   type: vless
-  server: 155.117.232.61
-  port: 443
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  server: 45.202.255.92
+  port: 9443
+  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: node-usa.blok-signalon.top
+  servername: www.amazon.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms
-    short-id: 336c2cff6e3717c4
-- name: US - zhuhai.uk 02
-  type: vless
-  server: node-usa.blok-signalon.top
-  port: 443
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: node-usa.blok-signalon.top
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms
-    short-id: 336c2cff6e3717c4
-- name: EE - zhuhai.uk 01
-  type: vless
-  server: 79.182.39.232
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  udp: true
-  network: tcp
-  tls: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-    short-id: a73f0410d728c823
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
-  - US - zhuhai.uk 02
-  - EE - zhuhai.uk 01
+  - JP - zhuhai.uk 01
