@@ -1,20 +1,19 @@
 proxies:
-- name: JP - zhuhai.uk 01
+- name: TH - zhuhai.uk 01
   type: vless
-  server: 45.202.255.92
-  port: 9443
-  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
+  server: 141.193.154.234
+  port: 443
+  uuid: 80fdddb8-3eb8-41ad-9916-fbb42c442e6e
   udp: true
   network: tcp
-  flow: xtls-rprx-vision
   tls: true
-  servername: www.amazon.com
-  client-fingerprint: chrome
+  servername: cloudflare.com
+  client-fingerprint: firefox
   reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
+    public-key: dN2EhTLZsQ1RsO4rCdoIBIi7mFtmqsC2iekPft3MPnY
+    short-id: '1835'
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - JP - zhuhai.uk 01
+  - TH - zhuhai.uk 01
