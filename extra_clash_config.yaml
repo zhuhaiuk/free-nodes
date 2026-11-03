@@ -1,18 +1,13 @@
 proxies:
-- name: RU - zhuhai.uk 01
-  type: vless
-  server: 201.24.121.243
+- name: US - zhuhai.uk 01
+  type: trojan
+  server: 169.197.140.218
   port: 443
-  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-  network: grpc
-  tls: true
-  servername: kk-ru24a1.testkknegr.online
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: vlgrpc
+  sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - RU - zhuhai.uk 01
+  - US - zhuhai.uk 01
