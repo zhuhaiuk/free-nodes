@@ -1,13 +1,48 @@
 proxies:
-- name: US - zhuhai.uk 01
-  type: trojan
-  server: 169.197.140.218
+- name: CH - zhuhai.uk 01
+  type: vless
+  server: prvtch.titun.su
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
-  sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: perevodchiki.su
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+- name: DE - zhuhai.uk 02
+  type: vless
+  server: 147.45.153.29
+  port: 443
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: patch-46.topp-con.xyz
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
+    short-id: b9120cd53ffd7bba
+- name: RU - zhuhai.uk 01
+  type: vless
+  server: xssite.webredirect.org
+  port: 443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  udp: true
+  network: grpc
+  tls: true
+  servername: xssite.webredirect.org
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-ru
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
+  - CH - zhuhai.uk 01
+  - DE - zhuhai.uk 02
+  - RU - zhuhai.uk 01
