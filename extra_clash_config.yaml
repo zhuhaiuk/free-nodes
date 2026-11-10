@@ -1,35 +1,44 @@
 proxies:
-- name: FI - zhuhai.uk 01
-  type: vless
-  server: fi-edge.gacvpn.site
+- name: US - zhuhai.uk 02
+  type: trojan
+  server: 176.122.173.224
   port: 443
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  password: a75243d0f5c2e31bd6c8c118b4f6442f81ad
+  udp: true
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: CH - zhuhai.uk 02
+  type: vless
+  server: 179.43.166.190
+  port: 443
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: fi3-edge.gacvpn.site
+  servername: perevodchiki.su
   client-fingerprint: firefox
   reality-opts:
-    public-key: QjYksCdraKvxMG024774_EOZjxtIB7xHm3GYGx3oN1Y
-    short-id: c59bb8af70d9db1e
-- name: DE - zhuhai.uk 01
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+- name: CH - zhuhai.uk 01
   type: vless
-  server: 188.130.154.204
+  server: 179.43.166.190
   port: 443
-  uuid: ed2e4dd1-d19f-48dd-b613-3f855b1d0765
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
   udp: true
-  network: ws
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn2.zovip2.ir
+  servername: perevodchiki.su
   client-fingerprint: chrome
-  ws-opts:
-    path: "/api/v3/pulse"
-    headers:
-      Host: cdn2.zovip2.ir
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - FI - zhuhai.uk 01
-  - DE - zhuhai.uk 01
+  - US - zhuhai.uk 02
+  - CH - zhuhai.uk 02
+  - CH - zhuhai.uk 01
