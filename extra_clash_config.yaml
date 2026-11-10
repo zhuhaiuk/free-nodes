@@ -1,44 +1,36 @@
 proxies:
-- name: US - zhuhai.uk 02
-  type: trojan
-  server: 176.122.173.224
-  port: 443
-  password: a75243d0f5c2e31bd6c8c118b4f6442f81ad
-  udp: true
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: CH - zhuhai.uk 02
+- name: US - zhuhai.uk 01
   type: vless
-  server: 179.43.166.190
+  server: 104.36.69.105
   port: 443
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  uuid: 4dbf1ade-33f1-40dc-9273-e51babd570fe
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: perevodchiki.su
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-- name: CH - zhuhai.uk 01
-  type: vless
-  server: 179.43.166.190
-  port: 443
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: perevodchiki.su
+  servername: portal.citygrainla.com
   client-fingerprint: chrome
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
+    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+    short-id: 051f20c2344a2dfd
+- name: PL - zhuhai.uk 01
+  type: vless
+  server: 201.58.189.105
+  port: 2083
+  uuid: d7ddade6-b7a0-4cab-a910-d5d5c378d98a
+  udp: true
+  network: grpc
+  tls: true
+  servername: dl.google.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4
+    short-id: 8bd80253
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 02
-  - CH - zhuhai.uk 02
-  - CH - zhuhai.uk 01
+  - US - zhuhai.uk 01
+  - PL - zhuhai.uk 01
