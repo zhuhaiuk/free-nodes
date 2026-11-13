@@ -1,29 +1,30 @@
 proxies:
-- name: FR - zhuhai.uk 01
+- name: ES - zhuhai.uk 01
   type: vless
-  server: 200.102.183.50
-  port: 443
-  uuid: 664f65f4-33b3-43a3-b9e5-68192d1d428e
+  server: 9.247.174.134
+  port: 8443
+  uuid: 585a421d-d782-4420-912e-dd58ff5966d7
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: f2hbck5x3c0g8pl7.cdn.cachefleet.com
+  servername: play.googleapis.com
   client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: qi8ws15c7jv5q2fa
-- name: RU - zhuhai.uk 01
+  reality-opts:
+    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+    short-id: 974f7f8f
+- name: RU - zhuhai.uk 02
   type: vless
-  server: 5.42.111.231
+  server: 201.24.116.192
   port: 443
-  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   udp: true
   network: grpc
   tls: true
-  servername: vps2.nemnogogo.com
+  servername: vps3.nemnogogo.com
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: RU - zhuhai.uk 02
+- name: RU - zhuhai.uk 01
   type: vless
   server: vps3.nemnogogo.com
   port: 443
@@ -35,26 +36,26 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: NL - zhuhai.uk 01
+- name: EE - zhuhai.uk 01
   type: vless
-  server: 79.182.39.131
+  server: 5.129.202.80
   port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   udp: true
-  network: grpc
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: 717252g.nl8.h1clayd.click
+  servername: mirror-50.topp-con.xyz
   client-fingerprint: chrome
+  skip-cert-verify: true
   reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
+    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
+    short-id: 2ef2b10d5143d798
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - FR - zhuhai.uk 01
-  - RU - zhuhai.uk 01
+  - ES - zhuhai.uk 01
   - RU - zhuhai.uk 02
-  - NL - zhuhai.uk 01
+  - RU - zhuhai.uk 01
+  - EE - zhuhai.uk 01
