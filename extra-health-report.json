@@ -1,15 +1,30 @@
 {
-  "checked_at": "2026-11-13T19:39:06Z",
+  "checked_at": "2026-11-15T06:25:05Z",
   "source": "https://raw.githubusercontent.com/kooker/FreeSubsCheck/main/base64.txt",
   "test_url": "https://www.gstatic.com/generate_204",
   "timeout_ms": 5000,
-  "candidates": 1,
+  "candidates": 6,
   "live_nodes": [
     {
-      "name": "ES - zhuhai.uk 01",
-      "delay": 771,
+      "name": "NL - zhuhai.uk 01",
+      "delay": 373,
+      "type": "vless"
+    },
+    {
+      "name": "RU - zhuhai.uk 03",
+      "delay": 619,
+      "type": "vless"
+    },
+    {
+      "name": "RU - zhuhai.uk 01",
+      "delay": 625,
+      "type": "vless"
+    },
+    {
+      "name": "RU - zhuhai.uk 02",
+      "delay": 625,
       "type": "vless"
     }
   ],
-  "live_count": 1
+  "live_count": 4
 }
