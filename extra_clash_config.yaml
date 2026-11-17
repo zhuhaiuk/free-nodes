@@ -1,7 +1,55 @@
 proxies:
-- name: RU - zhuhai.uk 01
+- name: DE - zhuhai.uk 01
+  type: ss
+  server: 47.85.201.22
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+  udp: true
+- name: SE - zhuhai.uk 02
   type: vless
-  server: 201.24.116.192
+  server: 88.216.214.159
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  network: tcp
+  tls: true
+  servername: api-svc-mgr.galioncc.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+- name: NL - zhuhai.uk 05
+  type: vless
+  server: 31.77.28.173
+  port: 443
+  uuid: 372931d3-91c5-4564-b79c-041302de9a17
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nl4.soshelper.space
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9UG9zvrDpiPgY_J0dvB-n10ygEw3FzJ2qT8PFtITUBE
+    short-id: e06e30590f288e0f
+- name: NL - zhuhai.uk 03
+  type: vless
+  server: 31.77.28.68
+  port: 443
+  uuid: 372931d3-91c5-4564-b79c-041302de9a17
+  udp: true
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nl2.soshelper.space
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mEo4kHPpRns7efJfVW1G-gDEsPag0jELFQK-HIwrvjY
+    short-id: 6562cf617728186e
+- name: RU - zhuhai.uk 03
+  type: vless
+  server: 201.51.12.98
   port: 443
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   udp: true
@@ -11,9 +59,9 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: RU - zhuhai.uk 03
+- name: RU - zhuhai.uk 01
   type: vless
-  server: 201.51.12.98
+  server: 201.24.116.192
   port: 443
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   udp: true
@@ -35,25 +83,67 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: JP - zhuhai.uk 01
+- name: CY - zhuhai.uk 01
   type: vless
-  server: zfapi.zalolink.com
-  port: 43149
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  server: 194.55.167.133
+  port: 443
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
   udp: true
   network: tcp
   flow: xtls-rprx-vision
   tls: true
-  servername: psstatic.cdn.bcebos.com
+  servername: cy1.gofizz.in
   client-fingerprint: firefox
   reality-opts:
-    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-    short-id: 15aa0ad4
+    public-key: XSh3jB8zXtqpI38glgwN2Bn5imxN8Rkyc39LeBSD8BQ
+    short-id: 24f1fa53275b
+- name: DE - zhuhai.uk 02
+  type: vless
+  server: luminexorizon.ink
+  port: 443
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  udp: true
+  network: grpc
+  tls: true
+  servername: luminexorizon.ink
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: glush.de3.v1
+- name: SE - zhuhai.uk 01
+  type: vless
+  server: 88.216.60.73
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  network: tcp
+  tls: true
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+- name: NL - zhuhai.uk 02
+  type: vless
+  server: 194.60.228.97
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  network: tcp
+  tls: true
+  servername: base.hosamobenl.co.uk
+  client-fingerprint: chrome
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - RU - zhuhai.uk 01
+  - DE - zhuhai.uk 01
+  - SE - zhuhai.uk 02
+  - NL - zhuhai.uk 05
+  - NL - zhuhai.uk 03
   - RU - zhuhai.uk 03
+  - RU - zhuhai.uk 01
   - RU - zhuhai.uk 02
-  - JP - zhuhai.uk 01
+  - CY - zhuhai.uk 01
+  - DE - zhuhai.uk 02
+  - SE - zhuhai.uk 01
+  - NL - zhuhai.uk 02
