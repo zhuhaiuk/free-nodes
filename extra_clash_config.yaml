@@ -1,89 +1,19 @@
 proxies:
-- name: US - zhuhai.uk 01
-  type: vless
-  server: 199.232.78.120
-  port: 443
-  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
-  udp: true
-  network: ws
-  tls: true
-  servername: cdn.akamai.steamstatic.com
-  skip-cert-verify: true
-  ws-opts:
-    path: "/"
-    headers:
-      Host: ushetzijji.global.ssl.fastly.net.
 - name: SE - zhuhai.uk 01
   type: vless
-  server: 88.216.214.159
+  server: 88.216.60.73
   port: 443
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   udp: true
   network: tcp
   tls: true
-  servername: api-svc-mgr.galioncc.com
-  client-fingerprint: firefox
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: ios
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7c92e4b10d6f835
-- name: RU - zhuhai.uk 01
-  type: vless
-  server: vps3.nemnogogo.com
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  udp: true
-  network: grpc
-  tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: FI - zhuhai.uk 01
-  type: vless
-  server: 198.202.24.142
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
-  udp: true
-  network: ws
-  tls: true
-  servername: vipfree.dr-ping.ir
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/"
-    headers:
-      Host: vipfree.dr-ping.ir
-- name: NL - zhuhai.uk 01
-  type: vless
-  server: 136.148.208.221
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 8a2e72t.nl20.h1clayd.shop
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-- name: NL - zhuhai.uk 02
-  type: vless
-  server: 194.60.228.97
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  network: tcp
-  tls: true
-  servername: base.hosamobenl.co.uk
-  client-fingerprint: chrome
-  skip-cert-verify: true
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 01
   - SE - zhuhai.uk 01
-  - RU - zhuhai.uk 01
-  - FI - zhuhai.uk 01
-  - NL - zhuhai.uk 01
-  - NL - zhuhai.uk 02
