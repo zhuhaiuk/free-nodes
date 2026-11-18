@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-11-17T11:43:16.803Z
+生成时间：2026-11-18T11:30:33.173Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -12,9 +12,9 @@
 | 免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费代理节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费节点订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 每小时更新免费节点 | #1 | https://github.com/zhuhaiuk/free-nodes | 已进入前三：保持更新频率，避免大幅改动标题和 canonical。 |
+| 每小时更新免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Clash 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| Mihomo 节点 | #5 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
+| Mihomo 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | V2Ray 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Trojan 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Shadowsocks 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
@@ -32,35 +32,35 @@
 
 | 域名 | 出现次数 |
 | --- | --- |
-| github.com | 28 |
-| youtube.com | 15 |
-| 85la.com | 5 |
-| freeclashnode.com | 4 |
-| mibei77.com | 4 |
-| sshs8.com | 4 |
+| google.com | 104 |
+| github.com | 10 |
+| youtube.com | 7 |
 | freenodes.github.io | 3 |
-| nodecats.com | 3 |
-| wiki.metacubex.one | 3 |
-| clashios.com | 2 |
+| t.me | 3 |
 | end-gfw.com | 2 |
-| play.google.com | 2 |
+| id.bocchi.vip | 2 |
+| mibei77.com | 2 |
+| b.freev2.net | 1 |
+| clash-plus.com | 1 |
+| clashbest.github.io | 1 |
+| clashclient.com | 1 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| clash | 120 |
-| v2ray | 115 |
-| 机场 | 82 |
-| 免费节点 | 73 |
-| 小火箭 | 55 |
-| trojan | 41 |
-| 节点订阅 | 39 |
-| shadowrocket | 29 |
-| shadowsocks | 25 |
-| 每日更新 | 25 |
-| free proxy | 12 |
-| mihomo | 11 |
+| v2ray | 143 |
+| clash | 141 |
+| 机场 | 104 |
+| 免费节点 | 88 |
+| 小火箭 | 56 |
+| shadowrocket | 31 |
+| 节点订阅 | 29 |
+| 每日更新 | 29 |
+| trojan | 26 |
+| shadowsocks | 16 |
+| mihomo | 14 |
+| 免费订阅 | 12 |
 
 ## 自动策略
 
