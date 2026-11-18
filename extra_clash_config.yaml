@@ -1,19 +1,13 @@
 proxies:
-- name: SE - zhuhai.uk 01
-  type: vless
-  server: 88.216.60.73
+- name: DE - zhuhai.uk 01
+  type: ss
+  server: 47.85.162.44
   port: 443
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
   udp: true
-  network: tcp
-  tls: true
-  servername: ns-api-gw.galioncc.com
-  client-fingerprint: ios
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - SE - zhuhai.uk 01
+  - DE - zhuhai.uk 01
