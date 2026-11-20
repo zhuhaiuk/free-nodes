@@ -1,32 +1,44 @@
 proxies:
-- name: US - zhuhai.uk 06
+- name: RU - zhuhai.uk 02
   type: vless
-  server: 104.16.205.65
-  port: 2083
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  udp: true
-  network: ws
-  tls: true
-  servername: ahmad99hoseini.pages.dev
-  client-fingerprint: chrome
-  ws-opts:
-    path: "/"
-    headers:
-      Host: ahmad99hoseini.pages.dev
-- name: DE - zhuhai.uk 05
-  type: vless
-  server: 176.98.176.60
+  server: 201.51.12.98
   port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   udp: true
-  network: tcp
-  flow: xtls-rprx-vision
+  network: grpc
   tls: true
-  servername: mosaic.topp-con.xyz
+  servername: vps3.nemnogogo.com
   client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: RU - zhuhai.uk 03
+  type: vless
+  server: vps3.nemnogogo.com
+  port: 443
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  udp: true
+  network: grpc
+  tls: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: RU - zhuhai.uk 01
+  type: vless
+  server: 201.24.116.192
+  port: 443
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  udp: true
+  network: grpc
+  tls: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - US - zhuhai.uk 06
-  - DE - zhuhai.uk 05
+  - RU - zhuhai.uk 02
+  - RU - zhuhai.uk 03
+  - RU - zhuhai.uk 01
