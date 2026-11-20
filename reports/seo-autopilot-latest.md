@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-11-19T11:29:38.533Z
+生成时间：2026-11-20T11:25:56.439Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -12,7 +12,7 @@
 | 免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费代理节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费节点订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 每小时更新免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 每小时更新免费节点 | #3 | https://github.com/zhuhaiuk/free-nodes | 已进入前三：保持更新频率，避免大幅改动标题和 canonical。 |
 | Clash 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Mihomo 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | V2Ray 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
@@ -32,35 +32,35 @@
 
 | 域名 | 出现次数 |
 | --- | --- |
-| google.com | 104 |
-| youtube.com | 10 |
-| github.com | 9 |
-| 85la.com | 3 |
-| nodecats.com | 2 |
-| t.me | 2 |
-| tangappleid.com | 2 |
+| google.com | 102 |
+| github.com | 19 |
+| mibei77.com | 4 |
+| youtube.com | 3 |
+| b.freev2.net | 2 |
+| end-gfw.com | 2 |
+| freenodes.github.io | 2 |
 | wiki.metacubex.one | 2 |
-| buy.evvcv.com | 1 |
-| ccbaohe.com | 1 |
 | clashios.com | 1 |
-| clashnodefree.com | 1 |
+| clashvip.com | 1 |
+| freeclashnode.com | 1 |
+| geonode.com | 1 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| clash | 126 |
-| v2ray | 122 |
-| 机场 | 108 |
-| 免费节点 | 75 |
-| 小火箭 | 54 |
-| 节点订阅 | 34 |
-| shadowrocket | 34 |
-| 每日更新 | 32 |
-| trojan | 27 |
-| shadowsocks | 18 |
-| mihomo | 12 |
-| free proxy | 10 |
+| v2ray | 129 |
+| 机场 | 121 |
+| clash | 112 |
+| 免费节点 | 67 |
+| 小火箭 | 49 |
+| shadowrocket | 25 |
+| 节点订阅 | 23 |
+| trojan | 22 |
+| shadowsocks | 21 |
+| 免费订阅 | 18 |
+| 每日更新 | 17 |
+| mihomo | 10 |
 
 ## 自动策略
 
