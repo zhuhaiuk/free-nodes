@@ -195,7 +195,7 @@ proxies:
   port: 1080
   username: '8888'
   password: '8888'
-- name: RU - zhuhai.uk 02
+- name: RU - zhuhai.uk 01
   type: vless
   server: 201.51.12.98
   port: 443
@@ -207,7 +207,7 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: RU - zhuhai.uk 03
+- name: RU - zhuhai.uk 02
   type: vless
   server: vps3.nemnogogo.com
   port: 443
@@ -219,18 +219,17 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: RU - zhuhai.uk 01
+- name: DE - zhuhai.uk 01
   type: vless
-  server: 201.24.116.192
+  server: 176.98.176.60
   port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   udp: true
-  network: grpc
+  network: tcp
+  flow: xtls-rprx-vision
   tls: true
-  servername: vps3.nemnogogo.com
+  servername: mosaic.topp-con.xyz
   client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
 proxy-groups:
 - name: 选择出口
   type: select
@@ -264,9 +263,9 @@ proxy-groups:
   - KR - zhuhai.uk 02
   - SG - zhuhai.uk
   - SG - zhuhai.uk 02
-  - RU - zhuhai.uk 02
-  - RU - zhuhai.uk 03
   - RU - zhuhai.uk 01
+  - RU - zhuhai.uk 02
+  - DE - zhuhai.uk 01
 rules:
 - GEOSITE,CN,DIRECT
 - GEOIP,CN,DIRECT
