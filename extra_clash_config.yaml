@@ -1,43 +1,13 @@
 proxies:
-- name: RU - zhuhai.uk 01
-  type: vless
-  server: 201.51.12.98
+- name: DE - zhuhai.uk 02
+  type: ss
+  server: 47.254.167.157
   port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-  network: grpc
-  tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: RU - zhuhai.uk 02
-  type: vless
-  server: vps3.nemnogogo.com
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  udp: true
-  network: grpc
-  tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: DE - zhuhai.uk 01
-  type: vless
-  server: 176.98.176.60
-  port: 443
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  udp: true
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: mosaic.topp-con.xyz
-  client-fingerprint: firefox
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - RU - zhuhai.uk 01
-  - RU - zhuhai.uk 02
-  - DE - zhuhai.uk 01
+  - DE - zhuhai.uk 02
