@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-11-22T11:10:31.047Z
+生成时间：2026-11-24T13:33:14.625Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -12,7 +12,7 @@
 | 免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费代理节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 免费节点订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 每小时更新免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 每小时更新免费节点 | #3 | https://github.com/zhuhaiuk/free-nodes | 已进入前三：保持更新频率，避免大幅改动标题和 canonical。 |
 | Clash 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Mihomo 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | V2Ray 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
@@ -21,8 +21,8 @@
 | Shadowrocket 共享账号 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 小火箭账号 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 机场推荐 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 免费订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 代理订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
+| 免费订阅 | #6 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
+| 代理订阅 | #8 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
 | free nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | free proxy nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | free Clash nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
@@ -32,35 +32,35 @@
 
 | 域名 | 出现次数 |
 | --- | --- |
-| google.com | 119 |
-| github.com | 15 |
+| github.com | 29 |
+| youtube.com | 13 |
+| gist.github.com | 6 |
+| 85la.com | 5 |
+| end-gfw.com | 5 |
 | mibei77.com | 5 |
-| ios.juzixp.com | 2 |
-| play.google.com | 2 |
-| clash-plus.com | 1 |
-| freenode.net | 1 |
-| geonode.com | 1 |
-| p4gefau1t.github.io | 1 |
-| proxy5.net | 1 |
-| shadowsocks.org | 1 |
-| shadowsockshelp.github.io | 1 |
+| freeclashnode.com | 4 |
+| freenodes.github.io | 4 |
+| tangappleid.com | 3 |
+| v2cross.com | 3 |
+| b.freev2.net | 2 |
+| nodecats.com | 2 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| v2ray | 126 |
-| clash | 108 |
-| 机场 | 76 |
-| 免费节点 | 52 |
-| 小火箭 | 49 |
-| trojan | 37 |
-| 节点订阅 | 34 |
-| shadowsocks | 23 |
-| shadowrocket | 23 |
-| 每日更新 | 23 |
-| 免费订阅 | 15 |
-| mihomo | 14 |
+| clash | 136 |
+| v2ray | 114 |
+| 免费节点 | 82 |
+| 机场 | 60 |
+| 小火箭 | 51 |
+| trojan | 45 |
+| 节点订阅 | 40 |
+| shadowrocket | 30 |
+| 每日更新 | 26 |
+| shadowsocks | 18 |
+| 免费订阅 | 13 |
+| mihomo | 13 |
 
 ## 自动策略
 
