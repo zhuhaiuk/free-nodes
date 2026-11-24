@@ -1,11 +1,4 @@
 proxies:
-- name: DE - zhuhai.uk 01
-  type: ss
-  server: 47.254.167.157
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
 - name: RU - zhuhai.uk 01
   type: vless
   server: 201.24.116.192
@@ -15,12 +8,24 @@ proxies:
   network: grpc
   tls: true
   servername: vps3.nemnogogo.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: RU - zhuhai.uk 03
+  type: vless
+  server: 201.51.12.98
+  port: 443
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  udp: true
+  network: grpc
+  tls: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: RU - zhuhai.uk 02
   type: vless
-  server: 201.51.12.98
+  server: leviko-ru4448.shopingggg.ir
   port: 443
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   udp: true
@@ -39,52 +44,14 @@ proxies:
   network: grpc
   tls: true
   servername: vps3.nemnogogo.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: CH - zhuhai.uk 01
-  type: vless
-  server: 193.233.89.130
-  port: 8443
-  uuid: 7bd7c4aa-52c4-482c-bdcc-e7380fa6b5fe
-  udp: true
-  network: grpc
-  tls: true
-  servername: g.play2go.gay
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: xx8KWdR4HbVmvqPb0wRPAstBHGN2Uk99m7AF794_E3c
-  grpc-opts:
-    grpc-service-name: grpc
-- name: RU - zhuhai.uk 03
-  type: vless
-  server: leviko-ru4448.shopingggg.ir
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  udp: true
-  network: grpc
-  tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: FR - zhuhai.uk 01
-  type: vless
-  server: 88.151.197.87
-  port: 2025
-  uuid: 1697852e-cd5c-472d-b377-0def0f301d98
-  udp: true
-  network: ws
-  ws-opts:
-    path: "/"
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - DE - zhuhai.uk 01
   - RU - zhuhai.uk 01
+  - RU - zhuhai.uk 03
   - RU - zhuhai.uk 02
   - RU - zhuhai.uk 04
-  - CH - zhuhai.uk 01
-  - RU - zhuhai.uk 03
-  - FR - zhuhai.uk 01
