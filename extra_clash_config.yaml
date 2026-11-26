@@ -1,5 +1,5 @@
 proxies:
-- name: RU - zhuhai.uk 01
+- name: RU - zhuhai.uk 03
   type: vless
   server: 201.24.116.192
   port: 443
@@ -11,33 +11,9 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: RU - zhuhai.uk 03
-  type: vless
-  server: 201.51.12.98
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  udp: true
-  network: grpc
-  tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
 - name: RU - zhuhai.uk 02
   type: vless
-  server: leviko-ru4448.shopingggg.ir
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  udp: true
-  network: grpc
-  tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: RU - zhuhai.uk 04
-  type: vless
-  server: vps3.nemnogogo.com
+  server: 201.51.12.98
   port: 443
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   udp: true
@@ -51,7 +27,5 @@ proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
-  - RU - zhuhai.uk 01
   - RU - zhuhai.uk 03
   - RU - zhuhai.uk 02
-  - RU - zhuhai.uk 04
