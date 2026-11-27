@@ -1,6 +1,6 @@
 # SEO Autopilot Report
 
-生成时间：2026-11-26T12:16:32.829Z
+生成时间：2026-11-27T12:04:01.601Z
 
 目标站点：https://nodes.zhuhai.uk  
 目标仓库：https://github.com/zhuhaiuk/free-nodes
@@ -9,10 +9,10 @@
 
 | 关键词 | 当前排名 | 匹配页面 | 自动优化方向 |
 | --- | --- | --- | --- |
-| 免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 免费代理节点 | #8 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
-| 免费节点订阅 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 每小时更新免费节点 | #3 | https://github.com/zhuhaiuk/free-nodes | 已进入前三：保持更新频率，避免大幅改动标题和 canonical。 |
+| 免费节点 | #6 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
+| 免费代理节点 | #6 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
+| 免费节点订阅 | #6 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
+| 每小时更新免费节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Clash 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | Mihomo 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | V2Ray 节点 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
@@ -21,8 +21,8 @@
 | Shadowrocket 共享账号 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 小火箭账号 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | 机场推荐 | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
-| 免费订阅 | #7 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
-| 代理订阅 | #8 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
+| 免费订阅 | #5 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
+| 代理订阅 | #4 | https://github.com/zhuhaiuk/free-nodes | 已进入前 10：强化差异化表达和外链入口，争取前三。 |
 | free nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | free proxy nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
 | free Clash nodes | 未进前 20 |  | 未进入前 20：增强对应专题页标题、FAQ、教程内链和 README 锚文本。 |
@@ -32,35 +32,35 @@
 
 | 域名 | 出现次数 |
 | --- | --- |
-| github.com | 29 |
-| youtube.com | 21 |
-| mibei77.com | 7 |
-| end-gfw.com | 6 |
-| freeclashnode.com | 6 |
-| freenodes.github.io | 6 |
+| github.com | 31 |
+| youtube.com | 20 |
+| t.me | 8 |
+| mibei77.com | 6 |
+| end-gfw.com | 5 |
+| freenodes.github.io | 5 |
+| freeclashnode.com | 4 |
 | v2rayfree.org | 4 |
-| shadowrocket.one | 3 |
-| wiki.metacubex.one | 3 |
+| wiki.metacubex.one | 4 |
+| runtushare.net | 3 |
 | ccbaohe.com | 2 |
 | fxapp.xyz | 2 |
-| id.bocchi.vip | 2 |
 
 ## SERP 高频信号
 
 | 词/主题 | 出现次数 |
 | --- | --- |
-| clash | 147 |
-| v2ray | 119 |
-| 免费节点 | 77 |
-| 机场 | 72 |
-| 小火箭 | 54 |
-| trojan | 35 |
-| 节点订阅 | 33 |
-| 每日更新 | 25 |
-| shadowrocket | 24 |
-| shadowsocks | 23 |
-| mihomo | 15 |
-| 免费订阅 | 10 |
+| v2ray | 128 |
+| clash | 126 |
+| 免费节点 | 86 |
+| 机场 | 67 |
+| 小火箭 | 59 |
+| 每日更新 | 36 |
+| trojan | 33 |
+| shadowrocket | 31 |
+| 节点订阅 | 29 |
+| shadowsocks | 26 |
+| free proxy | 13 |
+| mihomo | 12 |
 
 ## 自动策略
 
