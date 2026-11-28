@@ -1,48 +1,18 @@
 proxies:
 - name: RU - zhuhai.uk 01
   type: vless
-  server: vps3.nemnogogo.com
+  server: 201.24.116.192
   port: 443
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   udp: true
   network: grpc
   tls: true
   servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: US - zhuhai.uk 01
-  type: vless
-  server: xray-b8ct4r2f-sahdon-hosaindoost.cloady.io
-  port: 443
-  uuid: 1fd2e2d1-96f5-2056-19fd-b375b1a9d851
-  udp: true
-  network: ws
-  tls: true
-  servername: xray-b8ct4r2f-sahdon-hosaindoost.cloady.io
-  skip-cert-verify: true
-  ws-opts:
-    path: "/ffad70ffdfc3bcda"
-    headers:
-      Host: xray-b8ct4r2f-sahdon-hosaindoost.cloady.io
-- name: DE - zhuhai.uk 02
-  type: vless
-  server: bookend.filnex.baby
-  port: 443
-  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
-  udp: true
-  network: ws
-  tls: true
-  servername: ferncrest.gerqix.online
-  client-fingerprint: firefox
-  ws-opts:
-    path: "/api/de1/stream"
-    headers:
-      Host: bookend.filnex.baby
 proxy-groups:
 - name: EXTRA-LIVE
   type: select
   proxies:
   - RU - zhuhai.uk 01
-  - US - zhuhai.uk 01
-  - DE - zhuhai.uk 02
